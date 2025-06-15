@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erik Erikson - Psikososyal Gelişim Soruları</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+        }
+        
+        .header h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+        
+        .nav-link {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background: rgba(255,255,255,0.2);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-link:hover {
+            background: rgba(255,255,255,0.3);
+        }
+        
+        .content {
+            padding: 40px;
+        }
+        
+        .question {
+            background: #f8f9fa;
+            margin-bottom: 30px;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .question-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        
+        .question-number {
+            background: #667eea;
+            color: white;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+        
+        .question-type {
+            background: #28a745;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+        }
+        
+        .question-text {
+            font-size: 1.1rem;
+            color: #333;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+        
+        .options {
+            list-style: none;
+            margin-bottom: 20px;
+        }
+        
+        .options li {
+            padding: 10px 15px;
+            margin: 8px 0;
+            background: white;
+            border-radius: 8px;
+            border: 2px solid #e9ecef;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .options li:hover {
+            border-color: #667eea;
+            background: #f0f4ff;
+        }
+        
+        .explanation {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+        
+        .explanation h4 {
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+        
+        .explanation p {
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+        
+        .fill-blank {
+            border: none;
+            border-bottom: 2px solid #667eea;
+            background: transparent;
+            padding: 5px;
+            font-size: 1rem;
+            width: 150px;
+            margin: 0 5px;
+        }
+        
+        .essay-area {
+            width: 100%;
+            min-height: 100px;
+            padding: 15px;
+            border: 2px solid #e9ecef;
+            border-radius: 10px;
+            font-family: inherit;
+            font-size: 1rem;
+            resize: vertical;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🌱 Erik Erikson - Psikososyal Gelişim</h1>
+            <p>Sekiz dönem, kimlik krizi ve yaşam dönemleri</p>
+            <a href="index.html" class="nav-link">← Ana Sayfaya Dön</a>
+        </div>
+        
+        <div class="content">
+            <!-- Soru 1 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">1</div>
+                    <div class="question-type">Çoktan Seçmeli</div>
+                </div>
+                <div class="question-text">
+                    Erikson'un psikososyal gelişim kuramında kaç dönem vardır?
+                </div>
+                <ul class="options">
+                    <li>A) 5 dönem</li>
+                    <li>B) 6 dönem</li>
+                    <li>C) 7 dönem</li>
+                    <li>D) 8 dönem</li>
+                    <li>E) 9 dönem</li>
+                </ul>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevap: D) 8 dönem</h4>
+                    <p><strong>Açıklama:</strong> Erikson'un psikososyal gelişim kuramı <strong>8 dönem</strong>den oluşur ve yaşam boyu gelişimi kapsar. Her dönem belirli bir yaş aralığına karşılık gelir ve kendine özgü bir psikososyal krizi vardır. Bu dönemler: 1) Güven-Güvensizlik (0-1 yaş), 2) Özerklik-Utanç/Şüphe (1-3 yaş), 3) Girişkenlik-Suçluluk (3-5 yaş), 4) Çalışkanlık-Aşağılık (5-12 yaş), 5) Kimlik-Rol Karmaşası (12-18 yaş), 6) Yakınlık-Yalıtım (18-40 yaş), 7) Üretkenlik-Durgunluk (40-65 yaş), 8) Bütünlük-Umutsuzluk (65+ yaş).</p>
+                </div>
+            </div>
+
+            <!-- Soru 2 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">2</div>
+                    <div class="question-type">Boşluk Doldurma</div>
+                </div>
+                <div class="question-text">
+                    Erikson'a göre ergenlik döneminin temel krizi <input type="text" class="fill-blank" placeholder="kimlik"> kazanımı ile <input type="text" class="fill-blank" placeholder="rol karmaşası"> arasındadır. Bu dönemin başarılı çözümü <input type="text" class="fill-blank" placeholder="sadakat"> erdemini getirir.
+                </div>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevaplar: Kimlik, Rol Karmaşası, Sadakat</h4>
+                    <p><strong>Açıklama:</strong> <strong>5. Dönem (12-18 yaş):</strong> Kimlik kazanımı vs. Rol karmaşası krizi yaşanır. <strong>Kimlik kazanımı:</strong> Ergenin "Ben kimim?" sorusuna cevap bulması, tutarlı bir benlik algısı geliştirmesi. <strong>Rol karmaşası:</strong> Farklı roller arasında sıkışıp kalma, kim olduğunu bilememek. <strong>Sadakat erdemi:</strong> Bu dönemin başarılı çözümünde kazanılan erdem, değerlere ve ideallere bağlılık gösterebilme yetisi. Bu dönem kimlik moratoryumu (deneme süresi) içerir ve gençler farklı rolleri deneyimler.</p>
+                </div>
+            </div>
+
+            <!-- Soru 3 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">3</div>
+                    <div class="question-type">Çoktan Seçmeli</div>
+                </div>
+                <div class="question-text">
+                    "Üretkenlik vs. Durgunluk" krizi hangi yaş döneminde yaşanır?
+                </div>
+                <ul class="options">
+                    <li>A) Ergenlik (12-18 yaş)</li>
+                    <li>B) Genç yetişkinlik (18-40 yaş)</li>
+                    <li>C) Orta yaş (40-65 yaş)</li>
+                    <li>D) Yaşlılık (65+ yaş)</li>
+                    <li>E) Okul çağı (5-12 yaş)</li>
+                </ul>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevap: C) Orta yaş (40-65 yaş)</h4>
+                    <p><strong>Açıklama:</strong> <strong>7. Dönem (40-65 yaş):</strong> Üretkenlik vs. Durgunluk krizi yaşanır. <strong>Üretkenlik (Generativity):</strong> Gelecek nesillere katkıda bulunma, çocuk yetiştirme, topluma faydalı olma, yaratıcı çalışmalar yapma. <strong>Durgunluk (Stagnation):</strong> Kişisel büyümeyi durdurma, sadece kendi ihtiyaçlarına odaklanma, gelecek nesillere ilgisizlik. Bu dönemin erdemi <strong>ilgi/özen (care)</strong> olup, başkalarının refahını düşünebilme yetisini ifade eder. Orta yaş krizi bu dönemde yaşanabilir.</p>
+                </div>
+            </div>
+
+            <!-- Soru 4 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">4</div>
+                    <div class="question-type">Klasik Sınav</div>
+                </div>
+                <div class="question-text">
+                    Erikson'un "kimlik" kavramını detaylandırın ve kimlik gelişim sürecinin aşamalarını açıklayın.
+                </div>
+                <textarea class="essay-area" placeholder="Cevabınızı buraya yazınız..."></textarea>
+                <div class="explanation">
+                    <h4>🎯 Örnek Cevap:</h4>
+                    <p><strong>Kimlik Kavramı:</strong> Kimlik, kişinin "Ben kimim?" sorusuna verdiği cevap olup, zaman içinde tutarlı kalan benlik algısıdır. Geçmiş deneyimler, şu anki durumlar ve gelecek hedefleri birleştiren bütünleyici bir yapıdır.</p>
+                    <p><strong>Kimlik Statüleri:</strong> 1) <strong>Kimlik Dağınıklığı:</strong> Ne arayış ne de bağlılık yok. 2) <strong>Kimlik Moratoryumu:</strong> Aktif arayış var, henüz bağlılık yok. 3) <strong>Kimlik İpoteği:</strong> Arayış olmadan bağlılık (ebeveyn değerlerini aynen alma). 4) <strong>Kimlik Başarısı:</strong> Arayış sonucu bilinçli bağlılık.</p>
+                    <p><strong>Gelişim Süreci:</strong> Kimlik gelişimi ergenlikle başlar ancak yaşam boyu sürer. Çeşitli kimlik alanları (meslek, ideoloji, cinsel kimlik, kişilerarası ilişkiler) farklı hızlarda gelişir.</p>
+                    <p><strong>Kültürel Faktörler:</strong> Kimlik gelişimi toplumsal beklentiler, fırsatlar ve kısıtlamalardan etkilenir.</p>
+                </div>
+            </div>
+
+            <!-- Soru 5 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">5</div>
+                    <div class="question-type">Çoktan Seçmeli</div>
+                </div>
+                <div class="question-text">
+                    İlk psikososyal kriz olan "Güven vs. Güvensizlik" döneminin erdemi nedir?
+                </div>
+                <ul class="options">
+                    <li>A) Umut</li>
+                    <li>B) İrade</li>
+                    <li>C) Amaç</li>
+                    <li>D) Yeterlik</li>
+                    <li>E) Sadakat</li>
+                </ul>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevap: A) Umut</h4>
+                    <p><strong>Açıklama:</strong> <strong>1. Dönem (0-1 yaş):</strong> Güven vs. Güvensizlik krizinin erdemi <strong>umut</strong>tur. <strong>Temel güven:</strong> Bakıcının tutarlı, öngörülebilir ve güvenilir bakım sağlamasıyla gelişir. Bebek dünyayın güvenli bir yer olduğunu öğrenir. <strong>Güvensizlik:</strong> Tutarsız, ihmalkar bakım sonucu dünyayı tehlikeli görme. <strong>Umut erdemi:</strong> Zorluklar karşısında bile geleceğe dair iyimserlik ve başarabilme inancını ifade eder. Bu erdem, yaşam boyu diğer krizlerin üstesinden gelmede temel oluşturur. Anne-çocuk ilişkisinin kalitesi bu dönemin başarısını belirler.</p>
+                </div>
+            </div>
+
+            <!-- Soru 6 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">6</div>
+                    <div class="question-type">Boşluk Doldurma</div>
+                </div>
+                <div class="question-text">
+                    Erikson'un kuramında her dönemin bir <input type="text" class="fill-blank" placeholder="krizi"> vardır ve bu krizin olumlu çözümü bir <input type="text" class="fill-blank" placeholder="erdem"> kazandırır. Olumsuz çözüm ise <input type="text" class="fill-blank" placeholder="maldaptation"> yaratır.
+                </div>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevaplar: Krizi, Erdem, Maldaptation</h4>
+                    <p><strong>Açıklama:</strong> Erikson'un kuramının temel yapısı: <strong>Psikososyal kriz:</strong> Her dönemde yaşanan temel çatışma, iki karşıt kutup arasındaki gerilim. <strong>Erdem (virtue):</strong> Krizin olumlu çözümünde kazanılan güç, yaşam boyu kullanılabilir yetenek. <strong>Maldaptation:</strong> Krizin tamamen olumlu kutupla çözülmesi (aşırı olumlu). <strong>Malignancy:</strong> Krizin tamamen olumsuz kutupla çözülmesi (aşırı olumsuz). Sağlıklı gelişim, her iki kutbun dengelenmesi ile mümkündür, ancak olumlu kutup ağır basmalıdır.</p>
+                </div>
+            </div>
+
+            <!-- Soru 7 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">7</div>
+                    <div class="question-type">Çoktan Seçmeli</div>
+                </div>
+                <div class="question-text">
+                    "Çalışkanlık vs. Aşağılık" döneminin başarısız çözümü hangi soruna yol açar?
+                </div>
+                <ul class="options">
+                    <li>A) Kimlik karmaşası</li>
+                    <li>B) Yetersizlik duygusu</li>
+                    <li>C) Güvensizlik</li>
+                    <li>D) Utanç</li>
+                    <li>E) Suçluluk</li>
+                </ul>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevap: B) Yetersizlik duygusu</h4>
+                    <p><strong>Açıklama:</strong> <strong>4. Dönem (5-12 yaş):</strong> Çalışkanlık vs. Aşağılık krizi yaşanır. <strong>Çalışkanlık (Industry):</strong> Okul becerileri, akademik ve sosyal yeterlikler geliştirme, üretken olma. <strong>Aşağılık (Inferiority):</strong> Yetersizlik hissetme, becerilerinden şüphe etme. Bu dönemin erdemi <strong>yeterlik (competence)</strong> olup, işleri başarıyla tamamlayabilme duygusudur. Başarısız çözüm durumunda çocuk kendini yetersiz hisseder, öğrenmeye karşı isteksizlik gelişir ve öz-güven eksikliği yaşar. Öğretmenler ve akranlarla ilişkiler bu dönemde kritiktir.</p>
+                </div>
+            </div>
+
+            <!-- Soru 8 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">8</div>
+                    <div class="question-type">Klasik Sınav</div>
+                </div>
+                <div class="question-text">
+                    Erikson ile Freud'un gelişim teorileri arasındaki temel farklılıkları karşılaştırın.
+                </div>
+                <textarea class="essay-area" placeholder="Cevabınızı buraya yazınız..."></textarea>
+                <div class="explanation">
+                    <h4>🎯 Örnek Cevap:</h4>
+                    <p><strong>Gelişim Süresi:</strong> Freud: Çocuklukla sınırlı (5 dönem). Erikson: Yaşam boyu (8 dönem).</p>
+                    <p><strong>Odak Noktası:</strong> Freud: Psikoseksüel, libidinal gelişim. Erikson: Psikososyal, ego gelişimi.</p>
+                    <p><strong>Toplumsal Faktörler:</strong> Freud: İkinci planda. Erikson: Merkezi öneme sahip.</p>
+                    <p><strong>Krizler:</strong> Freud: Fiksasyon riski olan dönemler. Erikson: Büyüme fırsatı olan krizler.</p>
+                    <p><strong>Sonuçlar:</strong> Freud: Patoloji odaklı, bastırma. Erikson: Erdem kazanımı, ego güçleri.</p>
+                    <p><strong>Kültür:</strong> Freud: Evrensel, kültürden bağımsız. Erikson: Kültürel faktörlerin önemini vurgu.</p>
+                    <p><strong>İyimserlik:</strong> Freud: Pesimist yaklaşım. Erikson: İyimser, büyüme odaklı.</p>
+                    <p><strong>Biyoloji-Toplum:</strong> Freud: Biyolojik determinizm. Erikson: Bio-psiko-sosyal yaklaşım.</p>
+                </div>
+            </div>
+
+            <!-- Soru 9 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">9</div>
+                    <div class="question-type">Boşluk Doldurma</div>
+                </div>
+                <div class="question-text">
+                    Yaşlılık döneminin krizi <input type="text" class="fill-blank" placeholder="bütünlük"> vs. <input type="text" class="fill-blank" placeholder="umutsuzluk"> şeklindedir ve bu dönemin erdemi <input type="text" class="fill-blank" placeholder="bilgelik"> olarak adlandırılır.
+                </div>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevaplar: Bütünlük, Umutsuzluk, Bilgelik</h4>
+                    <p><strong>Açıklama:</strong> <strong>8. Dönem (65+ yaş):</strong> Bütünlük vs. Umutsuzluk krizi yaşanır. <strong>Ego Bütünlüğü (Integrity):</strong> Yaşanmış hayatı kabul etme, pişmanlık duymama, anlamlı bir yaşam sürdüğüne inanma. <strong>Umutsuzluk (Despair):</strong> Yaşamdan pişmanlık, zaman kaybı hissi, ölüm korkusu. <strong>Bilgelik erdemi:</strong> Yaşam deneyimlerinden çıkarılan derin anlayış, ölümü kabul etme, gençlere rehberlik edebilme yetisi. Bu dönemde kişi yaşamına retrospektif bakar ve değerlendirir. Başarılı çözüm huzur ve kabul getirir.</p>
+                </div>
+            </div>
+
+            <!-- Soru 10 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">10</div>
+                    <div class="question-type">Çoktan Seçmeli</div>
+                </div>
+                <div class="question-text">
+                    "Yakınlık vs. Yalıtım" döneminin başarılı çözümü hangi erdemi getirir?
+                </div>
+                <ul class="options">
+                    <li>A) Umut</li>
+                    <li>B) Sevgi</li>
+                    <li>C) Özen</li>
+                    <li>D) Bilgelik</li>
+                    <li>E) Sadakat</li>
+                </ul>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevap: B) Sevgi</h4>
+                    <p><strong>Açıklama:</strong> <strong>6. Dönem (18-40 yaş):</strong> Yakınlık vs. Yalıtım krizinin erdemi <strong>sevgi</strong>dir. <strong>Yakınlık (Intimacy):</strong> Başkalarıyla derin, anlamlı ilişkiler kurabilme, sevgi ve yakınlık paylaşabilme. <strong>Yalıtım (Isolation):</strong> İlişki kurmaktan kaçınma, yalnızlık, duygusal mesafe. <strong>Sevgi erdemi:</strong> Karşılıklı sevgi ve özen gösterebilme, uzun süreli bağlılık kurabilme yetisi. Bu dönem romantik ilişkiler, evlilik, arkadaşlık kurmayı içerir. Kimlik gelişiminin tamamlanması bu dönemin başarısı için ön koşuldur.</p>
+                </div>
+            </div>
+
+            <!-- Soru 11 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">11</div>
+                    <div class="question-type">Çoktan Seçmeli</div>
+                </div>
+                <div class="question-text">
+                    "Özerklik vs. Utanç ve Şüphe" döneminde hangi davranışlar görülür?
+                </div>
+                <ul class="options">
+                    <li>A) Okula gitme isteği</li>
+                    <li>B) Tuvalet eğitimi ve kendini kontrol etme</li>
+                    <li>C) Akran ilişkileri kurma</li>
+                    <li>D) Kimlik arayışı</li>
+                    <li>E) İş hayatına başlama</li>
+                </ul>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevap: B) Tuvalet eğitimi ve kendini kontrol etme</h4>
+                    <p><strong>Açıklama:</strong> <strong>2. Dönem (1-3 yaş):</strong> Özerklik vs. Utanç/Şüphe krizi yaşanır. <strong>Özerklik (Autonomy):</strong> Kendi kararlarını verme, bağımsızlık geliştirme, "ben yapabilirim" duygusu. <strong>Utanç/Şüphe:</strong> Kendi yeteneklerinden şüphe etme, başkalarına bağımlı olma. Bu dönemde tuvalet eğitimi, giyinme, yeme gibi temel beceriler kazanılır. Çocuk "hayır" demeyi öğrenir ve iradesini kullanmaya başlar. Ebeveynlerin sabırlı ve destekleyici tutumu <strong>irade erdemi</strong>nin gelişimini sağlar.</p>
+                </div>
+            </div>
+
+            <!-- Soru 12 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">12</div>
+                    <div class="question-type">Klasik Sınav</div>
+                </div>
+                <div class="question-text">
+                    Erikson'un "epigenetic principle" (epigenetik ilke) kavramını açıklayın ve psikososyal gelişimdeki önemini tartışın.
+                </div>
+                <textarea class="essay-area" placeholder="Cevabınızı buraya yazınız..."></textarea>
+                <div class="explanation">
+                    <h4>🎯 Örnek Cevap:</h4>
+                    <p><strong>Epigenetik İlke Tanımı:</strong> Her gelişim döneminin önceden belirlenmiş bir sırayla ortaya çıktığını ve her dönemin kendine özgü kritik zamanının olduğunu ifade eder. Biyolojik gelişimden uyarlanan bu ilke, psikososyal gelişimin de benzer bir düzen izlediğini savunur.</p>
+                    <p><strong>Temel Özellikler:</strong> 1) Her dönem öncekinin temelinde gelişir, 2) Her krizin çözülmesi için optimal zaman vardır, 3) Dönemler atlanamaz veya değiştirilemez, 4) Erken dönemlerin başarısızlığı sonraki dönemleri etkiler.</p>
+                    <p><strong>Psikososyal Gelişimdeki Önemi:</strong> Bu ilke, her krizin zamanında çözülmesinin önemini vurgular. Örneğin, güven gelişimi bebeklik döneminde kritiktir ve sonraki tüm ilişkileri etkiler. Kimlik gelişimi ergenlikte en kritikken, bu dönemde çözülmeyen sorunlar yetişkinlikte de devam eder.</p>
+                    <p><strong>Terapötik İmlikasyonlar:</strong> Geç dönemlerde ortaya çıkan sorunların kökenini erken dönemlerdeki çözülmemiş krizlerde aramak gerekir. Ancak Erikson, yaşam boyu gelişimin mümkün olduğunu da vurgular.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

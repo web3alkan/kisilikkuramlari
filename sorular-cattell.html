@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raymond Cattell - Faktör Analizi Kuramı Soruları</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+        }
+        
+        .header h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+        
+        .nav-link {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background: rgba(255,255,255,0.2);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-link:hover {
+            background: rgba(255,255,255,0.3);
+        }
+        
+        .content {
+            padding: 40px;
+        }
+        
+        .question {
+            background: #f8f9fa;
+            margin-bottom: 30px;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .question-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        
+        .question-number {
+            background: #667eea;
+            color: white;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+        
+        .question-type {
+            background: #28a745;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+        }
+        
+        .question-text {
+            font-size: 1.1rem;
+            color: #333;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+        
+        .options {
+            list-style: none;
+            margin-bottom: 20px;
+        }
+        
+        .options li {
+            padding: 10px 15px;
+            margin: 8px 0;
+            background: white;
+            border-radius: 8px;
+            border: 2px solid #e9ecef;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .options li:hover {
+            border-color: #667eea;
+            background: #f0f4ff;
+        }
+        
+        .correct-answer {
+            border-color: #28a745 !important;
+            background: #d4edda !important;
+        }
+        
+        .explanation {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+        
+        .explanation h4 {
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+        
+        .explanation p {
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+        
+        .fill-blank {
+            border: none;
+            border-bottom: 2px solid #667eea;
+            background: transparent;
+            padding: 5px;
+            font-size: 1rem;
+            width: 150px;
+            margin: 0 5px;
+        }
+        
+        .essay-area {
+            width: 100%;
+            min-height: 100px;
+            padding: 15px;
+            border: 2px solid #e9ecef;
+            border-radius: 10px;
+            font-family: inherit;
+            font-size: 1rem;
+            resize: vertical;
+        }
+        
+        @media (max-width: 768px) {
+            .content {
+                padding: 20px;
+            }
+            .question-header {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📊 Raymond Cattell - Faktör Analizi Kuramı</h1>
+            <p>16 Kişilik Faktörü, kaynak özellikleri ve bilimsel yaklaşım</p>
+            <a href="index.html" class="nav-link">← Ana Sayfaya Dön</a>
+        </div>
+        
+        <div class="content">
+            <!-- Soru 1 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">1</div>
+                    <div class="question-type">Çoktan Seçmeli</div>
+                </div>
+                <div class="question-text">
+                    Cattell'in kuramında "kaynak özellik" (source trait) ile "yüzey özellik" (surface trait) arasındaki temel fark nedir?
+                </div>
+                <ul class="options">
+                    <li>A) Biri kalıcı diğeri geçici</li>
+                    <li>B) Biri gözlemlenebilir diğeri değil</li>
+                    <li>C) Biri temel nedensel faktör diğeri gözlenen davranış kümesi</li>
+                    <li>D) Biri genetik diğeri çevresel</li>
+                    <li>E) Biri bilinçli diğeri bilinçdışı</li>
+                </ul>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevap: C) Biri temel nedensel faktör diğeri gözlenen davranış kümesi</h4>
+                    <p><strong>Açıklama:</strong> Cattell'in kuramında <strong>kaynak özellik (source trait)</strong> kişiliğin temelinde yatan gerçek nedensel faktörlerdir ve faktör analizi ile keşfedilirler. Bunlar gözlenemeyen ama davranışa neden olan temel yapılardır. <strong>Yüzey özellik (surface trait)</strong> ise günlük yaşamda gözlenebilen davranış kümeleridir - birlikte görülme eğiliminde olan davranışların gruplarıdır. Örneğin, "sosyallik" bir yüzey özelliği olabilir (konuşkan olmak, parti sevmek, arkadaş canlısı olmak gibi davranışların birlikteliği), ancak bunu yaratan temel kaynak özellik "dışadönüklük" olabilir. Kaynak özellikleri faktör analizi ile belirlenir ve kişiliğin asıl yapı taşlarını oluştururlar. Bu ayrım, kişiliğin yüzeysel tanımlamasından ziyade derin yapısını anlamaya odaklanır.</p>
+                </div>
+            </div>
+
+            <!-- Soru 2 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">2</div>
+                    <div class="question-type">Boşluk Doldurma</div>
+                </div>
+                <div class="question-text">
+                    Cattell'in 16PF testinde <input type="text" class="fill-blank" placeholder="16"> temel kişilik faktörü bulunur ve bu faktörler <input type="text" class="fill-blank" placeholder="faktör analizi"> ile belirlenmişler.
+                </div>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevaplar: 16, Faktör analizi</h4>
+                    <p><strong>Açıklama:</strong> Cattell'in en ünlü katkısı <strong>16PF (16 Personality Factor)</strong> testidir ve bu testte <strong>16 temel kişilik faktörü</strong> bulunur. Bu faktörler kapsamlı <strong>faktör analizi</strong> çalışmaları sonucunda belirlenmiştir. Cattell, başlangıçta Allport'un sözlükten derlediği 4000+ kişilik terimini kategorilete, ardından bunları 171 özellik grubuna indirdi, daha sonra faktör analizi kullanarak 16 temel faktöre ulaştı. Bu 16 faktör şunlardır: Sıcaklık (A), Akıl yürütme (B), Duygusal kararlılık (C), Baskınlık (E), Canlılık (F), Kural bilinci (G), Sosyal cesaret (H), Duyarlılık (I), Şüphecilik (L), Hayal gücü (M), Gizlilik (N), Suçluluk eğilimi (O), Radikalizm (Q1), Kendine yeterlik (Q2), Mükemmeliyetçilik (Q3), Gerginlik (Q4). Bu yaklaşım, kişiliği ölçmede bilimsel ve objektif bir yöntem sağlar.</p>
+                </div>
+            </div>
+
+            <!-- Soru 3 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">3</div>
+                    <div class="question-type">Çoktan Seçmeli</div>
+                </div>
+                <div class="question-text">
+                    Cattell'in kuramında "L-data", "Q-data" ve "T-data" sırasıyla neyi ifade eder?
+                </div>
+                <ul class="options">
+                    <li>A) Laboratuvar, anket, test verileri</li>
+                    <li>B) Yaşam kaydı, anket, objektif test verileri</li>
+                    <li>C) Longitudinal, kalite, zaman verileri</li>
+                    <li>D) Lider, kalite, takım verileri</li>
+                    <li>E) Öğrenme, kalite, tedavi verileri</li>
+                </ul>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevap: B) Yaşam kaydı, anket, objektif test verileri</h4>
+                    <p><strong>Açıklama:</strong> Cattell, kişilik araştırmasında üç farklı veri türünün kullanılması gerektiğini savunur: <strong>L-data (Life record data):</strong> Yaşam kaydı verileri - kişinin günlük yaşamından elde edilen gerçek davranış verileri. Okul notları, devamsızlık kayıtları, suç kayıtları, iş performansı gibi objektif yaşam verileri. <strong>Q-data (Questionnaire data):</strong> Anket verileri - kişinin kendisi hakkında verdiği bilgiler, öz-bildirimi ölçekleri. Kişinin kendi algılarına dayanır. <strong>T-data (Test data):</strong> Objektif test verileri - kişinin ne ölçüldüğünü bilmediği, davranışsal gözlemlerle elde edilen veriler. Reaksiyon zamanı, fizyolojik ölçümler, projektif testler gibi. Cattell, bu üç veri türünün birlikte kullanılmasının ("veri kutusu" yaklaşımı) kişiliği en objektif şekilde anlamamızı sağladığını savunur.</p>
+                </div>
+            </div>
+
+            <!-- Soru 4 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">4</div>
+                    <div class="question-type">Klasik Sınav</div>
+                </div>
+                <div class="question-text">
+                    Cattell'in "akışkan zeka" ve "kristalleşmiş zeka" ayrımını açıklayın ve yaşlanmayla olan ilişkisini değerlendirin.
+                </div>
+                <textarea class="essay-area" placeholder="Cevabınızı buraya yazınız..."></textarea>
+                <div class="explanation">
+                    <h4>🎯 Örnek Cevap:</h4>
+                    <p><strong>Akışkan Zeka (Fluid Intelligence - Gf):</strong> Yeni problemleri çözme, örüntüleri tanıma, yeni durumlarla başa çıkma yeteneğidir. Biyolojik temellere sahiptir ve nöron işleyişine bağlıdır.</p>
+                    <p><strong>Özellikleri:</strong> Hız gerektiren görevlerde önemli, kültürden bağımsız, genetik faktörlerle güçlü ilişkili, yaşla birlikte azalma eğilimi.</p>
+                    <p><strong>Kristalleşmiş Zeka (Crystallized Intelligence - Gc):</strong> Deneyim ve eğitim yoluyla kazanılan bilgi ve becerilerin uygulanması yeteneğidir. Kültürel aktarım sonucu oluşur.</p>
+                    <p><strong>Özellikleri:</strong> Kelime dağarcığı, genel bilgi, öğrenilmiş beceriler, kültürel faktörlerin etkisi güçlü, yaşla birlikte artma veya stabil kalma eğilimi.</p>
+                    <p><strong>Yaşlanmayla İlişki:</strong></p>
+                    <p><strong>Akışkan Zeka:</strong> 20'li yaşlardan sonra tedricen azalmaya başlar. 30-40 yaş arası belirgin azalma, 60+ yaş sonrası hızlı azalma. Beyin yaşlanması, işleme hızı azalması, sinaptik kayıplar etkili.</p>
+                    <p><strong>Kristalleşmiş Zeka:</strong> Yaşla birlikte artar veya en azından stabil kalır. 60-70 yaşlara kadar artış gösterebilir. Birikmiş bilgi ve deneyimin avantajı.</p>
+                    <p><strong>Pratik Sonuçlar:</strong></p>
+                    <p><strong>- Eğitim:</strong> Yaşlı yetişkinlerde kristalleşmiş zekayı kullanan öğretim yöntemleri daha etkili.</p>
+                    <p><strong>- İş hayatı:</strong> Yaşlı çalışanların deneyim odaklı işlerde avantajı, hız gerektiren işlerde dezavantajı.</p>
+                    <p><strong>- Rehabilitasyon:</strong> Yaşlılarda mevcut bilgiyi kullanma odaklı müdahaleler daha başarılı.</p>
+                    <p><strong>Modern Etki:</strong> Bu ayrım, modern zeka teorilerinin (CHC teorisi) temelini oluşturmuş ve yaşlılık psikolojisinde önemli bir kavram haline gelmiştir.</p>
+                </div>
+            </div>
+
+            <!-- Soru 5 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">5</div>
+                    <div class="question-type">Çoktan Seçmeli</div>
+                </div>
+                <div class="question-text">
+                    Cattell'in "MAVA" (Multiple Abstract Variance Analysis) yönteminin amacı nedir?
+                </div>
+                <ul class="options">
+                    <li>A) Zeka testleri geliştirmek</li>
+                    <li>B) Kalıtım ve çevre etkilerini ayırt etmek</li>
+                    <li>C) Faktör sayısını belirlemek</li>
+                    <li>D) Test güvenirliğini ölçmek</li>
+                    <li>E) Yaş farklılıklarını analiz etmek</li>
+                </ul>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevap: B) Kalıtım ve çevre etkilerini ayırt etmek</h4>
+                    <p><strong>Açıklama:</strong> <strong>MAVA (Multiple Abstract Variance Analysis)</strong> Cattell'in geliştirdiği ve kişilik özelliklerinde kalıtım ve çevre faktörlerinin göreli etkilerini belirlemeyi amaçlayan istatistiksel bir yöntemdir. Bu yöntem, farklı akrabalık derecelerindeki kişiler arasındaki benzerlikları analiz ederek kalıtılabilirlik katsayılarını hesaplar. MAVA yöntemi şu grupları karşılaştırır: aynı ailede büyüyen ikizler, farklı ailede büyüyen ikizler, kardeşler, evlatlık alınan çocuklar, biyolojik ailelerinden ayrılmış çocuklar. Bu karşılaştırmalarla, bir özelliğin ne kadarının genetik faktörlerden, ne kadarının ortak çevre faktörlerinden ve ne kadarının özgül çevre faktörlerinden kaynaklandığını belirler. Bu yaklaşım, modern davranış genetiği çalışmalarının öncüsü olmuş ve kişilik-genetik ilişkisini anlamada önemli katkı sağlamıştır.</p>
+                </div>
+            </div>
+
+            <!-- Soru 6 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">6</div>
+                    <div class="question-type">Boşluk Doldurma</div>
+                </div>
+                <div class="question-text">
+                    Cattell'e göre <input type="text" class="fill-blank" placeholder="erg"> temel motivasyonel birimdir ve bu <input type="text" class="fill-blank" placeholder="sentiment"> ler ile organize olur.
+                </div>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevaplar: Erg, Sentiment</h4>
+                    <p><strong>Açıklama:</strong> Cattell'in motivasyon teorisinde <strong>"erg"</strong> temel motivasyonel birimdir. Erg, belirli bir hedefe yönelmiş doğuştan gelen güdü kaynağını ifade eder (örneğin: cinsellik, güvenlik, kendini ifade etme, koruma). Ergalar biyolojik temellere sahiptir ve tüm insanlarda bulunur. <strong>"Sentiment"</strong> ler ise öğrenilmiş motivasyonel yapılardır ve belirli nesnelere, kişilere veya fikirlere karşı geliştirilen tutumsal örüntülerdir (örneğin: aileye bağlılık, kariyere adanma, hobi sevgisi). Sentimentler, ergaları organize eder ve yönlendirir. Cattell'in motivasyon modeli şu şekilde çalışır: Ergalar → Sentimentler → Tutumlar → Davranışlar. Bu hiyerarşik yapı, karmaşık insan motivasyonunun nasıl organize olduğunu açıklar. Önemli sentimentler: benlik-duygusu, üst-ego, kariyer, aile, din gibi.</p>
+                </div>
+            </div>
+
+            <!-- Soru 7 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">7</div>
+                    <div class="question-type">Çoktan Seçmeli</div>
+                </div>
+                <div class="question-text">
+                    Cattell'in "P-tekniği" neyi inceler?
+                </div>
+                <ul class="options">
+                    <li>A) Gruplar arası farkları</li>
+                    <li>B) Tek kişinin zaman içindeki değişimini</li>
+                    <li>C) Kişilik testlerinin geçerliliğini</li>
+                    <li>D) Faktör yapılarını</li>
+                    <li>E) Yaş ile ilgili değişimleri</li>
+                </ul>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevap: B) Tek kişinin zaman içindeki değişimini</h4>
+                    <p><strong>Açıklama:</strong> <strong>"P-tekniği"</strong> Cattell'in geliştirdiği ve tek bir kişinin zaman içindeki değişimini inceleyen faktör analizi yöntemidir. Bu teknik, idiografik (bireysel) analiz yaklaşımının bir parçasıdır. P-tekniği şu şekilde çalışır: Bir kişiden uzun bir süre boyunca (günlük, haftalık vb.) düzenli ölçümler alınır; bu ölçümler çeşitli değişkenler üzerinde (ruh hali, performans, davranış vb.) yapılır; elde edilen veriler faktör analizine tabi tutulur; kişinin kendi içindeki değişim örüntüleri ve bu değişimlerin altında yatan faktörler belirlenir. Bu yöntem, geleneksel R-tekniğinden (kişiler arası farklılıklar) farklı olarak, kişi içi dinamikleri anlamaya odaklanır. P-tekniği, kişiliğin durumsal değişkenliğini, duygusal döngüleri ve davranış örüntülerindeki bireysel farklılıkları anlamamızı sağlar.</p>
+                </div>
+            </div>
+
+            <!-- Soru 8 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">8</div>
+                    <div class="question-type">Klasik Sınav</div>
+                </div>
+                <div class="question-text">
+                    Cattell'in "Yapısal Öğrenme Teorisi" ile kişilik gelişimini nasıl açıkladığını detaylandırın ve bu teorinin temel bileşenlerini tartışın.
+                </div>
+                <textarea class="essay-area" placeholder="Cevabınızı buraya yazınız..."></textarea>
+                <div class="explanation">
+                    <h4>🎯 Örnek Cevap:</h4>
+                    <p><strong>Yapısal Öğrenme Teorisinin Temeli:</strong> Cattell, kişilik gelişimini hem kalıtımsal faktörlerin hem de öğrenme süreçlerinin etkileşimi olarak görür. Bu teori, kişiliğin dinamik bir sistem olduğunu ve sürekli öğrenme yoluyla şekillendiğini savunur.</p>
+                    <p><strong>Temel Bileşenler:</strong></p>
+                    <p><strong>1. Kalıtımsal Faktörler:</strong> Temperament özellikleri, temel zeka kapasitesi ve ergalar (temel güdüler) doğuştan gelir. Bu faktörler, öğrenme için temel yapıyı sağlar.</p>
+                    <p><strong>2. Öğrenme Süreçleri:</strong> Çevresel deneyimler yoluyla sentimentler (öğrenilmiş motivasyonel yapılar) ve tutumlar gelişir. Klasik ve operant koşullanma, gözlemsel öğrenme etkili.</p>
+                    <p><strong>3. Dinamik Etkileşim:</strong> Kalıtımsal yapı ile çevresel deneyimler sürekli etkileşim halindedir. Bu etkileşim, benzersiz kişilik yapısı oluşturur.</p>
+                    <p><strong>Gelişim Aşamaları:</strong></p>
+                    <p><strong>- Bebeklik (0-6 yaş):</strong> Temel ergaların ortaya çıkışı, ilk öğrenme deneyimleri, temel güven gelişimi.</p>
+                    <p><strong>- Çocukluk (6-14 yaş):</strong> Okul deneyimleri, sosyal öğrenme, temel sentimentlerin gelişimi.</p>
+                    <p><strong>- Ergenlik (14-23 yaş):</strong> Kimlik arayışı, değer sistemlerinin oluşması, kariyer sentimentinin gelişimi.</p>
+                    <p><strong>- Yetişkinlik (23-50 yaş):</strong> İş ve aile sentimentlerinin olgunlaşması, sorumluluklarının artması.</p>
+                    <p><strong>- Yaşlılık (50+ yaş):</strong> Değer sistemlerinin kristalleşmesi, bilgelik gelişimi, uyum stratejilerinin değişimi.</p>
+                    <p><strong>Öğrenme Mekanizmaları:</strong> İntegrasyon öğrenmesi (tutumları sentimentlerle bağlama), rol öğrenmesi (sosyal roller), araçsal öğrenme (hedefe ulaşma yolları).</p>
+                    <p><strong>Katkılar:</strong> Kişilik gelişimini çok boyutlu ele alma, kalıtım-çevre etkileşimini vurgulama, yaşam boyu gelişim perspektifi sunma.</p>
+                </div>
+            </div>
+
+            <!-- Soru 9 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">9</div>
+                    <div class="question-type">Boşluk Doldurma</div>
+                </div>
+                <div class="question-text">
+                    Cattell'in kuramında <input type="text" class="fill-blank" placeholder="durum"> faktörleri geçici ve değişken, <input type="text" class="fill-blank" placeholder="özellik"> faktörleri ise kalıcı ve sabittir.
+                </div>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevaplar: Durum, Özellik</h4>
+                    <p><strong>Açıklama:</strong> Cattell, kişiliği etkileyen faktörleri iki kategoriye ayırır: <strong>Durum faktörleri (State factors):</strong> Geçici, değişken ve durumsal faktörlerdir. Kişinin belirli bir andaki ruh halini, motivasyon düzeyini ve performansını etkiler. Örnek: kaygı düzeyi, yorgunluk, heyecan, öfke durumu. Bu faktörler zaman içinde değişir ve çevresel koşullara bağlıdır. <strong>Özellik faktörleri (Trait factors):</strong> Kalıcı, sabit ve kişiye özgü faktörlerdir. Kişinin karakteristik davranış eğilimlerini belirler ve farklı durumlarda tutarlılık gösterir. Örnek: zeka, dışadönüklük, duygusal kararlılık. Bu faktörler uzun süreli istikrar gösterir. Cattell'in formülü: Davranış = f(Kişilik özellikleri × Durum faktörleri). Bu ayrım, davranışın hem bireysel farklılıklardan hem de durumsal değişkenlerden etkilendiğini gösterir ve modern kişilik psikolojisinde "özellik-durum" tartışmasının temelini oluşturur.</p>
+                </div>
+            </div>
+
+            <!-- Soru 10 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">10</div>
+                    <div class="question-type">Çoktan Seçmeli</div>
+                </div>
+                <div class="question-text">
+                    Cattell'in "spesifikasyon denklemi" neyi açıklar?
+                </div>
+                <ul class="options">
+                    <li>A) Zeka gelişimini</li>
+                    <li>B) Belirli bir davranışın tahmin edilmesini</li>
+                    <li>C) Faktör yüklerini</li>
+                    <li>D) Test güvenirliğini</li>
+                    <li>E) Yaş farklılıklarını</li>
+                </ul>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevap: B) Belirli bir davranışın tahmin edilmesini</h4>
+                    <p><strong>Açıklama:</strong> <strong>"Spesifikasyon denklemi"</strong> Cattell'in belirli bir davranışı tahmin etmek için kullandığı matematiksel formüldür. Bu denklem, bir kişinin belirli bir durumda nasıl davranacağını, o kişinin özellik skorları ve durumsal faktörler kullanarak tahmin etmeye çalışır. Denklemin genel formu: aij = Σ (bikTik + bjlSjl) şeklindedir. Burada: aij = j kişisinin i davranışındaki performansı; bik = i davranışının k özelliğindeki yükü; Tik = j kişisinin k özelliğindeki skoru; bjl = i davranışının l durumsal faktöründeki yükü; Sjl = j kişisinin l durumsal faktöründeki skoru. Bu denklem, hem kalıcı kişilik özelliklerinin hem de geçici durumsal faktörlerin davranış üzerindeki etkisini matematiksel olarak birleştirir. Amacı, kişiliği bilimsel olarak tahmin edilebilir hale getirmektir. Modern kişilik psikolojisinde davranış tahmininin matematiksel temellerini oluşturur.</p>
+                </div>
+            </div>
+
+            <!-- Soru 11 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">11</div>
+                    <div class="question-type">Çoktan Seçmeli</div>
+                </div>
+                <div class="question-text">
+                    Cattell'in "scree test"i neyi belirlemek için kullanılır?
+                </div>
+                <ul class="options">
+                    <li>A) Test puanlarını</li>
+                    <li>B) Faktör sayısını</li>
+                    <li>C) Güvenilirlik katsayısını</li>
+                    <li>D) Geçerlilik düzeyini</li>
+                    <li>E) Norm değerlerini</li>
+                </ul>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevap: B) Faktör sayısını</h4>
+                    <p><strong>Açıklama:</strong> <strong>"Scree test"</strong> Cattell'in faktör analizinde kaç faktör çıkarılması gerektiğini belirlemek için geliştirdiği bir yöntemdir. Bu test, eigenvalue'ları (özdeğerleri) büyükten küçüğe sıralayarak bir grafik çizer. Grafik, dağ yamaçlarındaki moloz yığınına benzediği için "scree" (moloz) testi adını alır. Test şu şekilde çalışır: Her faktörün açıkladığı varyans miktarı (eigenvalue) hesaplanır; bu değerler grafik üzerinde yatay eksende sıralanır; grafikteki "dirsek noktası" bulunur - bu nokta, eğimin keskin şekilde azaldığı yerdir; bu noktadan sonraki faktörler önemsiz kabul edilir ve analiz dışı bırakılır. Scree testi, faktör sayısını belirlemenin subjektif bir yöntemidir ancak yaygın olarak kullanılır. Modern istatistik programlarında standart araç haline gelmiştir ve faktör analizinin kalitesini artırmada önemli rol oynar.</p>
+                </div>
+            </div>
+
+            <!-- Soru 12 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">12</div>
+                    <div class="question-type">Klasik Sınav</div>
+                </div>
+                <div class="question-text">
+                    Cattell'in kişilik psikolojisine katkılarını değerlendirin ve modern faktör analizi yaklaşımlarına etkisini analiz edin.
+                </div>
+                <textarea class="essay-area" placeholder="Cevabınızı buraya yazınız..."></textarea>
+                <div class="explanation">
+                    <h4>🎯 Örnek Cevap:</h4>
+                    <p><strong>Kişilik Psikolojisine Katkılar:</strong></p>
+                    <p><strong>1. Bilimsel Metodoloji:</strong> Kişilik araştırmasını sezgisel yaklaşımlardan kurtarıp bilimsel temellere oturttu. Faktör analizini sistematik olarak kullandı.</p>
+                    <p><strong>2. Kapsamlı Veri Toplama:</strong> L-Q-T data yaklaşımıyla çok kaynaklı veri toplama metodolojisini geliştirdi.</p>
+                    <p><strong>3. Objektif Ölçüm:</strong> 16PF testiyle kişiliği objektif olarak ölçme imkanı sağladı.</p>
+                    <p><strong>4. Kaynak-Yüzey Ayrımı:</strong> Kişiliğin temel yapısı ile görünen davranışlar arasındaki farkı netleştirdi.</p>
+                    <p><strong>5. Çok Boyutlu Yaklaşım:</strong> Kişiliği tek boyutlu değil, çok boyutlu bir yapı olarak ele aldı.</p>
+                    <p><strong>6. Zeka Teorisi:</strong> Akışkan-kristalleşmiş zeka ayrımıyla zeka araştırmalarına önemli katkı sağladı.</p>
+                    <p><strong>Modern Faktör Analizi Yaklaşımlarına Etkisi:</strong></p>
+                    <p><strong>1. Big Five Modeli:</strong> Cattell'in 16 faktörünün yeniden analizi sonucu 5 faktörlü model geliştirildi. Costa ve McCrae'nin çalışmaları Cattell'in temellerine dayanır.</p>
+                    <p><strong>2. Leksik Yaklaşım:</strong> Kişilik özelliklerini dil analizi ile bulma yaklaşımının öncüsü oldu.</p>
+                    <p><strong>3. Hiyerarşik Modeller:</strong> Eysenck'ın süper faktör yaklaşımı Cattell'in çalışmalarından esinlendi.</p>
+                    <p><strong>4. Durumsal Faktör Analizi:</strong> P-tekniği ile bireysel farklılıkları anlama yöntemleri gelişti.</p>
+                    <p><strong>5. Çok Metodlu Araştırma:</strong> Farklı veri türlerini birleştirme yaklaşımı yaygınlaştı.</p>
+                    <p><strong>Eleştiriler ve Sınırlılıklar:</strong></p>
+                    <p><strong>1. Faktör Sayısı:</strong> 16 faktörün çok fazla olduğu, daha az faktörün yeterli olabileceği eleştirisi.</p>
+                    <p><strong>2. Tekrarlanabilirlik:</strong> Bazı faktörlerin farklı örneklemlerde tekrarlanmadığı bulundu.</p>
+                    <p><strong>3. Teorik Açıklama:</strong> Faktörlerin ne anlama geldiği konusunda teorik açıklamalar yetersiz.</p>
+                    <p><strong>Günümüzdeki Durumu:</strong> Cattell'in metodolojik katkıları hala yaşamaya devam ediyor. 16PF testi kullanılıyor, faktör analizi yöntemleri geliştirilmeye devam ediyor, çok kaynaklı veri toplama standarttır.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

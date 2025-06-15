@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carl Gustav Jung - Analitik Psikoloji Soruları</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+        }
+        
+        .header h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+        
+        .nav-link {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background: rgba(255,255,255,0.2);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-link:hover {
+            background: rgba(255,255,255,0.3);
+        }
+        
+        .content {
+            padding: 40px;
+        }
+        
+        .question {
+            background: #f8f9fa;
+            margin-bottom: 30px;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .question-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        
+        .question-number {
+            background: #667eea;
+            color: white;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+        
+        .question-type {
+            background: #28a745;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+        }
+        
+        .question-text {
+            font-size: 1.1rem;
+            color: #333;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+        
+        .options {
+            list-style: none;
+            margin-bottom: 20px;
+        }
+        
+        .options li {
+            padding: 10px 15px;
+            margin: 8px 0;
+            background: white;
+            border-radius: 8px;
+            border: 2px solid #e9ecef;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .options li:hover {
+            border-color: #667eea;
+            background: #f0f4ff;
+        }
+        
+        .correct-answer {
+            border-color: #28a745 !important;
+            background: #d4edda !important;
+        }
+        
+        .explanation {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+        
+        .explanation h4 {
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+        
+        .explanation p {
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+        
+        .fill-blank {
+            border: none;
+            border-bottom: 2px solid #667eea;
+            background: transparent;
+            padding: 5px;
+            font-size: 1rem;
+            width: 150px;
+            margin: 0 5px;
+        }
+        
+        .essay-area {
+            width: 100%;
+            min-height: 100px;
+            padding: 15px;
+            border: 2px solid #e9ecef;
+            border-radius: 10px;
+            font-family: inherit;
+            font-size: 1rem;
+            resize: vertical;
+        }
+        
+        @media (max-width: 768px) {
+            .content {
+                padding: 20px;
+            }
+            .question-header {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🌟 Carl Gustav Jung - Analitik Psikoloji</h1>
+            <p>Kolektif bilinçdışı, arketipler ve psikolojik tipler</p>
+            <a href="index.html" class="nav-link">← Ana Sayfaya Dön</a>
+        </div>
+        
+        <div class="content">
+            <!-- Soru 1 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">1</div>
+                    <div class="question-type">Çoktan Seçmeli</div>
+                </div>
+                <div class="question-text">
+                    Jung'un teorisinde "kolektif bilinçdışı" kavramı neyi ifade eder?
+                </div>
+                <ul class="options">
+                    <li>A) Bireysel deneyimlerden kaynaklanan bilinçdışı içerikler</li>
+                    <li>B) Tüm insanlık tarafından paylaşılan ortak bilinçdışı yapılar</li>
+                    <li>C) Sadece belirli kültürlere özgü bilinçdışı içerikler</li>
+                    <li>D) Bastırılmış çocukluk anıları</li>
+                    <li>E) Sosyal normlardan kaynaklanan bilinçdışı yapılar</li>
+                </ul>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevap: B) Tüm insanlık tarafından paylaşılan ortak bilinçdışı yapılar</h4>
+                    <p><strong>Açıklama:</strong> <strong>Kolektif bilinçdışı</strong>, Jung'un en önemli kavramlarından biridir. Bu, tüm insanlık tarafından miras alınan, doğuştan gelen ortak bilinçdışı yapıları ifade eder. Bireysel deneyimlerden değil, insanlığın evrimsel geçmişinden kaynaklanır. İçinde arketipler (ilk imgeler) barındırır. Bu yapılar evrenseldir ve kültürel sınırları aşar. Örneğin, ana arketipi, kahraman arketipi gibi tüm kültürlerde benzer formlar alır. Jung bunu "psişenin objektif katmanı" olarak da adlandırır.</p>
+                </div>
+            </div>
+
+            <!-- Soru 2 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">2</div>
+                    <div class="question-type">Boşluk Doldurma</div>
+                </div>
+                <div class="question-text">
+                    Jung'a göre kişilik yapısı <input type="text" class="fill-blank" placeholder="ego"> (bilinçli ben), <input type="text" class="fill-blank" placeholder="gölge"> (bastırılan yönler), <input type="text" class="fill-blank" placeholder="anima/animus"> (karşı cinsel yön) ve <input type="text" class="fill-blank" placeholder="self"> (bütün kişilik) olmak üzere dört ana bileşenden oluşur.
+                </div>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevaplar: Ego, Gölge, Anima/Animus, Self</h4>
+                    <p><strong>Açıklama:</strong> Jung'un kişilik yapısı: <strong>Ego:</strong> Bilinçli zihnin merkezi, kimlik duygumuz. <strong>Gölge (Shadow):</strong> Kabul etmek istemediğimiz, bastırdığımız kişilik yönleri. <strong>Anima/Animus:</strong> Erkeklerdeki kadınsı yön (anima), kadınlardaki erkeksi yön (animus). <strong>Self:</strong> Kişiliğin bütünlüğü, bilinçli ve bilinçdışı unsurların birleşimi, kendini gerçekleştirme hedefi. Bu dört yapı arasındaki dinamik etkileşim, psikolojik gelişimi ve bireyleşme sürecini yönlendirir.</p>
+                </div>
+            </div>
+
+            <!-- Soru 3 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">3</div>
+                    <div class="question-type">Çoktan Seçmeli</div>
+                </div>
+                <div class="question-text">
+                    Aşağıdakilerden hangisi Jung'un temel arketiplerinden biri DEĞİLDİR?
+                </div>
+                <ul class="options">
+                    <li>A) Ana (The Great Mother)</li>
+                    <li>B) Kahraman (The Hero)</li>
+                    <li>C) Bilge Yaşlı Adam (The Wise Old Man)</li>
+                    <li>D) Persona</li>
+                    <li>E) Süperego</li>
+                </ul>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevap: E) Süperego</h4>
+                    <p><strong>Açıklama:</strong> <strong>Süperego</strong> Freud'un yapısal modeline ait bir kavramdır, Jung'un arketipleri arasında yer almaz. Jung'un temel arketipleri arasında: <strong>Ana Arketipi:</strong> Besleyici, koruyucu ana figürü; <strong>Kahraman Arketipi:</strong> Zorluklarla mücadele eden, engelleri aşan figür; <strong>Bilge Yaşlı Adam:</strong> Bilgelik ve rehberlik veren figür; <strong>Persona:</strong> Toplumsal maske, dış dünyaya gösterdiğimiz yüz bulunur. Diğer önemli arketipler arasında Anima/Animus, Gölge, Self, Düzen, İkizler vb. yer alır.</p>
+                </div>
+            </div>
+
+            <!-- Soru 4 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">4</div>
+                    <div class="question-type">Klasik Sınav</div>
+                </div>
+                <div class="question-text">
+                    Jung'un psikolojik tipleri kuramını açıklayın. Bu kuramın günümüzdeki uygulamaları nelerdir?
+                </div>
+                <textarea class="essay-area" placeholder="Cevabınızı buraya yazınız..."></textarea>
+                <div class="explanation">
+                    <h4>🎯 Örnek Cevap:</h4>
+                    <p><strong>Temel Boyutlar:</strong> Jung kişiliği iki temel boyutta ele alır: 1) <strong>Tutum Tipleri:</strong> İçedönük (Introvert) - enerjisini iç dünyasından alan; Dışadönük (Extravert) - enerjisini dış dünyadan alan. 2) <strong>İşlev Tipleri:</strong> Düşünce, duygu, duyu, sezgi olmak üzere dört temel psikolojik işlev.</p>
+                    <p><strong>Sekiz Tip:</strong> İki tutum × dört işlev = 8 psikolojik tip ortaya çıkar. Her birey bu tiplerden birinde baskındır ancak diğer işlevleri de geliştirebilir.</p>
+                    <p><strong>Günümüzdeki Uygulamalar:</strong> Myers-Briggs Tip Göstergesi (MBTI), iş yaşamında takım oluşturma, kariyer danışmanlığı, eğitim metotları, çift terapisi, kişilik değerlendirme araçları. Modern organizasyon psikolojisinde yaygın kullanım alanı bulmuştur.</p>
+                </div>
+            </div>
+
+            <!-- Soru 5 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">5</div>
+                    <div class="question-type">Çoktan Seçmeli</div>
+                </div>
+                <div class="question-text">
+                    "Bireyleşme" (individuation) süreci aşağıdakilerden hangisini ifade eder?
+                </div>
+                <ul class="options">
+                    <li>A) Toplumdan kopup yalnız yaşama</li>
+                    <li>B) Kişiliğin farklı yönlerini bütünleştirme süreci</li>
+                    <li>C) Sadece bilinçli yönleri geliştirme</li>
+                    <li>D) Başkalarından farklı olmaya çalışma</li>
+                    <li>E) Sosyal normlara uyum sağlama</li>
+                </ul>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevap: B) Kişiliğin farklı yönlerini bütünleştirme süreci</h4>
+                    <p><strong>Açıklama:</strong> <strong>Bireyleşme (İndividuation)</strong>, Jung'un teorisinin merkezinde yer alan gelişim sürecidir. Bu süreç, kişinin bilinçli ve bilinçdışı yönlerini tanıyarak bütünleştirmesi, gölgesi, anima/animusu ve diğer arketiplerle yüzleşerek Self'e (bütün kişilik) ulaşması demektir. Amaç toplumdan kopmak değil, kendi gerçek potansiyelini keşfederek hem bireysel hem de toplumsal olarak daha sağlıklı olmaktır. Bu yaşam boyu süren bir süreçtir ve genellikle orta yaş döneminde yoğunlaşır.</p>
+                </div>
+            </div>
+
+            <!-- Soru 6 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">6</div>
+                    <div class="question-type">Boşluk Doldurma</div>
+                </div>
+                <div class="question-text">
+                    Jung'a göre rüyalar sadece <input type="text" class="fill-blank" placeholder="geriye dönük"> (geçmiş yaşantıları işleme) değil, aynı zamanda <input type="text" class="fill-blank" placeholder="ileriye dönük"> (gelecek potansiyelleri gösterme) işlev de görür.
+                </div>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevaplar: Geriye dönük, İleriye dönük</h4>
+                    <p><strong>Açıklama:</strong> Jung, Freud'dan farklı olarak rüyaların sadece geçmişteki bastırılmış içerikleri yansıtmadığını, aynı zamanda <strong>prospektif (ileriye dönük)</strong> işlev de gördüğünü savunur. <strong>Retrospektif işlev:</strong> Geçmiş yaşantıları, çatışmaları ve travmaları işleme. <strong>Prospektif işlev:</strong> Gelecekteki gelişim potansiyellerini, çözüm yollarını ve yaratıcı fırsatları gösterme. Rüyalar, psişenin dengeleyici işlevini yerine getirir ve bireyleşme sürecine katkı sağlar. Bu yaklaşım Jung'u Freud'dan ayıran önemli farklardan biridir.</p>
+                </div>
+            </div>
+
+            <!-- Soru 7 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">7</div>
+                    <div class="question-type">Çoktan Seçmeli</div>
+                </div>
+                <div class="question-text">
+                    "Eşzamanlılık" (synchronicity) kavramı Jung tarafından nasıl tanımlanır?
+                </div>
+                <ul class="options">
+                    <li>A) İki olayın aynı zamanda gerçekleşmesi</li>
+                    <li>B) Neden-sonuç ilişkisi olmayan anlamlı tesadüfler</li>
+                    <li>C) Aynı kişinin farklı zamanlarda benzer davranışlar sergilemesi</li>
+                    <li>D) İkizlerin benzer davranışlar göstermesi</li>
+                    <li>E) Rüya ile gerçek arasındaki benzerlikler</li>
+                </ul>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevap: B) Neden-sonuç ilişkisi olmayan anlamlı tesadüfler</h4>
+                    <p><strong>Açıklama:</strong> <strong>Eşzamanlılık (Synchronicity)</strong>, Jung'un geliştirdiği özgün kavramlardan biridir. Bu, iki veya daha fazla olayın nedensel bir bağlantısı olmaksızın anlamlı bir şekilde bir araya gelmesini ifade eder. Örneğin, birinden bahsederken o kişinin tesadüfen karşımıza çıkması. Jung bu kavramı, evrenin sadece nedensellik yasasıyla değil, aynı zamanda anlam yasasıyla da işlediğine olan inancından yola çıkarak geliştirmiştir. Bu olaylar özellikle bireyleşme sürecinde ve psikolojik dönüşüm dönemlerinde sık görülür.</p>
+                </div>
+            </div>
+
+            <!-- Soru 8 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">8</div>
+                    <div class="question-type">Klasik Sınav</div>
+                </div>
+                <div class="question-text">
+                    Jung'un "gölge" (shadow) arketipini açıklayın ve bu kavramın psikolojik gelişimdeki rolünü tartışın.
+                </div>
+                <textarea class="essay-area" placeholder="Cevabınızı buraya yazınız..."></textarea>
+                <div class="explanation">
+                    <h4>🎯 Örnek Cevap:</h4>
+                    <p><strong>Gölge Tanımı:</strong> Gölge, kişiliğimizin kabul etmek istemediğimiz, bastırdığımız, reddettiğimiz yönlerini temsil eder. Toplumsal normlar ve kişisel idealler nedeniyle bilinçdışına itilen özelliklerimizdir. Hem olumsuz hem de olumlu potansiyelleri içerebilir.</p>
+                    <p><strong>Özellikleri:</strong> Genellikle rüyalarda, projektif süreçlerde ve başkalarına karşı aşırı tepkilerimizde kendini gösterir. Kendimizde kabul etmediğimiz özellikleri başkalarında rahatsız edici buluruz.</p>
+                    <p><strong>Psikolojik Gelişimdeki Rolü:</strong> Gölgeyle yüzleşmek bireyleşme sürecinin kritik aşamalarından biridir. Gölgeyi tanımak ve kabul etmek, kişiliğin bütünleşmesi için gereklidir. Bu süreç öz-farkındalığı artırır, projektif eğilimleri azaltır ve kişisel gücü geri kazandırır.</p>
+                    <p><strong>Terapötik İmlikasyonlar:</strong> Gölgeyle çalışmak, aktif hayal kurma, rüya analizi ve sanattan yararlanma teknikleriyle yapılabilir.</p>
+                </div>
+            </div>
+
+            <!-- Soru 9 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">9</div>
+                    <div class="question-type">Boşluk Doldurma</div>
+                </div>
+                <div class="question-text">
+                    Jung'un dört psikolojik işlevi: <input type="text" class="fill-blank" placeholder="düşünce"> (mantık), <input type="text" class="fill-blank" placeholder="duygu"> (değerlendirme), <input type="text" class="fill-blank" placeholder="duyu"> (algı) ve <input type="text" class="fill-blank" placeholder="sezgi"> (olasılıklar) şeklindedir.
+                </div>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevaplar: Düşünce, Duygu, Duyu, Sezgi</h4>
+                    <p><strong>Açıklama:</strong> Jung'un dört temel psikolojik işlevi: <strong>Düşünce (Thinking):</strong> Mantıklı analiz, neden-sonuç ilişkileri kurma. <strong>Duygu (Feeling):</strong> Değer yargıları oluşturma, hoş-hoş değil değerlendirmesi. <strong>Duyu (Sensing):</strong> Beş duyu organıyla algılama, somut gerçekleri kavrama. <strong>Sezgi (Intuition):</strong> Olasılıkları görme, geleceği öngörme, bütünü kavrama. Bu dört işlev iki çift halinde karşıt çalışır: Düşünce-Duygu (rasyonel işlevler), Duyu-Sezgi (irrasyonel işlevler). Her kişide bir işlev dominant, biri yardımcı, biri de bastırılmış (inferior) durumda bulunur.</p>
+                </div>
+            </div>
+
+            <!-- Soru 10 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">10</div>
+                    <div class="question-type">Çoktan Seçmeli</div>
+                </div>
+                <div class="question-text">
+                    Jung'a göre yaşamın ikinci yarısının (orta yaş sonrası) temel görevi nedir?
+                </div>
+                <ul class="options">
+                    <li>A) Kariyer başarısına odaklanmak</li>
+                    <li>B) Ailevi sorumluluklarını yerine getirmek</li>
+                    <li>C) Spiritüel gelişim ve anlam arayışı</li>
+                    <li>D) Sosyal statü kazanmak</li>
+                    <li>E) Fiziksel sağlığı korumak</li>
+                </ul>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevap: C) Spiritüel gelişim ve anlam arayışı</h4>
+                    <p><strong>Açıklama:</strong> Jung'a göre yaşam iki temel döneme ayrılır: <strong>İlk yarı (35 yaşa kadar):</strong> Ego gelişimi, kariyer kurma, aile oluşturma, dış dünyaya odaklanma dönemi. <strong>İkinci yarı (35 yaşından sonra):</strong> İçsel gelişim, spiritüel arayış, yaşamın anlamını bulma, ölümlülükle yüzleşme dönemi. Bu dönemde kişi dış başarılardan ziyade içsel bütünlüğe, bireyleşme sürecine ve spiritüel gelişime odaklanır. Jung bu geçişi "yaşamın öğle vakti" olarak adlandırır ve bu dönemde yaşanan bunalımları doğal ve gerekli görür.</p>
+                </div>
+            </div>
+
+            <!-- Soru 11 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">11</div>
+                    <div class="question-type">Çoktan Seçmeli</div>
+                </div>
+                <div class="question-text">
+                    "Aktif hayal kurma" (active imagination) tekniğinin amacı nedir?
+                </div>
+                <ul class="options">
+                    <li>A) Rüya içeriğini kontrol etmek</li>
+                    <li>B) Bilinçdışı içeriklerle bilinçli diyalog kurmak</li>
+                    <li>C) Hafızayı güçlendirmek</li>
+                    <li>D) Yaratıcılığı köreltmek</li>
+                    <li>E) Sosyal becerileri geliştirmek</li>
+                </ul>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevap: B) Bilinçdışı içeriklerle bilinçli diyalog kurmak</h4>
+                    <p><strong>Açıklama:</strong> <strong>Aktif hayal kurma</strong>, Jung'un geliştirdiği önemli bir terapötik tekniktir. Bu yöntemde kişi, bilinçli bir şekilde hayal kurarak bilinçdışı figürler, semboller ve arketiplerle diyalog kurar. Amaç, ego ile bilinçdışı arasında köprü kurmak ve bireyleşme sürecini desteklemektir. Teknik şu şekilde uygulanır: Rahat bir durumda, spontan ortaya çıkan imgelere odaklanılır ve bu imgelerle etkileşime geçilir. Bu süreç, gölge arketipiyle, anima/animus ile ve diğer bilinçdışı içeriklerle tanışmayı sağlar.</p>
+                </div>
+            </div>
+
+            <!-- Soru 12 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">12</div>
+                    <div class="question-type">Klasik Sınav</div>
+                </div>
+                <div class="question-text">
+                    Jung ile Freud arasındaki temel teorik farklılıkları karşılaştırarak açıklayın.
+                </div>
+                <textarea class="essay-area" placeholder="Cevabınızı buraya yazınız..."></textarea>
+                <div class="explanation">
+                    <h4>🎯 Örnek Cevap:</h4>
+                    <p><strong>Bilinçdışı Anlayışı:</strong> Freud: Bireysel, bastırılmış içerikler. Jung: Bireysel + kolektif bilinçdışı, arketipler.</p>
+                    <p><strong>Libido Teorisi:</strong> Freud: Sadece cinsel enerji. Jung: Genel yaşam enerjisi, cinsel olmayan motivasyonlar da içerir.</p>
+                    <p><strong>Rüya Analizi:</strong> Freud: Geriye dönük, bastırılmış arzuları açığa çıkarma. Jung: Hem geriye hem ileriye dönük, dengeleme ve rehberlik işlevi.</p>
+                    <p><strong>Kişilik Gelişimi:</strong> Freud: Çocuklukta tamamlanır. Jung: Yaşam boyu sürer, orta yaş sonrası spiritüel gelişim.</p>
+                    <p><strong>Patoloji Yaklaşımı:</strong> Freud: Hastalık odaklı. Jung: Büyüme ve gelişim odaklı.</p>
+                    <p><strong>Spiritüellik:</strong> Freud: Reddeder, illüzyon olarak görür. Jung: İnsan doğasının temel parçası olarak kabul eder.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

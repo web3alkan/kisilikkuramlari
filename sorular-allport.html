@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gordon Allport - Özellik Kuramı Soruları</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+        }
+        
+        .header h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+        
+        .nav-link {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background: rgba(255,255,255,0.2);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-link:hover {
+            background: rgba(255,255,255,0.3);
+        }
+        
+        .content {
+            padding: 40px;
+        }
+        
+        .question {
+            background: #f8f9fa;
+            margin-bottom: 30px;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .question-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        
+        .question-number {
+            background: #667eea;
+            color: white;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+        
+        .question-type {
+            background: #28a745;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+        }
+        
+        .question-text {
+            font-size: 1.1rem;
+            color: #333;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+        
+        .options {
+            list-style: none;
+            margin-bottom: 20px;
+        }
+        
+        .options li {
+            padding: 10px 15px;
+            margin: 8px 0;
+            background: white;
+            border-radius: 8px;
+            border: 2px solid #e9ecef;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .options li:hover {
+            border-color: #667eea;
+            background: #f0f4ff;
+        }
+        
+        .correct-answer {
+            border-color: #28a745 !important;
+            background: #d4edda !important;
+        }
+        
+        .explanation {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+        
+        .explanation h4 {
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+        
+        .explanation p {
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+        
+        .fill-blank {
+            border: none;
+            border-bottom: 2px solid #667eea;
+            background: transparent;
+            padding: 5px;
+            font-size: 1rem;
+            width: 150px;
+            margin: 0 5px;
+        }
+        
+        .essay-area {
+            width: 100%;
+            min-height: 100px;
+            padding: 15px;
+            border: 2px solid #e9ecef;
+            border-radius: 10px;
+            font-family: inherit;
+            font-size: 1rem;
+            resize: vertical;
+        }
+        
+        @media (max-width: 768px) {
+            .content {
+                padding: 20px;
+            }
+            .question-header {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎯 Gordon Allport - Özellik Kuramı</h1>
+            <p>Kişilik özellikleri, bireysel farklılıklar ve idiografik yaklaşım</p>
+            <a href="index.html" class="nav-link">← Ana Sayfaya Dön</a>
+        </div>
+        
+        <div class="content">
+            <!-- Soru 1 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">1</div>
+                    <div class="question-type">Çoktan Seçmeli</div>
+                </div>
+                <div class="question-text">
+                    Allport'un kuramında "trait" (özellik) nasıl tanımlanır?
+                </div>
+                <ul class="options">
+                    <li>A) Geçici davranış kalıbı</li>
+                    <li>B) Çevresel faktör</li>
+                    <li>C) Nöro-psişik yapı</li>
+                    <li>D) Sosyal rol</li>
+                    <li>E) Duygusal tepki</li>
+                </ul>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevap: C) Nöro-psişik yapı</h4>
+                    <p><strong>Açıklama:</strong> Allport, <strong>özelliği (trait)</strong> "çeşitli uyaranları eşdeğer kılma ve eşdeğer (anlamlı ve tutarlı) davranış biçimlerini başlatma ve yönlendirme kapasitesine sahip nöro-psişik yapı" olarak tanımlar. Bu tanımın özellikleri: <strong>Nöro-psişik:</strong> Hem nörolojik hem de psikolojik temelleri vardır; <strong>Yapı:</strong> Sabit ve dayanıklı bir örgütlenmedir; <strong>Uyaran eşdeğerliği:</strong> Farklı durumları benzer şekilde algılar; <strong>Davranış tutarlılığı:</strong> Benzer davranış kalıpları üretir; <strong>Motivasyonel güç:</strong> Davranışı yönlendirir ve başlatır. Bu tanım, özellikleri geçici durumsal faktörlerden ayırır ve kişiliğin temel yapı taşları olarak konumlandırır. Allport, özelliklerinin gerçek psikolojik varlıklar olduğunu, sadece tanımlayıcı kategoriler olmadığını savunur.</p>
+                </div>
+            </div>
+
+            <!-- Soru 2 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">2</div>
+                    <div class="question-type">Boşluk Doldurma</div>
+                </div>
+                <div class="question-text">
+                    Allport, özellikleri <input type="text" class="fill-blank" placeholder="kardinal"> , <input type="text" class="fill-blank" placeholder="merkezi"> ve <input type="text" class="fill-blank" placeholder="ikincil"> özellikler olmak üzere üçe ayırır.
+                </div>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevaplar: Kardinal, Merkezi, İkincil</h4>
+                    <p><strong>Açıklama:</strong> Allport, özellikleri önemlilik derecesine göre üç kategoriye ayırır: <strong>1) Kardinal Özellikler:</strong> Kişiliği tamamen domine eden, o kişiyle özdeşleşen özellikler. Çok nadir bulunur. Örnek: Gandhi'nin şiddetsizliği, Hitler'in otoriterciliği. Bu özellikler kişinin tüm davranışlarını etkiler. <strong>2) Merkezi Özellikler:</strong> Kişiliğin temel yapı taşları, genellikle 5-10 arasında bulunur. Kişiyi tanımlayan temel özellikler. Örnek: dürüstlük, sosyallik, sabırlılık. Bu özellikler bir referans mektubunda bahsedilecek niteliklerdir. <strong>3) İkincil Özellikler:</strong> Daha az belirgin, sadece belirli durumlarda ortaya çıkan özellikler. Örnek: müzik zevki, yemek tercihleri, giyim tarzı. Bu sınıflandırma, kişiliğin hiyerarşik yapısını gösterir ve her bireyin benzersiz özellik kombinasyonuna sahip olduğunu vurgular.</p>
+                </div>
+            </div>
+
+            <!-- Soru 3 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">3</div>
+                    <div class="question-type">Çoktan Seçmeli</div>
+                </div>
+                <div class="question-text">
+                    "İdiografik" yaklaşım ile "nomotetik" yaklaşım arasındaki temel fark nedir?
+                </div>
+                <ul class="options">
+                    <li>A) Biri nitel diğeri nicel araştırma yapar</li>
+                    <li>B) Biri bireysel diğeri genel yasalar arar</li>
+                    <li>C) Biri kliniktir diğeri deneyseldir</li>
+                    <li>D) Biri eskidir diğeri moderndir</li>
+                    <li>E) Biri subjektif diğeri objektiftir</li>
+                </ul>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevap: B) Biri bireysel diğeri genel yasalar arar</h4>
+                    <p><strong>Açıklama:</strong> <strong>İdiografik yaklaşım</strong> bireysel farklılıklara odaklanır ve her kişinin benzersiz olduğunu savunur. Her bireyin kendi özellik yapısı vardır ve bu yapı ona özgüdür. Amaç, bireyi derinlemesine anlamaktır. <strong>Nomotetik yaklaşım</strong> ise genel yasalar ve evrensel ilkeler aramaya odaklanır. Tüm insanlarda geçerli olan ortak özellikler ve yasaları bulmaya çalışır. Allport, her iki yaklaşımın da gerekli olduğunu savunur ancak psikolojinin fazla nomotetik olduğunu ve idiografik yaklaşıma daha fazla yer verilmesi gerektiğini düşünür. Bu tartışma, kişilik psikolojisinde "benzersizlik vs. evrensellik" sorununun temelini oluşturur. Modern araştırmalar, her iki yaklaşımın birbirini tamamladığını göstermektedir.</p>
+                </div>
+            </div>
+
+            <!-- Soru 4 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">4</div>
+                    <div class="question-type">Klasik Sınav</div>
+                </div>
+                <div class="question-text">
+                    Allport'un "işlevsel özerklik" (functional autonomy) kavramını açıklayın ve kişilik gelişimindeki rolünü değerlendirin.
+                </div>
+                <textarea class="essay-area" placeholder="Cevabınızı buraya yazınız..."></textarea>
+                <div class="explanation">
+                    <h4>🎯 Örnek Cevap:</h4>
+                    <p><strong>İşlevsel Özerklik Tanımı:</strong> İşlevsel özerklik, bir davranışın başlangıçtaki motivasyonundan bağımsız hale gelerek kendi başına motivasyon kaynağı olması durumudur. Yani, bir davranış ilk başta başka bir ihtiyacı karşılamak için yapılırken, zamanla o davranışın kendisi amaç haline gelir.</p>
+                    <p><strong>İki Türü:</strong></p>
+                    <p><strong>1. Kalıcı İşlevsel Özerklik:</strong> Geniş kapsamlı, yaşam boyu süren motivasyonlar. Örnek: İlk başta para kazanmak için başlayan bir meslek, zamanla tutkuya dönüşebilir.</p>
+                    <p><strong>2. Uygun İşlevsel Özerklik:</strong> Daha sınırlı, günlük yaşamla ilgili alışkanlıklar. Örnek: Sağlık için başlanan spor, hobi haline gelebilir.</p>
+                    <p><strong>Örnekler:</strong></p>
+                    <p><strong>- Meslek Seçimi:</strong> Ailenin baskısıyla başlanan tıp eğitimi, zamanla gerçek bir ilgi haline gelebilir.</p>
+                    <p><strong>- Hobiler:</strong> Sosyalleşmek için başlanan müzik, sonradan yaşamın merkezine oturabilir.</p>
+                    <p><strong>- Değerler:</strong> Çocuklukta öğretilen ahlaki değerler, yetişkinlikte kendi içsel motivasyonu haline gelir.</p>
+                    <p><strong>Kişilik Gelişimindeki Rolü:</strong></p>
+                    <p><strong>1. Değişim ve Büyüme:</strong> Kişiliğin sabit olmadığını, sürekli evrim geçirdiğini gösterir.</p>
+                    <p><strong>2. Bireysellik:</strong> Her kişinin benzersiz motivasyon yapısı geliştirmesini açıklar.</p>
+                    <p><strong>3. Mevcut Odak:</strong> Geçmiş yerine şimdiki motivasyonların önemini vurgular.</p>
+                    <p><strong>4. Spontan Gelişim:</strong> Kişiliğin dışsal güçlere değil, içsel dinamiklere göre şekillendiğini savunur.</p>
+                </div>
+            </div>
+
+            <!-- Soru 5 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">5</div>
+                    <div class="question-type">Çoktan Seçmeli</div>
+                </div>
+                <div class="question-text">
+                    Allport'un "önyargı" konusundaki çalışmasının temel bulgusu nedir?
+                </div>
+                <ul class="options">
+                    <li>A) Önyargı genetiktir</li>
+                    <li>B) Önyargı temas eksikliğinden kaynaklanır</li>
+                    <li>C) Önyargı sadece kişilik sorunudur</li>
+                    <li>D) Önyargı değiştirilemez</li>
+                    <li>E) Önyargı sadece eğitim eksikliğidir</li>
+                </ul>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevap: B) Önyargı temas eksikliğinden kaynaklanır</h4>
+                    <p><strong>Açıklama:</strong> Allport'un "The Nature of Prejudice" (1954) kitabında geliştirdiği <strong>"temas hipotezi"</strong> önyargının temel nedenlerinden birinin gruplar arası temas eksikliği olduğunu savunur. Ancak bu hipotez basit değildir - her türlü temas önyargıyı azaltmaz. Etkili temas için şu koşullar gereklidir: <strong>1) Eşit statü:</strong> Gruplar arası etkileşimde statü eşitliği; <strong>2) Ortak hedefler:</strong> Grupların birlikte çalışabileceği paylaşılan amaçlar; <strong>3) Kurumsal destek:</strong> Otoritelerin gruplar arası etkileşimi desteklemesi; <strong>4) Kişisel etkileşim:</strong> Yüzeysel değil, anlamlı kişisel ilişkiler. Bu koşullar sağlandığında temas, önyargıyı azaltabilir. Modern araştırmalar bu hipotezi büyük ölçüde doğrulamıştır ve çok kültürlü eğitim politikalarının temelini oluşturmuştur.</p>
+                </div>
+            </div>
+
+            <!-- Soru 6 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">6</div>
+                    <div class="question-type">Boşluk Doldurma</div>
+                </div>
+                <div class="question-text">
+                    Allport'a göre <input type="text" class="fill-blank" placeholder="proprium"> kişinin özüne ait olan, <input type="text" class="fill-blank" placeholder="ego"> işlevleri ise kişiliğin çekirdeğini oluşturan süreçlerdir.
+                </div>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevaplar: Proprium, Ego</h4>
+                    <p><strong>Açıklama:</strong> Allport, <strong>"proprium"</strong> kavramını kişiliğin çekirdek kısmını tanımlamak için kullanır. Proprium, kişinin "ben" dediği her şeyi içerir - kişinin kendisine ait hissettiği tüm özellikler ve deneyimler. Bu kavram, "ego" veya "self" kavramlarına benzer ama daha kapsamlıdır. <strong>Proprium'un gelişimi 7 aşamada gerçekleşir:</strong> 1) Bedensel benlik (0-2 yaş), 2) Benlik kimliği (2-3 yaş), 3) Ego güçlenmesi (3-4 yaş), 4) Ego genişlemesi (4-6 yaş), 5) Benlik imajı (6-12 yaş), 6) Rasyonel başa çıkan olarak benlik (12+ yaş), 7) Proprial çaba (12+ yaş). Bu gelişim, kişinin kendini tanımasını ve kişilik bütünlüğünü sağlar. Proprium, kişiliğin tutarlılığını ve sürekliliğini açıklayan temel kavramdır.</p>
+                </div>
+            </div>
+
+            <!-- Soru 7 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">7</div>
+                    <div class="question-type">Çoktan Seçmeli</div>
+                </div>
+                <div class="question-text">
+                    Allport'un "olgun kişilik" anlayışında hangi özellik yer almaz?
+                </div>
+                <ul class="options">
+                    <li>A) Benlik sınırlarının genişlemesi</li>
+                    <li>B) Sıcak insan ilişkileri</li>
+                    <li>C) Mükemmeliyetçilik</li>
+                    <li>D) Birleştirici yaşam felsefesi</li>
+                    <li>E) Gerçekçi algı</li>
+                </ul>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevap: C) Mükemmeliyetçilik</h4>
+                    <p><strong>Açıklama:</strong> <strong>"Mükemmeliyetçilik"</strong> Allport'un olgun kişilik tanımında yer almaz, aksine olgunluğu engelleyen bir faktör olarak görülür. Allport'un olgun kişiliğin altı özelliği: <strong>1) Benlik sınırlarının genişlemesi:</strong> Kişi kendisinden büyük amaçlara adanır. <strong>2) Sıcak insan ilişkileri:</strong> Empati kapasitesi ve yakın ilişki kurabilme. <strong>3) Duygusal güvenlik (kendini kabul):</strong> Kendi eksikliklerini kabul etme, savunmacı olmama. <strong>4) Gerçekçi algı:</strong> Kendini ve dünyayı objektif görme. <strong>5) Problem çözme becerileri:</strong> Yaşam zorluklarıyla başa çıkabilme. <strong>6) Birleştirici yaşam felsefesi:</strong> Tutarlı değer sistemi ve anlam duygusu. Mükemmeliyetçilik, gerçekçi algıyı engeller ve duygusal güvensizlik yaratır, bu nedenle olgun kişiliğin tersi bir özellik olarak değerlendirilir.</p>
+                </div>
+            </div>
+
+            <!-- Soru 8 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">8</div>
+                    <div class="question-type">Klasik Sınav</div>
+                </div>
+                <div class="question-text">
+                    Allport'un "mektuplar yöntemi" ile yaptığı Jenny Masterson vakası çalışmasını açıklayın ve bu çalışmanın idiografik araştırmaya katkısını değerlendirin.
+                </div>
+                <textarea class="essay-area" placeholder="Cevabınızı buraya yazınız..."></textarea>
+                <div class="explanation">
+                    <h4>🎯 Örnek Cevap:</h4>
+                    <p><strong>Jenny Masterson Vakası:</strong> Bu çalışma, Allport'un idiografik yaklaşımın en meşhur örneğidir. Jenny, 1946-1947 yılları arasında oğlunun arkadaşlarına yazdığı 301 mektubu inceleyen bir vaka çalışmasıdır.</p>
+                    <p><strong>Çalışmanın Özellikleri:</strong></p>
+                    <p><strong>1. Veri Kaynağı:</strong> Jenny'nin 11 yıl boyunca yazdığı kişisel mektuplar, doğal yaşam verileri sağladı.</p>
+                    <p><strong>2. Yaşam Bağlamı:</strong> Jenny, dul bir anne olarak oğlu Ross ile karmaşık bir ilişki yaşıyordu.</p>
+                    <p><strong>3. Analiz Yöntemi:</strong> Mektuplar hem nitel hem de nicel yöntemlerle analiz edildi.</p>
+                    <p><strong>Temel Bulgular:</strong> Jenny'nin kişiliği sekiz merkezi özellikle karakterize edildi: şüpheci, kendine acıyan, antagonistik, dramatik, estetik, agresif, siniklik ve korumacı.</p>
+                    <p><strong>İdiografik Araştırmaya Katkıları:</strong></p>
+                    <p><strong>1. Metodolojik Yenilik:</strong> Kişisel belgelerin sistematik analizinin nasıl yapılabileceğini gösterdi.</p>
+                    <p><strong>2. Bireysel Benzersizlik:</strong> Her kişinin özgün özellik örüntüsüne sahip olduğunu somut olarak gösterdi.</p>
+                    <p><strong>3. Derinlemesine Analiz:</strong> Tek bir kişinin derinlemesine incelenmesinin değerli bilgiler sağlayabileceğini kanıtladı.</p>
+                    <p><strong>4. Doğal Veri:</strong> Laboratuvar koşulları dışında, doğal yaşam verilerinin kullanımını teşvik etti.</p>
+                    <p><strong>5. Karma Yöntem:</strong> Nitel ve nicel analizin birlikte kullanılabileceğini gösterdi.</p>
+                    <p><strong>Eleştiriler:</strong> Tek vaka olması, genellenemezlik, subjektif yorum riski.</p>
+                    <p><strong>Modern Etki:</strong> Bu çalışma, nitel araştırma yöntemlerinin gelişimine katkı sağlamış ve kişilik psikolojisinde vaka çalışması geleneğinin güçlenmesine yardımcı olmuştur.</p>
+                </div>
+            </div>
+
+            <!-- Soru 9 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">9</div>
+                    <div class="question-type">Boşluk Doldurma</div>
+                </div>
+                <div class="question-text">
+                    Allport, <input type="text" class="fill-blank" placeholder="motivasyonel"> ve <input type="text" class="fill-blank" placeholder="stilistik"> özellikler arasında ayrım yapar ve birinci türün daha önemli olduğunu savunur.
+                </div>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevaplar: Motivasyonel, Stilistik</h4>
+                    <p><strong>Açıklama:</strong> Allport, özellikleri işlevlerine göre iki kategoriye ayırır: <strong>Motivasyonel Özellikler:</strong> Davranışı başlatan, yönlendiren ve sürdüren özellikler. Bunlar "yönlendirici" özelliklerdir ve kişinin hedeflerini, değerlerini ve amaçlarını belirler. Örnek: başarı güdüsü, yardımseverlik, adalet arayışı. Bu özellikler "neyi" ve "neden" sorularını yanıtlar. <strong>Stilistik Özellikler:</strong> Davranışın "nasıl" sergilendiğini belirleyen özellikler. Motivasyonu sağlamazlar ama davranışın biçimini şekillendirirler. Örnek: hızlı-yavaş, sessiz-gürültülü, dikkatli-dikkatsiz. Bu özellikler "nasıl" sorusunu yanıtlar. Allport, motivasyonel özelliklerin daha önemli olduğunu çünkü davranışın asıl kaynağı olduklarını savunur. Bu ayrım, modern kişilik psikolojisinde "içerik" ve "stil" ayrımının temelini oluşturmuştur.</p>
+                </div>
+            </div>
+
+            <!-- Soru 10 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">10</div>
+                    <div class="question-type">Çoktan Seçmeli</div>
+                </div>
+                <div class="question-text">
+                    Allport'un "değerler çalışması" hangi alanları kapsar?
+                </div>
+                <ul class="options">
+                    <li>A) Sadece dini değerler</li>
+                    <li>B) Teorik, ekonomik, estetik, sosyal, politik, dini</li>
+                    <li>C) Sadece sosyal değerler</li>
+                    <li>D) Sadece ahlaki değerler</li>
+                    <li>E) Sadece kişisel değerler</li>
+                </ul>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevap: B) Teorik, ekonomik, estetik, sosyal, politik, dini</h4>
+                    <p><strong>Açıklama:</strong> Allport, Vernon ve Lindzey tarafından geliştirilen <strong>"Study of Values"</strong> (Değerler Çalışması) altı temel değer alanını kapsar: <strong>1) Teorik Değerler:</strong> Bilgi, gerçek, anlayış arayışı. Bilim insanları ve akademisyenlerde yüksek. <strong>2) Ekonomik Değerler:</strong> Pratiklik, faydalılık, kazanç odaklılık. İş insanlarında baskın. <strong>3) Estetik Değerler:</strong> Güzellik, uyum, sanat sevgisi. Sanatçılarda yüksek. <strong>4) Sosyal Değerler:</strong> İnsanlara yardım etme, başkalarını sevme. Sosyal hizmet alanında çalışanlarda yüksek. <strong>5) Politik Değerler:</strong> Güç, etki, liderlik arayışı. Politikacılarda baskın. <strong>6) Dini Değerler:</strong> Manevi arayış, birlik, anlam bulma. Dini liderler ve mistiklerde yüksek. Bu değerler sistemi, kişiliğin motivasyonel yönünü anlamada kullanılır ve meslek seçimi, yaşam tarzı gibi konularda yönlendirici olur.</p>
+                </div>
+            </div>
+
+            <!-- Soru 11 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">11</div>
+                    <div class="question-type">Çoktan Seçmeli</div>
+                </div>
+                <div class="question-text">
+                    "Dini duygu" konusundaki çalışmasında Allport hangi ayrımı yapar?
+                </div>
+                <ul class="options">
+                    <li>A) Olgun ve olgunlaşmamış din</li>
+                    <li>B) Doğu ve Batı dinleri</li>
+                    <li>C) Bireysel ve toplumsal din</li>
+                    <li>D) Geleneksel ve modern din</li>
+                    <li>E) Mistik ve dogmatik din</li>
+                </ul>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevap: A) Olgun ve olgunlaşmamış din</h4>
+                    <p><strong>Açıklama:</strong> Allport, "The Individual and His Religion" (1950) kitabında <strong>"olgun"</strong> ve <strong>"olgunlaşmamış"</strong> din arasında temel bir ayrım yapar. <strong>Olgunlaşmamış Din:</strong> Çıkarcı, korku temelli, sığ ve yüzeysel. Kişi dini, kendi ihtiyaçlarını karşılamak için kullanır (teselli, güvenlik, sosyal statü). Dogmatik, hoşgörüsüz ve önyargılı. <strong>Olgun Din:</strong> Derinlemesine yaşanan, kişiyi aşan değerlere adanmış, hoşgörülü ve kapsayıcı. Kişi kendini din için ada, dini kendisi için değil. Şüpheyi tolere eder, gelişmeye açık. Bu ayrım, dindarlığın kalitesini değerlendirmede önemli bir ölçüt sağlar. Allport'un araştırmaları, olgun dindarlığın önyargıyı azalttığını, olgunlaşmamış dindarlığın ise artırdığını göstermiştir. Bu çalışma, din psikolojisi alanında önemli bir katkı sağlamıştır.</p>
+                </div>
+            </div>
+
+            <!-- Soru 12 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">12</div>
+                    <div class="question-type">Klasik Sınav</div>
+                </div>
+                <div class="question-text">
+                    Allport'un kişilik psikolojisine genel katkılarını değerlendirin ve modern özellik teorilerine etkisini analiz edin.
+                </div>
+                <textarea class="essay-area" placeholder="Cevabınızı buraya yazınız..."></textarea>
+                <div class="explanation">
+                    <h4>🎯 Örnek Cevap:</h4>
+                    <p><strong>Kişilik Psikolojisine Genel Katkılar:</strong></p>
+                    <p><strong>1. Teorik Temel:</strong> Modern özellik teorisinin kurucusu olarak kabul edilir. Özellikleri gerçek psikolojik yapılar olarak tanımladı.</p>
+                    <p><strong>2. Metodolojik Çeşitlilik:</strong> İdiografik ve nomotetik yaklaşımların birlikte kullanılması gerektiğini savundu.</p>
+                    <p><strong>3. Bireysellik Vurgusu:</strong> Her kişinin benzersiz olduğunu ve bu benzersizliğin bilimsel olarak incelenebileceğini gösterdi.</p>
+                    <p><strong>4. Yaşam Boyu Gelişim:</strong> Kişiliğin statik olmadığını, yaşam boyu gelişmeye devam ettiğini vurguladı.</p>
+                    <p><strong>5. Değerler ve Motivasyon:</strong> Kişiliğin motivasyonel yönüne ve değerlerin önemine dikkat çekti.</p>
+                    <p><strong>6. Sosyal Psikoloji:</strong> Önyargı araştırmalarıyla sosyal psikoloji alanına önemli katkı sağladı.</p>
+                    <p><strong>Modern Özellik Teorilerine Etkisi:</strong></p>
+                    <p><strong>1. Big Five Modeli:</strong> Allport'un özellik anlayışı, modern Beş Faktör Modelinin temelini oluşturdu.</p>
+                    <p><strong>2. Özellik Hiyerarşisi:</strong> Kardinal-merkezi-ikincil ayrımı, modern hiyerarşik modelleri etkiledi.</p>
+                    <p><strong>3. Leksik Yaklaşım:</strong> Özellikler için dil analizini kullanma yaklaşımını başlattı.</p>
+                    <p><strong>4. İdiografik Araştırma:</strong> Bireysel farklılıkları inceleme yöntemleri geliştirdi.</p>
+                    <p><strong>Eleştiriler ve Sınırlılıklar:</strong></p>
+                    <p><strong>1. Ampirik Destek:</strong> Bazı kavramları (işlevsel özerklik) yeterince test edilmedi.</p>
+                    <p><strong>2. Ölçüm Sorunları:</strong> İdiografik yaklaşımın nicelleştirilmesi zor.</p>
+                    <p><strong>3. Karmaşıklık:</strong> Teorik yapı bazen fazla karmaşık ve belirsiz.</p>
+                    <p><strong>Günümüzdeki Durumu:</strong> Allport'un fikirleri, modern kişilik psikolojisinin temelini oluşturmaya devam ediyor. Özellikle özellik yaklaşımı, en yaygın kullanılan kişilik modellerinin (Big Five) kökenini oluşturuyor.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kişilik Kuramları Sınav Hazırlık Sistemi</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+        
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .content {
+            padding: 40px;
+        }
+        
+        .theory-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+        
+        .theory-card {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            border-radius: 15px;
+            padding: 25px;
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        
+        .theory-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+        }
+        
+        .theory-card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+        }
+        
+        .theory-card p {
+            font-size: 0.95rem;
+            opacity: 0.9;
+            line-height: 1.5;
+        }
+        
+        .question-count {
+            background: rgba(255,255,255,0.2);
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        
+        .intro {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #555;
+            font-size: 1.1rem;
+        }
+        
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin: 30px 0;
+            flex-wrap: wrap;
+        }
+        
+        .stat-item {
+            text-align: center;
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 15px;
+            min-width: 150px;
+        }
+        
+        .stat-number {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #667eea;
+            display: block;
+        }
+        
+        .stat-label {
+            color: #666;
+            font-size: 0.9rem;
+            margin-top: 5px;
+        }
+        
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+            .content {
+                padding: 20px;
+            }
+            .stats {
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🧠 Kişilik Kuramları</h1>
+            <p>Sınav Hazırlık Sistemi</p>
+        </div>
+        
+        <div class="content">
+            <div class="intro">
+                <p>Psikoloji ve kişilik kuramları alanında kapsamlı sınav hazırlığı için hazırlanmış soru bankası. Her kuram için detaylı sorular ve açıklamalı cevaplar.</p>
+            </div>
+            
+            <div class="stats">
+                <div class="stat-item">
+                    <span class="stat-number">34</span>
+                    <div class="stat-label">Konu Başlığı</div>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">340+</span>
+                    <div class="stat-label">Toplam Soru</div>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">5</span>
+                    <div class="stat-label">Soru Türü</div>
+                </div>
+            </div>
+            
+            <div class="theory-grid">
+                <a href="sorular-kapak.html" class="theory-card">
+                    <h3>📚 Giriş ve Genel Bakış</h3>
+                    <p>Kişilik kuramlarına giriş, temel kavramlar ve genel çerçeve</p>
+                    <span class="question-count">10 Soru</span>
+                </a>
+                
+                <a href="sorular-freud.html" class="theory-card">
+                    <h3>🎭 Sigmund Freud</h3>
+                    <p>Psikanalitik kuram, bilinçdışı, id-ego-süperego, savunma mekanizmaları</p>
+                    <span class="question-count">15 Soru</span>
+                </a>
+                
+                <a href="sorular-jung.html" class="theory-card">
+                    <h3>🌟 Carl Gustav Jung</h3>
+                    <p>Analitik psikoloji, kolektif bilinçdışı, arketipler, psikolojik tipler</p>
+                    <span class="question-count">12 Soru</span>
+                </a>
+                
+                <a href="sorular-adler.html" class="theory-card">
+                    <h3>🎯 Alfred Adler</h3>
+                    <p>Bireysel psikoloji, aşağılık kompleksi, üstünlük çabası</p>
+                    <span class="question-count">10 Soru</span>
+                </a>
+                
+                <a href="sorular-erikson.html" class="theory-card">
+                    <h3>🌱 Erik Erikson</h3>
+                    <p>Psikososyal gelişim, sekiz dönem, kimlik krizi, yaşam dönemleri</p>
+                    <span class="question-count">12 Soru</span>
+                </a>
+                
+                <a href="sorular-fromm.html" class="theory-card">
+                    <h3>🗽 Erich Fromm</h3>
+                    <p>Hümanistik psikanaliz, özgürlükten kaçış, karakter yönelimleri</p>
+                    <span class="question-count">10 Soru</span>
+                </a>
+                
+                <a href="sorular-sullivan.html" class="theory-card">
+                    <h3>🤝 Harry Stack Sullivan</h3>
+                    <p>Kişilerarası teori, gelişim dönemleri, güvenlik operasyonları</p>
+                    <span class="question-count">15 Soru</span>
+                </a>
+                
+                <a href="sorular-rogers.html" class="theory-card">
+                    <h3>🌸 Carl Rogers</h3>
+                    <p>Hümanistik yaklaşım, kendini gerçekleştirme, koşulsuz kabul</p>
+                    <span class="question-count">10 Soru</span>
+                </a>
+                
+                <a href="sorular-maslow.html" class="theory-card">
+                    <h3>⛰️ Abraham Maslow</h3>
+                    <p>İhtiyaçlar hiyerarşisi, kendini gerçekleştirme, zirve deneyimler</p>
+                    <span class="question-count">10 Soru</span>
+                </a>
+                
+                <a href="sorular-skinner.html" class="theory-card">
+                    <h3>🔬 B.F. Skinner</h3>
+                    <p>Davranışçı yaklaşım, operant koşullanma, pekiştirme programları</p>
+                    <span class="question-count">12 Soru</span>
+                </a>
+                
+                <a href="sorular-dollard-miller.html" class="theory-card">
+                    <h3>📊 Dollard & Miller</h3>
+                    <p>Öğrenme teorisi, sürü indirimi, çatışma türleri</p>
+                    <span class="question-count">10 Soru</span>
+                </a>
+                
+                <a href="sorular-kelly.html" class="theory-card">
+                    <h3>🏗️ George Kelly</h3>
+                    <p>Kişisel yapı teorisi, yapı alternatifçiliği, sabit rol terapisi</p>
+                    <span class="question-count">12 Soru</span>
+                </a>
+                
+                <a href="sorular-allport.html" class="theory-card">
+                    <h3>📝 Gordon Allport</h3>
+                    <p>Özellik teorisi, kardinal-merkezi-ikincil özellikler, proprium</p>
+                    <span class="question-count">12 Soru</span>
+                </a>
+                
+                <a href="sorular-cattell.html" class="theory-card">
+                    <h3>📈 Raymond Cattell</h3>
+                    <p>Faktör analizi, 16PF, yüzey ve kaynak özellikler</p>
+                    <span class="question-count">15 Soru</span>
+                </a>
+                
+                <a href="sorular-eysenck.html" class="theory-card">
+                    <h3>🧬 Hans Eysenck</h3>
+                    <p>Üç faktör modeli, dışadönüklük-nevrotiklik-psikotiklik</p>
+                    <span class="question-count">12 Soru</span>
+                </a>
+                
+                <a href="sorular-big-five.html" class="theory-card">
+                    <h3>🌟 Beş Faktör Modeli</h3>
+                    <p>Big Five, OCEAN, McCrae-Costa, NEO kişilik envanteri</p>
+                    <span class="question-count">15 Soru</span>
+                </a>
+                
+                <a href="sorular-bilisssel.html" class="theory-card">
+                    <h3>🧠 Bilişsel Yaklaşımlar</h3>
+                    <p>Bilişsel teoriler, şemalar, atıf teorileri, öz-yeterlik</p>
+                    <span class="question-count">12 Soru</span>
+                </a>
+                
+                <a href="sorular-sosyal-ogrenme.html" class="theory-card">
+                    <h3>👥 Sosyal Öğrenme</h3>
+                    <p>Bandura, gözlemsel öğrenme, modelleme, öz-düzenleme</p>
+                    <span class="question-count">10 Soru</span>
+                </a>
+                
+                <a href="sorular-karsilastirma.html" class="theory-card">
+                    <h3>⚖️ Kuram Karşılaştırması</h3>
+                    <p>Teoriler arası farklar, benzerlikler, değerlendirme kriterleri</p>
+                    <span class="question-count">20 Soru</span>
+                </a>
+                
+                <a href="sorular-uygulama.html" class="theory-card">
+                    <h3>🎯 Pratik Uygulamalar</h3>
+                    <p>Klinik uygulamalar, terapi teknikleri, değerlendirme araçları</p>
+                    <span class="question-count">15 Soru</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

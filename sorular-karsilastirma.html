@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kişilik Kuramları Karşılaştırması</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+        }
+        
+        .header h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+        
+        .nav-link {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background: rgba(255,255,255,0.2);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-link:hover {
+            background: rgba(255,255,255,0.3);
+        }
+        
+        .content {
+            padding: 40px;
+        }
+        
+        .question {
+            background: #f8f9fa;
+            margin-bottom: 30px;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .question-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        
+        .question-number {
+            background: #667eea;
+            color: white;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+        
+        .question-type {
+            background: #28a745;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+        }
+        
+        .question-text {
+            font-size: 1.1rem;
+            color: #333;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+        
+        .options {
+            list-style: none;
+            margin-bottom: 20px;
+        }
+        
+        .options li {
+            padding: 10px 15px;
+            margin: 8px 0;
+            background: white;
+            border-radius: 8px;
+            border: 2px solid #e9ecef;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .options li:hover {
+            border-color: #667eea;
+            background: #f0f4ff;
+        }
+        
+        .correct-answer {
+            border-color: #28a745 !important;
+            background: #d4edda !important;
+        }
+        
+        .explanation {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+        
+        .explanation h4 {
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+        
+        .explanation p {
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+        
+        .fill-blank {
+            border: none;
+            border-bottom: 2px solid #667eea;
+            background: transparent;
+            padding: 5px;
+            font-size: 1rem;
+            width: 150px;
+            margin: 0 5px;
+        }
+        
+        .essay-area {
+            width: 100%;
+            min-height: 100px;
+            padding: 15px;
+            border: 2px solid #e9ecef;
+            border-radius: 10px;
+            font-family: inherit;
+            font-size: 1rem;
+            resize: vertical;
+        }
+        
+        @media (max-width: 768px) {
+            .content {
+                padding: 20px;
+            }
+            .question-header {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>⚖️ Kişilik Kuramları Karşılaştırması</h1>
+            <p>Farklı yaklaşımların analizi ve değerlendirmesi</p>
+            <a href="index.html" class="nav-link">← Ana Sayfaya Dön</a>
+        </div>
+        
+        <div class="content">
+            <!-- Soru 1 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">1</div>
+                    <div class="question-type">Çoktan Seçmeli</div>
+                </div>
+                <div class="question-text">
+                    Hangi kişilik kuramı insan doğasını en olumsuz şekilde görür?
+                </div>
+                <ul class="options">
+                    <li>A) Hümanistik yaklaşım</li>
+                    <li>B) Sosyal öğrenme kuramı</li>
+                    <li>C) Freud'un psikanalitik kuramı</li>
+                    <li>D) Big Five modeli</li>
+                    <li>E) Bilişsel yaklaşım</li>
+                </ul>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevap: C) Freud'un psikanalitik kuramı</h4>
+                    <p><strong>Açıklama:</strong> <strong>Freud'un psikanalitik kuramı</strong> insan doğasını en olumsuz şekilde görür. Bu görüşün temelleri: İnsanlar temel olarak saldırgan ve cinsel dürtülerle (id) güdülenir; medeni toplum bu dürtüleri bastırmak zorundadır; çocukluk travmaları kişiliği olumsuz etkiler; bilinçdışı güçler davranışı kontrol eder; insanlar çoğunlukla kendi gerçek motivasyonlarının farkında değildir. Freud, "medeniyet insana yük getirir" der ve insanın doğal dürtülerinin toplumsal yaşamla çeliştiğini savunur. Diğer yaklaşımlar daha olumlu: Hümanistik yaklaşım insanın doğal iyiliğini vurgular; sosyal öğrenme kuramı değişebilirliği savunur; bilişsel yaklaşım rasyonel kapasiteyi önemser; Big Five nötr bir bakış sergiler. Bu nedenle Freud'un kuramı en pesimist yaklaşım olarak kabul edilir.</p>
+                </div>
+            </div>
+
+            <!-- Soru 2 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">2</div>
+                    <div class="question-type">Boşluk Doldurma</div>
+                </div>
+                <div class="question-text">
+                    <input type="text" class="fill-blank" placeholder="Davranışçı"> yaklaşımlar çevresel faktörleri vurgularken, <input type="text" class="fill-blank" placeholder="özellik"> kuramları bireysel farklılıklara odaklanır.
+                </div>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevaplar: Davranışçı, Özellik</h4>
+                    <p><strong>Açıklama:</strong> <strong>Davranışçı yaklaşımlar</strong> (Skinner, Pavlov) çevresel faktörlerin belirleyici rol oynadığını savunur: davranış uyaran-tepki ilişkileriyle açıklanır, pekiştirme ve ceza davranışı şekillendirir, kişilik farklılıkları farklı öğrenme deneyimlerinden kaynaklanır, genetik faktörler minimum rol oynar. <strong>Özellik kuramları</strong> (Allport, Cattell, Eysenck, Big Five) ise bireysel farklılıklara odaklanır: kişiler sabit özellik kombinasyonlarına sahiptir, bu özellikler zaman ve durumlarda tutarlılık gösterir, kalıtımsal faktörler önemlidir, kişiliği tanımlamak için objektif ölçümler kullanılır. Bu temel fark, "doğa-beslenme" tartışmasını yansıtır: davranışçılık "beslenme" (çevre), özellik kuramları "doğa" (kalıtım) tarafını vurgular. Modern yaklaşımlar her iki faktörün etkileşimini benimser.</p>
+                </div>
+            </div>
+
+            <!-- Soru 3 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">3</div>
+                    <div class="question-type">Çoktan Seçmeli</div>
+                </div>
+                <div class="question-text">
+                    Hangi iki yaklaşım bilinçdışının önemini en çok vurgular?
+                </div>
+                <ul class="options">
+                    <li>A) Psikanalitik ve Hümanistik</li>
+                    <li>B) Psikanalitik ve Jung'un Analitik Psikolojisi</li>
+                    <li>C) Davranışçı ve Bilişsel</li>
+                    <li>D) Özellik ve Sosyal öğrenme</li>
+                    <li>E) Hümanistik ve Bilişsel</li>
+                </ul>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevap: B) Psikanalitik ve Jung'un Analitik Psikolojisi</h4>
+                    <p><strong>Açıklama:</strong> <strong>Psikanalitik yaklaşım ve Jung'un Analitik Psikolojisi</strong> bilinçdışının önemini en çok vurgulayan iki yaklaşımdır. <strong>Freud'un Psikanalitik Kuramı:</strong> Bilinçdışı kişiliğin en büyük bölümüdür, bastırılan anılar ve dürtüleri içerir, davranışın asıl nedenidir, rüyalar ve savunma mekanizmaları yoluyla kendini gösterir. <strong>Jung'un Analitik Psikolojisi:</strong> Kişisel bilinçdışına ek olarak "kolektif bilinçdışı"nı önerir, arketipler evrensel bilinçdışı kalıplardır, gölge, anima/animus gibi bilinçdışı yapılar kişiliği etkiler, bireyselleşme süreci bilinçdışının entegrasyonunu gerektirir. Diğer yaklaşımlar bilinçdışını daha az vurgular: Hümanistik yaklaşım bilinçli deneyimlere odaklanır, davranışçılık gözlemlenebilir davranışları inceler, bilişsel yaklaşım bilinçli düşünce süreçlerini önemser. Bu iki yaklaşım, bilinçdışının kişilik üzerindeki etkisini merkeze alır.</p>
+                </div>
+            </div>
+
+            <!-- Soru 4 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">4</div>
+                    <div class="question-type">Klasik Sınav</div>
+                </div>
+                <div class="question-text">
+                    Freud, Skinner ve Rogers'ın insan motivasyonu hakkındaki görüşlerini karşılaştırın ve her yaklaşımın güçlü-zayıf yanlarını değerlendirin.
+                </div>
+                <textarea class="essay-area" placeholder="Cevabınızı buraya yazınız..."></textarea>
+                <div class="explanation">
+                    <h4>🎯 Örnek Cevap:</h4>
+                    <p><strong>Freud - Psikanalitik Motivasyon:</strong></p>
+                    <p><strong>Görüş:</strong> İnsan temel olarak libido (yaşam enerjisi) ve Thanatos (ölüm dürtüsü) tarafından güdülenir. Haz ilkesi baskındır, anında tatmin aranır. Bilinçdışı güçler davranışı yönlendirir.</p>
+                    <p><strong>Güçlü yanlar:</strong> Çocukluk deneyimlerinin önemini vurguladı, savunma mekanizmalarını keşfetti, terapötik süreci başlattı.</p>
+                    <p><strong>Zayıf yanlar:</strong> Aşırı cinsel odaklı, kadın psikolojisini ihmal etti, bilimsel doğrulanabilirlik sorunu.</p>
+                    <p><strong>Skinner - Davranışçı Motivasyon:</strong></p>
+                    <p><strong>Görüş:</strong> İnsan motivasyonu dış pekiştireçlerle açıklanır. İç motivasyon kavramı gereksizdir. Davranış operant koşullanma ile şekillenir. Çevresel kontrol belirleyicidir.</p>
+                    <p><strong>Güçlü yanlar:</strong> Objektif, ölçülebilir yaklaşım. Davranış değiştirme teknikleri geliştirdi. Eğitim alanında pratik uygulamalar.</p>
+                    <p><strong>Zayıf yanlar:</strong> İç deneyimleri göz ardı etti, aşırı mekanistik, özgür iradeyi reddetmesi eleştirildi.</p>
+                    <p><strong>Rogers - Hümanistik Motivasyon:</strong></p>
+                    <p><strong>Görüş:</strong> İnsan doğası temelde iyidir. Kendini gerçekleştirme eğilimi temel motivatördür. İç motivasyon ve kişisel büyüme odaklıdır. Organizmik değerlendirme süreci rehberdir.</p>
+                    <p><strong>Güçlü yanlar:</strong> İyimser insan görüşü, kişisel gelişime odaklanma, terapide empati vurgusu.</p>
+                    <p><strong>Zayıf yanlar:</strong> Aşırı iyimser, kötü davranışları açıklamada yetersiz, kültürel sınırlılık.</p>
+                    <p><strong>Karşılaştırmalı Değerlendirme:</strong></p>
+                    <p><strong>Determinizm-Özgürlük:</strong> Freud deterministik, Skinner aşırı deterministik, Rogers özgürlükçü.</p>
+                    <p><strong>İyimserlik-Kötümserlik:</strong> Freud kötümser, Skinner nötr, Rogers iyimser.</p>
+                    <p><strong>Değişebilirlik:</strong> Freud sınırlı, Skinner yüksek (çevre ile), Rogers yüksek (iç potansiyel ile).</p>
+                    <p><strong>Günümüz Sentezi:</strong> Modern psikoloji üç yaklaşımın da katkılarını birleştirmiş: bilinçdışı süreçler, öğrenme mekanizmaları ve kişisel büyüme potansiyeli hepsi kabul edilmektedir.</p>
+                </div>
+            </div>
+
+            <!-- Soru 5 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">5</div>
+                    <div class="question-type">Çoktan Seçmeli</div>
+                </div>
+                <div class="question-text">
+                    Hangi yaklaşım kişiliğin değişebilirliği konusunda en iyimserdir?
+                </div>
+                <ul class="options">
+                    <li>A) Özellik kuramları</li>
+                    <li>B) Davranışçı yaklaşım</li>
+                    <li>C) Psikanalitik yaklaşım</li>
+                    <li>D) Biyolojik yaklaşım</li>
+                    <li>E) Faktör analizi yaklaşımı</li>
+                </ul>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevap: B) Davranışçı yaklaşım</h4>
+                    <p><strong>Açıklama:</strong> <strong>Davranışçı yaklaşım</strong> kişiliğin değişebilirliği konusunda en iyimserdır. Bu yaklaşımın değişebilirlik görüşü: Kişilik öğrenilmiş davranış kalıplarından oluşur; çevresel koşullar değiştirilirse davranış da değişir; yaş sınırı yoktur, yaşam boyu öğrenme mümkündür; sistematik pekiştirme programlarıyla herhangi bir davranış öğretilebilir; genetik sınırlamalar minimal düzeydedir. Diğer yaklaşımların değişebilirlik görüşleri: <strong>Özellik kuramları:</strong> Kişilik nispeten sabittir, kalıtımsal faktörler güçlüdür. <strong>Psikanalitik yaklaşım:</strong> Erken çocukluk deneyimleri belirleyicidir, değişim zor ve uzun sürelidir. <strong>Biyolojik yaklaşım:</strong> Genetik faktörler baskındır, değişim çok sınırlıdır. Bu nedenle davranışçı yaklaşım, kişilik değişimi konusunda en umutlu ve müdahaleye açık perspektifi sunar.</p>
+                </div>
+            </div>
+
+            <!-- Soru 6 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">6</div>
+                    <div class="question-type">Boşluk Doldurma</div>
+                </div>
+                <div class="question-text">
+                    <input type="text" class="fill-blank" placeholder="İdiografik"> yaklaşım bireysel benzersizliği vurgularken, <input type="text" class="fill-blank" placeholder="nomotetik"> yaklaşım genel yasalar arar.
+                </div>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevaplar: İdiografik, Nomotetik</h4>
+                    <p><strong>Açıklama:</strong> <strong>İdiografik yaklaşım</strong> bireysel benzersizliği ve her kişinin özgün kişilik yapısını vurgular: her birey eşsizdir ve kendi özel dinamiklerine sahiptir, vaka çalışmaları ve derinlemesine analiz kullanır, Allport ve Kelly bu yaklaşımı benimser, kişisel anlatılar ve yaşam hikayeleri önemlidir. <strong>Nomotetik yaklaşım</strong> ise genel yasalar ve evrensel ilkeler arar: tüm insanlarda geçerli kişilik boyutları belirlemeye çalışır, büyük örneklemlerle nicel araştırmalar yapar, faktör analizi ve istatistiksel yöntemler kullanır, Cattell, Eysenck ve Big Five modeli bu yaklaşımı benimser. Modern kişilik psikolojisi her iki yaklaşımın da değerli katkıları olduğunu kabul eder: nomotetik yaklaşım genel çerçeveyi, idiografik yaklaşım bireysel farklılıkları anlamak için gereklidir. En iyi yaklaşım, her ikisini birleştiren entegratif modellerdir.</p>
+                </div>
+            </div>
+
+            <!-- Soru 7 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">7</div>
+                    <div class="question-type">Çoktan Seçmeli</div>
+                </div>
+                <div class="question-text">
+                    Kişilik kuramları arasında "özgür irade vs determinizm" tartışmasında hangi sıralama doğrudur?
+                </div>
+                <ul class="options">
+                    <li>A) En deterministic: Davranışçı > Psikanalitik > Özellik > Hümanistik: En özgürlükçü</li>
+                    <li>B) En deterministic: Psikanalitik > Davranışçı > Özellik > Hümanistik: En özgürlükçü</li>
+                    <li>C) En deterministic: Hümanistik > Özellik > Davranışçı > Psikanalitik: En özgürlükçü</li>
+                    <li>D) En deterministic: Özellik > Hümanistik > Psikanalitik > Davranışçı: En özgürlükçü</li>
+                    <li>E) Tüm yaklaşımlar eşit düzeyde deterministik</li>
+                </ul>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevap: A) En deterministic: Davranışçı > Psikanalitik > Özellik > Hümanistik: En özgürlükçü</h4>
+                    <p><strong>Açıklama:</strong> Kişilik kuramları determinizm-özgür irade spektrumunda şu şekilde sıralanır: <strong>En Deterministik - Davranışçı:</strong> Davranış tamamen çevresel koşullarla belirlenir, özgür irade illüzyondur, Skinner bunu açıkça savunur. <strong>Psikanalitik:</strong> Bilinçdışı güçler davranışı belirler, çocukluk deneyimleri kaderci etkiye sahiptir, ancak terapi ile farkındalık mümkündür. <strong>Özellik Kuramları:</strong> Genetik faktörler ve sabit özellikler belirleyicidir ancak çevresel etkileşim kabul edilir, orta düzey determinizm. <strong>En Özgürlükçü - Hümanistik:</strong> İnsan seçim yapabilen, kendi yaşamını yönlendiren, sorumlu bir varlıktır, Rogers ve Maslow özgür iradeyi vurgular. Bu sıralama, her yaklaşımın insan davranışının ne kadar önceden belirlendiği konusundaki görüşlerini yansıtır. Modern psikoloji, genellikle "sınırlı özgür irade" anlayışını benimser.</p>
+                </div>
+            </div>
+
+            <!-- Soru 8 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">8</div>
+                    <div class="question-type">Klasik Sınav</div>
+                </div>
+                <div class="question-text">
+                    Modern kişilik psikolojisinde "entegratif yaklaşımlar"ın nasıl geliştiğini açıklayın ve farklı kuramların hangi katkılarının birleştirildiğini örneklerle gösterin.
+                </div>
+                <textarea class="essay-area" placeholder="Cevabınızı buraya yazınız..."></textarea>
+                <div class="explanation">
+                    <h4>🎯 Örnek Cevap:</h4>
+                    <p><strong>Entegratif Yaklaşımların Gelişimi:</strong></p>
+                    <p><strong>Tarihsel Süreç:</strong> 1980'lerden itibaren kişilik psikolojisinde "büyük birleşme" dönemi başladı. Her kuramın güçlü yanlarını koruyarak zayıflıklarını giderme isteği, kuramlar arası köprüler kurma çabası, ampirik bulguların desteklediği ortak noktaların belirlenmesi.</p>
+                    <p><strong>Temel Entegrasyon Alanları:</strong></p>
+                    <p><strong>1. Çok Düzeyli Yaklaşımlar:</strong></p>
+                    <p><strong>- Biyolojik Düzey:</strong> Genetik, nörotransmitter, beyin yapıları (Eysenck'dan)</p>
+                    <p><strong>- Psikolojik Düzey:</strong> Bilişsel süreçler, özellikler, öğrenme (Bilişsel + Özellik kuramları)</p>
+                    <p><strong>- Sosyal Düzey:</strong> Kültür, sosyal roller, ilişkiler (Sullivan, Bandura'dan)</p>
+                    <p><strong>2. Gelişimsel Entegrasyon:</strong></p>
+                    <p><strong>- Erken yaşam:</strong> Psikanalitik통찰lar + bağlanma kuramı</p>
+                    <p><strong>- Çocukluk:</strong> Sosyal öğrenme + bilişsel gelişim</p>
+                    <p><strong>- Yetişkinlik:</strong> Özellik kararlılığı + yaşam deneyimleri</p>
+                    <p><strong>3. Motivasyonel Entegrasyon:</strong></p>
+                    <p><strong>- Temel ihtiyaçlar:</strong> Maslow'un hiyerarşisi + modern öz-belirleme kuramı</p>
+                    <p><strong>- Öğrenilmiş motivasyon:</strong> Davranışçı pekiştirme + bilişsel hedef belirleme</p>
+                    <p><strong>- İç motivasyon:</strong> Hümanistik büyüme + sosyal bilişsel öz-yeterlilik</p>
+                    <p><strong>Modern Entegratif Modeller:</strong></p>
+                    <p><strong>1. Beş Faktör + Bilişsel Süreçler:</strong> Big Five özellikleri + Beck'in şema teorisi birleştirilerek kişilik bozukluklarını açıklama.</p>
+                    <p><strong>2. Sosyal Bilişsel Kuram:</strong> Bandura'nın öz-yeterlilik + bilişsel değerlendirme + çevresel etkileşim.</p>
+                    <p><strong>3. Kişilik Sistemi Yaklaşımı:</strong> Mischel'in CAPS modeli - bilişsel-duyguşsal birimlerin durumsal aktivasyonu.</p>
+                    <p><strong>Güncel Örnekler:</strong></p>
+                    <p><strong>- Nörogörüntüleme + Kişilik:</strong> fMRI ile Big Five boyutlarının beyin bölgeleriyle ilişkisi</p>
+                    <p><strong>- Epigenetik + Gelişim:</strong> Gen-çevre etkileşimi araştırmaları</p>
+                    <p><strong>- Kültürlerarası + Evrensel:</strong> Evrensel özellikler + kültürel varyasyonlar</p>
+                    <p><strong>Sonuç:</strong> Modern kişilik psikolojisi artık tek bir paradigma yerine, çok paradigmalı, entegratif bir bilim dalı haline gelmiştir.</p>
+                </div>
+            </div>
+
+            <!-- Soru 9 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">9</div>
+                    <div class="question-type">Boşluk Doldurma</div>
+                </div>
+                <div class="question-text">
+                    <input type="text" class="fill-blank" placeholder="Klinik"> uygulamalarda psikanalitik yaklaşım, <input type="text" class="fill-blank" placeholder="eğitim"> alanında davranışçı yaklaşım daha etkilidir.
+                </div>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevaplar: Klinik, Eğitim</h4>
+                    <p><strong>Açıklama:</strong> Farklı kişilik yaklaşımları farklı uygulama alanlarında daha etkili olmaktadır. <strong>Klinik uygulamalar</strong>da psikanalitik yaklaşım güçlüdür çünkü: derin psikolojik sorunları ele alır, geçmiş travmaları analiz eder, bilinçdışı süreçleri keşfeder, uzun süreli kişilik değişimi hedefler, kompleks duygusal problemleri inceler. Psikodinamik terapi, psikanalitik psychotherapy hala yaygın kullanılır. <strong>Eğitim alanında</strong> davranışçı yaklaşım daha etkilidir çünkü: objektif hedefler belirler, ölçülebilir sonuçlar üretir, sistematik pekiştirme uygular, davranış değiştirme teknikleri sunar, hızlı ve pratik çözümler sağlar. Programlı öğretim, davranış değiştirme, sınıf yönetimi, özel eğitim alanlarında davranışçı teknikler standart haline gelmiştir. Her yaklaşımın kendine uygun uygulama alanları vardır ve başarı duruma bağlıdır.</p>
+                </div>
+            </div>
+
+            <!-- Soru 10 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">10</div>
+                    <div class="question-type">Çoktan Seçmeli</div>
+                </div>
+                <div class="question-text">
+                    Kişilik kuramları karşılaştırmasında "araştırma yöntemi" açısından hangi eşleştirme doğrudur?
+                </div>
+                <ul class="options">
+                    <li>A) Psikanalitik: Deney, Davranışçı: Vaka çalışması</li>
+                    <li>B) Psikanalitik: Vaka çalışması, Davranışçı: Deney</li>
+                    <li>C) Hümanistik: Deney, Özellik: Gözlem</li>
+                    <li>D) Bilişsel: Vaka çalışması, Sosyal öğrenme: Anket</li>
+                    <li>E) Tüm yaklaşımlar aynı yöntemleri kullanır</li>
+                </ul>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevap: B) Psikanalitik: Vaka çalışması, Davranışçı: Deney</h4>
+                    <p><strong>Açıklama:</strong> Kişilik kuramları farklı araştırma yöntemlerini tercih eder ve bu tercihleri yaklaşımlarının doğasını yansıtır. <strong>Psikanalitik yaklaşım - Vaka çalışması:</strong> Bireysel derinlemesine analiz, terapötik süreçlerin incelenmesi, nitel veriler, uzun süreli gözlem, Anna O, Küçük Hans gibi ünlü vakalar. <strong>Davranışçı yaklaşım - Deney:</strong> Kontrollü laboratuvar koşulları, objektif ölçümler, uyaran-tepki ilişkilerinin analizi, değişkenlerin manipülasyonu, Little Albert, Skinner kutusu deneyleri. Diğer yaklaşımlar: <strong>Özellik kuramları:</strong> Anketler, faktör analizi, büyük örneklemler; <strong>Hümanistik yaklaşım:</strong> Fenomenolojik yöntemler, nitel araştırma; <strong>Bilişsel yaklaşım:</strong> Bilişsel testler, düşünce protokolleri; <strong>Sosyal öğrenme:</strong> Gözlemsel deneyler, modelleme çalışmaları. Bu yöntem farklılıkları, her yaklaşımın epistemolojik temellerini ve insan doğası hakkındaki varsayımlarını yansıtır.</p>
+                </div>
+            </div>
+
+            <!-- Soru 11 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">11</div>
+                    <div class="question-type">Klasik Sınav</div>
+                </div>
+                <div class="question-text">
+                    Kişilik kuramlarının günümüzde hangi pratik alanlarda nasıl kullanıldığını açıklayın ve gelecekte bu kuramların nasıl evrimleşebileceğini öngörün.
+                </div>
+                <textarea class="essay-area" placeholder="Cevabınızı buraya yazınız..."></textarea>
+                <div class="explanation">
+                    <h4>🎯 Örnek Cevap:</h4>
+                    <p><strong>Günümüz Pratik Uygulamaları:</strong></p>
+                    <p><strong>1. Klinik Psikoloji ve Psikoterapi:</strong></p>
+                    <p><strong>- Psikanalitik:</strong> Uzun süreli terapi, kişilik bozuklukları, travma tedavisi</p>
+                    <p><strong>- Bilişsel:</strong> CBT, depresyon-kaygı tedavisi, en yaygın terapi yaklaşımı</p>
+                    <p><strong>- Hümanistik:</strong> Kişi merkezli terapi, egzistansiyel terapi, grup terapisi</p>
+                    <p><strong>- Davranışçı:</strong> Fobi tedavisi, madde bağımlılığı, davranış değiştirme</p>
+                    <p><strong>2. Eğitim ve Öğrenme:</strong></p>
+                    <p><strong>- Sosyal öğrenme:</strong> Modelleme, öz-yeterlilik geliştirme, akran öğrenimi</p>
+                    <p><strong>- Davranışçı:</strong> Programlı öğretim, sınıf yönetimi, özel eğitim</p>
+                    <p><strong>- Bilişsel:</strong> Problem çözme, eleştirel düşünme, metabiliş eğitimi</p>
+                    <p><strong>3. İş Dünyası ve Organizasyonel Psikoloji:</strong></p>
+                    <p><strong>- Big Five:</strong> İşe alım, takım oluşturma, liderlik değerlendirme</p>
+                    <p><strong>- Sosyal öğrenme:</strong> Liderlik geliştirme, mentorluk, örgütsel öğrenme</p>
+                    <p><strong>- Davranışçı:</strong> Performans yönetimi, motivasyon sistemleri</p>
+                    <p><strong>4. Sağlık Psikolojisi:</strong></p>
+                    <p><strong>- Bilişsel:</strong> Kronik hastalık uyumu, ağrı yönetimi, sağlık davranışları</p>
+                    <p><strong>- Sosyal öğrenme:</strong> Sağlık davranışı değişimi, öz-yeterlilik geliştirme</p>
+                    <p><strong>5. Teknoloji ve Yapay Zeka:</strong></p>
+                    <p><strong>- Big Five:</strong> Kişiselleştirilmiş içerik, kullanıcı deneyimi tasarımı</p>
+                    <p><strong>- Bilişsel:</strong> Chatbot gelişimi, insan-bilgisayar etkileşimi</p>
+                    <p><strong>Gelecek Evrim Öngörüleri:</strong></p>
+                    <p><strong>1. Nöropsikoloji Entegrasyonu:</strong> Brain imaging ile kişilik-beyin ilişkileri, gerçek zamanlı neurofeedback terapiler, kişiselleştirilmiş nöroterapi.</p>
+                    <p><strong>2. Büyük Veri ve AI:</strong> Dijital ayak izlerinden kişilik analizi, predictive modeling, kişiselleştirilmiş müdahaleler, sosyal medya analizi.</p>
+                    <p><strong>3. Epigenetik ve Gelişimsel Yaklaşım:</strong> Gen-çevre etkileşimi modelleri, yaşam boyu plastisité, erken müdahale programları.</p>
+                    <p><strong>4. Kültürlerarası ve Evrensel Modeller:</strong> Global geçerli modeller, kültürel adaptasyonlar, çeşitlilik odaklı yaklaşımlar.</p>
+                    <p><strong>5. Sanal Gerçeklik ve İmmersive Teknolojiler:</strong> VR terapisi, sanal ortamda kişilik değerlendirmesi, immersive sosyal öğrenme.</p>
+                    <p><strong>6. Önleyici ve Toplum Sağlığı Odaklı Yaklaşımlar:</strong> Mental sağlığı koruma, resilience geliştirme, toplum düzeyinde müdahaleler.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

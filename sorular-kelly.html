@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>George Kelly - Kişisel Yapılar Kuramı Soruları</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+        }
+        
+        .header h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+        
+        .nav-link {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background: rgba(255,255,255,0.2);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-link:hover {
+            background: rgba(255,255,255,0.3);
+        }
+        
+        .content {
+            padding: 40px;
+        }
+        
+        .question {
+            background: #f8f9fa;
+            margin-bottom: 30px;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .question-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        
+        .question-number {
+            background: #667eea;
+            color: white;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+        
+        .question-type {
+            background: #28a745;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+        }
+        
+        .question-text {
+            font-size: 1.1rem;
+            color: #333;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+        
+        .options {
+            list-style: none;
+            margin-bottom: 20px;
+        }
+        
+        .options li {
+            padding: 10px 15px;
+            margin: 8px 0;
+            background: white;
+            border-radius: 8px;
+            border: 2px solid #e9ecef;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .options li:hover {
+            border-color: #667eea;
+            background: #f0f4ff;
+        }
+        
+        .correct-answer {
+            border-color: #28a745 !important;
+            background: #d4edda !important;
+        }
+        
+        .explanation {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+        
+        .explanation h4 {
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+        
+        .explanation p {
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+        
+        .fill-blank {
+            border: none;
+            border-bottom: 2px solid #667eea;
+            background: transparent;
+            padding: 5px;
+            font-size: 1rem;
+            width: 150px;
+            margin: 0 5px;
+        }
+        
+        .essay-area {
+            width: 100%;
+            min-height: 100px;
+            padding: 15px;
+            border: 2px solid #e9ecef;
+            border-radius: 10px;
+            font-family: inherit;
+            font-size: 1rem;
+            resize: vertical;
+        }
+        
+        @media (max-width: 768px) {
+            .content {
+                padding: 20px;
+            }
+            .question-header {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🏗️ George Kelly - Kişisel Yapılar Kuramı</h1>
+            <p>Bilişsel süreçler, kişisel yapılar ve insan bilim insanı modeli</p>
+            <a href="index.html" class="nav-link">← Ana Sayfaya Dön</a>
+        </div>
+        
+        <div class="content">
+            <!-- Soru 1 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">1</div>
+                    <div class="question-type">Çoktan Seçmeli</div>
+                </div>
+                <div class="question-text">
+                    Kelly'nin kuramında temel kavram nedir?
+                </div>
+                <ul class="options">
+                    <li>A) Dürtü</li>
+                    <li>B) Pekiştirme</li>
+                    <li>C) Kişisel yapı (Personal construct)</li>
+                    <li>D) Bilinçdışı</li>
+                    <li>E) Kendini gerçekleştirme</li>
+                </ul>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevap: C) Kişisel yapı (Personal construct)</h4>
+                    <p><strong>Açıklama:</strong> Kelly'nin kuramının temel kavramı <strong>kişisel yapı (personal construct)</strong>dır. Kişisel yapılar, insanların dünyayı anlamlandırmak ve öngörüde bulunmak için kullandıkları bilişsel kategorilerdir. Her yapı, iki kutuplu bir boyutta çalışır (örneğin: iyi-kötü, güçlü-zayıf, güvenilir-güvenilmez). Kelly'e göre herkes kendi kişisel yapılar sistemini geliştirir ve bu sistem, o kişinin dünyayı algılama ve yorumlama biçimini belirler. Kişisel yapılar sistemi, sürekli test edilir ve revize edilir. Bu yaklaşım, insanı "bilim insanı" olarak görür - herkes hipotezler kurar, test eder ve teorilerini günceller.</p>
+                </div>
+            </div>
+
+            <!-- Soru 2 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">2</div>
+                    <div class="question-type">Boşluk Doldurma</div>
+                </div>
+                <div class="question-text">
+                    Kelly'e göre her kişisel yapının iki <input type="text" class="fill-blank" placeholder="kutbu"> vardır ve kişi olayları bu kutuplar arasında <input type="text" class="fill-blank" placeholder="değerlendirir"> .
+                </div>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevaplar: Kutbu, Değerlendirir</h4>
+                    <p><strong>Açıklama:</strong> Kelly'nin kuramında her kişisel yapının <strong>iki kutbu</strong> vardır ve bu kutuplar birbirine zıt anlamlar taşır. Örneğin, "akıllı-aptal", "güvenilir-güvenilmez", "sıcak-soğuk" gibi. İnsan, karşılaştığı olayları, kişileri ve durumları bu kutuplar arasında <strong>değerlendirir</strong>. Bu değerlendirme süreci bilinçli olabileceği gibi otomatik de olabilir. Kutuplardan biri genellikle "tercih edilen", diğeri "tercih edilmeyen" olarak algılanır. Ancak bazen her iki kutup da olumlu veya olumsuz olabilir (örneğin: spontan-planlı). Bu iki kutuplu yapı, insanın algısal dünyasının temel örgütlenmesini sağlar ve karmaşık bilgileri anlaşılır kategorilere ayırmasına yardım eder.</p>
+                </div>
+            </div>
+
+            <!-- Soru 3 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">3</div>
+                    <div class="question-type">Çoktan Seçmeli</div>
+                </div>
+                <div class="question-text">
+                    "Repertory Grid Tekniği" (Repertuar Izgarası) neyi amaçlar?
+                </div>
+                <ul class="options">
+                    <li>A) Zeka düzeyini ölçme</li>
+                    <li>B) Kişisel yapıları keşfetme</li>
+                    <li>C) Hafıza kapasitesini test etme</li>
+                    <li>D) Sosyal becerileri değerlendirme</li>
+                    <li>E) Motivasyon düzeyini ölçme</li>
+                </ul>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevap: B) Kişisel yapıları keşfetme</h4>
+                    <p><strong>Açıklama:</strong> <strong>"Repertory Grid Tekniği"</strong> Kelly'nin geliştirdiği ve kişisel yapıları keşfetmeyi amaçlayan bir değerlendirme yöntemidir. Bu tekniğin çalışma prensibi şöyledir: Kişiden önemli kişileri (annnesi, babası, en iyi arkadaşı vb.) listeleyen "role listesi" hazırlanır; bu kişilerden üçü seçilir ve "Bu üç kişiden ikisi nasıl benzer, üçüncüsü nasıl farklı?" sorusu sorulur; kişinin verdiği cevap bir kişisel yapıyı (construct) ortaya çıkarır; bu süreç farklı üçlülerle tekrarlanır; sonuçta kişinin kişisel yapılar sistemi haritası çıkarılır. Bu teknik, psikoterapi, örgütsel gelişim, eğitim ve araştırma alanlarında yaygın olarak kullanılır ve kişinin dünyayı algılama biçimini objektif olarak analiz etmeyi sağlar.</p>
+                </div>
+            </div>
+
+            <!-- Soru 4 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">4</div>
+                    <div class="question-type">Klasik Sınav</div>
+                </div>
+                <div class="question-text">
+                    Kelly'nin "insan bilim insanı" metaforunu açıklayın ve bu yaklaşımın kişilik teorisindeki yerini değerlendirin.
+                </div>
+                <textarea class="essay-area" placeholder="Cevabınızı buraya yazınız..."></textarea>
+                <div class="explanation">
+                    <h4>🎯 Örnek Cevap:</h4>
+                    <p><strong>"İnsan Bilim İnsanı" Metaforu:</strong> Kelly, insanı "bilim insanı" olarak konceptualize eder. Bu metafora göre her insan, tıpkı bir bilim insanı gibi dünyayı anlamaya çalışır, hipotezler kurar, bunları test eder ve sonuçlara göre teorilerini revize eder.</p>
+                    <p><strong>Bilimsel Süreç Analojisi:</strong></p>
+                    <p><strong>1. Hipotez Kurma:</strong> İnsan, kişisel yapıları kullanarak gelecek hakkında tahminlerde bulunur. "Bu kişi güvenilirdir" gibi.</p>
+                    <p><strong>2. Test Etme:</strong> Bu tahminleri günlük yaşam deneyimleriyle test eder. Güvenilir dediği kişiyle etkileşime girer.</p>
+                    <p><strong>3. Değerlendirme:</strong> Tahmininin doğru çıkıp çıkmadığını değerlendirir. Kişi beklediği gibi davrandı mı?</p>
+                    <p><strong>4. Revizyon:</strong> Sonuçlara göre kişisel yapılarını günceller. Gerekirse "güvenilirlik" yapısını yeniden tanımlar.</p>
+                    <p><strong>Kişilik Teorisindeki Yeri:</strong> Bu yaklaşım devrimsel bir paradigma değişimi yaratmıştır:</p>
+                    <p><strong>- Aktif İnsan:</strong> İnsanı pasif tepki veren değil, aktif anlam arayan varlık olarak görür.</p>
+                    <p><strong>- Bilişsel Odak:</strong> Davranışçı ve psikanalitik yaklaşımlardan farklı olarak bilişsel süreçlere odaklanır.</p>
+                    <p><strong>- Bireysel Farklılık:</strong> Her kişinin benzersiz yapılar sistemi olduğunu vurgular.</p>
+                    <p><strong>- Değişim Odaklı:</strong> Kişilik sabit değil, sürekli güncellenen dinamik bir sistem olarak görülür.</p>
+                </div>
+            </div>
+
+            <!-- Soru 5 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">5</div>
+                    <div class="question-type">Çoktan Seçmeli</div>
+                </div>
+                <div class="question-text">
+                    Kelly'nin kuramında "temel corollary" (bağıntı) kavramı neyi ifade eder?
+                </div>
+                <ul class="options">
+                    <li>A) Ana kişilik özelliği</li>
+                    <li>B) Temel postulattan çıkarılan sonuç</li>
+                    <li>C) Davranış kalıbı</li>
+                    <li>D) Sosyal rol</li>
+                    <li>E) Duygusal tepki</li>
+                </ul>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevap: B) Temel postulattan çıkarılan sonuç</h4>
+                    <p><strong>Açıklama:</strong> Kelly'nin kuramı, bir <strong>temel postulat</strong> ve ondan türetilen <strong>11 corollary (bağıntı)</strong> üzerine kuruludur. Temel postulat: "Bir kişinin süreçleri, olayları öngörme biçimlerine göre psikolojik olarak kanallanır." Corollary'ler bu temel postulattan çıkarılan sonuçlardır ve kuramın detaylarını açıklar. Önemli corollary'ler: <strong>İnşa Corollary'si:</strong> Kişi deneyimlerini tekrarlayan temaları ayırt ederek anlamlandırır; <strong>Bireylik Corollary'si:</strong> İnsanlar aynı olayları farklı şekilde yapılandırır; <strong>Örgütlenme Corollary'si:</strong> Kişi yapıları hiyerarşik olarak örgütler; <strong>Aralık Corollary'si:</strong> Her yapının uygulanabilirlik aralığı vardır. Bu sistematik yaklaşım, Kelly'nin kuramını diğer kişilik teorilerinden ayırır ve bilimsel bir temel sağlar.</p>
+                </div>
+            </div>
+
+            <!-- Soru 6 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">6</div>
+                    <div class="question-type">Boşluk Doldurma</div>
+                </div>
+                <div class="question-text">
+                    Kelly'e göre <input type="text" class="fill-blank" placeholder="kaygı"> belirsizlikten kaynaklanır ve kişi olayları <input type="text" class="fill-blank" placeholder="öngöremediği"> zaman yaşar.
+                </div>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevaplar: Kaygı, Öngöremediği</h4>
+                    <p><strong>Açıklama:</strong> Kelly'nin kuramında <strong>kaygı</strong>, kişinin mevcut kişisel yapılar sistemiyle olayları öngörememasinden kaynaklanan belirsizlik duygusudur. Bu durum şu şekilde ortaya çıkar: Kişi, aşina olmadığı yeni bir durumla karşılaştığında mevcut yapıları işe yaramaz; gelecekte ne olacağını tahmin edemez; bu belirsizlik kaygı yaratır. Örneğin, yeni bir işe başlayan kişi, iş yerindeki sosyal dinamikleri anlayamadığı için kaygı yaşar. Kaygı çözümü: Yeni yapılar geliştirmek veya mevcut yapıları genişletmek. Kelly ayrıca <strong>tehdit</strong> (yapılar sistemindeki kapsamlı değişim tehlikesi) ve <strong>korku</strong> (yapıların geçersiz çıkma riski) kavramlarını da benzer şekilde tanımlar. Bu yaklaşım, kaygıyı patolojik değil, büyüme ve gelişimin doğal bir parçası olarak görür.</p>
+                </div>
+            </div>
+
+            <!-- Soru 7 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">7</div>
+                    <div class="question-type">Çoktan Seçmeli</div>
+                </div>
+                <div class="question-text">
+                    "Sabit rol terapisi" (Fixed Role Therapy) hangi prensibi temel alır?
+                </div>
+                <ul class="options">
+                    <li>A) Geçmiş anıları analiz etme</li>
+                    <li>B) Yeni bir rol deneyerek kişilik değişimi</li>
+                    <li>C) Davranış değiştirme teknikleri</li>
+                    <li>D) Bilinçdışı çatışmaları çözme</li>
+                    <li>E) İlaç tedavisi</li>
+                </ul>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevap: B) Yeni bir rol deneyerek kişilik değişimi</h4>
+                    <p><strong>Açıklama:</strong> <strong>"Sabit rol Terapisi"</strong> Kelly'nin geliştirdiği özgün bir terapi yaklaşımıdır ve yeni bir rol deneyerek kişilik değişimi prensibini temel alır. Terapinin aşamaları şöyledir: <strong>1) Kendini Değerlendirme:</strong> Danışan kendini üçüncü şahış olarak tanımlar. <strong>2) Rol Geliştirme:</strong> Terapist, danışanın mevcut rolünden farklı ama tamamen zıt olmayan yeni bir rol karakteri geliştirir. <strong>3) Rol Deneyimi:</strong> Danışan 2-3 hafta boyunca bu yeni rolü "prova" eder, sanki bir oyuncu gibi davranır. <strong>4) Değerlendirme:</strong> Deneyimler tartışılır ve yararlı olanlar benimsenir. Bu yaklaşımın mantığı, yeni davranışların yeni kişisel yapıları geliştirebileceği ve kişinin kendini farklı görme şansı bulabileceğidir. "Rol yapmak" güvenli bir deneme ortamı sağlar çünkü "gerçek ben değil" düşüncesi riski azaltır.</p>
+                </div>
+            </div>
+
+            <!-- Soru 8 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">8</div>
+                    <div class="question-type">Klasik Sınav</div>
+                </div>
+                <div class="question-text">
+                    Kelly'nin kuramında "yapısal alternativizm" (constructive alternativism) felsefesini açıklayın ve bu yaklaşımın psikolojik sağlık anlayışındaki etkisini tartışın.
+                </div>
+                <textarea class="essay-area" placeholder="Cevabınızı buraya yazınız..."></textarea>
+                <div class="explanation">
+                    <h4>🎯 Örnek Cevap:</h4>
+                    <p><strong>Yapısal Alternativizm Felsefesi:</strong> Kelly'nin kuramının felsefi temeli olan "yapısal alternativizm", gerçekliğin tek ve sabit bir yorumu olmadığını, her olayın farklı şekillerde yapılandırılabileceğini savunur.</p>
+                    <p><strong>Temel İlkeler:</strong></p>
+                    <p><strong>1. Çoklu Gerçeklik:</strong> Aynı olay farklı kişiler tarafından farklı şekillerde anlamlandırılabilir. Hiçbir yorumun mutlak doğru veya yanlış olmadığı kabul edilir.</p>
+                    <p><strong>2. Değişebilirlik:</strong> İnsanın dünyayı algılama biçimi sabit değildir, değiştirilebilir ve geliştirilebilir.</p>
+                    <p><strong>3. Seçim Özgürlüğü:</strong> İnsan, olayları yorumlama konusunda seçim hakkına sahiptir. Bu seçim, davranışları ve yaşam kalitesini etkiler.</p>
+                    <p><strong>4. Yaratıcı Alternatifler:</strong> Her problem için birden fazla çözüm yolu vardır ve yeni yaklaşımlar geliştirilebilir.</p>
+                    <p><strong>Psikolojik Sağlığa Etkisi:</strong></p>
+                    <p><strong>Sağlık Tanımı:</strong> Psikolojik sağlık, esnek ve uyarlanabilir kişisel yapılara sahip olmak olarak tanımlanır. Sağlıklı kişi:</p>
+                    <p><strong>- Çok boyutlu bakış:</strong> Olayları tek perspektiften değil, çoklu açılardan değerlendirebilir.</p>
+                    <p><strong>- Değişime açıklık:</strong> Yeni deneyimlere açık, yapılarını güncellemeye istekli.</p>
+                    <p><strong>- Problem çözme yetisi:</strong> Çıkmaza düştüğünde alternatif yaklaşımlar geliştirebilir.</p>
+                    <p><strong>Patoloji Anlayışı:</strong> Psikolojik sorunlar, katı ve değişmez yapılara sahip olmaktan kaynaklanır. Kişi tek bir bakış açısına sıkışır ve alternatifleri göremez.</p>
+                    <p><strong>Tedavi Yaklaşımı:</strong> Terapi, danışanın alternatif yapılar geliştirmesine ve mevcut sorunlarını yeni perspektiflerden görmesine yardım eder.</p>
+                </div>
+            </div>
+
+            <!-- Soru 9 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">9</div>
+                    <div class="question-type">Boşluk Doldurma</div>
+                </div>
+                <div class="question-text">
+                    Kelly'e göre <input type="text" class="fill-blank" placeholder="süper-ordinate"> yapılar daha genel ve kapsayıcı, <input type="text" class="fill-blank" placeholder="sub-ordinate"> yapılar ise daha spesifik ve sınırlıdır.
+                </div>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevaplar: Süper-ordinate, Sub-ordinate</h4>
+                    <p><strong>Açıklama:</strong> Kelly'nin yapı teorisinde hiyerarşik bir örgütlenme vardır. <strong>Süper-ordinate yapılar</strong> daha genel, kapsayıcı ve geniş uygulanabilirlik alanına sahip yapılardır. Örneğin, "iyi-kötü" çok sayıda duruma uygulanabilir. <strong>Sub-ordinate yapılar</strong> ise daha spesifik, dar kapsamlı ve sınırlı uygulama alanına sahip yapılardır. Örneğin, "müzik zevki olan-olmayan" sadece müzikle ilgili durumlarda kullanılır. Hiyerarşik yapı şöyle çalışır: Üst düzey yapılar, alt düzey yapıları organize eder ve yönlendirir; çelişki durumunda üst düzey yapı baskın gelir; değişim genellikle alt düzeyden başlar ve üst düzeye doğru ilerler. Bu örgütlenme, kişinin tutarlı bir dünya görüşü geliştirmesini sağlar ve karmaşık bilgileri anlaşılır hale getirir.</p>
+                </div>
+            </div>
+
+            <!-- Soru 10 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">10</div>
+                    <div class="question-type">Çoktan Seçmeli</div>
+                </div>
+                <div class="question-text">
+                    Kelly'nin kuramına göre "yaratıcılık" neyi gerektirir?
+                </div>
+                <ul class="options">
+                    <li>A) Yüksek zeka</li>
+                    <li>B) Kişisel yapıları yeniden düzenleme</li>
+                    <li>C) Sosyal onay</li>
+                    <li>D) Motivasyon</li>
+                    <li>E) Yetenekli olma</li>
+                </ul>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevap: B) Kişisel yapıları yeniden düzenleme</h4>
+                    <p><strong>Açıklama:</strong> Kelly'e göre <strong>yaratıcılık</strong>, mevcut kişisel yapıları yeniden düzenleme ve yeni yapılar geliştirme yetisini gerektirir. Bu süreç şu şekilde gerçekleşir: Kişi, mevcut yapılarının yetersiz olduğu durumlarla karşılaştığında; alışılagelmiş kategorilerden çıkarak yeni bağlantılar kurar; farklı yapıları bir araya getirerek özgün çözümler geliştirir; bu süreçte "loosening" (gevşetme) ve "tightening" (sıkılaştırma) döngüleri yaşar. Yaratıcı kişinin özellikleri: Yapısal esneklik (çok katı yapılara sahip olmama), belirsizliği tolere etme, alternatif bakış açıları geliştirme yetisi, deneysel tutum. Kelly, yaratıcılığı sadece sanatsal alanlarla sınırlamaz; günlük yaşamda problem çözme, kişilerarası ilişkiler ve kişisel gelişim alanlarında da yaratıcılık mümkündür. Bu yaklaşım, yaratıcılığı özel bir yetenek değil, öğrenilebilir bir beceri olarak görür.</p>
+                </div>
+            </div>
+
+            <!-- Soru 11 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">11</div>
+                    <div class="question-type">Çoktan Seçmeli</div>
+                </div>
+                <div class="question-text">
+                    "Role Construct Repertory Test" (Rep Test) hangi amaca hizmet eder?
+                </div>
+                <ul class="options">
+                    <li>A) Hafıza testı</li>
+                    <li>B) Kişilik özelliklerini ölçme</li>
+                    <li>C) Kişisel yapıları ortaya çıkarma</li>
+                    <li>D) Zeka testi</li>
+                    <li>E) Motivasyon değerlendirmesi</li>
+                </ul>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevap: C) Kişisel yapıları ortaya çıkarma</h4>
+                    <p><strong>Açıklama:</strong> <strong>"Role Construct Repertory Test" (Rep Test)</strong> Kelly'nin geliştirdiği ve kişisel yapıları sistematik olarak ortaya çıkarmayı amaçlayan bir değerlendirme aracıdır. Test aşamaları: <strong>1) Role Listesi:</strong> Kişiden hayatındaki önemli rolleri (anne, baba, eş, en iyi arkadaş, sevmediği kişi vb.) dolduran kişilerin isimleri yazması istenir. <strong>2) Üçlü Karşılaştırma:</strong> Bu kişilerden üçü seçilir ve "Bu üç kişiden ikisi diğerinden nasıl farklı?" sorusu sorulur. <strong>3) Yapı Çıkarma:</strong> Verilen cevap bir kişisel yapıyı ortaya çıkarır (örnek: "A ve B güvenilir, C güvenilmez"). <strong>4) Değerlendirme:</strong> Kişi tüm rollerdeki kişileri bu yapıya göre değerlendirir. <strong>5) Tekrar:</strong> Farklı üçlülerle süreç tekrarlanır. Sonuçta kişinin kişisel yapılar haritası çıkarılır ve bu yapıların nasıl örgütlendiği anlaşılır. Test, araştırma, terapi ve örgütsel gelişim alanlarında yaygın kullanılır.</p>
+                </div>
+            </div>
+
+            <!-- Soru 12 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">12</div>
+                    <div class="question-type">Klasik Sınav</div>
+                </div>
+                <div class="question-text">
+                    Kelly'nin kuramının modern bilişsel psikolojiye katkılarını değerlendirin ve günümüzdeki uygulamalarını örneklerle açıklayın.
+                </div>
+                <textarea class="essay-area" placeholder="Cevabınızı buraya yazınız..."></textarea>
+                <div class="explanation">
+                    <h4>🎯 Örnek Cevap:</h4>
+                    <p><strong>Modern Bilişsel Psikolojiye Katkılar:</strong></p>
+                    <p><strong>1. Bilişsel Devrim Öncülüğü:</strong> 1950'lerde, davranışçılığın hakim olduğu dönemde bilişsel süreçlerin önemini vurgulayan ilk kapsamlı kuramlardan biri oldu.</p>
+                    <p><strong>2. Şema Teorisi:</strong> Kişisel yapılar kavramı, modern "şema" ve "çerçeve" teorilerinin temelini oluşturdu.</p>
+                    <p><strong>3. Bilişsel Yapılandırmacılık:</strong> Gerçekliğin aktif olarak yapılandırıldığı fikri, yapılandırmacı öğrenme teorilerini etkiledi.</p>
+                    <p><strong>4. Repertory Grid Tekniği:</strong> Modern araştırma metodolojisinde yaygın kullanılan tekniğin öncüsü oldu.</p>
+                    <p><strong>5. İdiyografik Yaklaşım:</strong> Bireysel farklılıkları anlamaya odaklanan yaklaşımların gelişimini destekledi.</p>
+                    <p><strong>Günümüzdeki Uygulamalar:</strong></p>
+                    <p><strong>1. Bilişsel Davranışçı Terapi:</strong> CBT'de "olumsuz otomatik düşünceler" ve "çarpıtılmış inançlar" kavramları Kelly'nin yapı teorisinden esinlenmiştir.</p>
+                    <p><strong>2. Örgütsel Gelişim:</strong> Repertory Grid, şirketlerde takım dinamiklerini anlamak, liderlik tarzlarını değerlendirmek için kullanılır.</p>
+                    <p><strong>3. Eğitim Araştırmaları:</strong> Öğrencilerin kavram anlayışlarını ve öğrenme süreçlerini incelemede kullanılır.</p>
+                    <p><strong>4. Pazarlama Araştırmaları:</strong> Tüketici davranışlarını ve marka algılarını anlamada grid tekniği uygulanır.</p>
+                    <p><strong>5. Aile Terapisi:</strong> Aile üyelerinin birbirlerini algılama biçimlerini anlamak için kullanılır.</p>
+                    <p><strong>6. Kişilik Araştırmaları:</strong> İdiyografik kişilik araştırmalarında repertory grid tekniği standart araç haline gelmiştir.</p>
+                    <p><strong>7. Yapay Zeka:</strong> Bilgi temsili ve uzman sistemler alanında Kelly'nin fikirleri uygulanmaktadır.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

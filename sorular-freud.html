@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sigmund Freud - Psikanalitik Kuram Soruları</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+        }
+        
+        .header h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+        
+        .nav-link {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background: rgba(255,255,255,0.2);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-link:hover {
+            background: rgba(255,255,255,0.3);
+        }
+        
+        .content {
+            padding: 40px;
+        }
+        
+        .question {
+            background: #f8f9fa;
+            margin-bottom: 30px;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .question-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        
+        .question-number {
+            background: #667eea;
+            color: white;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+        
+        .question-type {
+            background: #28a745;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+        }
+        
+        .question-text {
+            font-size: 1.1rem;
+            color: #333;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+        
+        .options {
+            list-style: none;
+            margin-bottom: 20px;
+        }
+        
+        .options li {
+            padding: 10px 15px;
+            margin: 8px 0;
+            background: white;
+            border-radius: 8px;
+            border: 2px solid #e9ecef;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .options li:hover {
+            border-color: #667eea;
+            background: #f0f4ff;
+        }
+        
+        .correct-answer {
+            border-color: #28a745 !important;
+            background: #d4edda !important;
+        }
+        
+        .explanation {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+        
+        .explanation h4 {
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+        
+        .explanation p {
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+        
+        .fill-blank {
+            border: none;
+            border-bottom: 2px solid #667eea;
+            background: transparent;
+            padding: 5px;
+            font-size: 1rem;
+            width: 150px;
+            margin: 0 5px;
+        }
+        
+        .essay-area {
+            width: 100%;
+            min-height: 100px;
+            padding: 15px;
+            border: 2px solid #e9ecef;
+            border-radius: 10px;
+            font-family: inherit;
+            font-size: 1rem;
+            resize: vertical;
+        }
+        
+        @media (max-width: 768px) {
+            .content {
+                padding: 20px;
+            }
+            .question-header {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎭 Sigmund Freud - Psikanalitik Kuram</h1>
+            <p>Bilinçdışı, yapısal model ve psikanalitik süreçler</p>
+            <a href="index.html" class="nav-link">← Ana Sayfaya Dön</a>
+        </div>
+        
+        <div class="content">
+            <!-- Soru 1 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">1</div>
+                    <div class="question-type">Çoktan Seçmeli</div>
+                </div>
+                <div class="question-text">
+                    Freud'un topografik modelinde bilinç düzeyleri kaç katmana ayrılır?
+                </div>
+                <ul class="options">
+                    <li>A) İki katmana (bilinçli-bilinçsiz)</li>
+                    <li>B) Üç katmana (bilinçli-önbilinçli-bilinçdışı)</li>
+                    <li>C) Dört katmana</li>
+                    <li>D) Beş katmana</li>
+                    <li>E) Altı katmana</li>
+                </ul>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevap: B) Üç katmana (bilinçli-önbilinçli-bilinçdışı)</h4>
+                    <p><strong>Açıklama:</strong> Freud'un topografik modeli zihin yapısını üç temel düzeye ayırır: <strong>Bilinçli (Conscious):</strong> Şu anda farkında olduğumuz düşünceler; <strong>Önbilinçli (Preconscious):</strong> Dikkatimizi verdiğimizde hatırlayabildiğimiz bilgiler; <strong>Bilinçdışı (Unconscious):</strong> Bastırılmış, farkında olmadığımız ancak davranışlarımızı etkileyen içerikler. Bu model, Freud'un erken dönem çalışmalarında ortaya koyduğu temel yapıdır ve daha sonra yapısal modelle (id-ego-süperego) birleştirilmiştir.</p>
+                </div>
+            </div>
+
+            <!-- Soru 2 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">2</div>
+                    <div class="question-type">Boşluk Doldurma</div>
+                </div>
+                <div class="question-text">
+                    Freud'un yapısal modelinde <input type="text" class="fill-blank" placeholder="id"> haz ilkesiyle, <input type="text" class="fill-blank" placeholder="ego"> gerçeklik ilkesiyle, <input type="text" class="fill-blank" placeholder="süperego"> ise mükemmellik ilkesiyle çalışır.
+                </div>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevaplar: Id, Ego, Süperego</h4>
+                    <p><strong>Açıklama:</strong> <strong>Id:</strong> Haz ilkesi (pleasure principle) ile çalışır, temel dürtüleri ve ihtiyaçları temsil eder, anında tatmin arar. <strong>Ego:</strong> Gerçeklik ilkesi (reality principle) ile çalışır, id'in isteklerini gerçekçi yollarla karşılamaya çalışır, çevresel koşulları değerlendirir. <strong>Süperego:</strong> Mükemmellik ilkesi (perfection principle) ile çalışır, ahlaki değerleri ve idealleri temsil eder, vicdan işlevi görür. Bu üç yapı arasındaki dinamik etkileşim kişiliği şekillendirir.</p>
+                </div>
+            </div>
+
+            <!-- Soru 3 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">3</div>
+                    <div class="question-type">Çoktan Seçmeli</div>
+                </div>
+                <div class="question-text">
+                    Aşağıdakilerden hangisi savunma mekanizmalarından biri DEĞİLDİR?
+                </div>
+                <ul class="options">
+                    <li>A) Bastırma (Repression)</li>
+                    <li>B) Projeksiyon</li>
+                    <li>C) Sublimation</li>
+                    <li>D) Kondensasyon</li>
+                    <li>E) Regresyon</li>
+                </ul>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevap: D) Kondensasyon</h4>
+                    <p><strong>Açıklama:</strong> <strong>Kondensasyon</strong> bir savunma mekanizması değil, rüya çalışmasının (dream work) bir özelliğidir. Rüyalarda birden fazla düşünce veya imgenin tek bir sembole sıkıştırılmasıdır. Diğer seçenekler gerçek savunma mekanizmalarıdır: <strong>Bastırma:</strong> Tehdit edici anıları bilinçdışına itme; <strong>Projeksiyon:</strong> Kendi özelliklerini başkalarına atfetme; <strong>Sublimation:</strong> Dürtüleri sosyal olarak kabul edilebilir formlara dönüştürme; <strong>Regresyon:</strong> Daha erken gelişim dönemlerine geri dönme.</p>
+                </div>
+            </div>
+
+            <!-- Soru 4 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">4</div>
+                    <div class="question-type">Klasik Sınav</div>
+                </div>
+                <div class="question-text">
+                    Freud'un psikoseksüel gelişim kuramındaki beş dönemi sırasıyla yazın ve her dönemin temel özelliklerini açıklayın.
+                </div>
+                <textarea class="essay-area" placeholder="Cevabınızı buraya yazınız..."></textarea>
+                <div class="explanation">
+                    <h4>🎯 Örnek Cevap:</h4>
+                    <p><strong>1. Oral Dönem (0-1 yaş):</strong> Libido ağız bölgesinde yoğunlaşır. Emme, ısırma, çiğneme aktiviteleri. Fixasyon: aşırı yeme, sigara, tırnak yeme.</p>
+                    <p><strong>2. Anal Dönem (1-3 yaş):</strong> Libido anal bölgede yoğunlaşır. Tuvalet eğitimi kritik. Fixasyon: aşırı düzenli veya dağınık kişilik.</p>
+                    <p><strong>3. Fallik Dönem (3-6 yaş):</strong> Libido genital organlarda yoğunlaşır. Oedipus/Elektra kompleksi yaşanır. Cinsel kimlik gelişimi.</p>
+                    <p><strong>4. Latent Dönem (6-puberte):</strong> Cinsel dürtüler bastırılır. Sosyal beceriler, okul başarısı öne çıkar. Sakin dönem.</p>
+                    <p><strong>5. Genital Dönem (puberte sonrası):</strong> Olgun cinsellik gelişir. Karşı cinsle sağlıklı ilişkiler kurma yetisi.</p>
+                </div>
+            </div>
+
+            <!-- Soru 5 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">5</div>
+                    <div class="question-type">Çoktan Seçmeli</div>
+                </div>
+                <div class="question-text">
+                    Oedipus kompleksinin çözümü hangi yapının gelişimiyle sonuçlanır?
+                </div>
+                <ul class="options">
+                    <li>A) Id'in güçlenmesi</li>
+                    <li>B) Ego'nun gelişimi</li>
+                    <li>C) Süperego'nun oluşumu</li>
+                    <li>D) Libido'nun artışı</li>
+                    <li>E) Bilinçdışının genişlemesi</li>
+                </ul>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevap: C) Süperego'nun oluşumu</h4>
+                    <p><strong>Açıklama:</strong> Oedipus kompleksinin çözümü süperego'nun oluşumuyla sonuçlanır. Fallik dönemde çocuk, aynı cinsiyetteki ebeveynle özdeşim kurarak (identifikasyon) onun değerlerini ve normlarını içselleştirir. Bu süreç süperego'nun temellerini atar. Erkek çocuk babasıyla, kız çocuk annesiyle özdeşim kurarak ahlaki değerleri ve toplumsal kuralları benimser. Bu nedenle süperego'nun gelişimi yaklaşık 5-6 yaşlarında Oedipus kompleksinin çözümüyle başlar ve çocuğun vicdan gelişimini sağlar.</p>
+                </div>
+            </div>
+
+            <!-- Soru 6 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">6</div>
+                    <div class="question-type">Boşluk Doldurma</div>
+                </div>
+                <div class="question-text">
+                    Rüya analizinde <input type="text" class="fill-blank" placeholder="manifest"> içerik rüyanın hatırlanan kısmı, <input type="text" class="fill-blank" placeholder="latent"> içerik ise rüyanın <input type="text" class="fill-blank" placeholder="gerçek"> anlamıdır.
+                </div>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevaplar: Manifest, Latent, Gerçek</h4>
+                    <p><strong>Açıklama:</strong> Freud'a göre rüyalar iki düzeyde analiz edilmelidir: <strong>Manifest içerik:</strong> Rüyacının hatırladığı ve anlatabildiği rüya içeriği, yüzeysel ve görünen kısım. <strong>Latent içerik:</strong> Rüyanın gerçek, gizli anlamı, bilinçdışından gelen bastırılmış dürtüler ve arzular. Rüya çalışması (dream work) latent içeriği manifest içeriğe dönüştürür. Psikanaliz sürecinde amaç, manifest içerikten hareketle latent içeriği keşfetmektir. Bu süreçte kondensasyon, yer değiştirme, sembolizasyon gibi mekanizmalar rol oynar.</p>
+                </div>
+            </div>
+
+            <!-- Soru 7 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">7</div>
+                    <div class="question-type">Çoktan Seçmeli</div>
+                </div>
+                <div class="question-text">
+                    Psikanalitik tedavide "transferans" kavramı neyi ifade eder?
+                </div>
+                <ul class="options">
+                    <li>A) Terapistin hastaya olan duygularını</li>
+                    <li>B) Hastanın geçmiş ilişkilerini terapiste aktarması</li>
+                    <li>C) Semptomların bir organdan diğerine geçmesi</li>
+                    <li>D) Bilinçli düşüncelerin bilinçdışına geçmesi</li>
+                    <li>E) Rüya içeriğinin gerçek yaşama aktarılması</li>
+                </ul>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevap: B) Hastanın geçmiş ilişkilerini terapiste aktarması</h4>
+                    <p><strong>Açıklama:</strong> <strong>Transferans</strong>, hastanın geçmişteki önemli kişilerle (genellikle ebeveynlerle) yaşadığı duygusal ilişkileri ve çatışmaları terapiste aktarması sürecidir. Hasta, terapiste karşı geçmişten gelen duyguları (sevgi, öfke, korku vb.) yaşar ve onu geçmişteki figürlermiş gibi algılar. Bu durum tedavi sürecinin önemli bir parçasıdır çünkü geçmiş çatışmaların yeniden yaşanmasına ve çözümlenmesine olanak sağlar. Karşı-transferans ise terapistin hastaya karşı geliştirdiği duygulardır.</p>
+                </div>
+            </div>
+
+            <!-- Soru 8 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">8</div>
+                    <div class="question-type">Klasik Sınav</div>
+                </div>
+                <div class="question-text">
+                    Freud'un libido teorisini açıklayın. Bu teorinin eleştirileri nelerdir?
+                </div>
+                <textarea class="essay-area" placeholder="Cevabınızı buraya yazınız..."></textarea>
+                <div class="explanation">
+                    <h4>🎯 Örnek Cevap:</h4>
+                    <p><strong>Libido Teorisi:</strong> Freud, libidoyu yaşamsal enerji kaynağı olarak tanımlar. Bu enerji temel olarak cinsel dürtülerden kaynaklanır ve gelişim boyunca farklı vücut bölgelerine odaklanır. Libido, id'in temel motivasyon kaynağıdır ve haz arayışını yönlendirir.</p>
+                    <p><strong>Gelişim Süreci:</strong> Oral, anal, fallik, latent ve genital dönemlerde farklı bölgelere odaklanır. Her dönemde yaşanan sorunlar fixasyonlara yol açabilir.</p>
+                    <p><strong>Eleştiriler:</strong> 1) Aşırı cinsel odaklı olması, 2) Kadın cinselliğini yeterince açıklamaması, 3) Kültürel faktörleri göz ardı etmesi, 4) Bilimsel doğrulanabilirlik sorunu, 5) Çocuk cinselliği konusunda abartılı görüşler, 6) Sosyal ve çevresel faktörlerin küçümsenmesi.</p>
+                </div>
+            </div>
+
+            <!-- Soru 9 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">9</div>
+                    <div class="question-type">Boşluk Doldurma</div>
+                </div>
+                <div class="question-text">
+                    Freud'a göre kaygı üç türe ayrılır: <input type="text" class="fill-blank" placeholder="gerçekçi"> kaygı, <input type="text" class="fill-blank" placeholder="nevrotik"> kaygı ve <input type="text" class="fill-blank" placeholder="ahlaki"> kaygı.
+                </div>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevaplar: Gerçekçi, Nevrotik, Ahlaki</h4>
+                    <p><strong>Açıklama:</strong> <strong>Gerçekçi (Realistik) Kaygı:</strong> Dış dünyadaki gerçek tehlikelere karşı ego'nun gösterdiği normal tepki. Örneğin, tehlikeli bir durumda hissedilen korku. <strong>Nevrotik Kaygı:</strong> Id'in dürtülerinin kontrol dışına çıkma korkusu. Ego'nun id'den gelen tehditler karşısında hissettiği kaygı. <strong>Ahlaki Kaygı:</strong> Süperego'nun cezalandırma tehdidi karşısında hissedilen kaygı. Vicdan azabı, suçluluk duygusu şeklinde kendini gösterir. Bu üç kaygı türü, yapısal modeldeki üç yapı arasındaki çatışmaları yansıtır.</p>
+                </div>
+            </div>
+
+            <!-- Soru 10 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">10</div>
+                    <div class="question-type">Çoktan Seçmeli</div>
+                </div>
+                <div class="question-text">
+                    Aşağıdakilerden hangisi Freud'un "birincil süreç düşünce"nin özelliklerinden değildir?
+                </div>
+                <ul class="options">
+                    <li>A) Mantıksız ve irrasyonel</li>
+                    <li>B) Zaman kavramının olmaması</li>
+                    <li>C) Çelişkilerin bir arada bulunması</li>
+                    <li>D) Sembolik düşünce</li>
+                    <li>E) Gerçeklik ilkesine uygunluk</li>
+                </ul>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevap: E) Gerçeklik ilkesine uygunluk</h4>
+                    <p><strong>Açıklama:</strong> <strong>Birincil süreç düşünce</strong> id ile ilişkilidir ve haz ilkesine uygun çalışır, gerçeklik ilkesine değil. Özellikleri: mantıksız ve irrasyonel, zaman kavramının olmaması, çelişkilerin bir arada bulunabilmesi, sembolik düşünce, anında tatmin arayışı. <strong>İkincil süreç düşünce</strong> ise ego ile ilişkilidir ve gerçeklik ilkesine uygun çalışır, mantıklı, zaman kavramını dikkate alan, çelişkileri çözmeye çalışan, gerçekçi problem çözme odaklıdır. Rüyalar, fantaziler birincil süreç; bilinçli düşünme ikincil süreç örnekleridir.</p>
+                </div>
+            </div>
+
+            <!-- Soru 11 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">11</div>
+                    <div class="question-type">Çoktan Seçmeli</div>
+                </div>
+                <div class="question-text">
+                    "Serbest çağrışım" tekniğinin amacı aşağıdakilerden hangisidir?
+                </div>
+                <ul class="options">
+                    <li>A) Hastanın zekasını ölçmek</li>
+                    <li>B) Bilinçdışı içeriklere ulaşmak</li>
+                    <li>C) Hastanın sosyal becerilerini değerlendirmek</li>
+                    <li>D) Hafıza kapasitesini test etmek</li>
+                    <li>E) İletişim becerilerini geliştirmek</li>
+                </ul>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevap: B) Bilinçdışı içeriklere ulaşmak</h4>
+                    <p><strong>Açıklama:</strong> <strong>Serbest çağrışım</strong> psikanalitik tedavinin temel tekniğidir. Hasta aklına gelen her şeyi, ne kadar mantıksız, utanç verici veya önemsiz görse de sansürlemeden söyler. Bu tekniğin amacı, bilinçli savunmaları aşarak bilinçdışındaki bastırılmış düşünce, duygu ve anılara ulaşmaktır. Hastanın direnci (resistance) ve aktarım (transference) bu süreçte önemli ipuçları verir. Freud bu tekniği hipnoz yerine geliştirmiş ve psikanalitik tedavinin köşe taşı haline getirmiştir.</p>
+                </div>
+            </div>
+
+            <!-- Soru 12 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">12</div>
+                    <div class="question-type">Klasik Sınav</div>
+                </div>
+                <div class="question-text">
+                    Freud'un kişilik gelişimi teorisinde "fixasyon" kavramını açıklayın ve örneklerle destekleyin.
+                </div>
+                <textarea class="essay-area" placeholder="Cevabınızı buraya yazınız..."></textarea>
+                <div class="explanation">
+                    <h4>🎯 Örnek Cevap:</h4>
+                    <p><strong>Fixasyon Tanımı:</strong> Bireyin gelişim sürecinde belirli bir psikoseksüel dönemde takılıp kalması ve libidosunun bir kısmının o dönemde sabit kalmasıdır. Bu durum, o dönemin ihtiyaçlarının yeterince karşılanmaması veya aşırı karşılanması sonucu oluşur.</p>
+                    <p><strong>Oral Fixasyon Örnekleri:</strong> Aşırı yeme, sigara içme, tırnak yeme, kalem çiğneme, aşırı konuşma, saldırgan ya da pasif bağımlı kişilik özellikleri.</p>
+                    <p><strong>Anal Fixasyon Örnekleri:</strong> Aşırı düzenli ya da çok dağınık olma, cimrilik ya da savurganlık, inatçılık, temizlik takıntısı.</p>
+                    <p><strong>Fallik Fixasyon Örnekleri:</strong> Aşırı cinsel aktivite ya da cinsel kaçınma, otoriteyle sorun yaşama, narsistik özellikler.</p>
+                    <p><strong>Sonuçlar:</strong> Fixasyonlar yetişkinlik döneminde o döneme özgü davranış kalıplarının sürmesine neden olur ve kişilik gelişimini engeller.</p>
+                </div>
+            </div>
+
+            <!-- Soru 13 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">13</div>
+                    <div class="question-type">Boşluk Doldurma</div>
+                </div>
+                <div class="question-text">
+                    Freud'un topografik modelinde buzdağı metaforunda <input type="text" class="fill-blank" placeholder="bilinçli"> su üstünde, <input type="text" class="fill-blank" placeholder="önbilinçli"> su seviyesinde, <input type="text" class="fill-blank" placeholder="bilinçdışı"> ise su altında yer alır.
+                </div>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevaplar: Bilinçli, Önbilinçli, Bilinçdışı</h4>
+                    <p><strong>Açıklama:</strong> Freud'un buzdağı metaforu zihin yapısını görselleştirmek için kullanılır: <strong>Bilinçli</strong> kısım suyun üstünde görünen küçük bölüm gibidir - şu anda farkında olduğumuz düşünceler. <strong>Önbilinçli</strong> su seviyesinde, kısmen görünen kısım gibidir - dikkatimizi verdiğimizde hatırlayabildiğimiz bilgiler. <strong>Bilinçdışı</strong> ise suyun altında kalan büyük kısım gibidir - göremediğimiz ama davranışlarımızı etkileyen, bastırılmış içerikler. Bu metafor, bilinçdışının zihnin en büyük ve en etkili kısmı olduğunu vurgular.</p>
+                </div>
+            </div>
+
+            <!-- Soru 14 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">14</div>
+                    <div class="question-type">Çoktan Seçmeli</div>
+                </div>
+                <div class="question-text">
+                    Aşağıdakilerden hangisi "Thanatos" (ölüm dürtüsü) ile ilişkili bir kavram değildir?
+                </div>
+                <ul class="options">
+                    <li>A) Yıkıcılık</li>
+                    <li>B) Saldırganlık</li>
+                    <li>C) Kendine zarar verme</li>
+                    <li>D) Sublimation</li>
+                    <li>E) Tekrarlama kompulsiyonu</li>
+                </ul>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevap: D) Sublimation</h4>
+                    <p><strong>Açıklama:</strong> <strong>Sublimation</strong> Eros (yaşam dürtüsü) ile ilişkili bir savunma mekanizmasıdır, Thanatos ile değil. Sublimation, libidinal enerjinin sosyal olarak kabul edilebilir ve yapıcı faaliyetlere yönlendirilmesidir. <strong>Thanatos (ölüm dürtüsü)</strong> ise yıkıcılık, saldırganlık, kendine zarar verme ve tekrarlama kompulsiyonu ile ilişkilidir. Freud'un geç dönem teorisinde Eros ve Thanatos arasındaki çatışma, insan davranışının temel dinamiği olarak görülür. Thanatos, organik yaşamı önceki duruma (ölümsüz duruma) döndürme çabasını temsil eder.</p>
+                </div>
+            </div>
+
+            <!-- Soru 15 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">15</div>
+                    <div class="question-type">Klasik Sınav</div>
+                </div>
+                <div class="question-text">
+                    Psikanalitik kuramın günümüz psikolojisine katkılarını ve sınırlılıklarını değerlendirin.
+                </div>
+                <textarea class="essay-area" placeholder="Cevabınızı buraya yazınız..."></textarea>
+                <div class="explanation">
+                    <h4>🎯 Örnek Cevap:</h4>
+                    <p><strong>Katkılar:</strong> 1) Bilinçdışının önemini vurgulamış, 2) Çocukluk deneyimlerinin yetişkinlik üzerindeki etkisini göstermiş, 3) Savunma mekanizmaları kavramını ortaya koymuş, 4) Psikoterapi alanını kurmuş, 5) Kişilik gelişiminin dinamik süreçlerini açıklamış, 6) Transferans ve karşı-transferans kavramlarını geliştirmiş.</p>
+                    <p><strong>Sınırlılıklar:</strong> 1) Bilimsel doğrulanabilirlik sorunu, 2) Aşırı cinsel odaklı yaklaşım, 3) Kadın psikolojisini yeterince açıklayamama, 4) Kültürel faktörleri göz ardı etme, 5) Deterministik yaklaşım, 6) Tedavi sürecinin uzunluğu ve maliyeti.</p>
+                    <p><strong>Günümüzdeki Durumu:</strong> Modern psikoloji Freud'un bazı kavramlarını (bilinçdışı, savunma mekanizmaları) kabul ederken, teorinin tümünü reddeder. Nöropsikoloji bilinçdışı süreçlerin varlığını desteklerken, cinsel odaklı açıklamaları desteklemez.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

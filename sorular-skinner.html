@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B.F. Skinner - Davranışçı Kuram Soruları</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+        }
+        
+        .header h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+        
+        .nav-link {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background: rgba(255,255,255,0.2);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-link:hover {
+            background: rgba(255,255,255,0.3);
+        }
+        
+        .content {
+            padding: 40px;
+        }
+        
+        .question {
+            background: #f8f9fa;
+            margin-bottom: 30px;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .question-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        
+        .question-number {
+            background: #667eea;
+            color: white;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+        
+        .question-type {
+            background: #28a745;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+        }
+        
+        .question-text {
+            font-size: 1.1rem;
+            color: #333;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+        
+        .options {
+            list-style: none;
+            margin-bottom: 20px;
+        }
+        
+        .options li {
+            padding: 10px 15px;
+            margin: 8px 0;
+            background: white;
+            border-radius: 8px;
+            border: 2px solid #e9ecef;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .options li:hover {
+            border-color: #667eea;
+            background: #f0f4ff;
+        }
+        
+        .correct-answer {
+            border-color: #28a745 !important;
+            background: #d4edda !important;
+        }
+        
+        .explanation {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+        
+        .explanation h4 {
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+        
+        .explanation p {
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+        
+        .fill-blank {
+            border: none;
+            border-bottom: 2px solid #667eea;
+            background: transparent;
+            padding: 5px;
+            font-size: 1rem;
+            width: 150px;
+            margin: 0 5px;
+        }
+        
+        .essay-area {
+            width: 100%;
+            min-height: 100px;
+            padding: 15px;
+            border: 2px solid #e9ecef;
+            border-radius: 10px;
+            font-family: inherit;
+            font-size: 1rem;
+            resize: vertical;
+        }
+        
+        @media (max-width: 768px) {
+            .content {
+                padding: 20px;
+            }
+            .question-header {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🧪 B.F. Skinner - Davranışçı Kuram</h1>
+            <p>Operant koşullanma, pekiştirme ve davranış analizi</p>
+            <a href="index.html" class="nav-link">← Ana Sayfaya Dön</a>
+        </div>
+        
+        <div class="content">
+            <!-- Soru 1 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">1</div>
+                    <div class="question-type">Çoktan Seçmeli</div>
+                </div>
+                <div class="question-text">
+                    Skinner'ın kuramında temel odak noktası nedir?
+                </div>
+                <ul class="options">
+                    <li>A) Bilinçdışı süreçler</li>
+                    <li>B) Gözlemlenebilir davranış</li>
+                    <li>C) İçsel deneyimler</li>
+                    <li>D) Kişilerarası ilişkiler</li>
+                    <li>E) Bilişsel süreçler</li>
+                </ul>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevap: B) Gözlemlenebilir davranış</h4>
+                    <p><strong>Açıklama:</strong> Skinner'ın radikal davranışçılığının temel odak noktası <strong>gözlemlenebilir davranış</strong>tır. Skinner, psikolojinin bilimsel bir disiplin olabilmesi için objektif olarak ölçülebilen ve gözlemlenebilen davranışlarla ilgilenmesi gerektiğini savunur. İçsel zihinsel süreçler, duygular ve düşünceler "kara kutu" içinde kalır ve bilimsel olarak incelenemez. Bu yaklaşım, davranışı çevre ile organizma arasındaki etkileşimin sonucu olarak görür. Skinner, davranışın nedenlerini iç faktörlerde değil, dış çevresel koşullarda arar ve davranışın çevresel koşullar tarafından nasıl şekillendirildiğini inceler.</p>
+                </div>
+            </div>
+
+            <!-- Soru 2 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">2</div>
+                    <div class="question-type">Boşluk Doldurma</div>
+                </div>
+                <div class="question-text">
+                    Operant koşullanmada davranışın sonucunda gelen <input type="text" class="fill-blank" placeholder="pekiştireç"> o davranışın tekrarlanma olasılığını artırırken, <input type="text" class="fill-blank" placeholder="ceza"> ise azaltır.
+                </div>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevaplar: Pekiştireç, Ceza</h4>
+                    <p><strong>Açıklama:</strong> Operant koşullanmanın temel prensibi, davranışın sonuçlarının o davranışın gelecekteki tekrarlanma olasılığını etkilemesidir. <strong>Pekiştireç (Reinforcer)</strong>, davranışın ardından gelen ve o davranışın tekrarlanma olasılığını artıran uyarandır. Pozitif pekiştireç (hoş şey ekleme) ve negatif pekiştireç (hoş olmayan şeyi kaldırma) olmak üzere iki türü vardır. <strong>Ceza (Punishment)</strong> ise davranışın ardından gelen ve o davranışın tekrarlanma olasılığını azaltan uyarandır. Pozitif ceza (hoş olmayan şey ekleme) ve negatif ceza (hoş şeyi kaldırma) olmak üzere iki türü vardır. Bu süreç, davranışın çevresel sonuçlar tarafından nasıl şekillendirildiğini gösterir.</p>
+                </div>
+            </div>
+
+            <!-- Soru 3 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">3</div>
+                    <div class="question-type">Çoktan Seçmeli</div>
+                </div>
+                <div class="question-text">
+                    Aşağıdaki pekiştirme programlarından hangisi en yavaş öğrenme sağlar ancak en dayanıklı davranış üretir?
+                </div>
+                <ul class="options">
+                    <li>A) Sürekli pekiştirme</li>
+                    <li>B) Sabit oran programı</li>
+                    <li>C) Değişken oran programı</li>
+                    <li>D) Sabit aralık programı</li>
+                    <li>E) Değişken aralık programı</li>
+                </ul>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevap: C) Değişken oran programı</h4>
+                    <p><strong>Açıklama:</strong> <strong>Değişken oran programı</strong> en yavaş öğrenme sağlar ancak en dayanıklı davranış üretir. Bu programda, pekiştireç belirsiz sayıda tepki verildikten sonra verilir (örneğin bazen 3., bazen 7., bazen 12. tepkiden sonra). Kumarhane oyunları bu prensiple çalışır. Bu programın özellikleri: Öğrenme süreci yavaştır çünkü pekiştireç düzenli gelmez; ancak bir kez öğrenildikten sonra davranış çok dayanıklıdır; söndürme (extinction) süreci en uzun olanıdır; davranış oranı yüksek ve sabittir; "kısmi pekiştirme etkisi" nedeniyle davranış çok güçlü bir şekilde korunur. Bu nedenle kumar bağımlılığı gibi problemli davranışlar bu programla pekiştirildiğinde çok güçlü olur ve değiştirilmesi zordur.</p>
+                </div>
+            </div>
+
+            <!-- Soru 4 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">4</div>
+                    <div class="question-type">Klasik Sınav</div>
+                </div>
+                <div class="question-text">
+                    Skinner'ın "şekillendirme" (shaping) tekniğini açıklayın ve bir örnek vererek nasıl uygulandığını gösterin.
+                </div>
+                <textarea class="essay-area" placeholder="Cevabınızı buraya yazınız..."></textarea>
+                <div class="explanation">
+                    <h4>🎯 Örnek Cevap:</h4>
+                    <p><strong>Şekillendirme Tanımı:</strong> Şekillendirme, karmaşık bir davranışı öğretmek için, hedef davranışa yaklaşan ardışık davranışları pekiştirme tekniğidir. "Yaklaşık ardışık davranışları pekiştirme" olarak da bilinir.</p>
+                    <p><strong>Tekniğin Aşamaları:</strong> 1) Hedef davranışı belirle, 2) Başlangıç davranışı tespit et, 3) Hedef davranışa yaklaşan her davranışı pekiştir, 4) Kriter yükseltilerek daha iyi performans iste, 5) Hedef davranışa ulaşana kadar devam et.</p>
+                    <p><strong>Örnek Uygulama - Fare Deneyi:</strong> Bir fareye kaldıraç çekmeyi öğretmek için: 1) İlk aşamada farenin kaldıraca yaklaşmasını pekiştir, 2) Sonra kaldıraca dokunmasını pekiştir, 3) Daha sonra kaldıraca pençesini koymasını pekiştir, 4) Son olarak kaldıracı çekmesini pekiştir.</p>
+                    <p><strong>İnsan Davranışı Örneği:</strong> Çocuğa bisiklet sürmesini öğretmek: 1) Bisiklete binmeyi pekiştir, 2) Pedala basmasını pekiştir, 3) Dengeyi korumaya çalışmasını pekiştir, 4) Kısa mesafe sürmesini pekiştir, 5) Uzun mesafe sürmesini pekiştir.</p>
+                    <p><strong>Önemli Noktalar:</strong> Sabırlı olma, küçük adımlarla ilerleme, her aşamayı pekiştirme, çok hızlı ilerlememe.</p>
+                </div>
+            </div>
+
+            <!-- Soru 5 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">5</div>
+                    <div class="question-type">Çoktan Seçmeli</div>
+                </div>
+                <div class="question-text">
+                    "Süperstisyöz davranış" kavramı neyi ifade eder?
+                </div>
+                <ul class="options">
+                    <li>A) Planlı öğrenme davranışı</li>
+                    <li>B) Tesadüfi pekiştirme sonucu oluşan davranış</li>
+                    <li>C) Genetik olarak programlı davranış</li>
+                    <li>D) Bilinçli tercih edilen davranış</li>
+                    <li>E) Sosyal öğrenme ile kazanılan davranış</li>
+                </ul>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevap: B) Tesadüfi pekiştirme sonucu oluşan davranış</h4>
+                    <p><strong>Açıklama:</strong> <strong>"Süperstisyöz davranış"</strong> Skinner'ın keşfettiği önemli bir fenomendir. Bu, bir davranış ile pekiştireç arasında gerçek bir nedensel ilişki olmadığı halde, tesadüfi zamanlama nedeniyle o davranışın pekiştirilmesi sonucu oluşan davranıştır. Skinner'ın güvercin deneyi: Güvercinlere düzenli aralıklarla (15 saniyede bir) yiyecek verildi, ne yaparlarsa yapsınlar. Güvercinler, yiyecek geldiği sırada yaptıkları davranışı (dönme, kafayı sallama vb.) o davranışın yiyeceği getirdiğini sanarak tekrarlamaya başladılar. İnsanlarda da benzer durumlar görülür: sporcuların maç öncesi ritüelleri, sınav öncesi şanslı nesneler kullanma, belirli kıyafetler giyme gibi. Bu davranışlar, tesadüfi pekiştirme sonucu oluşur ve gerçekte sonuca etkisi olmasa da sürdürülür.</p>
+                </div>
+            </div>
+
+            <!-- Soru 6 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">6</div>
+                    <div class="question-type">Boşluk Doldurma</div>
+                </div>
+                <div class="question-text">
+                    Skinner kutusunda <input type="text" class="fill-blank" placeholder="ayırt edici"> uyaran, organizmanın hangi davranışı ne zaman yapması gerektiğini gösterirken, <input type="text" class="fill-blank" placeholder="operant"> ise organizmayı çevresini etkilemeye yönelten davranıştır.
+                </div>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevaplar: Ayırt edici, Operant</h4>
+                    <p><strong>Açıklama:</strong> Operant koşullanmada üç temel öğe vardır: <strong>Ayırt edici uyaran (Discriminative stimulus - S^D):</strong> Organizmanın hangi davranışın pekiştirileceğini gösteren çevresel ipucu. Örneğin, Skinner kutusundaki ışık açık olduğunda kaldıraç çekme davranışının pekiştirileceğini gösterir. <strong>Operant davranış:</strong> Organizmayı çevresini etkilemeye yönelten, gönüllü davranış. Kaldıraç çekme, tuşa basma gibi davranışlar operant davranışlardır. <strong>Sonuç (Consequence):</strong> Davranışın ardından gelen pekiştireç veya ceza. Bu üçlü (S^D - R - S^R) operant koşullanmanın temel modelini oluşturur ve davranışın nasıl çevresel kontrol altına alındığını gösterir.</p>
+                </div>
+            </div>
+
+            <!-- Soru 7 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">7</div>
+                    <div class="question-type">Çoktan Seçmeli</div>
+                </div>
+                <div class="question-text">
+                    Skinner'a göre dil öğreniminin temel mekanizması nedir?
+                </div>
+                <ul class="options">
+                    <li>A) Doğuştan gelen dil yetisi</li>
+                    <li>B) Bilişsel gelişim</li>
+                    <li>C) Taklit ve pekiştirme</li>
+                    <li>D) Sosyal etkileşim</li>
+                    <li>E) Genetik programlama</li>
+                </ul>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevap: C) Taklit ve pekiştirme</h4>
+                    <p><strong>Açıklama:</strong> Skinner'a göre dil öğrenimi, <strong>taklit ve pekiştirme</strong> mekanizmaları ile gerçekleşir. Bu yaklaşıma göre: Çocuk, ebeveynlerinin konuşmalarını taklit eder; doğru telaffuz ettiği kelimeler pekiştirilir (gülümseme, alkış, ihtiyaçların karşılanması); yanlış telaffuzlar düzeltilir veya pekiştirilmez; bu süreç, şekillendirme yoluyla devam eder; çocuk, sosyal pekiştireçler sayesinde dil kurallarını öğrenir. Skinner, "Verbal Behavior" (1957) kitabında bu görüşlerini detaylandırmıştır. Ancak bu yaklaşım, Chomsky tarafından eleştirilmiştir çünkü çocuklar hiç duymadıkları cümleler kurabilir ve dil öğrenimi evrensel kurallar içerir. Modern araştırmalar, dil öğreniminin hem çevresel hem de doğuştan gelen faktörlerin etkisiyle gerçekleştiğini göstermektedir.</p>
+                </div>
+            </div>
+
+            <!-- Soru 8 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">8</div>
+                    <div class="question-type">Klasik Sınav</div>
+                </div>
+                <div class="question-text">
+                    "Programlı öğretim" kavramını açıklayın ve Skinner'ın eğitim alanındaki katkılarını değerlendirin.
+                </div>
+                <textarea class="essay-area" placeholder="Cevabınızı buraya yazınız..."></textarea>
+                <div class="explanation">
+                    <h4>🎯 Örnek Cevap:</h4>
+                    <p><strong>Programlı Öğretim Tanımı:</strong> Programlı öğretim, öğretim materyalinin küçük adımlara bölündüğü, öğrencinin kendi hızında ilerleyebildiği ve her adımda geri bildirim aldığı öğretim yöntemidir.</p>
+                    <p><strong>Temel İlkeler:</strong> 1) Küçük adımlar: Karmaşık konular küçük parçalara bölünür, 2) Aktif katılım: Öğrenci sürekli tepki verir, 3) Anında geri bildirim: Her tepki hemen değerlendirilir, 4) Kendi hızında ilerleme: Her öğrenci kendi öğrenme hızına göre ilerler, 5) Hata minimizasyonu: Başarı oranı yüksek tutulur.</p>
+                    <p><strong>Öğretim Makineleri:</strong> Skinner, bu ilkeleri uygulayan mekanik öğretim makineleri geliştirdi. Bu makineler, soruları sırayla sunar, öğrencinin cevabını değerlendirir ve doğru cevap için pekiştireç sağlar.</p>
+                    <p><strong>Eğitime Katkılar:</strong> 1) Bireysel öğrenme hızını dikkate alma, 2) Objektif değerlendirme sistemleri, 3) Öğrenme sürecinin bilimsel analizi, 4) Computer-aided instruction'ın temellerini atma, 5) Özel eğitimde davranış değiştirme programları.</p>
+                    <p><strong>Modern Uygulamalar:</strong> E-öğrenme platformları, adaptif öğrenme sistemleri, oyunlaştırma (gamification) teknikleri Skinner'ın prensiplerini kullanır.</p>
+                </div>
+            </div>
+
+            <!-- Soru 9 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">9</div>
+                    <div class="question-type">Boşluk Doldurma</div>
+                </div>
+                <div class="question-text">
+                    Skinner'a göre özgür irade bir <input type="text" class="fill-blank" placeholder="illüzyon"> dur ve insan davranışı tamamen <input type="text" class="fill-blank" placeholder="deterministik"> tir.
+                </div>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevaplar: İllüzyon, Deterministik</h4>
+                    <p><strong>Açıklama:</strong> Skinner'ın radikal davranışçılığının en tartışmalı yanlarından biri, <strong>özgür iradenin bir illüzyon</strong> olduğu görüşüdır. Bu yaklaşıma göre: İnsan davranışı tamamen <strong>deterministik</strong>tir, yani geçmiş deneyimler ve çevresel koşullar tarafından belirlenir; özgür seçim yaptığımızı düşünürüz ama aslında genetik faktörler ve pekiştirme tarihimiz davranışlarımızı belirler; "seçim" yaptığımızı hissetmemizin nedeni, hangi davranışların pekiştirileceğini bilemememizdir; toplumsal sorunların çözümü, davranış kontrolü ve çevresel düzenlemeler yoluyladır. Bu görüş, "Beyond Freedom and Dignity" (1971) kitabında detaylandırılmıştır ve büyük tartışma yaratmıştır. Eleştirmenler bu yaklaşımı "insanlığın değerini yok sayan" olarak görürken, Skinner bunun bilimsel gerçeklik olduğunu savunmuştur.</p>
+                </div>
+            </div>
+
+            <!-- Soru 10 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">10</div>
+                    <div class="question-type">Çoktan Seçmeli</div>
+                </div>
+                <div class="question-text">
+                    Aşağıdakilerden hangisi Skinner'ın kuramının eleştirilerinden biri değildir?
+                </div>
+                <ul class="options">
+                    <li>A) İnsan davranışını aşırı basitleştirme</li>
+                    <li>B) Bilişsel süreçleri göz ardı etme</li>
+                    <li>C) Deterministik yaklaşım</li>
+                    <li>D) Gözlemlenebilir davranışlara odaklanma</li>
+                    <li>E) Etik sorunları görmezden gelme</li>
+                </ul>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevap: D) Gözlemlenebilir davranışlara odaklanma</h4>
+                    <p><strong>Açıklama:</strong> <strong>"Gözlemlenebilir davranışlara odaklanma"</strong> Skinner'ın kuramının bir eleştirisi değil, temel bir özelliğidir ve bilimsel yaklaşımın gereği olarak görülür. Skinner'ın kuramına yöneltilen gerçek eleştiriler şunlardır: <strong>İnsan davranışını aşırı basitleştirme:</strong> Karmaşık insan davranışını sadece uyaran-tepki ilişkisiyle açıklamaya çalışma; <strong>Bilişsel süreçleri göz ardı etme:</strong> Düşünce, duygu ve bilinç gibi içsel süreçleri dikkate almama; <strong>Deterministik yaklaşım:</strong> Özgür iradeyi reddetme ve insan onurunu yok sayma; <strong>Etik sorunlar:</strong> Davranış kontrolü ve manipülasyon konularındaki etik sorunları görmezden gelme; <strong>Kültürel faktörleri göz ardı etme:</strong> İnsan davranışının sosyal ve kültürel boyutlarını yetersiz görmek.</p>
+                </div>
+            </div>
+
+            <!-- Soru 11 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">11</div>
+                    <div class="question-type">Çoktan Seçmeli</div>
+                </div>
+                <div class="question-text">
+                    "Token economy" (jeton ekonomisi) sistemi hangi prensibi temel alır?
+                </div>
+                <ul class="options">
+                    <li>A) Klasik koşullanma</li>
+                    <li>B) Sosyal öğrenme</li>
+                    <li>C) Operant koşullanma</li>
+                    <li>D) Bilişsel değişim</li>
+                    <li>E) Psikanalitik yaklaşım</li>
+                </ul>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevap: C) Operant koşullanma</h4>
+                    <p><strong>Açıklama:</strong> <strong>"Token economy" (jeton ekonomisi)</strong> sistemi, Skinner'ın operant koşullanma prensiplerini temel alan bir davranış değiştirme tekniğidir. Bu sistemin çalışma prensibi şöyledir: İstenilen davranışlar sergilendiğinde kişi jeton (puan, marka vb.) kazanır; bu jetonlar, daha sonra değerli şeylerle (ayrıcalıklar, nesneler, aktiviteler) değiştirilir; jetonlar "ikincil pekiştireç" olarak işlev görür. Uygulama alanları: Akıl hastaneleri, okullar, çocuk bakım kurumları, hapishaneler, özel eğitim sınıfları. Avantajları: Anında pekiştirme sağlar, motivasyonu artırır, istenilen davranışları sistematik olarak geliştirir. Bu sistem, özellikle kurumsal ortamlarda davranış yönetiminde etkili olduğu kanıtlanmıştır ve hala yaygın olarak kullanılmaktadır.</p>
+                </div>
+            </div>
+
+            <!-- Soru 12 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">12</div>
+                    <div class="question-type">Klasik Sınav</div>
+                </div>
+                <div class="question-text">
+                    Skinner'ın davranışçı kuramının günümüz psikolojisine katkılarını ve sınırlılıklarını kapsamlı bir şekilde değerlendirin.
+                </div>
+                <textarea class="essay-area" placeholder="Cevabınızı buraya yazınız..."></textarea>
+                <div class="explanation">
+                    <h4>🎯 Örnek Cevap:</h4>
+                    <p><strong>Günümüze Katkılar:</strong></p>
+                    <p><strong>1. Davranış Terapi Alanı:</strong> Davranış değiştirme teknikleri, sistematik duyarsızlaştırma, maruz bırakma terapileri geliştirdi.</p>
+                    <p><strong>2. Eğitim Teknolojileri:</strong> Programlı öğretim, bilgisayar destekli öğretim, e-öğrenme platformlarının temelini oluşturdu.</p>
+                    <p><strong>3. Özel Eğitim:</strong> Uygulamalı davranış analizi (ABA), otizm tedavisinde yaygın kullanım.</p>
+                    <p><strong>4. Örgütsel Davranış:</strong> Performans yönetimi, motivasyon sistemleri, davranış temelli güvenlik programları.</p>
+                    <p><strong>5. Klinik Uygulamalar:</strong> Madde bağımlılığı tedavisi, obsesif-kompulsif bozukluk tedavisi.</p>
+                    <p><strong>6. Araştırma Yöntemleri:</strong> Tek-denekli araştırma desenleri, objektif davranış ölçümleri.</p>
+                    <p><strong>Sınırlılıklar:</strong></p>
+                    <p><strong>1. Bilişsel Süreçler:</strong> Düşünce, duygu ve bilinç gibi içsel süreçleri yeterince açıklamaz.</p>
+                    <p><strong>2. İnsan Karmaşıklığı:</strong> İnsan davranışının sosyal, kültürel ve duygusal boyutlarını göz ardı eder.</p>
+                    <p><strong>3. Yaratıcılık ve Spontanlık:</strong> Yaratıcı ve spontan davranışları açıklamada yetersiz kalır.</p>
+                    <p><strong>4. Etik Endişeler:</strong> Davranış kontrolü ve manipülasyon konularında etik sorunlar yaratır.</p>
+                    <p><strong>5. Bireysel Farklılıklar:</strong> Kişilik ve bireysel farklılıkları yeterince dikkate almaz.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

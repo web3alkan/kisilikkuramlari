@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hans Eysenck - Üç Faktör Modeli Soruları</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+        }
+        
+        .header h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+        
+        .nav-link {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background: rgba(255,255,255,0.2);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-link:hover {
+            background: rgba(255,255,255,0.3);
+        }
+        
+        .content {
+            padding: 40px;
+        }
+        
+        .question {
+            background: #f8f9fa;
+            margin-bottom: 30px;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .question-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        
+        .question-number {
+            background: #667eea;
+            color: white;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+        
+        .question-type {
+            background: #28a745;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+        }
+        
+        .question-text {
+            font-size: 1.1rem;
+            color: #333;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+        
+        .options {
+            list-style: none;
+            margin-bottom: 20px;
+        }
+        
+        .options li {
+            padding: 10px 15px;
+            margin: 8px 0;
+            background: white;
+            border-radius: 8px;
+            border: 2px solid #e9ecef;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .options li:hover {
+            border-color: #667eea;
+            background: #f0f4ff;
+        }
+        
+        .correct-answer {
+            border-color: #28a745 !important;
+            background: #d4edda !important;
+        }
+        
+        .explanation {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+        
+        .explanation h4 {
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+        
+        .explanation p {
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+        
+        .fill-blank {
+            border: none;
+            border-bottom: 2px solid #667eea;
+            background: transparent;
+            padding: 5px;
+            font-size: 1rem;
+            width: 150px;
+            margin: 0 5px;
+        }
+        
+        .essay-area {
+            width: 100%;
+            min-height: 100px;
+            padding: 15px;
+            border: 2px solid #e9ecef;
+            border-radius: 10px;
+            font-family: inherit;
+            font-size: 1rem;
+            resize: vertical;
+        }
+        
+        @media (max-width: 768px) {
+            .content {
+                padding: 20px;
+            }
+            .question-header {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>⚡ Hans Eysenck - Üç Faktör Modeli</h1>
+            <p>Dışadönüklük, nevrotizm, psikotizm ve biyolojik temeller</p>
+            <a href="index.html" class="nav-link">← Ana Sayfaya Dön</a>
+        </div>
+        
+        <div class="content">
+            <!-- Soru 1 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">1</div>
+                    <div class="question-type">Çoktan Seçmeli</div>
+                </div>
+                <div class="question-text">
+                    Eysenck'ın üç faktör modelindeki boyutlar hangileridir?
+                </div>
+                <ul class="options">
+                    <li>A) Dışadönüklük, Uyumluluk, Sorumluluk</li>
+                    <li>B) Dışadönüklük, Nevrotizm, Psikotizm</li>
+                    <li>C) Açıklık, Nevrotizm, Dışadönüklük</li>
+                    <li>D) Güven, Kontrol, Başarı</li>
+                    <li>E) Sosyallik, Kararlılık, Yaratıcılık</li>
+                </ul>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevap: B) Dışadönüklük, Nevrotizm, Psikotizm</h4>
+                    <p><strong>Açıklama:</strong> Eysenck'ın üç faktör modeli <strong>Dışadönüklük (Extraversion)</strong>, <strong>Nevrotizm (Neuroticism)</strong> ve <strong>Psikotizm (Psychoticism)</strong> boyutlarından oluşur. <strong>Dışadönüklük:</strong> Sosyallik, canlılık, iyimserlik, uyarılma arayışı. <strong>Nevrotizm:</strong> Duygusal kararsızlık, kaygı, depresif eğilimler, stres duyarlılığı. <strong>Psikotizm:</strong> Saldırganlık, empati eksikliği, konvansiyonellik karşıtlığı, yaratıcılık. Bu üç boyut birbirinden bağımsızdır ve kişiliğin temel yapısını oluşturur. Her boyut süper faktör olarak işlev görür ve altında birçok özellik barındırır. Bu model, modern kişilik psikolojisinin en etkili modellerinden biri olmuş ve Big Five modelinin de temelini oluşturmuştur.</p>
+                </div>
+            </div>
+
+            <!-- Soru 2 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">2</div>
+                    <div class="question-type">Boşluk Doldurma</div>
+                </div>
+                <div class="question-text">
+                    Eysenck'a göre dışadönükler <input type="text" class="fill-blank" placeholder="uyarılma"> arayışındadır çünkü <input type="text" class="fill-blank" placeholder="düşük"> temel uyarılma düzeyine sahiptirler.
+                </div>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevaplar: Uyarılma, Düşük</h4>
+                    <p><strong>Açıklama:</strong> Eysenck'ın uyarılma teorisine göre, <strong>dışadönükler</strong> sürekli uyarılma arayışındadır çünkü sahip oldukları <strong>düşük</strong> temel uyarılma düzeyi nedeniyle optimal performans için daha fazla uyarılmaya ihtiyaç duyarlar. Bu teori, retiküler aktivasyon sistemine (RAS) dayanır. Dışadönüklerin RAS'ı daha az aktiftir, bu nedenle: sosyal ortamlara yönelirler, heyecan verici aktiviteler ararlar, çoklu uyaran tolere edebilirler, risk alma eğilimi gösterirler. <strong>İçedönükler</strong> ise yüksek temel uyarılma düzeyine sahiptir ve fazla uyarılmaya karşı duyarlıdırlar: sakin ortamları tercih ederler, az uyaranla yetinirler, derin düşünceye odaklanırlar, aşırı uyarılmadan kaçınırlar. Bu biyolojik temelli açıklama, davranışsal farklılıkların altında yatan nörolojik mekanizmaları gösterir.</p>
+                </div>
+            </div>
+
+            <!-- Soru 3 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">3</div>
+                    <div class="question-type">Çoktan Seçmeli</div>
+                </div>
+                <div class="question-text">
+                    Eysenck'ın "limbik sistem" teorisine göre nevrotizm hangi beyin yapısıyla ilişkilidir?
+                </div>
+                <ul class="options">
+                    <li>A) Prefrontal korteks</li>
+                    <li>B) Hippokampus ve amigdala</li>
+                    <li>C) Cerebellum</li>
+                    <li>D) Temporal lob</li>
+                    <li>E) Parietal korteks</li>
+                </ul>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevap: B) Hippokampus ve amigdala</h4>
+                    <p><strong>Açıklama:</strong> Eysenck'ın nevrotizm teorisine göre, nevrotizm düzeyi <strong>limbik sistem</strong>in, özellikle <strong>hippokampus ve amigdala</strong>nın aktivitesiyle ilişkilidir. Bu yapılar duygusal tepkileri ve otonom sinir sistemi fonksiyonlarını kontrol eder. Yüksek nevrotizm skoruna sahip kişilerde: limbik sistem daha reaktiftir, stres karşısında güçlü duygusal tepkiler verilir, otonom sinir sistemi kolay uyarılır, kaygı ve korku tepkileri aşırı olur, iyileşme süreci yavaştır. Düşük nevrotizm skorlu kişilerde ise: limbik sistem daha az reaktiftir, duygusal kararlılık vardır, stres toleransı yüksektir, sakin ve dengeli tepkiler verilir. Bu biyolojik temel, nevrotizmin kalıtımsal özelliğini ve tedavi yaklaşımlarını açıklar. Modern nörogörüntüleme çalışmaları bu teorinin birçok yönünü desteklemiştir.</p>
+                </div>
+            </div>
+
+            <!-- Soru 4 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">4</div>
+                    <div class="question-type">Klasik Sınav</div>
+                </div>
+                <div class="question-text">
+                    Eysenck'ın "psikotizm" boyutunu açıklayın ve bu boyutun ölçümündeki zorlukları tartışın.
+                </div>
+                <textarea class="essay-area" placeholder="Cevabınızı buraya yazınız..."></textarea>
+                <div class="explanation">
+                    <h4>🎯 Örnek Cevap:</h4>
+                    <p><strong>Psikotizm Boyutu Tanımı:</strong> Psikotizm, Eysenck'ın üçüncü büyük kişilik boyutudur ve normal popülasyonda değişen derecelerde bulunan özellikleri içerir. Bu boyut, psikopatoloji ile normal kişilik arasında bir köprü kurar.</p>
+                    <p><strong>Yüksek Psikotizm Özellikleri:</strong></p>
+                    <p><strong>- Saldırganlık:</strong> Fiziksel ve sözel saldırganlık eğilimi, düşmanlık.</p>
+                    <p><strong>- Empati eksikliği:</strong> Başkalarının duygularını anlama güçlüğü, ilgisizlik.</p>
+                    <p><strong>- İmpulsivite:</strong> Ani kararlar verme, sonuçları düşünmeme.</p>
+                    <p><strong>- Antisosyal davranış:</strong> Kurallara uymama, sosyal normlara karşı çıkma.</p>
+                    <p><strong>- Yaratıcılık:</strong> Konvansiyonel olmayan düşünce, özgünlük.</p>
+                    <p><strong>- Duyarsızlık:</strong> Başkalarının acısına karşı kayıtsızlık.</p>
+                    <p><strong>Düşük Psikotizm Özellikleri:</strong> Empati, sosyal uyum, geleneksel değerlere saygı, kontrollü davranış, başkalarını düşünme.</p>
+                    <p><strong>Ölçümdeki Zorluklar:</strong></p>
+                    <p><strong>1. Sosyal İstenirlik:</strong> Yüksek psikotizm özelliklerini kabul etmek sosyal olarak hoş karşılanmaz, bu nedenle samimi cevap alma zorluğu.</p>
+                    <p><strong>2. Patoloji Karışıklığı:</strong> Normal kişilik özelliği ile psikolojik bozukluk arasındaki sınırın belirsizliği.</p>
+                    <p><strong>3. Kültürel Farklar:</strong> Saldırganlık ve antisosyal davranışın kültürler arası farklı algılanması.</p>
+                    <p><strong>4. Güvenilirlik Sorunları:</strong> Test-tekrar test güvenilirliği diğer boyutlara göre düşük.</p>
+                    <p><strong>5. Cinsiyet Farkları:</strong> Erkeklerde sistematik olarak daha yüksek skorlar çıkması.</p>
+                    <p><strong>Eleştiriler:</strong> Kavramsal belirsizlik, faktör yapısının tutarsızlığı, klinik kullanımda sınırlılık.</p>
+                </div>
+            </div>
+
+            <!-- Soru 5 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">5</div>
+                    <div class="question-type">Çoktan Seçmeli</div>
+                </div>
+                <div class="question-text">
+                    Eysenck'ın "koşullanma" teorisine göre hangi kişilik tipi daha kolay koşullanır?
+                </div>
+                <ul class="options">
+                    <li>A) Dışadönük ve düşük nevrotizm</li>
+                    <li>B) İçedönük ve yüksek nevrotizm</li>
+                    <li>C) Dışadönük ve yüksek nevrotizm</li>
+                    <li>D) İçedönük ve düşük nevrotizm</li>
+                    <li>E) Psikotizm düzeyi farketmez</li>
+                </ul>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevap: B) İçedönük ve yüksek nevrotizm</h4>
+                    <p><strong>Açıklama:</strong> Eysenck'ın koşullanma teorisine göre <strong>içedönük ve yüksek nevrotizm</strong> skoruna sahip kişiler daha kolay koşullanır. Bu durum şu mekanizmalarla açıklanır: <strong>İçedönüklük etkisi:</strong> Yüksek uyarılma düzeyi nedeniyle uyaranlara daha duyarlıdırlar, dikkat odaklanması daha iyidir, öğrenme sürecinde daha az dikkat dağılması yaşarlar. <strong>Nevrotizm etkisi:</strong> Yüksek kaygı düzeyi öğrenmeyi güçlendirir, otonom sinir sistemi reaktivitesi yüksektir, duygusal tepkiler güçlüdür. Bu kombinasyon: klasik koşullanmada daha hızlı öğrenme, daha güçlü koşullu tepkiler, daha dirençli alışkanlıklar, sosyal normlara daha kolay uyum sağlar. Tersi durumda (dışadönük-düşük nevrotizm) koşullanma daha zordur. Bu teori, suç davranışını ve sosyalleşme sürecini açıklamada kullanılır - kolay koşullananlar sosyal kurallara uyar, zor koşullananlar antisosyal davranış gösterebilir.</p>
+                </div>
+            </div>
+
+            <!-- Soru 6 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">6</div>
+                    <div class="question-type">Boşluk Doldurma</div>
+                </div>
+                <div class="question-text">
+                    Eysenck'ın kuramında <input type="text" class="fill-blank" placeholder="kalıtım"> kişiliğin en önemli belirleyicisidir ve çevre sadece <input type="text" class="fill-blank" placeholder="minör"> rol oynar.
+                </div>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevaplar: Kalıtım, Minör</h4>
+                    <p><strong>Açıklama:</strong> Eysenck, kişiliğin temel boyutlarının büyük ölçüde <strong>kalıtımsal</strong> olduğunu ve çevresel faktörlerin sadece <strong>minör</strong> (ikincil) rol oynadığını savunur. İkiz çalışmalarına dayalı bulgular: Dışadönüklük yaklaşık %50-60 kalıtılabilir, Nevrotizm yaklaşık %40-60 kalıtılabilir, Psikotizm yaklaşık %40-50 kalıtılabilir. Bu yüksek kalıtılabilirlik oranları: kişilik özelliklerinin biyolojik temellerinin güçlü olduğunu, çevresel müdahalelerin sınırlı etkisi olduğunu, kişiliğin erken yaşta belirlendiğini, yaşam boyu nispeten sabit kaldığını gösterir. Eysenck, bu nedenle kişilik değişimi konusunda pesimisttir ve terapiye şüpheyle yaklaşır. Bu görüş, çevre etkisini vurgulayan diğer teorilerle çelişir ve "doğa-beslenme" tartışmasında güçlü bir doğa savunusu sunar.</p>
+                </div>
+            </div>
+
+            <!-- Soru 7 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">7</div>
+                    <div class="question-type">Çoktan Seçmeli</div>
+                </div>
+                <div class="question-text">
+                    Eysenck Kişilik Envanteri (EPI) hangi boyutları ölçer?
+                </div>
+                <ul class="options">
+                    <li>A) Sadece dışadönüklük</li>
+                    <li>B) Dışadönüklük ve nevrotizm</li>
+                    <li>C) Dışadönüklük, nevrotizm ve psikotizm</li>
+                    <li>D) Sadece nevrotizm</li>
+                    <li>E) Tüm kişilik boyutları</li>
+                </ul>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevap: B) Dışadönüklük ve nevrotizm</h4>
+                    <p><strong>Açıklama:</strong> <strong>Eysenck Kişilik Envanteri (EPI)</strong> başlangıçta sadece <strong>dışadönüklük ve nevrotizm</strong> boyutlarını ölçmek için geliştirilmiştir. EPI'nin özellikleri: 57 soruluk kısa form, evet/hayır şeklinde cevaplanan sorular, E (Extraversion) ve N (Neuroticism) skorları, L (Lie) geçerlilik ölçeği. Daha sonra psikotizm boyutu eklenerek <strong>Eysenck Kişilik Anketi (EPQ)</strong> geliştirilmiştir. EPQ'da: E-N boyutlarına ek olarak P (Psychoticism) boyutu, daha fazla soru (90 soru), daha kapsamlı değerlendirme imkanı bulunur. EPI hala yaygın olarak kullanılır çünkü: kısa ve pratik, güvenilir ölçümler sağlar, araştırmalarda standart araç, çok dile çevrilmiş. Bu testler, Eysenck'ın teorik modelinin ampirik testini sağlar ve kişilik araştırmalarında yaygın kullanım bulur.</p>
+                </div>
+            </div>
+
+            <!-- Soru 8 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">8</div>
+                    <div class="question-type">Klasik Sınav</div>
+                </div>
+                <div class="question-text">
+                    Eysenck'ın suç davranışı açıklamasını detaylandırın ve bu teorinin kriminolojiye katkılarını değerlendirin.
+                </div>
+                <textarea class="essay-area" placeholder="Cevabınızı buraya yazınız..."></textarea>
+                <div class="explanation">
+                    <h4>🎯 Örnek Cevap:</h4>
+                    <p><strong>Suç Davranışı Teorisi:</strong> Eysenck, suç davranışını kişilik boyutları ve koşullanma süreçleri ile açıklar. Teori, biyolojik faktörlerle sosyal öğrenmeyi birleştirir.</p>
+                    <p><strong>Temel Mekanizma:</strong> Sosyalleşme süreci, toplumsal kuralların vicdana işlenmesi yoluyla gerçekleşir. Bu süreç koşullanma ilkeleriyle çalışır: antisosyal davranış → ceza/eleştiri → kaygı/suçluluk → davranıştan kaçınma.</p>
+                    <p><strong>Suç Eğilimli Kişilik Profili:</strong></p>
+                    <p><strong>Yüksek Dışadönüklük:</strong> Uyarılma arayışı, risk alma, düşük koşullanabilirlik, heyecan için kural çiğneme.</p>
+                    <p><strong>Yüksek Nevrotizm:</strong> Duygusal kararsızlık, impulse kontrol sorunu, stres altında kötü kararlar verme.</p>
+                    <p><strong>Yüksek Psikotizm:</strong> Empati eksikliği, saldırganlık, sosyal normlara karşı çıkma, antisosyal eğilimler.</p>
+                    <p><strong>Koşullanma Zorluğu:</strong> Bu kombinasyon, vicdan gelişimini engeller çünkü: sosyal kurallar etkili şekilde öğrenilmez, ceza-kaygı bağlantısı zayıftır, anlık tatmin uzun vadeli sonuçlardan önemlidir.</p>
+                    <p><strong>Ampirik Bulgular:</strong> Suçlularda gerçekten daha yüksek E, N, P skorları bulunmuş, özellikle gençlik suçluluğunda güçlü ilişki, tekrarlayan suç işleyenlerde en belirgin fark.</p>
+                    <p><strong>Kriminolojiye Katkıları:</strong></p>
+                    <p><strong>1. Risk Değerlendirmesi:</strong> Kişilik testleri ile suç risk tahmini yapılabilir.</p>
+                    <p><strong>2. Tedavi Yaklaşımları:</strong> Kişilik odaklı müdahale programları geliştirildi.</p>
+                    <p><strong>3. Önleme Stratejileri:</strong> Erken müdahale programları için hedef grup belirleme.</p>
+                    <p><strong>4. Teorik Çerçeve:</strong> Biyolojik ve sosyal faktörleri birleştiren model.</p>
+                    <p><strong>Eleştiriler:</strong> Determinizm eleştirisi, sosyoekonomik faktörleri ihmal etme, kültürel farklılıkları göz ardı etme, basitleştirme suçlaması.</p>
+                </div>
+            </div>
+
+            <!-- Soru 9 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">9</div>
+                    <div class="question-type">Boşluk Doldurma</div>
+                </div>
+                <div class="question-text">
+                    Eysenck'a göre <input type="text" class="fill-blank" placeholder="davranış terapisi"> kişilik değiştirmek yerine <input type="text" class="fill-blank" placeholder="davranış"> değiştirmeye odaklanmalıdır.
+                </div>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevaplar: Davranış terapisi, Davranış</h4>
+                    <p><strong>Açıklama:</strong> Eysenck, kişiliğin büyük ölçüde genetik olarak belirlendiğini savunduğu için <strong>davranış terapisi</strong>nin kişiliği değiştirmeye değil, problematik <strong>davranışları</strong> değiştirmeye odaklanması gerektiğini düşünür. Bu yaklaşımın mantığı: Kişilik boyutları (E, N, P) kalıtımsal ve değişmez, ancak bu boyutlar farklı davranışlar şeklinde kendini gösterebilir, terapi bu davranış ifadelerini değiştirebilir. Örneğin: Yüksek nevrotizimli kişide kaygı azaltılamaz ama başa çıkma stratejileri öğretilebilir, dışadönük kişinin sosyal ihtiyacı değiştirilemez ama sosyal becerileri geliştirilebilir. Eysenck'ın terapi yaklaşımı: Simptom odaklı, kısa süreli, davranış değiştirme teknikleri (sistematik duyarsızlaştırma, aversif terapi), klasik ve operant koşullanma ilkeleri kullanma. Bu yaklaşım, modern davranış terapisinin gelişiminde etkili olmuş ancak kişiliğin değişebilirliği konusunda eleştiri almıştır.</p>
+                </div>
+            </div>
+
+            <!-- Soru 10 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">10</div>
+                    <div class="question-type">Çoktan Seçmeli</div>
+                </div>
+                <div class="question-text">
+                    Eysenck'ın "zeka ve kişilik" ilişkisi hakkındaki görüşü nedir?
+                </div>
+                <ul class="options">
+                    <li>A) Zeka ve kişilik aynı şeydir</li>
+                    <li>B) Zeka kişiliğin bir parçasıdır</li>
+                    <li>C) Zeka ve kişilik bağımsız yapılardır</li>
+                    <li>D) Kişilik zekayı belirler</li>
+                    <li>E) Zeka kişiliği belirler</li>
+                </ul>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevap: C) Zeka ve kişilik bağımsız yapılardır</h4>
+                    <p><strong>Açıklama:</strong> Eysenck, <strong>zeka ve kişiliğin bağımsız yapılar</strong> olduğunu ve aralarında sistemik bir ilişki bulunmadığını savunur. Bu görüşün temelleri: Faktör analizi çalışmaları zeka ve kişilik faktörlerinin ayrı kümelenmeler gösterdiğini ortaya koyar, zeka testleri ile kişilik testleri arasında düşük korelasyonlar bulunur, her iki yapının farklı biyolojik temelleri vardır. Zeka: bilişsel yetenekler, problem çözme, öğrenme kapasitesi; Kişilik: davranış eğilimleri, duygusal tepkiler, motivasyonel örüntüler. Ancak Eysenck, belli sınırlı ilişkilerin olabileceğini kabul eder: psikotizm ile yaratıcılık arasında pozitif ilişki, nevrotizm ile performans kaygısı arasında etkileşim, dışadönüklük ile sosyal zeka arasında çok zayıf ilişki. Bu yaklaşım, modern psikolojide zeka ve kişiliğin ayrı araştırma alanları olmasının temelini oluşturmuştur.</p>
+                </div>
+            </div>
+
+            <!-- Soru 11 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">11</div>
+                    <div class="question-type">Çoktan Seçmeli</div>
+                </div>
+                <div class="question-text">
+                    Eysenck'ın kuramında "tip" ve "özellik" arasındaki fark nedir?
+                </div>
+                <ul class="options">
+                    <li>A) Tip daha geneldir, özellik daha spesifiktir</li>
+                    <li>B) Tip geçicidir, özellik kalıcıdır</li>
+                    <li>C) Tip ölçülebilir, özellik ölçülemez</li>
+                    <li>D) Aralarında fark yoktur</li>
+                    <li>E) Tip sosyaldir, özellik biyolojiktir</li>
+                </ul>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevap: A) Tip daha geneldir, özellik daha spesifiktir</h4>
+                    <p><strong>Açıklama:</strong> Eysenck'ın hiyerarşik modelinde <strong>"tip" daha genel ve kapsayıcıdır, "özellik" ise daha spesifik ve sınırlıdır</strong>. Hiyerarşik yapı şöyledir: <strong>En üst düzey - Tipler:</strong> Süper faktörler (Dışadönüklük, Nevrotizm, Psikotizm). Geniş davranış alanlarını kapsar. <strong>Orta düzey - Özellikler:</strong> Tiplerin altında yer alan, daha spesifik davranış eğilimleri (sosyallik, canlılık, dominant olma gibi). <strong>Alt düzey - Alışkanlık tepkileri:</strong> Belirli durumlar için öğrenilmiş tepkiler. <strong>En alt düzey - Spesifik tepkiler:</strong> Tek seferlik davranışlar. Örnek: Dışadönüklük tipi → sosyallik özelliği → parti verme alışkanlığı → bu akşam arkadaş çağırma davranışı. Bu hiyerarşi, davranışın hem genel hem spesifik düzeylerde anlaşılmasını sağlar ve kişiliğin karmaşık yapısını sistematik olarak organize eder.</p>
+                </div>
+            </div>
+
+            <!-- Soru 12 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">12</div>
+                    <div class="question-type">Klasik Sınav</div>
+                </div>
+                <div class="question-text">
+                    Eysenck'ın kişilik modelinin modern psikolojiye katkılarını ve Big Five modeli ile ilişkisini kapsamlı olarak değerlendirin.
+                </div>
+                <textarea class="essay-area" placeholder="Cevabınızı buraya yazınız..."></textarea>
+                <div class="explanation">
+                    <h4>🎯 Örnek Cevap:</h4>
+                    <p><strong>Modern Psikolojiye Katkılar:</strong></p>
+                    <p><strong>1. Biyolojik Temel:</strong> Kişiliğin nörolojik temellerini araştıranların öncüsü oldu. Modern nörogörüntüleme çalışmalarının teorik alt yapısını sağladı.</p>
+                    <p><strong>2. Faktör Analizi:</strong> Kişilik araştırmalarında objektif, istatistiksel yöntemlerin kullanımını yaygınlaştırdı.</p>
+                    <p><strong>3. Hiyerarşik Model:</strong> Kişiliğin çok düzeyli yapısını sistematik olarak modelledi.</p>
+                    <p><strong>4. Çapraz Kültürel Geçerlik:</strong> Teorisini farklı kültürlerde test etti, evrensel boyutlar önerdi.</p>
+                    <p><strong>5. Davranış Genetiği:</strong> İkiz çalışmalarıyla kişiliğin kalıtımsal temellerini araştırdı.</p>
+                    <p><strong>6. Klinical Uygulamalar:</strong> Kişilik bozukluklarını boyutsal yaklaşımla ele aldı.</p>
+                    <p><strong>Big Five Modeli ile İlişki:</strong></p>
+                    <p><strong>Doğrudan Geçenler:</strong></p>
+                    <p><strong>- Dışadönüklük (E):</strong> Big Five'daki Extraversion ile neredeyse özdeş. Sosyallik, canlılık, pozitif duygular içerir.</p>
+                    <p><strong>- Nevrotizm (N):</strong> Big Five'daki Neuroticism ile aynı. Duygusal kararsızlık, kaygı, stres duyarlılığı.</p>
+                    <p><strong>Kısmen Geçenler:</strong></p>
+                    <p><strong>- Psikotizm (P):</strong> Big Five'da doğrudan karşılığı yok. Ancak düşük Uyumluluk (Agreeableness) ve düşük Sorumluluk (Conscientiousness) ile ilişkili.</p>
+                    <p><strong>Big Five'da Ek Olanlar:</strong></p>
+                    <p><strong>- Açıklık (Openness):</strong> Eysenck modelinde net karşılığı yok, psikotizm ile kısmen örtüşür.</p>
+                    <p><strong>- Uyumluluk ve Sorumluluk:</strong> Eysenck'da ayrı boyutlar değil, diğer boyutların alt bileşenleri.</p>
+                    <p><strong>Teorik Farklılıklar:</strong></p>
+                    <p><strong>- Boyut sayısı:</strong> Eysenck 3, Big Five 5 boyut önerir.</p>
+                    <p><strong>- Biyolojik vurgu:</strong> Eysenck daha güçlü biyolojik determinizm savunur.</p>
+                    <p><strong>- Hiyerarşi:</strong> Eysenck daha katı hiyerarşik yapı önerir.</p>
+                    <p><strong>Günümüzdeki Etki:</strong> Eysenck'ın modeli Big Five'ın temelini oluşturmuş, biyolojik kişilik araştırmalarına yön vermiş, klinical değerlendirmede hala kullanılmaktadır.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

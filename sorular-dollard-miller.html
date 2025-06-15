@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dollard & Miller - Öğrenme Kuramı Soruları</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+        }
+        
+        .header h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+        
+        .nav-link {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background: rgba(255,255,255,0.2);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-link:hover {
+            background: rgba(255,255,255,0.3);
+        }
+        
+        .content {
+            padding: 40px;
+        }
+        
+        .question {
+            background: #f8f9fa;
+            margin-bottom: 30px;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .question-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        
+        .question-number {
+            background: #667eea;
+            color: white;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+        
+        .question-type {
+            background: #28a745;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+        }
+        
+        .question-text {
+            font-size: 1.1rem;
+            color: #333;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+        
+        .options {
+            list-style: none;
+            margin-bottom: 20px;
+        }
+        
+        .options li {
+            padding: 10px 15px;
+            margin: 8px 0;
+            background: white;
+            border-radius: 8px;
+            border: 2px solid #e9ecef;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .options li:hover {
+            border-color: #667eea;
+            background: #f0f4ff;
+        }
+        
+        .correct-answer {
+            border-color: #28a745 !important;
+            background: #d4edda !important;
+        }
+        
+        .explanation {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+        
+        .explanation h4 {
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+        
+        .explanation p {
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+        
+        .fill-blank {
+            border: none;
+            border-bottom: 2px solid #667eea;
+            background: transparent;
+            padding: 5px;
+            font-size: 1rem;
+            width: 150px;
+            margin: 0 5px;
+        }
+        
+        .essay-area {
+            width: 100%;
+            min-height: 100px;
+            padding: 15px;
+            border: 2px solid #e9ecef;
+            border-radius: 10px;
+            font-family: inherit;
+            font-size: 1rem;
+            resize: vertical;
+        }
+        
+        @media (max-width: 768px) {
+            .content {
+                padding: 20px;
+            }
+            .question-header {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📚 Dollard & Miller - Öğrenme Kuramı</h1>
+            <p>Psikanalitik kavramların öğrenme teorisi ile birleşimi</p>
+            <a href="index.html" class="nav-link">← Ana Sayfaya Dön</a>
+        </div>
+        
+        <div class="content">
+            <!-- Soru 1 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">1</div>
+                    <div class="question-type">Çoktan Seçmeli</div>
+                </div>
+                <div class="question-text">
+                    Dollard ve Miller'ın kuramında davranışın dört temel öğesinden hangisi motivasyonu sağlar?
+                </div>
+                <ul class="options">
+                    <li>A) İpucu (Cue)</li>
+                    <li>B) Dürtü (Drive)</li>
+                    <li>C) Tepki (Response)</li>
+                    <li>D) Pekiştirme (Reinforcement)</li>
+                    <li>E) Uyaran (Stimulus)</li>
+                </ul>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevap: B) Dürtü (Drive)</h4>
+                    <p><strong>Açıklama:</strong> Dollard ve Miller'ın öğrenme kuramında <strong>dürtü (drive)</strong> motivasyonu sağlayan temel öğedir. Dört temel öğe şunlardır: <strong>1) Dürtü (Drive):</strong> Organizmayı harekete geçiren güç, motivasyon kaynağı. Birincil dürtüler (açlık, susuzluk) ve ikincil dürtüler (kaygı, statü arayışı) olarak ikiye ayrılır. <strong>2) İpucu (Cue):</strong> Organizmayı doğru tepkiye yönlendiren uyaran. <strong>3) Tepki (Response):</strong> Organizmanın verdiği davranıs. <strong>4) Pekiştirme (Reinforcement):</strong> Dürtüyü azaltan sonuç. Bu model, Hull'un öğrenme kuramından esinlenmiştir ve psikanalitik kavramları davranışçı terimlerle açıklamaya çalışır.</p>
+                </div>
+            </div>
+
+            <!-- Soru 2 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">2</div>
+                    <div class="question-type">Boşluk Doldurma</div>
+                </div>
+                <div class="question-text">
+                    Dollard ve Miller'a göre <input type="text" class="fill-blank" placeholder="kaygı"> öğrenilmiş bir dürtüdür ve <input type="text" class="fill-blank" placeholder="bastırma"> kaygıyı azaltan öğrenilmiş bir tepkidir.
+                </div>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevaplar: Kaygı, Bastırma</h4>
+                    <p><strong>Açıklama:</strong> Dollard ve Miller, Freud'un psikanalitik kavramlarını öğrenme teorisi terimleriyle yeniden tanımlamışlardır. <strong>Kaygı</strong>, öğrenilmiş bir ikincil dürtüdür. Ceza alan çocuk, ceza durumlarıyla ilişkili uyaranları (öfkeli ses tonu, kaşlarını çatma vb.) kaygı uyandıran ipuçları olarak öğrenir. <strong>Bastırma</strong> ise kaygıyı azaltan öğrenilmiş bir tepkidir. Düşünmeyi durdurma, konuyu değiştirme gibi davranışlar kaygıyı azalttığı için pekiştirilir ve alışkanlık haline gelir. Bu yaklaşım, psikanalitik savunma mekanizmalarını da öğrenme terimleriyle açıklar: projeksiyon, yer değiştirme, racyonalizasyon gibi mekanizmalar kaygıyı azaltan öğrenilmiş tepkiler olarak görülür.</p>
+                </div>
+            </div>
+
+            <!-- Soru 3 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">3</div>
+                    <div class="question-type">Çoktan Seçmeli</div>
+                </div>
+                <div class="question-text">
+                    "Yaklaşma-kaçınma çatışması" kavramı neyi ifade eder?
+                </div>
+                <ul class="options">
+                    <li>A) İki olumlu seçenek arasında kalma</li>
+                    <li>B) İki olumsuz seçenek arasında kalma</li>
+                    <li>C) Aynı hedefin hem çekici hem itici yanları olması</li>
+                    <li>D) Farklı dürtülerin çatışması</li>
+                    <li>E) Bilinçli ve bilinçdışı isteklerin çatışması</li>
+                </ul>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevap: C) Aynı hedefin hem çekici hem itici yanları olması</h4>
+                    <p><strong>Açıklama:</strong> <strong>"Yaklaşma-kaçınma çatışması"</strong> aynı hedefin hem çekici hem de itici yanlarının bulunması durumunda yaşanan çatışmadır. Örneğin, evlilik hem mutluluk vaadi verir (yaklaşma) hem de sorumluluk korkusu yaratır (kaçınma). Dollard ve Miller üç çatışma türü tanımlar: <strong>1) Yaklaşma-yaklaşma çatışması:</strong> İki çekici seçenek arasında kalma (iki güzel iş teklifi). <strong>2) Kaçınma-kaçınma çatışması:</strong> İki itici seçenek arasında kalma (hasta olmak ya da ameliyat olmak). <strong>3) Yaklaşma-kaçınma çatışması:</strong> En yaygın ve çözümü en zor olan tür. Bu çatışmalar nevrotik semptomların temelinde yatar ve kişi hedefe yaklaştıkça kaçınma eğilimi güçlenir, uzaklaştıkça yaklaşma eğilimi güçlenir.</p>
+                </div>
+            </div>
+
+            <!-- Soru 4 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">4</div>
+                    <div class="question-type">Klasik Sınav</div>
+                </div>
+                <div class="question-text">
+                    Dollard ve Miller'ın "kritik eğitim durumları" kavramını açıklayın ve kişilik gelişimindeki etkisini değerlendirin.
+                </div>
+                <textarea class="essay-area" placeholder="Cevabınızı buraya yazınız..."></textarea>
+                <div class="explanation">
+                    <h4>🎯 Örnek Cevap:</h4>
+                    <p><strong>Kritik Eğitim Durumları Tanımı:</strong> Çocukluk döneminde yaşanan ve kişiliğin şekillenmesinde kritik rol oynayan öğrenme deneyimleridir. Bu durumlar, temel dürtülerin tatmini veya engellendiği anları içerir.</p>
+                    <p><strong>Dört Kritik Durum:</strong></p>
+                    <p><strong>1. Beslenme Durumu:</strong> Bebek dönemindeki beslenme deneyimleri güven-güvensizlik, bağımlılık-bağımsızlık tutumlarını şekillendirir. Aşırı koruyucu ya da ihmalkar beslenme davranışları ileriki yaşlarda benzer durumlarda kullanılır.</p>
+                    <p><strong>2. Temizlik Eğitimi:</strong> Tuvalet eğitimi sırasında yaşanan çatışmalar, otorite ilişkilerini ve düzen-dağınıklık eğilimlerini belirler. Aşırı sert eğitim obsesif davranışlara, çok gevşek eğitim düzensizliğe yol açabilir.</p>
+                    <p><strong>3. Erken Cinsellik:</strong> Çocukluk dönemindeki cinsel keşif ve mastürbasyon konularında verilen tepkiler, cinsellik ve bedensel haz konularındaki tutumları şekillendirir.</p>
+                    <p><strong>4. Öfke-Saldırganlık Kontrolü:</strong> Öfke ifadesine gösterilen tepkiler, saldırganlığın nasıl kontrol edileceğini veya bastırılacağını öğretir.</p>
+                    <p><strong>Kişilik Gelişimindeki Etkisi:</strong> Bu durumlar, temel öğrenme örüntülerini oluşturur ve yetişkinlik dönemindeki davranış tarzlarını belirler. Sağlıklı geçirilen deneyimler uyumlu kişilik, travmatik deneyimler ise nevrotik eğilimlere yol açar.</p>
+                </div>
+            </div>
+
+            <!-- Soru 5 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">5</div>
+                    <div class="question-type">Çoktan Seçmeli</div>
+                </div>
+                <div class="question-text">
+                    Dollard ve Miller'a göre "müdahaleci düşünceler" neyi ifade eder?
+                </div>
+                <ul class="options">
+                    <li>A) Yaratıcı düşünceler</li>
+                    <li>B) Problem çözme sürecini engelleyen düşünceler</li>
+                    <li>C) Mantıklı çıkarımlar</li>
+                    <li>D) Planlı düşünceler</li>
+                    <li>E) Olumlu kendini değerlendirmeler</li>
+                </ul>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevap: B) Problem çözme sürecini engelleyen düşünceler</h4>
+                    <p><strong>Açıklama:</strong> <strong>"Müdahaleci düşünceler"</strong> problem çözme sürecini engelleyen, kaygı yaratan ve uyumsuz davranışlara yol açan düşüncelerdir. Bu düşünceler genellikle geçmiş travmatik deneyimlerden kaynaklanır ve kişinin mevcut durumu objektif olarak değerlendirmesini engeller. Örnekler: "Başaramayacağım", "Herkes beni yargılıyor", "Felaket olacak" gibi düşünceler. Bu düşünceler, kaygıyı artırır ve etkili problem çözmemeyi engeller. Tedavide amaç, bu müdahaleci düşünceleri tanımlamak ve onları daha gerçekçi, işlevsel düşüncelerle değiştirmektir. Bu yaklaşım, modern bilişsel davranışçı terapinin "olumsuz otomatik düşünceler" kavramının öncüsüdür.</p>
+                </div>
+            </div>
+
+            <!-- Soru 6 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">6</div>
+                    <div class="question-type">Boşluk Doldurma</div>
+                </div>
+                <div class="question-text">
+                    Dollard ve Miller'ın kuramında <input type="text" class="fill-blank" placeholder="etiket"> koymak sorunu çözmenin ilk aşamasıdır ve bu <input type="text" class="fill-blank" placeholder="ayırt etme"> sürecini gerektirir.
+                </div>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevaplar: Etiket, Ayırt etme</h4>
+                    <p><strong>Açıklama:</strong> Dollard ve Miller'a göre problem çözmenin ilk ve en kritik aşaması <strong>etiket koymaktır</strong>. Bu, problemin ne olduğunu tanımlamak ve uygun kelimelerle ifade etmek anlamına gelir. Etiket koyma süreci <strong>ayırt etme</strong> yetisini gerektirir - yani farklı durumları, duyguları ve deneyimleri birbirinden ayırt etme kabiliyeti. Örneğin, belirsiz bir rahatsızlık hisseden kişi bunun "kaygı" olduğunu etiketleyebilirse, sorunla başa çıkma stratejileri geliştirebilir. Etiket koyamama (unlabeled feelings), nevrotik problemlerin temel nedenlerinden biridir. Çocuklar duygularını etiketlemeyi sosyal öğrenme yoluyla edinidir. Doğru etiketleme, kişinin deneyimlerini anlamasını ve kontrol etmesini sağlar.</p>
+                </div>
+            </div>
+
+            <!-- Soru 7 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">7</div>
+                    <div class="question-type">Çoktan Seçmeli</div>
+                </div>
+                <div class="question-text">
+                    "Taklit öğrenme" sürecinde hangi faktörler en önemlidir?
+                </div>
+                <ul class="options">
+                    <li>A) Sadece model alınan kişinin statüsü</li>
+                    <li>B) Model alınan kişinin benzerliği ve taklit eden kişinin motivasyonu</li>
+                    <li>C) Sadece pekiştirme sıklığı</li>
+                    <li>D) Sadece davranışın karmaşıklığı</li>
+                    <li>E) Sadece çevresel koşullar</li>
+                </ul>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevap: B) Model alınan kişinin benzerliği ve taklit eden kişinin motivasyonu</h4>
+                    <p><strong>Açıklama:</strong> Dollard ve Miller'a göre <strong>taklit öğrenme</strong> sürecinde en önemli faktörler <strong>model alınan kişinin benzerliği</strong> (yaş, cinsiyet, statü açısından) ve <strong>taklit eden kişinin motivasyonu</strong>dur. Taklit öğrenme şu şekilde gerçekleşir: Çocuk, kendisine benzer ve başarılı olan bir kişiyi gözlemler; o kişinin davranışlarını kopyalar; başarılı olursa davranış pekiştirilir; başarısız olursa davranış söndürülür. Bu süreçte önemli olan diğer faktörler: modelin prestiji ve gücü, davranışın gözlemlenebilirliği, taklit eden kişinin dikkat düzeyi ve hafıza kapasitesi. Bu yaklaşım, Bandura'nın sosyal öğrenme kuramının öncüsüdür ve çocukların sosyalleşme sürecinde taklinin rolünü vurgular.</p>
+                </div>
+            </div>
+
+            <!-- Soru 8 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">8</div>
+                    <div class="question-type">Klasik Sınav</div>
+                </div>
+                <div class="question-text">
+                    Dollard ve Miller'ın nevrozları açıklama biçimini detaylandırın ve tedavi yaklaşımlarını örneklerle açıklayın.
+                </div>
+                <textarea class="essay-area" placeholder="Cevabınızı buraya yazınız..."></textarea>
+                <div class="explanation">
+                    <h4>🎯 Örnek Cevap:</h4>
+                    <p><strong>Nevrozların Açıklanması:</strong> Dollard ve Miller nevrozları öğrenilmiş uyumsuz davranış örüntüleri olarak görür. Nevrozların gelişimi şu süreçle gerçekleşir:</p>
+                    <p><strong>1. Çatışma Oluşumu:</strong> Çocukluk döneminde yaşanan yaklaşma-kaçınma çatışmaları çözülemez. Örneğin, bağımsızlık isteği ile ebeveyn onayı arayışı arasındaki çatışma.</p>
+                    <p><strong>2. Bastırma Gelişimi:</strong> Kaygı yaratan düşünceler bastırılır çünkü geçici olarak rahatlama sağlar. Ancak asıl problem çözülmediği için çatışma devam eder.</p>
+                    <p><strong>3. Semptom Oluşumu:</strong> Bastırılan çatışmalar semptomlar olarak ortaya çıkar: anksiyete, depresyon, fobiler, obsesyonlar.</p>
+                    <p><strong>Tedavi Yaklaşımı:</strong></p>
+                    <p><strong>1. Etiketleme:</strong> Hastanın duygu ve deneyimlerini doğru şekilde tanımlaması sağlanır. "Bu hissettiğiniz şey kaygıdır."</p>
+                    <p><strong>2. Ayırt Etme Öğrenme:</strong> Geçmiş deneyimler ile şimdiki durumları ayırt etme yetisi geliştirilir.</p>
+                    <p><strong>3. Yeni Tepkiler Öğrenme:</strong> Eski uyumsuz tepkiler yerine yeni, daha uyumlu tepkiler öğretilir.</p>
+                    <p><strong>4. Transfer:</strong> Terapide öğrenilenler günlük yaşama aktarılır.</p>
+                    <p><strong>Örnek:</strong> Sosyal fobi tedavisinde hasta önce korkusunu etiketler, sonra geçmiş kötü deneyimlerle şimdiki durumları ayırt etmeyi öğrenir, yeni sosyal beceriler kazanır ve bunları günlük yaşamda uygular.</p>
+                </div>
+            </div>
+
+            <!-- Soru 9 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">9</div>
+                    <div class="question-type">Boşluk Doldurma</div>
+                </div>
+                <div class="question-text">
+                    Dollard ve Miller'a göre <input type="text" class="fill-blank" placeholder="dilsel"> düşünce, problem çözmede kritik rol oynar ve <input type="text" class="fill-blank" placeholder="sembollerle"> çalışma olanağı sağlar.
+                </div>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevaplar: Dilsel, Sembollerle</h4>
+                    <p><strong>Açıklama:</strong> Dollard ve Miller, <strong>dilsel düşünce</strong>nin problem çözmede kritik rol oynadığını vurgular. Dil, insanları diğer hayvanlardan ayıran temel özelliktir ve karmaşık problem çözme süreçlerini mümkün kılar. Dilsel düşüncenin avantajları: <strong>1) Sembollerle çalışma:</strong> Gerçek nesneler olmadan zihinsel manipülasyon yapabilme; <strong>2) Hızlı deneme-yanılma:</strong> Zihinsel olarak farklı çözümleri deneyebilme; <strong>3) Genelleme:</strong> Benzer problemleri tanıma ve çözme; <strong>4) İletişim:</strong> Deneyimleri paylaşma ve başkalarından öğrenme. Dil eksikliği, problem çözme kapasitesini sınırlar. Bu nedenle çocuklara duygularını ve deneyimlerini etiketlemeyi öğretmek kritik öneme sahiptir. Modern bilişsel psikolojinin temellerini atan bu yaklaşım, düşüncenin davranış üzerindeki etkisini vurgular.</p>
+                </div>
+            </div>
+
+            <!-- Soru 10 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">10</div>
+                    <div class="question-type">Çoktan Seçmeli</div>
+                </div>
+                <div class="question-text">
+                    Dollard ve Miller'ın kuramına göre hangisi temel dürtü örneği değildir?
+                </div>
+                <ul class="options">
+                    <li>A) Açlık</li>
+                    <li>B) Susuzluk</li>
+                    <li>C) Cinsel dürtü</li>
+                    <li>D) Statü arayışı</li>
+                    <li>E) Acıdan kaçınma</li>
+                </ul>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevap: D) Statü arayışı</h4>
+                    <p><strong>Açıklama:</strong> <strong>"Statü arayışı"</strong> temel dürtü değil, öğrenilmiş (ikincil) dürtü örneğidir. Dollard ve Miller dürtüleri iki kategoriye ayırır: <strong>Temel (Birincil) Dürtüler:</strong> Doğuştan gelen, biyolojik ihtiyaçlardan kaynaklanan dürtüler. Açlık, susuzluk, cinsel dürtü, acıdan kaçınma, uyku ihtiyacı gibi. Bu dürtüler yaşamın sürdürülmesi için gereklidir. <strong>Öğrenilmiş (İkincil) Dürtüler:</strong> Sosyal deneyimler sonucu kazanılan dürtüler. Statü arayışı, para kazanma, onay alma, kaygı (korku) gibi. Bu dürtüler, temel dürtülerle ilişkili deneyimler sonucu öğrenilir. Örneğin, para kazanma dürtüsü, paranın temel ihtiyaçları karşılaması deneyimi sonucu gelişir. İkincil dürtüler, karmaşık insan davranışının çoğunu açıklar ve kültürden kültüre değişebilir.</p>
+                </div>
+            </div>
+
+            <!-- Soru 11 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">11</div>
+                    <div class="question-type">Çoktan Seçmeli</div>
+                </div>
+                <div class="question-text">
+                    "Genelleştirme gradyanı" kavramı neyi açıklar?
+                </div>
+                <ul class="options">
+                    <li>A) Öğrenme hızının artışı</li>
+                    <li>B) Benzer uyaranlara verilen tepkilerin şiddeti</li>
+                    <li>C) Unutma sürecinin hızlanması</li>
+                    <li>D) Motivasyon artışı</li>
+                    <li>E) Dikkat dağılımı</li>
+                </ul>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevap: B) Benzer uyaranlara verilen tepkilerin şiddeti</h4>
+                    <p><strong>Açıklama:</strong> <strong>"Genelleştirme gradyanı"</strong> benzer uyaranlara verilen tepkilerin şiddetinin, orijinal uyarana benzerlik derecesi ile nasıl değiştiğini açıklayan kavramdır. Gradyan şu şekilde çalışır: Orijinal uyarana en güçlü tepki verilir; uyaran benzerliği azaldıkça tepki şiddeti de azalır; bu azalma belirli bir örüntü (gradyan) izler. Örneğin, beyaz fareden korkan bir çocuk, beyaz tavşana daha az, gri fareye daha da az korku gösterebilir. Bu kavram fobilerin yayılmasını açıklar: hastane korkusu beyaz önlüklü herkesi kapsayabilir. Aynı şekilde yaklaşma ve kaçınma gradyanları farklı eğrimlere sahiptir - yaklaşma gradyanı daha diktir. Bu durum çatışma durumlarını açıklar: hedefe uzakken yaklaşma güçlü, yakınken kaçınma eğilimi daha güçlü olur.</p>
+                </div>
+            </div>
+
+            <!-- Soru 12 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">12</div>
+                    <div class="question-type">Klasik Sınav</div>
+                </div>
+                <div class="question-text">
+                    Dollard ve Miller'ın kuramının modern psikolojiye katkılarını ve eleştirilerini kapsamlı olarak değerlendirin.
+                </div>
+                <textarea class="essay-area" placeholder="Cevabınızı buraya yazınız..."></textarea>
+                <div class="explanation">
+                    <h4>🎯 Örnek Cevap:</h4>
+                    <p><strong>Modern Psikolojiye Katkılar:</strong></p>
+                    <p><strong>1. Köprü Görevi:</strong> Psikanalitik kuramla davranışçı yaklaşım arasında köprü kurdu, her iki yaklaşımın güçlü yanlarını birleştirdi.</p>
+                    <p><strong>2. Bilişsel Öncülük:</strong> Dilsel düşünce kavramıyla bilişsel psikolojinin temellerini attı, düşüncenin davranış üzerindeki etkisini vurguladı.</p>
+                    <p><strong>3. Sosyal Öğrenme:</strong> Taklit öğrenme kavramıyla Bandura'nın sosyal öğrenme kuramına zemin hazırladı.</p>
+                    <p><strong>4. Çatışma Teorisi:</strong> Motivasyonel çatışmalar konusunda sistematik bir analiz sundu, modern çatışma teorilerinin temelini oluşturdu.</p>
+                    <p><strong>5. Terapi Teknikleri:</strong> Davranış terapisi ve bilişsel terapi yaklaşımlarının gelişimine katkı sağladı.</p>
+                    <p><strong>6. Kültürel Analiz:</strong> Kişilik ve kültür arasındaki ilişkiyi sistematik olarak inceledi.</p>
+                    <p><strong>Eleştiriler:</strong></p>
+                    <p><strong>1. Aşırı Basitleştirme:</strong> Karmaşık psikanalitik kavramları basit öğrenme terimleriyle açıklamaya çalışması eleştirildi.</p>
+                    <p><strong>2. Ampirik Destek:</strong> Teorik önerilerin birçoğu ampirik olarak doğrulanmadı, özellikle kritik eğitim durumları kavramı.</p>
+                    <p><strong>3. Kültürel Genelleme:</strong> Temel bulgular sadece Amerikan kültürüne dayalı, evrensel geçerliliği sorgulanabilir.</p>
+                    <p><strong>4. Gelişimsel Sınırlılık:</strong> Çocukluk deneyimlerine aşırı odaklanma, yetişkinlik gelişimini göz ardı etme.</p>
+                    <p><strong>5. Methodolojik Sorunlar:</strong> Retrospektif analiz kullanımı, objektif veri eksikliği.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kişilik Kuramları - Giriş ve Genel Bakış Soruları</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+        }
+        
+        .header h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+        
+        .nav-link {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background: rgba(255,255,255,0.2);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-link:hover {
+            background: rgba(255,255,255,0.3);
+        }
+        
+        .content {
+            padding: 40px;
+        }
+        
+        .question {
+            background: #f8f9fa;
+            margin-bottom: 30px;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .question-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        
+        .question-number {
+            background: #667eea;
+            color: white;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+        
+        .question-type {
+            background: #28a745;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+        }
+        
+        .question-text {
+            font-size: 1.1rem;
+            color: #333;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+        
+        .options {
+            list-style: none;
+            margin-bottom: 20px;
+        }
+        
+        .options li {
+            padding: 10px 15px;
+            margin: 8px 0;
+            background: white;
+            border-radius: 8px;
+            border: 2px solid #e9ecef;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .options li:hover {
+            border-color: #667eea;
+            background: #f0f4ff;
+        }
+        
+        .correct-answer {
+            border-color: #28a745 !important;
+            background: #d4edda !important;
+        }
+        
+        .explanation {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+        
+        .explanation h4 {
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+        
+        .explanation p {
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+        
+        .fill-blank {
+            border: none;
+            border-bottom: 2px solid #667eea;
+            background: transparent;
+            padding: 5px;
+            font-size: 1rem;
+            width: 150px;
+            margin: 0 5px;
+        }
+        
+        .essay-area {
+            width: 100%;
+            min-height: 100px;
+            padding: 15px;
+            border: 2px solid #e9ecef;
+            border-radius: 10px;
+            font-family: inherit;
+            font-size: 1rem;
+            resize: vertical;
+        }
+        
+        @media (max-width: 768px) {
+            .content {
+                padding: 20px;
+            }
+            .question-header {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📚 Kişilik Kuramları - Giriş ve Genel Bakış</h1>
+            <p>Kişilik psikolojisinin temel kavramları ve genel çerçevesi</p>
+            <a href="index.html" class="nav-link">← Ana Sayfaya Dön</a>
+        </div>
+        
+        <div class="content">
+            <!-- Soru 1 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">1</div>
+                    <div class="question-type">Çoktan Seçmeli</div>
+                </div>
+                <div class="question-text">
+                    Kişilik psikolojisinin amacı aşağıdakilerden hangisidir?
+                </div>
+                <ul class="options">
+                    <li>A) Sadece patolojik kişilik özelliklerini incelemek</li>
+                    <li>B) İnsanların davranışlarını tahmin etmek ve açıklamak</li>
+                    <li>C) Sadece çocukluk dönemindeki gelişimi anlamak</li>
+                    <li>D) Kişilik bozukluklarını tedavi etmek</li>
+                    <li>E) Sadece kalıtsal faktörleri araştırmak</li>
+                </ul>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevap: B) İnsanların davranışlarını tahmin etmek ve açıklamak</h4>
+                    <p><strong>Açıklama:</strong> Kişilik psikolojisinin temel amacı, bireylerin davranışlarını anlayarak bunları açıklamak ve gelecekteki davranışlarını tahmin edebilmektir. Bu alan sadece patolojik durumlarla değil, normal kişilik işleyişiyle de ilgilenir. Kişilik kuramları, insanların neden farklı durumlarda farklı davrandıklarını, bu davranış kalıplarının nasıl geliştiğini ve sürdürüldüğini açıklamaya çalışır. Bu nedenle hem teorik anlayış hem de pratik uygulamalar için kapsamlı bir yaklaşım gerektirir.</p>
+                </div>
+            </div>
+
+            <!-- Soru 2 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">2</div>
+                    <div class="question-type">Boşluk Doldurma</div>
+                </div>
+                <div class="question-text">
+                    Kişilik kuramları temel olarak üç ana kategoriye ayrılır: <input type="text" class="fill-blank" placeholder="Psikanalitik"> kuramlar, <input type="text" class="fill-blank" placeholder="Hümanistik"> kuramlar ve <input type="text" class="fill-blank" placeholder="Davranışçı"> kuramlar.
+                </div>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevaplar: Psikanalitik, Hümanistik, Davranışçı</h4>
+                    <p><strong>Açıklama:</strong> Kişilik kuramları geleneksel olarak üç ana kategoride sınıflandırılır: <strong>Psikanalitik kuramlar</strong> (Freud, Jung, Adler gibi) bilinçdışı süreçlere odaklanır; <strong>Hümanistik kuramlar</strong> (Rogers, Maslow gibi) insanın doğal gelişim potansiyeline vurgu yapar; <strong>Davranışçı kuramlar</strong> (Skinner, Watson gibi) ise gözlemlenebilir davranışlar ve öğrenme süreçlerine odaklanır. Her yaklaşım kişiliği farklı açılardan ele alır ve farklı tedavi yöntemleri önerir.</p>
+                </div>
+            </div>
+
+            <!-- Soru 3 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">3</div>
+                    <div class="question-type">Çoktan Seçmeli</div>
+                </div>
+                <div class="question-text">
+                    Aşağıdaki kavramlardan hangisi kişilik tanımının temel bileşenlerinden biri DEĞİLDİR?
+                </div>
+                <ul class="options">
+                    <li>A) Tutarlılık</li>
+                    <li>B) Bireysel farklılıklar</li>
+                    <li>C) Dayanıklılık (kararlılık)</li>
+                    <li>D) Geçicilik</li>
+                    <li>E) Organizasyon</li>
+                </ul>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevap: D) Geçicilik</h4>
+                    <p><strong>Açıklama:</strong> Kişilik tanımının temel bileşenleri arasında tutarlılık (davranışlarda süreklilik), bireysel farklılıklar (her bireyin benzersizliği), dayanıklılık (kişilik özelliklerinin zaman içinde sabit kalması) ve organizasyon (kişilik öğelerinin sistematik düzenlenmesi) yer alır. Geçicilik ise kişiliğin temel özelliği değildir; aksine kişilik görece sabit ve dayanıklı bir yapı olarak kabul edilir. Kişilik, geçici ruh hallerinden farklı olarak uzun süreli davranış kalıplarını ifade eder.</p>
+                </div>
+            </div>
+
+            <!-- Soru 4 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">4</div>
+                    <div class="question-type">Klasik Sınav</div>
+                </div>
+                <div class="question-text">
+                    Kişilik kuramlarının tarihsel gelişimini ana hatlarıyla açıklayınız. Bu gelişim sürecinde hangi faktörler etkili olmuştur?
+                </div>
+                <textarea class="essay-area" placeholder="Cevabınızı buraya yazınız..."></textarea>
+                <div class="explanation">
+                    <h4>🎯 Örnek Cevap:</h4>
+                    <p><strong>Tarihsel Gelişim:</strong> Kişilik kuramlarının gelişimi 19. yüzyıl sonlarında Freud'un psikanalitik teorisiyle başlamıştır. İlk dönem (1900-1930) psikanalitik yaklaşımın hakimiyeti altında geçmiştir. İkinci dönemde (1930-1950) Jung, Adler gibi neo-psikanalitik yaklaşımlar gelişmiştir. Üçüncü dönemde (1950-1970) hümanistik psikoloji ve davranışçı yaklaşımlar ortaya çıkmıştır. Son dönemde (1970-günümüz) bilişsel yaklaşımlar ve özellik teorileri öne çıkmıştır.</p>
+                    <p><strong>Etkili Faktörler:</strong> Bilimsel metodolojideki gelişmeler, toplumsal değişimler, diğer bilim dallarındaki ilerlemeler (biyoloji, sosyoloji), teknolojik gelişmeler ve kültürel faktörler bu gelişimi etkilemiştir.</p>
+                </div>
+            </div>
+
+            <!-- Soru 5 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">5</div>
+                    <div class="question-type">Çoktan Seçmeli</div>
+                </div>
+                <div class="question-text">
+                    Kişilik araştırmalarında kullanılan yöntemlerden hangisi doğrudan gözlem gerektirir?
+                </div>
+                <ul class="options">
+                    <li>A) Projektif testler</li>
+                    <li>B) Öz-bildirim ölçekleri</li>
+                    <li>C) Davranışsal gözlem</li>
+                    <li>D) Biyografik analizler</li>
+                    <li>E) Yapılandırılmış görüşmeler</li>
+                </ul>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevap: C) Davranışsal gözlem</h4>
+                    <p><strong>Açıklama:</strong> Davranışsal gözlem yöntemi, araştırmacının doğrudan bireyin davranışlarını sistematik olarak gözlemlemesini gerektirir. Bu yöntemde araştırmacı, doğal ya da kontrollü ortamlarda bireylerin davranışlarını objektif olarak kaydeder. Diğer yöntemlerden farklı olarak, bu yaklaşım doğrudan gözlem gerektirir ve subjektif yorumları minimize eder. Projektif testler yorumlama, öz-bildirim ölçekleri self-rapor, biyografik analizler doküman incelemesi, yapılandırılmış görüşmeler ise sözlü iletişim gerektirir.</p>
+                </div>
+            </div>
+
+            <!-- Soru 6 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">6</div>
+                    <div class="question-type">Boşluk Doldurma</div>
+                </div>
+                <div class="question-text">
+                    Kişilik değerlendirmesinde kullanılan <input type="text" class="fill-blank" placeholder="nometetik"> yaklaşım genel yasaları arar, <input type="text" class="fill-blank" placeholder="idiografik"> yaklaşım ise bireysel özelliklere odaklanır.
+                </div>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevaplar: Nometetik, İdiografik</h4>
+                    <p><strong>Açıklama:</strong> <strong>Nometetik yaklaşım</strong>, tüm insanlar için geçerli olan genel yasaları ve kuralları bulmaya odaklanır. Bu yaklaşım büyük örneklemler kullanır ve istatistiksel analizlerle genel eğilimleri ortaya çıkarır. <strong>İdiografik yaklaşım</strong> ise her bireyin benzersizliğine vurgu yapar ve tek bir kişiyi derinlemesine incelemeyi hedefler. Allport bu ayrımı önemsemiş ve her iki yaklaşımın da kişilik psikolojisi için gerekli olduğunu savunmuştur. Modern psikoloji bu iki yaklaşımı birleştirmeye çalışır.</p>
+                </div>
+            </div>
+
+            <!-- Soru 7 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">7</div>
+                    <div class="question-type">Çoktan Seçmeli</div>
+                </div>
+                <div class="question-text">
+                    Kişilik teorilerinin değerlendirilmesinde kullanılan kriterlerden hangisi teorinin pratik uygulamalardaki kullanışlılığını ifade eder?
+                </div>
+                <ul class="options">
+                    <li>A) Kapsamlılık</li>
+                    <li>B) Tutarlılık</li>
+                    <li>C) Sınanabilirlik</li>
+                    <li>D) Kullanışlılık</li>
+                    <li>E) Basitlik</li>
+                </ul>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevap: D) Kullanışlılık</h4>
+                    <p><strong>Açıklama:</strong> <strong>Kullanışlılık (utility)</strong> kriteri, bir teorinin pratik uygulamalarda ne kadar faydalı olduğunu değerlendirir. Bu kriter teorinin tedavi, eğitim, rehberlik gibi alanlarda ne kadar işlevsel olduğunu ölçer. Kapsamlılık teorinin ne kadar geniş bir alanı kapsadığını, tutarlılık iç mantıksal bütünlüğü, sınanabilirlik ampirik test edilebilirliği, basitlik ise teorinin anlaşılabilirliğini ifade eder. Kullanışlı bir teori, sadece açıklayıcı değil aynı zamanda pratik problemlerin çözümünde de etkili olmalıdır.</p>
+                </div>
+            </div>
+
+            <!-- Soru 8 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">8</div>
+                    <div class="question-type">Klasik Sınav</div>
+                </div>
+                <div class="question-text">
+                    Kişilik gelişiminde "doğa-beslenme" (nature-nurture) tartışmasını örneklerle açıklayın. Bu tartışma günümüzde nasıl ele alınmaktadır?
+                </div>
+                <textarea class="essay-area" placeholder="Cevabınızı buraya yazınız..."></textarea>
+                <div class="explanation">
+                    <h4>🎯 Örnek Cevap:</h4>
+                    <p><strong>Doğa-Beslenme Tartışması:</strong> Bu tartışma kişilik gelişiminde kalıtsal faktörler (doğa) ile çevresel faktörlerin (beslenme) hangisinin daha etkili olduğu sorusunu ele alır. Doğa tarafı genetik yatkınlıkları, beslenme tarafı ise aile, okul, kültür gibi çevresel etkenleri vurgular.</p>
+                    <p><strong>Örnekler:</strong> İkiz çalışmaları (aynı genetik yapıya sahip ikizlerin farklı ortamlarda yetişmesi), evlat edinme araştırmaları, kültürel karşılaştırmalı çalışmalar bu alanın temel araştırma yöntemleridir.</p>
+                    <p><strong>Günümüzdeki Yaklaşım:</strong> Modern psikoloji bu iki faktörün etkileşimsel olarak çalıştığını kabul eder. Epigenetik araştırmalar, genlerin çevresel faktörlerle nasıl etkileştiğini göstermektedir. Artık "ne kadar" sorusu yerine "nasıl etkileşim halinde" sorusu sorulmaktadır.</p>
+                </div>
+            </div>
+
+            <!-- Soru 9 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">9</div>
+                    <div class="question-type">Çoktan Seçmeli</div>
+                </div>
+                <div class="question-text">
+                    Kişilik psikolojisinde "özellik" (trait) kavramı aşağıdakilerden hangisini ifade eder?
+                </div>
+                <ul class="options">
+                    <li>A) Geçici ruh hallerini</li>
+                    <li>B) Davranışsal tutarlılığı sağlayan dayanıklı eğilimleri</li>
+                    <li>C) Sadece sosyal durumlardaki davranışları</li>
+                    <li>D) Bilinçdışı çatışmaları</li>
+                    <li>E) Öğrenilmiş tepki kalıplarını</li>
+                </ul>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevap: B) Davranışsal tutarlılığı sağlayan dayanıklı eğilimleri</h4>
+                    <p><strong>Açıklama:</strong> <strong>Özellik (trait)</strong>, bireyin farklı durumlarda benzer şekilde davranmasını sağlayan, göreli olarak sabit ve dayanıklı psikolojik eğilimleri ifade eder. Özellikler, geçici ruh hallerinden farklı olarak zaman içinde tutarlılık gösterir ve kişinin davranışlarını tahmin etmemizi sağlar. Örneğin, dışadönük bir kişi farklı sosyal ortamlarda benzer şekilde sosyal davranışlar sergiler. Bu kavram, özellikle Allport, Cattell ve Eysenck gibi özellik teorisyenleri tarafından geliştirilmiştir.</p>
+                </div>
+            </div>
+
+            <!-- Soru 10 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">10</div>
+                    <div class="question-type">Boşluk Doldurma</div>
+                </div>
+                <div class="question-text">
+                    Kişilik değerlendirmesinde objektif testler <input type="text" class="fill-blank" placeholder="sayısal"> veriler sağlarken, projektif testler <input type="text" class="fill-blank" placeholder="nitel"> veriler sağlar ve <input type="text" class="fill-blank" placeholder="yorumlama"> gerektirir.
+                </div>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevaplar: Sayısal (nicel), Nitel, Yorumlama</h4>
+                    <p><strong>Açıklama:</strong> <strong>Objektif testler</strong> (MMPI, Big Five gibi) standartlaştırılmış sorular içerir ve sayısal skorlar üretir, bu da istatistiksel analiz yapmayı kolaylaştırır. <strong>Projektif testler</strong> (Rorschach, TAT gibi) ise belirsiz uyaranlara verilen yanıtları analiz eder ve nitel veriler sağlar. Bu testler uzman yorumu gerektirir çünkü yanıtlar subjektif olarak değerlendirilir. Her iki yaklaşım da kişilik değerlendirmesinde farklı avantajlar sunar ve genellikle birlikte kullanıldığında daha kapsamlı bir değerlendirme sağlar.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

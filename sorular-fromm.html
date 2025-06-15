@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erich Fromm - Hümanistik Psikanaliz Soruları</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+        }
+        
+        .header h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+        
+        .nav-link {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background: rgba(255,255,255,0.2);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-link:hover {
+            background: rgba(255,255,255,0.3);
+        }
+        
+        .content {
+            padding: 40px;
+        }
+        
+        .question {
+            background: #f8f9fa;
+            margin-bottom: 30px;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .question-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        
+        .question-number {
+            background: #667eea;
+            color: white;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+        
+        .question-type {
+            background: #28a745;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+        }
+        
+        .question-text {
+            font-size: 1.1rem;
+            color: #333;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+        
+        .options {
+            list-style: none;
+            margin-bottom: 20px;
+        }
+        
+        .options li {
+            padding: 10px 15px;
+            margin: 8px 0;
+            background: white;
+            border-radius: 8px;
+            border: 2px solid #e9ecef;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .options li:hover {
+            border-color: #667eea;
+            background: #f0f4ff;
+        }
+        
+        .explanation {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+        
+        .explanation h4 {
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+        
+        .explanation p {
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+        
+        .fill-blank {
+            border: none;
+            border-bottom: 2px solid #667eea;
+            background: transparent;
+            padding: 5px;
+            font-size: 1rem;
+            width: 150px;
+            margin: 0 5px;
+        }
+        
+        .essay-area {
+            width: 100%;
+            min-height: 100px;
+            padding: 15px;
+            border: 2px solid #e9ecef;
+            border-radius: 10px;
+            font-family: inherit;
+            font-size: 1rem;
+            resize: vertical;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🗽 Erich Fromm - Hümanistik Psikanaliz</h1>
+            <p>Özgürlükten kaçış, karakter yönelimleri ve sevgi</p>
+            <a href="index.html" class="nav-link">← Ana Sayfaya Dön</a>
+        </div>
+        
+        <div class="content">
+            <!-- Soru 1 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">1</div>
+                    <div class="question-type">Çoktan Seçmeli</div>
+                </div>
+                <div class="question-text">
+                    Fromm'a göre modern insanın temel problemi nedir?
+                </div>
+                <ul class="options">
+                    <li>A) Cinsel baskı</li>
+                    <li>B) Özgürlükten kaçış</li>
+                    <li>C) Ekonomik sıkıntılar</li>
+                    <li>D) Aile çatışmaları</li>
+                    <li>E) Biyolojik dürtüler</li>
+                </ul>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevap: B) Özgürlükten kaçış</h4>
+                    <p><strong>Açıklama:</strong> Fromm'un "Escape from Freedom" (Özgürlükten Kaçış) adlı eserinde belirttiği temel tez budur. Modern insan geleneksel bağlardan kurtulup özgürleşirken, aynı zamanda bu özgürlükten korkar ve kaçmaya çalışır. Çünkü özgürlük beraberinde yalnızlık, belirsizlik ve sorumluluk getirir. İnsanlar bu durumla başa çıkmak için otoriterlik, konformizm ve yıkıcılık gibi kaçış mekanizmalarına başvururlar. Bu durum faşizm gibi totaliter rejimlerin nasıl ortaya çıkabildiğini açıklar.</p>
+                </div>
+            </div>
+
+            <!-- Soru 2 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">2</div>
+                    <div class="question-type">Boşluk Doldurma</div>
+                </div>
+                <div class="question-text">
+                    Fromm'un karakter yönelimlerinden <input type="text" class="fill-blank" placeholder="üretken"> yönelim sağlıklı kişiliği temsil ederken, <input type="text" class="fill-blank" placeholder="üretken olmayan"> yönelimler patolojik karakteri ifade eder.
+                </div>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevaplar: Üretken, Üretken Olmayan</h4>
+                    <p><strong>Açıklama:</strong> Fromm karakter yönelimlerini iki ana kategoriye ayırır: <strong>Üretken Yönelim:</strong> Sağlıklı, yaratıcı, sevgi dolu, özgür karakter yapısı. Kişi potansiyelini gerçekleştirmiş, kendini ve başkalarını olduğu gibi kabul etmiştir. <strong>Üretken Olmayan Yönelimler:</strong> 1) Alıcı (receptive), 2) Sömürücü (exploitative), 3) Biriktirici (hoarding), 4) Pazarlık (marketing) yönelimleri. Bu yönelimler insanın yaratıcı potansiyelini köreltir ve sağlıksız ilişki kalıpları yaratır.</p>
+                </div>
+            </div>
+
+            <!-- Soru 3 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">3</div>
+                    <div class="question-type">Çoktan Seçmeli</div>
+                </div>
+                <div class="question-text">
+                    Fromm'un "pazarlık yönelimi" hangi toplumsal durumu yansıtır?
+                </div>
+                <ul class="options">
+                    <li>A) Feodal toplum yapısını</li>
+                    <li>B) Modern kapitalist toplumu</li>
+                    <li>C) İlkel toplum örgütlenmesini</li>
+                    <li>D) Sosyalist toplum idealini</li>
+                    <li>E) Geleneksel aile yapısını</li>
+                </ul>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevap: B) Modern kapitalist toplumu</h4>
+                    <p><strong>Açıklama:</strong> <strong>Pazarlık yönelimi (marketing orientation)</strong> modern kapitalist toplumun karakteristik özelliğidir. Bu yönelimde kişi kendini bir mal gibi görür ve "pazarlanabilir" olmaya odaklanır. Değeri piyasa koşullarına göre değişir, sürekli kendini yeniden paketlemeye çalışır. Gerçek benliğini kaybeder, yüzeysel ilişkiler kurar ve sürekli değişen taleplere uyum sağlamaya çalışır. Bu durum modern tüketim toplumunun ve rekabetçi iş dünyasının yarattığı psikolojik sonuçları yansıtır. Fromm bunu kapitalizmin insanlık üzerindeki olumsuz etkilerinden biri olarak görür.</p>
+                </div>
+            </div>
+
+            <!-- Soru 4 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">4</div>
+                    <div class="question-type">Klasik Sınav</div>
+                </div>
+                <div class="question-text">
+                    Fromm'un "sevgi sanatı" kavramını açıklayın ve sevginin farklı türlerini tartışın.
+                </div>
+                <textarea class="essay-area" placeholder="Cevabınızı buraya yazınız..."></textarea>
+                <div class="explanation">
+                    <h4>🎯 Örnek Cevap:</h4>
+                    <p><strong>Sevgi Sanatı:</strong> Fromm "The Art of Loving" eserinde sevgiyi öğrenilebilir bir sanat olarak tanımlar. Sevgi pasif bir duygu değil, aktif bir tutumdur ve geliştirilmesi gerekir.</p>
+                    <p><strong>Sevginin Temel Öğeleri:</strong> 1) Özen (care), 2) Sorumluluk (responsibility), 3) Saygı (respect), 4) Bilgi (knowledge). Bu dört öğe gerçek sevgiyi oluşturur.</p>
+                    <p><strong>Sevgi Türleri:</strong> <strong>Kardeşçe sevgi:</strong> Tüm insanlara karşı temel sevgi. <strong>Ana sevgisi:</strong> Koşulsuz, koruyucu sevgi. <strong>Erotik sevgi:</strong> Iki kişi arasında özel bağ. <strong>Kendini sevme:</strong> Sağlıklı narsisizm. <strong>Tanrı sevgisi:</strong> Spiritüel boyut.</p>
+                    <p><strong>Modern Problemler:</strong> Kapitalist toplum sevgiyi metalaştırır, tüketim nesnesi haline getirir. Gerçek sevgi yerine sahip olma, kontrol etme isteği hakim olur.</p>
+                </div>
+            </div>
+
+            <!-- Soru 5 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">5</div>
+                    <div class="question-type">Çoktan Seçmeli</div>
+                </div>
+                <div class="question-text">
+                    Fromm'a göre "otoriteryen karakter" hangi özelliği göstermez?
+                </div>
+                <ul class="options">
+                    <li>A) Güçlü olana saygı</li>
+                    <li>B) Zayıf olana saldırganlık</li>
+                    <li>C) Eleştirel düşünce</li>
+                    <li>D) Konformist tutum</li>
+                    <li>E) Hiyerarşiye bağlılık</li>
+                </ul>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevap: C) Eleştirel düşünce</h4>
+                    <p><strong>Açıklama:</strong> <strong>Otoriteryen karakter</strong> eleştirel düşünce göstermez, aksine dogmatik ve katı düşünce yapısına sahiptir. Özellikleri: güçlü otoriteye körü körüne itaat, zayıf konumda olanlara saldırganlık, konformist tutum, hiyerarşik düzene bağlılık, belirsizlikten rahatsızlık duyma, siyah-beyaz düşünce. Bu karakter yapısı özgürlükten kaçış mekanizmalarından biridir. Kişi kendi özerkliğinden vazgeçerek güçlü bir otoriteye bağlanır, böylece belirsizlik ve sorumluluklardan kaçar. Faşist ideolojilerin tabanını bu tip karakterler oluşturur.</p>
+                </div>
+            </div>
+
+            <!-- Soru 6 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">6</div>
+                    <div class="question-type">Boşluk Doldurma</div>
+                </div>
+                <div class="question-text">
+                    Fromm'a göre insanın temel çelişkisi <input type="text" class="fill-blank" placeholder="doğa"> ile <input type="text" class="fill-blank" placeholder="kültür"> arasında yaşanır ve bu durum <input type="text" class="fill-blank" placeholder="varoluşsal"> ikilemi yaratır.
+                </div>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevaplar: Doğa, Kültür, Varoluşsal</h4>
+                    <p><strong>Açıklama:</strong> Fromm'a göre insan hem doğal hem de kültürel bir varlıktır ve bu durum temel çelişkiye yol açar. <strong>Doğal yön:</strong> Hayvan dünyasından gelen güdüler, temel ihtiyaçlar. <strong>Kültürel yön:</strong> Bilinç, dil, düşünme yetisi, özgürlük. Bu ikilik <strong>varoluşsal ikilem</strong> yaratır: İnsan ne tamamen doğal ne de tamamen kültürel varlık olabilir. Bu geriliim yaratıcılığın kaynağıdır ancak aynı zamanda kaygıya da neden olur. İnsan bu çelişkiyi çözmek için çeşitli yollar arar: yaratıcı çözümler (üretken yönelim) veya kaçış mekanizmaları (üretken olmayan yönelimler).</p>
+                </div>
+            </div>
+
+            <!-- Soru 7 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">7</div>
+                    <div class="question-type">Çoktan Seçmeli</div>
+                </div>
+                <div class="question-text">
+                    "Biriktirici yönelim" hangi davranış kalıplarıyla karakterizedir?
+                </div>
+                <ul class="options">
+                    <li>A) Sürekli paylaşma ve verme</li>
+                    <li>B) Tutumlu olma ve biriktirme</li>
+                    <li>C) Sürekli değişim arayışı</li>
+                    <li>D) Başkalarından alma</li>
+                    <li>E) Sömürücü davranışlar</li>
+                </ul>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevap: B) Tutumlu olma ve biriktirme</h4>
+                    <p><strong>Açıklama:</strong> <strong>Biriktirici yönelim (hoarding orientation)</strong> güvenliği birikimde bulan karakter yapısıdır. Özellikler: tutumlu, cimri, düzenli, temiz, inatçı, katı, şüpheci. Değişimden korkar, alışkanlıklarına bağlıdır. Her şeyi biriktirme eğilimi gösterir: eşya, para, duygular, düşünceler. İlişkilerde de sahip olma güdüsü hakimdir. Bu yönelim ekonomik belirsizlik dönemlerinde (Büyük Buhran gibi) yaygınlaşabilir. Pozitif yanları: düzenlilik, güvenilirlik, sadakat. Negatif yanları: cimrilik, katılık, değişime kapalılık.</p>
+                </div>
+            </div>
+
+            <!-- Soru 8 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">8</div>
+                    <div class="question-type">Klasik Sınav</div>
+                </div>
+                <div class="question-text">
+                    Fromm'un "sahip olma" ve "olma" kipi arasındaki farkı açıklayın ve modern toplumla ilişkisini tartışın.
+                </div>
+                <textarea class="essay-area" placeholder="Cevabınızı buraya yazınız..."></textarea>
+                <div class="explanation">
+                    <h4>🎯 Örnek Cevap:</h4>
+                    <p><strong>Sahip Olma Kipi:</strong> Kişinin kendini sahip olduğu şeylerle tanımladığı yaşam tarzı. "Benim arabam, evim, işim var, bu yüzden varım" anlayışı. Tüketim odaklı, materyalist, rekabetçi.</p>
+                    <p><strong>Olma Kipi:</strong> Kişinin varlığını, deneyimlerini ve potansiyelini temel alan yaşam tarzı. "Düşünürüm, severim, yaratırım, bu yüzden varım" anlayışı. Yaratıcı, ilişki odaklı, gelişim yönelimli.</p>
+                    <p><strong>Temel Farklar:</strong> Sahip olma: rekabet, korku, statik. Olma: paylaşım, sevgi, dinamik. Sahip olma: güvensizlik, kimlik arayışı. Olma: iç güvenlik, kimlik netliği.</p>
+                    <p><strong>Modern Toplumla İlişki:</strong> Kapitalist tüketim toplumu sahip olma kipini destekler. Reklamlar, medya, eğitim sistemi bu yönde etkiler. Sonuç: yabancılaşma, mutsuzluk, anlamsızlık. Fromm, olma kipine geçişin bireysel ve toplumsal dönüşüm için gerekli olduğunu savunur.</p>
+                </div>
+            </div>
+
+            <!-- Soru 9 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">9</div>
+                    <div class="question-type">Boşluk Doldurma</div>
+                </div>
+                <div class="question-text">
+                    Fromm'un üretken olmayan yönelimlerinden <input type="text" class="fill-blank" placeholder="alıcı"> yönelim pasif beklentiyi, <input type="text" class="fill-blank" placeholder="sömürücü"> yönelim ise agresif almayı temsil eder.
+                </div>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevaplar: Alıcı, Sömürücü</h4>
+                    <p><strong>Açıklama:</strong> <strong>Alıcı yönelim (receptive orientation):</strong> Pasif karakter yapısı, her şeyin dışarıdan gelmesini bekler. "Kaynak dışarıdadır" inancı. Bağımlı, boyun eğen, sadık, minnettar ama aynı zamanda pasif, çaresiz, iradesiz. <strong>Sömürücü yönelim (exploitative orientation):</strong> Agresif karakter yapısı, istediğini güçle alır. "Kaynak başkalarında" inancı. Aktif, girişken, özgüvenli ama aynı zamanda saldırgan, bencil, şüpheci, kıskanç. Her iki yönelim de dış dünyaya bağımlıdır ve yaratıcı potansiyeli engeller.</p>
+                </div>
+            </div>
+
+            <!-- Soru 10 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">10</div>
+                    <div class="question-type">Klasik Sınav</div>
+                </div>
+                <div class="question-text">
+                    Fromm'un toplumsal eleştirilerini özetleyin ve "sağlıklı toplum" vizyonunu açıklayın.
+                </div>
+                <textarea class="essay-area" placeholder="Cevabınızı buraya yazınız..."></textarea>
+                <div class="explanation">
+                    <h4>🎯 Örnek Cevap:</h4>
+                    <p><strong>Toplumsal Eleştiriler:</strong> 1) Kapitalizm insanı metalaştırır, 2) Tüketim toplumu yabancılaşmaya neden olur, 3) Teknoloji insanı pasifleştirir, 4) Bürokrasi bireyselliği öldürür, 5) Rekabet toplumsal dayanışmayı bozar.</p>
+                    <p><strong>Yabancılaşma Boyutları:</strong> Kendine, işine, ürününe, başkalarına ve doğaya yabancılaşma. Modern insan kendi yaratıcı potansiyelinden kopmuştur.</p>
+                    <p><strong>Sağlıklı Toplum Vizyonu:</strong> 1) <strong>Humanist sosyalizm:</strong> Ne kapitalist ne komünist, demokratik sosyalizm. 2) <strong>Katılımcı demokrasi:</strong> Gerçek halk katılımı. 3) <strong>Anlamlı çalışma:</strong> Yaratıcı, tatmin edici işler. 4) <strong>Dengeli teknoloji:</strong> İnsana hizmet eden teknoloji. 5) <strong>Ekolojik bilinç:</strong> Doğayla uyum.</p>
+                    <p><strong>Bireysel Çözümler:</strong> Olma kipine geçiş, sevgi sanatını öğrenme, eleştirel bilinç geliştirme, yaratıcı potansiyeli keşfetme.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

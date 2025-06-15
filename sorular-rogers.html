@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carl Rogers - Hümanistik Kuram Soruları</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+        }
+        
+        .header h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+        
+        .nav-link {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background: rgba(255,255,255,0.2);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-link:hover {
+            background: rgba(255,255,255,0.3);
+        }
+        
+        .content {
+            padding: 40px;
+        }
+        
+        .question {
+            background: #f8f9fa;
+            margin-bottom: 30px;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .question-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        
+        .question-number {
+            background: #667eea;
+            color: white;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+        
+        .question-type {
+            background: #28a745;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+        }
+        
+        .question-text {
+            font-size: 1.1rem;
+            color: #333;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+        
+        .options {
+            list-style: none;
+            margin-bottom: 20px;
+        }
+        
+        .options li {
+            padding: 10px 15px;
+            margin: 8px 0;
+            background: white;
+            border-radius: 8px;
+            border: 2px solid #e9ecef;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .options li:hover {
+            border-color: #667eea;
+            background: #f0f4ff;
+        }
+        
+        .correct-answer {
+            border-color: #28a745 !important;
+            background: #d4edda !important;
+        }
+        
+        .explanation {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+        
+        .explanation h4 {
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+        
+        .explanation p {
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+        
+        .fill-blank {
+            border: none;
+            border-bottom: 2px solid #667eea;
+            background: transparent;
+            padding: 5px;
+            font-size: 1rem;
+            width: 150px;
+            margin: 0 5px;
+        }
+        
+        .essay-area {
+            width: 100%;
+            min-height: 100px;
+            padding: 15px;
+            border: 2px solid #e9ecef;
+            border-radius: 10px;
+            font-family: inherit;
+            font-size: 1rem;
+            resize: vertical;
+        }
+        
+        @media (max-width: 768px) {
+            .content {
+                padding: 20px;
+            }
+            .question-header {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🌟 Carl Rogers - Hümanistik Kuram</h1>
+            <p>Birey merkezli yaklaşım, kendini gerçekleştirme ve koşulsuz sevgi</p>
+            <a href="index.html" class="nav-link">← Ana Sayfaya Dön</a>
+        </div>
+        
+        <div class="content">
+            <!-- Soru 1 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">1</div>
+                    <div class="question-type">Çoktan Seçmeli</div>
+                </div>
+                <div class="question-text">
+                    Rogers'ın kuramında temel güdüleyici güç nedir?
+                </div>
+                <ul class="options">
+                    <li>A) Libido</li>
+                    <li>B) Güç istenci</li>
+                    <li>C) Kendini gerçekleştirme eğilimi</li>
+                    <li>D) Güvenlik arayışı</li>
+                    <li>E) Sosyal onay</li>
+                </ul>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevap: C) Kendini gerçekleştirme eğilimi</h4>
+                    <p><strong>Açıklama:</strong> Rogers'a göre, tüm canlı organizmaların <strong>kendini gerçekleştirme eğilimi (self-actualizing tendency)</strong> vardır. Bu, organizmayı büyüme, gelişme ve potansiyelini gerçekleştirme yönünde motive eden temel güçtür. Bu eğilim, biyolojik ihtiyaçlardan ziyade psikolojik büyüme ve gelişmeye odaklanır. Birey, doğal olarak daha tam, karmaşık ve özerk bir kişi olmaya yönelir. Bu kavram, Maslow'un kendini gerçekleştirme kavramından farklı olarak, tüm yaşam boyu aktif olan temel bir güdü olarak görülür, sadece üst düzey bir ihtiyaç değil.</p>
+                </div>
+            </div>
+
+            <!-- Soru 2 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">2</div>
+                    <div class="question-type">Boşluk Doldurma</div>
+                </div>
+                <div class="question-text">
+                    Rogers'ın kişilik yapısında <input type="text" class="fill-blank" placeholder="benlik"> kavramı merkezdedir ve bu benlik <input type="text" class="fill-blank" placeholder="ideal benlik"> ile uyumlu olduğunda kişi psikolojik sağlık yaşar.
+                </div>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevaplar: Benlik, İdeal benlik</h4>
+                    <p><strong>Açıklama:</strong> Rogers'ın kuramının merkezinde <strong>benlik (self)</strong> kavramı yer alır. Benlik, kişinin kendisi hakkındaki algıları, düşünceleri ve değerlendirmelerinin bütünüdür. <strong>İdeal benlik</strong> ise kişinin olmak istediği, ulaşmaya çalıştığı benlik imajıdır. Gerçek benlik ile ideal benlik arasındaki uyum (congruence), psikolojik sağlığın göstergesidir. Bu iki benlik arasında büyük çelişki (incongruence) olduğunda, kişi kaygı, stres ve psikolojik rahatsızlıklar yaşar. Sağlıklı kişilik gelişimi, bu iki benlik arasındaki uyumun artırılmasıyla mümkündür.</p>
+                </div>
+            </div>
+
+            <!-- Soru 3 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">3</div>
+                    <div class="question-type">Çoktan Seçmeli</div>
+                </div>
+                <div class="question-text">
+                    Rogers'ın tedavi yaklaşımında terapistin sahip olması gereken üç temel tutum hangisidir?
+                </div>
+                <ul class="options">
+                    <li>A) Yorum, Analiz, Direktiflik</li>
+                    <li>B) Empati, Koşulsuz pozitif kabul, Samimiyet</li>
+                    <li>C) Objektiflik, Mesafe, Nötrallik</li>
+                    <li>D) Bilgi, Deneyim, Otorite</li>
+                    <li>E) Sabır, Disiplin, Kontrol</li>
+                </ul>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevap: B) Empati, Koşulsuz pozitif kabul, Samimiyet</h4>
+                    <p><strong>Açıklama:</strong> Rogers'ın birey-merkezli terapisinde terapistin sahip olması gereken üç temel tutum vardır: <strong>1) Empati:</strong> Danışanın iç dünyasını anlamaya çalışma, onun perspektifinden bakmaya çalışma. <strong>2) Koşulsuz Pozitif Kabul:</strong> Danışanı olduğu gibi kabul etme, yargılamama, koşul koymama. <strong>3) Samimiyet (Genuineness):</strong> Terapistin kendisi olması, rol yapmaktan kaçınması, otantik olması. Bu üç tutum, danışanın kendini güvende hissetmesini ve kendi potansiyelini keşfetmesini sağlar. Rogers, bu tutumların varlığının tedavi için yeterli olduğunu savunur.</p>
+                </div>
+            </div>
+
+            <!-- Soru 4 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">4</div>
+                    <div class="question-type">Klasik Sınav</div>
+                </div>
+                <div class="question-text">
+                    Rogers'ın "tam işlevsel kişi" (fully functioning person) kavramını açıklayın ve özelliklerini sıralayın.
+                </div>
+                <textarea class="essay-area" placeholder="Cevabınızı buraya yazınız..."></textarea>
+                <div class="explanation">
+                    <h4>🎯 Örnek Cevap:</h4>
+                    <p><strong>Tam İşlevsel Kişi Tanımı:</strong> Rogers'a göre tam işlevsel kişi, kendini gerçekleştirme sürecinde olan, potansiyelini kullanan ve psikolojik olarak sağlıklı olan kişidir.</p>
+                    <p><strong>Özellikler:</strong></p>
+                    <p><strong>1. Deneyime açıklık:</strong> Yaşadığı tüm duygu ve deneyimleri fark eder, bastırmaz veya çarpıtmaz.</p>
+                    <p><strong>2. Yaşantısal özgürlük:</strong> Davranışlarını özgürce seçer, dış baskılara boyun eğmez.</p>
+                    <p><strong>3. Organizmik güven:</strong> Kendi iç değerlendirmelerine güvenir, dış onay arayışında olmaz.</p>
+                    <p><strong>4. Yaşamsal süreç:</strong> Yaşamı statik değil, dinamik bir süreç olarak görür.</p>
+                    <p><strong>5. Yaratıcılık:</strong> Problemlere yaratıcı çözümler bulur, esnek düşünür.</p>
+                    <p><strong>6. Güvenilirlik:</strong> Değerleri ve davranışları tutarlıdır, samimi ilişkiler kurar.</p>
+                    <p><strong>7. Zengin yaşam:</strong> Yaşamın her anını dolu dolu yaşar, anlamlı deneyimler peşinde koşar.</p>
+                </div>
+            </div>
+
+            <!-- Soru 5 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">5</div>
+                    <div class="question-type">Çoktan Seçmeli</div>
+                </div>
+                <div class="question-text">
+                    "Değer koşulları" (conditions of worth) kavramı neyi ifade eder?
+                </div>
+                <ul class="options">
+                    <li>A) Kişinin kendine koyduğu kurallar</li>
+                    <li>B) Toplumsal normlar</li>
+                    <li>C) Değerli olmak için karşılanması gereken koşullar</li>
+                    <li>D) Ahlaki değerler</li>
+                    <li>E) Başarı kriterleri</li>
+                </ul>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevap: C) Değerli olmak için karşılanması gereken koşullar</h4>
+                    <p><strong>Açıklama:</strong> <strong>"Değer koşulları"</strong> Rogers'ın kuramında kritik bir kavramdır. Bu koşullar, kişinin başkalarından (özellikle ebeveynlerden) sevgi ve kabul görmek için karşılaması gerektiğini düşündüğü koşullardır. Örneğin, "Sadece başarılı olursam sevilir", "Sadece uslu olursam kabul edilirim" gibi düşünceler değer koşullarıdır. Bu koşullar, kişinin gerçek benliğini ifade etmesini engeller ve sahte bir benlik geliştirmesine neden olur. Çocukluk döneminde edinilen bu koşullar, yetişkinlikte de kişinin kendini değerlendirme biçimini etkiler ve psikolojik sorunlara yol açabilir. Sağlıklı kişilik gelişimi için bu koşulların fark edilmesi ve aşılması gerekir.</p>
+                </div>
+            </div>
+
+            <!-- Soru 6 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">6</div>
+                    <div class="question-type">Boşluk Doldurma</div>
+                </div>
+                <div class="question-text">
+                    Rogers'a göre kişi, <input type="text" class="fill-blank" placeholder="organizmik"> değerlendirme sürecini kullandığında kendi <input type="text" class="fill-blank" placeholder="iç"> bilgeliğine güvenir ve dış onaya ihtiyaç duymaz.
+                </div>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevaplar: Organizmik, İç</h4>
+                    <p><strong>Açıklama:</strong> <strong>Organizmik değerlendirme süreci</strong>, kişinin kendi deneyimlerini değerlendirmek için içsel olarak sahip olduğu doğal yetenektir. Bu süreç, kişinin neyin kendisi için doğru, değerli ve anlamlı olduğunu kendi iç bilgeliğiyle değerlendirmesini sağlar. Bebeklerde doğal olarak bulunan bu yetenek, büyüme sürecinde değer koşulları nedeniyle bastırılabilir. Tam işlevsel kişi, bu organizmik değerlendirme sürecini yeniden aktif hale getirir ve kararlarını dış otoritelerin görüşleri yerine kendi iç deneyimlerine dayanarak verir. Bu, kişinin otantik ve özgür yaşamasının temelini oluşturur.</p>
+                </div>
+            </div>
+
+            <!-- Soru 7 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">7</div>
+                    <div class="question-type">Çoktan Seçmeli</div>
+                </div>
+                <div class="question-text">
+                    Rogers'ın eğitim felsefesinde öğrencinin rolü nasıl tanımlanır?
+                </div>
+                <ul class="options">
+                    <li>A) Pasif bilgi alıcısı</li>
+                    <li>B) Aktif katılımcı ve kendi öğrenmesinin sorumlusu</li>
+                    <li>C) Öğretmenin yönlendirmesini bekleyen</li>
+                    <li>D) Rekabet halindeki yarışmacı</li>
+                    <li>E) Disiplinli takipçi</li>
+                </ul>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevap: B) Aktif katılımcı ve kendi öğrenmesinin sorumlusu</h4>
+                    <p><strong>Açıklama:</strong> Rogers'ın <strong>öğrenci-merkezli eğitim</strong> felsefesinde öğrenci, kendi öğrenmesinin aktif katılımcısı ve sorumlusudur. Bu yaklaşımda öğrenci, öğrenme sürecini yönlendiren, sorular soran, keşfeden ve kendi anlamını yaratan kişidir. Öğretmenin rolü ise rehberlik etmek, kaynak sağlamak ve destekleyici bir ortam yaratmaktır. Rogers, öğrencilerin doğal öğrenme merakına ve kapasitesine güvenilmesi gerektiğini savunur. Bu yaklaşım, öğrencinin içsel motivasyonunu artırır ve anlamlı öğrenmeyi teşvik eder. Geleneksel otoriter eğitim modeline alternatif olan bu yaklaşım, öğrencinin yaratıcılığını ve eleştirel düşünme becerisini geliştirir.</p>
+                </div>
+            </div>
+
+            <!-- Soru 8 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">8</div>
+                    <div class="question-type">Klasik Sınav</div>
+                </div>
+                <div class="question-text">
+                    Rogers'ın birey-merkezli terapisinin temel ilkelerini açıklayın ve bu yaklaşımın diğer terapi türlerinden farkını değerlendirin.
+                </div>
+                <textarea class="essay-area" placeholder="Cevabınızı buraya yazınız..."></textarea>
+                <div class="explanation">
+                    <h4>🎯 Örnek Cevap:</h4>
+                    <p><strong>Temel İlkeler:</strong></p>
+                    <p><strong>1. Danışan uzmanıdır:</strong> Kendi yaşamının uzmanı danışandır, terapist değil.</p>
+                    <p><strong>2. Non-direktif yaklaşım:</strong> Terapist yönlendirmez, danışanın kendi çözümlerini bulmasına yardım eder.</p>
+                    <p><strong>3. Burada ve şimdi odaklılık:</strong> Geçmiş analizinden ziyade şimdiki deneyimlere odaklanma.</p>
+                    <p><strong>4. Fenomenolojik yaklaşım:</strong> Danışanın subjektif deneyimlerini anlamaya çalışma.</p>
+                    <p><strong>5. İlişkinin tedavi edici değeri:</strong> Terapötik ilişkinin kendisi tedavi edicidir.</p>
+                    <p><strong>Diğer Yaklaşımlardan Farkları:</strong></p>
+                    <p><strong>- Psikanaliz'den farkı:</strong> Bilinçdışı analizi yapmaz, yorum vermez, transferans çalışmaz.</p>
+                    <p><strong>- Davranışçı yaklaşımdan farkı:</strong> Semptom değiştirmeye değil, kişinin büyümesine odaklanır.</p>
+                    <p><strong>- Bilişsel yaklaşımdan farkı:</strong> Düşünceleri değiştirmeye değil, duyguları kabul etmeye odaklanır.</p>
+                </div>
+            </div>
+
+            <!-- Soru 9 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">9</div>
+                    <div class="question-type">Boşluk Doldurma</div>
+                </div>
+                <div class="question-text">
+                    Rogers'a göre psikolojik problemlerin temel nedeni <input type="text" class="fill-blank" placeholder="uyumsuzluk"> dur ve bu durum gerçek benlik ile <input type="text" class="fill-blank" placeholder="deneyim"> arasındaki çelişkiden kaynaklanır.
+                </div>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevaplar: Uyumsuzluk, Deneyim</h4>
+                    <p><strong>Açıklama:</strong> Rogers'a göre psikolojik problemlerin temel nedeni <strong>uyumsuzluk (incongruence)</strong> dur. Bu, kişinin gerçek benlik algısı ile yaşadığı deneyimler arasındaki çelişkiyi ifade eder. Kişi, değer koşulları nedeniyle bazı deneyimlerini kabul etmez, çarpıtır veya inkâr eder. Örneğin, "iyi çocuk" olmak için öfke duygularını bastıran bir kişi, öfke yaşadığında benlik algısı ile deneyimi arasında uyumsuzluk yaşar. Bu uyumsuzluk arttıkça kaygı, stres ve diğer psikolojik problemler ortaya çıkar. Tedavinin amacı, bu uyumsuzluğu azaltarak kişinin tüm deneyimlerini kabul etmesini sağlamaktır.</p>
+                </div>
+            </div>
+
+            <!-- Soru 10 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">10</div>
+                    <div class="question-type">Çoktan Seçmeli</div>
+                </div>
+                <div class="question-text">
+                    Aşağıdakilerden hangisi Rogers'ın kuramının temel varsayımlarından biri değildir?
+                </div>
+                <ul class="options">
+                    <li>A) İnsan doğası temelde iyidir</li>
+                    <li>B) İnsanlar büyüme potansiyeline sahiptir</li>
+                    <li>C) Bilinçdışı güçler davranışı kontrol eder</li>
+                    <li>D) Kişi kendi deneyimlerinin uzmanıdır</li>
+                    <li>E) Kendini gerçekleştirme eğilimi evrenseldir</li>
+                </ul>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevap: C) Bilinçdışı güçler davranışı kontrol eder</h4>
+                    <p><strong>Açıklama:</strong> <strong>"Bilinçdışı güçler davranışı kontrol eder"</strong> Rogers'ın kuramının temel varsayımı değildir; bu psikanalitik yaklaşımın varsayımıdır. Rogers'ın temel varsayımları şunlardır: İnsan doğası temelde yapıcı ve iyidir; insanlar doğal olarak büyüme ve gelişme potansiyeline sahiptir; kişi kendi deneyimlerinin en iyi uzmanıdır; kendini gerçekleştirme eğilimi tüm insanlarda bulunur; birey özgür iradesi olan, seçim yapabilen bir varlıktır. Rogers, davranışın bilinçli ve farkında olunan süreçlerle kontrol edildiğini, kişinin kendi seçimlerinin sorumluluğunu alabileceğini savunur.</p>
+                </div>
+            </div>
+
+            <!-- Soru 11 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">11</div>
+                    <div class="question-type">Çoktan Seçmeli</div>
+                </div>
+                <div class="question-text">
+                    Rogers'ın "yansıtma" (reflection) tekniğinin amacı nedir?
+                </div>
+                <ul class="options">
+                    <li>A) Danışanın davranışını eleştirmek</li>
+                    <li>B) Danışanın duygularını anladığını göstermek</li>
+                    <li>C) Psikolojik testler uygulamak</li>
+                    <li>D) Geçmiş anıları analiz etmek</li>
+                    <li>E) Direktif önerilerde bulunmak</li>
+                </ul>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevap: B) Danışanın duygularını anladığını göstermek</h4>
+                    <p><strong>Açıklama:</strong> <strong>Yansıtma (reflection)</strong> tekniği, terapistin danışanın ifade ettiği duyguları ve düşünceleri kendi sözleriyle tekrar ifade etmesidir. Bu tekniğin amacı: 1) Danışana terapistin onu anladığını göstermek, 2) Danışanın kendi duygularını daha iyi fark etmesini sağlamak, 3) Empatik ilişki kurmak, 4) Danışanın kendi deneyimlerini daha derinde keşfetmesine yardım etmek. Yansıtma, yargılamayan, anlayışlı bir tavırla yapılır ve danışanın öz-farkındalığını artırır. Bu teknik, birey-merkezli terapinin temel araçlarından biridir ve danışanın kendini güvende hissetmesini sağlar.</p>
+                </div>
+            </div>
+
+            <!-- Soru 12 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">12</div>
+                    <div class="question-type">Klasik Sınav</div>
+                </div>
+                <div class="question-text">
+                    Rogers'ın hümanistik yaklaşımının günümüz psikolojisine katkılarını ve eleştirilerini kapsamlı olarak değerlendirin.
+                </div>
+                <textarea class="essay-area" placeholder="Cevabınızı buraya yazınız..."></textarea>
+                <div class="explanation">
+                    <h4>🎯 Örnek Cevap:</h4>
+                    <p><strong>Katkılar:</strong></p>
+                    <p><strong>1. Psikoterapi alanına katkılar:</strong> Birey-merkezli terapi, terapötik ilişkinin önemini vurguladı, empati ve koşulsuz kabul kavramlarını geliştirdi.</p>
+                    <p><strong>2. Eğitim alanına katkılar:</strong> Öğrenci-merkezli eğitim modeli, açık eğitim yaklaşımlarının temelini oluşturdu.</p>
+                    <p><strong>3. İnsan doğası anlayışı:</strong> İnsanın yapıcı potansiyeline odaklanarak iyimser bir perspektif sundu.</p>
+                    <p><strong>4. Araştırma katkıları:</strong> Psikoterapi süreçlerinin ampirik olarak araştırılmasını başlattı.</p>
+                    <p><strong>5. Pozitif psikoloji:</strong> Modern pozitif psikolojinin temellerini attı.</p>
+                    <p><strong>Eleştiriler:</strong></p>
+                    <p><strong>1. Kültürel sınırlılık:</strong> Bireyci kültürlere özgü olduğu, kolektivist kültürlerde uygulanamayacağı eleştirisi.</p>
+                    <p><strong>2. Aşırı iyimserlik:</strong> İnsan doğasının her zaman yapıcı olmadığı, kötülük potansiyelini göz ardı ettiği eleştirisi.</p>
+                    <p><strong>3. Yapısal eksiklik:</strong> Kuram olarak yeterince sistematik olmadığı, belirsizliklerin bulunduğu eleştirisi.</p>
+                    <p><strong>4. Sınırlı uygulama alanı:</strong> Ciddi psikopatolojilerde yetersiz kaldığı eleştirisi.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

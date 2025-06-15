@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bilişsel Yaklaşımlar - Kişilik Kuramları Soruları</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+        }
+        
+        .header h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+        
+        .nav-link {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background: rgba(255,255,255,0.2);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-link:hover {
+            background: rgba(255,255,255,0.3);
+        }
+        
+        .content {
+            padding: 40px;
+        }
+        
+        .question {
+            background: #f8f9fa;
+            margin-bottom: 30px;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .question-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        
+        .question-number {
+            background: #667eea;
+            color: white;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+        
+        .question-type {
+            background: #28a745;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+        }
+        
+        .question-text {
+            font-size: 1.1rem;
+            color: #333;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+        
+        .options {
+            list-style: none;
+            margin-bottom: 20px;
+        }
+        
+        .options li {
+            padding: 10px 15px;
+            margin: 8px 0;
+            background: white;
+            border-radius: 8px;
+            border: 2px solid #e9ecef;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .options li:hover {
+            border-color: #667eea;
+            background: #f0f4ff;
+        }
+        
+        .correct-answer {
+            border-color: #28a745 !important;
+            background: #d4edda !important;
+        }
+        
+        .explanation {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+        
+        .explanation h4 {
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+        
+        .explanation p {
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+        
+        .fill-blank {
+            border: none;
+            border-bottom: 2px solid #667eea;
+            background: transparent;
+            padding: 5px;
+            font-size: 1rem;
+            width: 150px;
+            margin: 0 5px;
+        }
+        
+        .essay-area {
+            width: 100%;
+            min-height: 100px;
+            padding: 15px;
+            border: 2px solid #e9ecef;
+            border-radius: 10px;
+            font-family: inherit;
+            font-size: 1rem;
+            resize: vertical;
+        }
+        
+        @media (max-width: 768px) {
+            .content {
+                padding: 20px;
+            }
+            .question-header {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🧠 Bilişsel Yaklaşımlar</h1>
+            <p>Düşünce süreçleri, şemalar ve bilişsel kişilik kuramları</p>
+            <a href="index.html" class="nav-link">← Ana Sayfaya Dön</a>
+        </div>
+        
+        <div class="content">
+            <!-- Soru 1 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">1</div>
+                    <div class="question-type">Çoktan Seçmeli</div>
+                </div>
+                <div class="question-text">
+                    Bilişsel kişilik yaklaşımının temel varsayımı nedir?
+                </div>
+                <ul class="options">
+                    <li>A) Davranış çevresel koşullarla belirlenir</li>
+                    <li>B) Düşünce süreçleri kişiliği şekillendirir</li>
+                    <li>C) Bilinçdışı güdüler baskındır</li>
+                    <li>D) Genetik faktörler belirleyicidir</li>
+                    <li>E) Sosyal öğrenme temeldir</li>
+                </ul>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevap: B) Düşünce süreçleri kişiliği şekillendirir</h4>
+                    <p><strong>Açıklama:</strong> Bilişsel kişilik yaklaşımının temel varsayımı <strong>düşünce süreçlerinin kişiliği şekillendirdiği</strong>dir. Bu yaklaşıma göre: kişinin olayları nasıl algıladığı, yorumladığı ve anlamlandırdığı davranışını belirler; bireyler aktif bilgi işlem sistemleridir; aynı durum farklı kişiler tarafından farklı şekilde algılanabilir; kişilik, bilişsel şemalar, otomatik düşünceler ve bilgi işleme stillerinden oluşur. Bu yaklaşım, davranışçılığın uyaran-tepki modelini reddeteer ve insanın zihinsel süreçlerinin merkeziliğini vurgular. Modern bilişsel davranışçı terapi, sosyal bilişsel kuram ve kişisel yapılar teorisi bu yaklaşımın örnekleridir. Kişilik farklılıkları, farklı bilişsel stillerden ve düşünce örüntülerinden kaynaklanır.</p>
+                </div>
+            </div>
+
+            <!-- Soru 2 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">2</div>
+                    <div class="question-type">Boşluk Doldurma</div>
+                </div>
+                <div class="question-text">
+                    Aaron Beck'in kuramında <input type="text" class="fill-blank" placeholder="şema"> lar bilgiyi organize eden yapılardır ve <input type="text" class="fill-blank" placeholder="otomatik düşünceler"> bu şemalardan türer.
+                </div>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevaplar: Şema, Otomatik düşünceler</h4>
+                    <p><strong>Açıklama:</strong> Beck'in bilişsel modelinde <strong>şemalar</strong> bilgiyi organize eden, saklan ve yorumlayan temel bilişsel yapılardır. Şemalar: erken yaşam deneyimlerinden gelişir, kendisi, dünya ve gelecek hakkındaki temel inançları içerir, genellikle bilinçdışıdır, bilgi işlemeyi yönlendirir. <strong>Otomatik düşünceler</strong> ise bu şemalardan spontan olarak türeyen, hızlı ve bilinç düzeyine çıkan düşüncelerdir. Otomatik düşüncelerin özellikleri: aniden ortaya çıkar, kişi tarafından sorgulanmaz, duygusal tepkileri tetikler, davranışı etkiler. Örneğin: "Ben değersizim" şeması → "Bu işi beceremeyeceğim" otomatik düşüncesi → kaygı → kaçınma davranışı. Bu model, depresyon ve kaygı bozukluklarını açıklamada kullanılır ve bilişsel davranışçı terapinin temelini oluşturur.</p>
+                </div>
+            </div>
+
+            <!-- Soru 3 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">3</div>
+                    <div class="question-type">Çoktan Seçmeli</div>
+                </div>
+                <div class="question-text">
+                    "Bilişsel çarpıtma" kavramından hangisi bir örnek değildir?
+                </div>
+                <ul class="options">
+                    <li>A) Tümden gelim</li>
+                    <li>B) Zihin okuma</li>
+                    <li>C) Felakete yorma</li>
+                    <li>D) Şema</li>
+                    <li>E) Siyah-beyaz düşünme</li>
+                </ul>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevap: D) Şema</h4>
+                    <p><strong>Açıklama:</strong> <strong>"Şema"</strong> bilişsel çarpıtma değil, temel bilişsel yapıdır. Bilişsel çarpıtmalar, gerçekliği yanlış değerlendiren düşünce hataları oldığıdır. Örnekler: <strong>Tümden gelim:</strong> Bir olaydan genel sonuç çıkarma ("Bir kez başarısız oldum, hiçbir şeyi beceremem"). <strong>Zihin okuma:</strong> Başkalarının ne düşündüğünü kesinmiş gibi varsayma. <strong>Felakete yorma:</strong> En kötü senaryoyu düşünme, abartılı sonuçlar çıkarma. <strong>Siyah-beyaz düşünme:</strong> Aşırı kategorik düşünme, gri alanları görmeme. Diğer çarpıtmalar: zihinsel filtre, pozitifi geçersiz kılma, duygusal akıl yürütme, etiketleme, kişiselleştirme. Bu çarpıtmalar depresyon, kaygı ve diğer psikolojik problemlerde yaygındır. Bilişsel terapi, bu çarpıtmaları tanımayı ve değiştirmeyi hedefler.</p>
+                </div>
+            </div>
+
+            <!-- Soru 4 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">4</div>
+                    <div class="question-type">Klasik Sınav</div>
+                </div>
+                <div class="question-text">
+                    Walter Mischel'in "geciken doyum" (marshmallow) deneyini açıklayın ve bu deneyin öz-kontrol ve kişilik gelişimi açısından önemini değerlendirin.
+                </div>
+                <textarea class="essay-area" placeholder="Cevabınızı buraya yazınız..."></textarea>
+                <div class="explanation">
+                    <h4>🎯 Örnek Cevap:</h4>
+                    <p><strong>Marshmallow Deneyi:</strong> 1960'larda Stanford Üniversitesi'nde yapılan bu deney, 4-6 yaş çocuklarla gerçekleştirildi. Çocuklara bir marshmallow verildi ve araştırmacı odadan çıktığında beklerlerse ikinci bir marshmallow alabilecekleri söylendi.</p>
+                    <p><strong>Deney Düzeni:</strong> Çocuk tek başına odada marshmallow ile bırakıldı, araştırmacı 15 dakika sonra geri döndü, çocuğun bekleme süresi kaydedildi, bazı çocuklar stratejiler geliştirdi (başka yere bakma, şarkı söyleme).</p>
+                    <p><strong>Temel Bulgular:</strong> Çocukların yaklaşık 1/3'ü tam süre bekledi, 1/3'ü hemen yedi, 1/3'ü kısmen bekledi, başarılı çocuklar dikkat dağıtma stratejileri kullandı.</p>
+                    <p><strong>Uzun Vadeli İzleme:</strong> Takip araştırmalarında şaşırtıcı sonuçlar elde edildi: daha çok bekleyen çocuklar lise SAT skorları daha yüksek, akademik başarıları daha iyi, vücut kütle indeksi daha düşük, madde bağımlılığı riski daha az, sosyal ilişkileri daha başarılı.</p>
+                    <p><strong>Öz-Kontrol Açısından Önemi:</strong></p>
+                    <p><strong>1. Erken Gelişim:</strong> Öz-kontrolün erken yaşta ölçülebilir olduğunu gösterdi.</p>
+                    <p><strong>2. Yaşam Boyu Etki:</strong> Çocuklukta gösterilen öz-kontrolün yaşam boyu süren etkileri olduğunu ortaya koydu.</p>
+                    <p><strong>3. Stratejiler:</strong> Öz-kontrolün öğrenilebilir stratejilerle geliştirilebileceğini gösterdi.</p>
+                    <p><strong>Kişilik Gelişimi Açısından Önemi:</strong></p>
+                    <p><strong>1. Sorumluluk Faktörü:</strong> Big Five'daki Sorumluluk faktörünün erken belirtisi olarak yorumlandı.</p>
+                    <p><strong>2. Çevre Etkisi:</strong> Güvenli çevre ve güvenilir yetişkinlerin öz-kontrol gelişimindeki rolü.</p>
+                    <p><strong>3. Müdahale İmkanı:</strong> Öz-kontrol becerilerinin eğitimle geliştirilebileceği umudunu verdi.</p>
+                    <p><strong>Eleştiriler:</strong> Sosyoekonomik faktörlerin etkisi, kültürel önyargılar, tekrarlanabilirlik sorunları.</p>
+                </div>
+            </div>
+
+            <!-- Soru 5 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">5</div>
+                    <div class="question-type">Çoktan Seçmeli</div>
+                </div>
+                <div class="question-text">
+                    "Bilişsel stil" kavramı neyi ifade eder?
+                </div>
+                <ul class="options">
+                    <li>A) Zeka düzeyi</li>
+                    <li>B) Bilgiyi işleme tercihleri</li>
+                    <li>C) Hafıza kapasitesi</li>
+                    <li>D) Öğrenme hızı</li>
+                    <li>E) Dikkat süresi</li>
+                </ul>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevap: B) Bilgiyi işleme tercihleri</h4>
+                    <p><strong>Açıklama:</strong> <strong>"Bilişsel stil"</strong> kişinin bilgiyi işleme, organize etme ve karar verme konusundaki tercih ettği yaklaşımları ifade eder. Bu, zeka düzeyinden farklı olarak, "nasıl" düşündüğümüzle ilgilidir, "ne kadar iyi" düşündüğümüzle değil. Temel bilişsel stiller: <strong>Alan bağımlı/bağımsız:</strong> Bilgiyi çevreden ayırabilme yetisi, <strong>Yansıtıcı/dürtüsel:</strong> Karar verme hızı ve dikkatlilik, <strong>Soyut/somut:</strong> Kavramsal vs. pratik düşünme tercihi, <strong>Analitik/bütüncül:</strong> Detaylara vs. genel resme odaklanma, <strong>Görsel/sözel:</strong> Bilgi işlemede tercih edilen modalite. Bilişsel stiller kişilik özelliklerini etkiler: öğrenme yaklaşımları, problem çözme stratejileri, sosyal etkileşim biçimleri, meslek tercihleri. Bu kavram, eğitim psikolojisi ve bireysel farklılıklar araştırmalarında önemli yer tutar.</p>
+                </div>
+            </div>
+
+            <!-- Soru 6 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">6</div>
+                    <div class="question-type">Boşluk Doldurma</div>
+                </div>
+                <div class="question-text">
+                    Julian Rotter'ın kuramında <input type="text" class="fill-blank" placeholder="kontrol odağı"> kişinin yaşam olaylarını ne ölçüde kontrol edebildiğine olan <input type="text" class="fill-blank" placeholder="inancı"> nı ifade eder.
+                </div>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevaplar: Kontrol odağı, İnancını</h4>
+                    <p><strong>Açıklama:</strong> Rotter'ın <strong>"kontrol odağı" (locus of control)</strong> kavramı, kişinin yaşamındaki olayları ne ölçüde kontrol edebildiğine olan <strong>inancını</strong> ifade eder. İki türü vardır: <strong>İç kontrol odağı:</strong> Kişi yaşamındaki olayların kendi davranışları, yetenekleri ve çabalarının sonucu olduğuna inanır. Bu kişiler: daha çok çaba harcar, sorumluluklarını kabul eder, başarı için içsel faktörleri görür, stresle daha iyi başa çıkar. <strong>Dış kontrol odağı:</strong> Yaşamdaki olayların şans, kader, güçlü başkaları tarafından belirlendiğine inanır. Bu kişiler: daha pasif davranır, çevresel faktörleri suçlar, learned helplessness'a eğilimli, depresyon riski daha yüksek. Kontrol odağı: çocukluk deneyimleriyle şekillenir, kültürden etkilenir, yaşam sonuçlarını etkiler (akademik başarı, iş performansı, sağlık davranışları). Bu kavram, pozitif psikoloji ve sağlık psikolojisinde önemli rol oynar.</p>
+                </div>
+            </div>
+
+            <!-- Soru 7 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">7</div>
+                    <div class="question-type">Çoktan Seçmeli</div>
+                </div>
+                <div class="question-text">
+                    Martin Seligman'ın "açıklayıcı stil" teorisinde iyimser kişiler başarısızlığı nasıl açıklar?
+                </div>
+                <ul class="options">
+                    <li>A) Kalıcı, yaygın ve kişisel</li>
+                    <li>B) Geçici, spesifik ve durumsal</li>
+                    <li>C) Kontrol edilemez ve kaderci</li>
+                    <li>D) Genetik ve değiştirilemez</li>
+                    <li>E) Rastgele ve anlamsız</li>
+                </ul>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevap: B) Geçici, spesifik ve durumsal</h4>
+                    <p><strong>Açıklama:</strong> Seligman'ın açıklayıcı stil teorisine göre, <strong>iyimser kişiler başarısızlığı geçici, spesifik ve durumsal</strong> faktörlerle açıklarlar. Üç boyut vardır: <strong>1) Kalıcılık boyutu:</strong> İyimserler başarısızlığı geçici görür ("Bu sefer olmadı"), kötümserler kalıcı ("Hiçbir zaman başaramam"). <strong>2) Yaygınlık boyutu:</strong> İyimserler spesifik görür ("Bu konuda kötüyüm"), kötümserler yaygın ("Her şeyde kötüyüm"). <strong>3) Kişisellik boyutu:</strong> İyimserler durumsal faktörleri görür ("Kötü şartlardı"), kötümserler kişisel suçlar ("Ben yetersizim"). Başarı durumunda tam tersi: iyimserler kalıcı, yaygın ve kişisel açıklamalar yapar. Bu stil depresyon, kaygı, akademik başarı, iş performansı, sağlık sonuçlarını etkiler. Açıklayıcı stil öğrenilebilir ve değiştirilebilir bir bilişsel eğilimdir.</p>
+                </div>
+            </div>
+
+            <!-- Soru 8 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">8</div>
+                    <div class="question-type">Klasik Sınav</div>
+                </div>
+                <div class="question-text">
+                    Albert Ellis'in REBT (Rational Emotive Behavior Therapy) kuramındaki ABC modelini açıklayın ve bu modelin kişilik anlayışına katkısını değerlendirin.
+                </div>
+                <textarea class="essay-area" placeholder="Cevabınızı buraya yazınız..."></textarea>
+                <div class="explanation">
+                    <h4>🎯 Örnek Cevap:</h4>
+                    <p><strong>ABC Modeli:</strong> Ellis'in REBT kuramının merkezinde yer alan model, insan duygularının ve davranışlarının nasıl oluştuğunu açıklar.</p>
+                    <p><strong>A - Activating Event (Tetikleyici Olay):</strong> Kişinin yaşadığı objektif durum, olay veya deneyim. Bu olayların kendisi doğrudan duyguya neden olmaz.</p>
+                    <p><strong>B - Belief System (İnanç Sistemi):</strong> Kişinin olay hakkındaki düşünceleri, inançları ve değerlendirmeleri. Gerçek duygusal ve davranışsal tepkilerin kaynağı buradadır.</p>
+                    <p><strong>C - Consequences (Sonuçlar):</strong> B'den kaynaklanan duygusal ve davranışsal tepkiler. Pozitif veya negatif olabilir.</p>
+                    <p><strong>İki İnanç Türü:</strong></p>
+                    <p><strong>Rasyonel İnançlar:</strong> Esnek, tercih ifade eden, gerçekçi. "Bu işi başarmayı tercih ederim ama başaramasam da hayat devam eder."</p>
+                    <p><strong>İrrasyonel İnançlar:</strong> Katı, mutlak talepler içeren, gerçekçi olmayan. "Bu işi mutlaka başarmalıyım, aksi takdirde tamamen başarısızım."</p>
+                    <p><strong>Dört Temel İrrasyonel İnanç:</strong></p>
+                    <p><strong>1. Talepler (Musturbation):</strong> "Mutlaka", "kesinlikle" gibi mutlak ifadeler.</p>
+                    <p><strong>2. Korkunçlaştırma:</strong> Durumları olduğundan daha kötü görmek.</p>
+                    <p><strong>3. Düşük Tolerans:</strong> "Dayanamam", "katlanamam" düşünceleri.</p>
+                    <p><strong>4. Global Değersizleştirme:</strong> Kendini, başkalarını veya yaşamı tamamen değersiz görmek.</p>
+                    <p><strong>Kişilik Anlayışına Katkısı:</strong></p>
+                    <p><strong>1. Bilişsel Faktörlerin Önemi:</strong> Kişiliğin bilişsel boyutunun davranışçı ve psikanalitik yaklaşımlardan daha önemli olduğunu gösterdi.</p>
+                    <p><strong>2. Değişebilirlik:</strong> Kişiliğin inanç sistemleri değiştirilerek değiştirilebileceğini savundu.</p>
+                    <p><strong>3. Sorumluluk:</strong> İnsanın kendi duygusal tepkilerinden sorumlu olduğu vurgusu.</p>
+                    <p><strong>4. Pratik Yaklaşım:</strong> Teorik açıklamalardan ziyade pragmatik problem çözme odaklı.</p>
+                </div>
+            </div>
+
+            <!-- Soru 9 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">9</div>
+                    <div class="question-type">Boşluk Doldurma</div>
+                </div>
+                <div class="question-text">
+                    Bilişsel yaklaşımda <input type="text" class="fill-blank" placeholder="metabiliş"> kişinin kendi düşünce süreçleri hakkındaki <input type="text" class="fill-blank" placeholder="bilgisi"> dir.
+                </div>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevaplar: Metabiliş, Bilgisidir</h4>
+                    <p><strong>Açıklama:</strong> <strong>Metabiliş</strong> kişinin kendi düşünce süreçleri hakkındaki <strong>bilgisi</strong> ve farkındalığıdır. "Düşünme hakkında düşünme" olarak da tanımlanır. Metabilişin bileşenleri: <strong>1) Metabilişsel bilgi:</strong> Kendi öğrenme stilini, güçlü ve zayıf yanlarını bilme, hangi stratejilerin ne zaman işe yaradığını anlama. <strong>2) Metabilişsel düzenleme:</strong> Düşünce süreçlerini planlama, izleme ve değerlendirme yeteneği. <strong>3) Metabilişsel deneyimler:</strong> Öğrenme sırasında yaşanan hisler ve sezgiler. Yüksek metabilişsel farkındalığa sahip kişiler: daha etkili öğrenme stratejileri kullanır, problemleri daha sistematik çözer, kendi sınırlarını tanır, öz-düzenleme becerisi gelişmiştir. Bu kavram, akademik başarı, yaşam boyu öğrenme ve kişisel gelişim açısından kritik öneme sahiptir.</p>
+                </div>
+            </div>
+
+            <!-- Soru 10 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">10</div>
+                    <div class="question-type">Çoktan Seçmeli</div>
+                </div>
+                <div class="question-text">
+                    Bilişsel yaklaşımların kişilik psikolojisindeki en önemli katkısı nedir?
+                </div>
+                <ul class="options">
+                    <li>A) Davranışın ölçülmesi</li>
+                    <li>B) Düşünce-duygu-davranış ilişkisini vurgulaması</li>
+                    <li>C) Genetik faktörleri keşfetmesi</li>
+                    <li>D) Sosyal öğrenmeyi açıklaması</li>
+                    <li>E) Test geliştirme yöntemleri</li>
+                </ul>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevap: B) Düşünce-duygu-davranış ilişkisini vurgulaması</h4>
+                    <p><strong>Açıklama:</strong> Bilişsel yaklaşımların kişilik psikolojisindeki en önemli katkısı <strong>düşünce-duygu-davranış arasındaki karmaşık ilişkiyi vurgulaması</strong>dır. Bu katkının önemi: <strong>1) Bütüncül bakış:</strong> İnsanı sadece davranış (davranışçılık) veya dürtü (psikanaliz) açısından değil, bilişsel süreçler açısından ele alma. <strong>2) Aktif rol:</strong> İnsanın pasif tepki veren değil, aktif bilgi işleyen varlık olduğunu gösterme. <strong>3) Değişebilirlik:</strong> Düşünce kalıpları değiştiğinde duygu ve davranışların da değişebileceğini gösterme. <strong>4) Tedavi yaklaşımları:</strong> Bilişsel davranışçı terapi gibi etkili müdahale yöntemlerinin gelişmesine katkı. <strong>5) Bireysel farklılıklar:</strong> Aynı durumda farklı tepkiler vermenin nedenini bilişsel değerlendirme farklılıklarıyla açıklama. Bu yaklaşım, modern psikolojide hem teorik hem de pratik açıdan devrim yaratmış ve psikolojik yardım alanında en etkili yöntemlerin gelişmesini sağlamıştır.</p>
+                </div>
+            </div>
+
+            <!-- Soru 11 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">11</div>
+                    <div class="question-type">Klasik Sınav</div>
+                </div>
+                <div class="question-text">
+                    Bilişsel yaklaşımların günümüz psikolojisindeki uygulamalarını örneklerle açıklayın ve gelecek perspektiflerini değerlendirin.
+                </div>
+                <textarea class="essay-area" placeholder="Cevabınızı buraya yazınız..."></textarea>
+                <div class="explanation">
+                    <h4>🎯 Örnek Cevap:</h4>
+                    <p><strong>Günümüz Uygulamaları:</strong></p>
+                    <p><strong>1. Klinik Psikoloji:</strong> Bilişsel Davranışçı Terapi (CBT) en yaygın terapi yaklaşımı, depresyon, kaygı, fobiler, PTSD tedavisinde altın standart, online CBT uygulamaları yaygınlaşıyor.</p>
+                    <p><strong>2. Eğitim Psikolojisi:</strong> Metabilişsel stratejiler öğretimi, problem çözme becerilerinin geliştirilmesi, öğrenme güçlüklerinde bilişsel yaklaşımlar, eleştirel düşünme eğitimi.</p>
+                    <p><strong>3. Örgütsel Psikoloji:</strong> Liderlik gelişimi, karar verme süreçleri, stres yönetimi, takım çalışması optimizasyonu, koçluk uygulamaları.</p>
+                    <p><strong>4. Sağlık Psikolojisi:</strong> Hastalık davranışları değişimi, ağrı yönetimi, kronik hastalık uyumu, sağlıklı yaşam tarzı geliştirme.</p>
+                    <p><strong>5. Spor Psikolojisi:</strong> Performans artırma, zihinsel antrenman, motivasyon geliştirme, yarışma kaygısı yönetimi.</p>
+                    <p><strong>6. Teknoloji Entegrasyonu:</strong> Mobil uygulamalar, VR terapi, AI destekli müdahaleler, düşünce izleme uygulamaları.</p>
+                    <p><strong>Gelecek Perspektifleri:</strong></p>
+                    <p><strong>1. Nörogörüntüleme Entegrasyonu:</strong> fMRI, EEG ile bilişsel süreçlerin beyin düzeyinde anlaşılması, gerçek zamanlı neurofeedback uygulamaları.</p>
+                    <p><strong>2. Yapay Zeka ve Büyük Veri:</strong> Kişiselleştirilmiş müdahaleler, otomatik düşünce analizi, tahminleyici modeller.</p>
+                    <p><strong>3. Dijital Terapötikler:</strong> Reçeteli dijital ilaçlar, oyunlaştırılmış terapi, sanal gerçeklik uygulamaları.</p>
+                    <p><strong>4. Önleyici Yaklaşımlar:</strong> Risk tarama, erken müdahale programları, toplum sağlığı uygulamaları.</p>
+                    <p><strong>5. Kültürlerarası Uyarlamalar:</strong> Farklı kültürlere özgü bilişsel modeller, kültürel açıdan duyarlı müdahaleler.</p>
+                    <p><strong>6. Entegratif Yaklaşımlar:</strong> Bilişsel, davranışsal, nörolojik ve sosyal faktörlerin birleştirilmesi, çok modaliteli terapi yaklaşımları.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

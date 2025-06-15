@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harry Stack Sullivan - Kişilerarası Kuram Soruları</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+        }
+        
+        .header h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+        
+        .nav-link {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background: rgba(255,255,255,0.2);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-link:hover {
+            background: rgba(255,255,255,0.3);
+        }
+        
+        .content {
+            padding: 40px;
+        }
+        
+        .question {
+            background: #f8f9fa;
+            margin-bottom: 30px;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .question-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        
+        .question-number {
+            background: #667eea;
+            color: white;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+        
+        .question-type {
+            background: #28a745;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+        }
+        
+        .question-text {
+            font-size: 1.1rem;
+            color: #333;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+        
+        .options {
+            list-style: none;
+            margin-bottom: 20px;
+        }
+        
+        .options li {
+            padding: 10px 15px;
+            margin: 8px 0;
+            background: white;
+            border-radius: 8px;
+            border: 2px solid #e9ecef;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .options li:hover {
+            border-color: #667eea;
+            background: #f0f4ff;
+        }
+        
+        .correct-answer {
+            border-color: #28a745 !important;
+            background: #d4edda !important;
+        }
+        
+        .explanation {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+        
+        .explanation h4 {
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+        
+        .explanation p {
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+        
+        .fill-blank {
+            border: none;
+            border-bottom: 2px solid #667eea;
+            background: transparent;
+            padding: 5px;
+            font-size: 1rem;
+            width: 150px;
+            margin: 0 5px;
+        }
+        
+        .essay-area {
+            width: 100%;
+            min-height: 100px;
+            padding: 15px;
+            border: 2px solid #e9ecef;
+            border-radius: 10px;
+            font-family: inherit;
+            font-size: 1rem;
+            resize: vertical;
+        }
+        
+        @media (max-width: 768px) {
+            .content {
+                padding: 20px;
+            }
+            .question-header {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🤝 Harry Stack Sullivan - Kişilerarası Kuram</h1>
+            <p>İnsan ilişkileri, sosyal etkileşim ve kişilerarası güvenlik</p>
+            <a href="index.html" class="nav-link">← Ana Sayfaya Dön</a>
+        </div>
+        
+        <div class="content">
+            <!-- Soru 1 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">1</div>
+                    <div class="question-type">Çoktan Seçmeli</div>
+                </div>
+                <div class="question-text">
+                    Sullivan'a göre kişiliğin temel birimi nedir?
+                </div>
+                <ul class="options">
+                    <li>A) Birey</li>
+                    <li>B) Kişilerarası durum</li>
+                    <li>C) Ego</li>
+                    <li>D) Bilinçdışı</li>
+                    <li>E) Libido</li>
+                </ul>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevap: B) Kişilerarası durum</h4>
+                    <p><strong>Açıklama:</strong> Sullivan, kişiliğin birey merkezli değil, <strong>kişilerarası durum</strong> merkezli olduğunu savunur. "Kişilik kişilerarası durumların nispeten kalıcı örüntüsüdır" der. Bu yaklaşım, kişiliği izole bir birey özelliği olarak görmez, aksine sosyal etkileşimler içinde şekillenen dinamik bir süreç olarak ele alır. Kişi ancak diğer insanlarla olan ilişkilerinde anlaşılabilir. Bu görüş, psikoanalitik kuramın bireyci yaklaşımından radikal bir sapma gösterir.</p>
+                </div>
+            </div>
+
+            <!-- Soru 2 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">2</div>
+                    <div class="question-type">Boşluk Doldurma</div>
+                </div>
+                <div class="question-text">
+                    Sullivan'ın kuramında temel güdü <input type="text" class="fill-blank" placeholder="güvenlik"> arayışıdır ve bu güdü <input type="text" class="fill-blank" placeholder="kaygı"> duygusunu azaltmaya yöneliktir.
+                </div>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevaplar: Güvenlik, Kaygı</h4>
+                    <p><strong>Açıklama:</strong> Sullivan'a göre insanın temel güdüsü <strong>güvenlik arayışı</strong>dır, Freud'un libido kavramından farklı olarak. Bu güvenlik arayışı, <strong>kaygı</strong> duygusunu azaltmaya yöneliktir. Kaygı, kişilerarası güvenliği tehdit eden durumlardan kaynaklanır. Bebek, annenin onayını kaybetme korkusuyla ilk kaygıyı yaşar. Bu temel dinamik, tüm yaşam boyu devam eder ve kişilerarası ilişkileri şekillendirir. Güvenlik sistemi, kaygıyı azaltan davranışları pekiştirirken, kaygı yaratan durumlardan kaçınmayı öğretir.</p>
+                </div>
+            </div>
+
+            <!-- Soru 3 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">3</div>
+                    <div class="question-type">Çoktan Seçmeli</div>
+                </div>
+                <div class="question-text">
+                    Sullivan'ın gelişim kuramında "Chum" dönemi hangi yaş aralığına denk gelir?
+                </div>
+                <ul class="options">
+                    <li>A) 0-2 yaş</li>
+                    <li>B) 3-5 yaş</li>
+                    <li>C) 6-8 yaş</li>
+                    <li>D) 8-10 yaş</li>
+                    <li>E) 11-14 yaş</li>
+                </ul>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevap: D) 8-10 yaş</h4>
+                    <p><strong>Açıklama:</strong> <strong>"Chum" dönemi</strong> 8-10 yaş arasında yaşanır ve Sullivan'ın gelişim kuramının en kritik dönemlerinden biridir. Bu dönemde çocuk, aynı cinsiyetten yakın bir arkadaşla (chum) özel bir bağ kurar. Bu ilişki, çocuğun ilk kez başka birinin ihtiyaçlarını kendi ihtiyaçları kadar önemsemesini sağlar. Chum ilişkisi, empati, işbirliği ve gerçek sevgi duygularının gelişiminde kritik rol oynar. Bu dönemin sağlıklı geçirilmesi, ileriki dönemlerde kurulan romantik ilişkilerin temelini atar. Chum dönemini sağlıklı yaşayamayan çocuklar, ileriki yaşlarda kişilerarası ilişkilerde zorluk yaşayabilir.</p>
+                </div>
+            </div>
+
+            <!-- Soru 4 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">4</div>
+                    <div class="question-type">Klasik Sınav</div>
+                </div>
+                <div class="question-text">
+                    Sullivan'ın gelişim dönemlerini sırasıyla yazın ve her dönemin temel özelliklerini açıklayın.
+                </div>
+                <textarea class="essay-area" placeholder="Cevabınızı buraya yazınız..."></textarea>
+                <div class="explanation">
+                    <h4>🎯 Örnek Cevap:</h4>
+                    <p><strong>1. Bebeklik (0-2 yaş):</strong> Anne ile güvenli bağlanma, temel güven oluşumu, ilk kişilerarası deneyimler.</p>
+                    <p><strong>2. Çocukluk (2-5 yaş):</strong> Dil gelişimi, oyun aktiviteleri, ebeveynlerle ilişki genişleme.</p>
+                    <p><strong>3. Okulöncesi (5-8 yaş):</strong> Sosyal roller öğrenme, otorite figürleriyle ilişki kurma, ebeveynlerin beklentilerini anlama.</p>
+                    <p><strong>4. Okul Çağı (8-10 yaş):</strong> Akranlarla rekabet, sosyal kabul arayışı, Chum ilişkisinin başlaması.</p>
+                    <p><strong>5. Ergenlik Öncesi (10-12 yaş):</strong> Chum ilişkisinin doruk noktası, yakın arkadaşlık, empati gelişimi.</p>
+                    <p><strong>6. Erken Ergenlik (12-14 yaş):</strong> Cinsel dürtülerin ortaya çıkması, karşı cinsle ilgilenme başlangıcı.</p>
+                    <p><strong>7. Geç Ergenlik (14-17 yaş):</strong> Romantik ilişkilerin başlaması, kimlik arayışı, bağımsızlık mücadelesi.</p>
+                </div>
+            </div>
+
+            <!-- Soru 5 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">5</div>
+                    <div class="question-type">Çoktan Seçmeli</div>
+                </div>
+                <div class="question-text">
+                    "Parataksik çarpıtma" kavramı neyi ifade eder?
+                </div>
+                <ul class="options">
+                    <li>A) Mantıklı düşünce süreçleri</li>
+                    <li>B) Geçmiş deneyimlerin bugünkü ilişkilere yansıtılması</li>
+                    <li>C) Empati kurma yeteneği</li>
+                    <li>D) Sosyal becerilerin gelişimi</li>
+                    <li>E) Kaygının azaltılması</li>
+                </ul>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevap: B) Geçmiş deneyimlerin bugünkü ilişkilere yansıtılması</h4>
+                    <p><strong>Açıklama:</strong> <strong>Parataksik çarpıtma</strong>, geçmişteki kişilerarası deneyimlerin bugünkü ilişkilere uygun olmayan bir şekilde aktarılmasıdır. Kişi, şu anki ilişkilerini geçmiş deneyimlerinin süzgecinden değerlendirir ve gerçek durumu objektif olarak göremez. Örneğin, çocuklukta otoriter bir babayla yaşayan birey, tüm otorite figürlerini aynı şekilde algılar. Bu kavram, Freud'un transferans kavramına benzer ama daha geniş bir kapsama sahiptir. Sullivan'a göre bu çarpıtmalar, kişilerarası ilişkilerdeki zorlukların temel nedenidir ve tedavide bu çarpıtmaları fark etmek kritik öneme sahiptir.</p>
+                </div>
+            </div>
+
+            <!-- Soru 6 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">6</div>
+                    <div class="question-type">Boşluk Doldurma</div>
+                </div>
+                <div class="question-text">
+                    Sullivan'a göre benlik sistemi üç kısımdan oluşur: <input type="text" class="fill-blank" placeholder="iyi-ben"> , <input type="text" class="fill-blank" placeholder="kötü-ben"> ve <input type="text" class="fill-blank" placeholder="ben-değil"> .
+                </div>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevaplar: İyi-ben, Kötü-ben, Ben-değil</h4>
+                    <p><strong>Açıklama:</strong> Sullivan'ın benlik sistemi üç bileşenden oluşur: <strong>İyi-ben (Good-me):</strong> Onay gören, güvenlik yaratan deneyimlerden oluşan benlik kısmı. Çocuk bu deneyimleri tekrarlamaya çalışır. <strong>Kötü-ben (Bad-me):</strong> Kaygı yaratan ama tolere edilebilir deneyimlerden oluşan kısım. Bu deneyimler bilinçte kalır ama rahatsızlık verir. <strong>Ben-değil (Not-me):</strong> Aşırı kaygı yaratan, dayanılmaz deneyimlerden oluşan ve bilinçdışına itilen kısım. Bu bölüm, kişinin farkında olmadığı ama davranışlarını etkileyen travmatik deneyimleri içerir. Bu üçlü yapı, kişinin kendini algılama biçimini ve kişilerarası ilişki kurma şeklini belirler.</p>
+                </div>
+            </div>
+
+            <!-- Soru 7 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">7</div>
+                    <div class="question-type">Çoktan Seçmeli</div>
+                </div>
+                <div class="question-text">
+                    Sullivan'ın tedavi yaklaşımında terapistin rolü aşağıdakilerden hangisidir?
+                </div>
+                <ul class="options">
+                    <li>A) Pasif gözlemci</li>
+                    <li>B) Yorumlayıcı otorite</li>
+                    <li>C) Katılımcı-gözlemci</li>
+                    <li>D) Direktif rehber</li>
+                    <li>E) Analitik uzman</li>
+                </ul>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevap: C) Katılımcı-gözlemci</h4>
+                    <p><strong>Açıklama:</strong> Sullivan, terapisti <strong>"katılımcı-gözlemci"</strong> olarak tanımlar. Bu rol, terapistin hem kişilerarası etkileşime aktif katılımcı olması hem de bu etkileşimi objektif bir şekilde gözlemlemesi anlamına gelir. Terapist, hastanın kişilerarası örüntülerini anlayabilmek için kendisi de bu örüntülerin bir parçası olur, ancak aynı zamanda dışarıdan bir gözlemci gibi değerlendirme yapar. Bu yaklaşım, klasik psikanalitik yaklaşımın "boş ekran" konseptinden farklıdır. Terapist, hasta ile gerçek bir insan ilişkisi kurar ve bu ilişki içinde hastanın parataksik çarpıtmalarını fark etmesine yardım eder.</p>
+                </div>
+            </div>
+
+            <!-- Soru 8 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">8</div>
+                    <div class="question-type">Klasik Sınav</div>
+                </div>
+                <div class="question-text">
+                    Sullivan'ın "empati" kavramını açıklayın ve bu kavramın kişilerarası ilişkilerdeki önemini değerlendirin.
+                </div>
+                <textarea class="essay-area" placeholder="Cevabınızı buraya yazınız..."></textarea>
+                <div class="explanation">
+                    <h4>🎯 Örnek Cevap:</h4>
+                    <p><strong>Empati Tanımı:</strong> Sullivan'a göre empati, bebeklerin doğuştan sahip olduğu, başkalarının duygusal durumlarını hissetme yeteneğidir. Bu, öğrenilen bir beceri değil, doğal bir kapasitedir.</p>
+                    <p><strong>Gelişimsel Süreç:</strong> Bebek, annenin kaygısını empati yoluyla hisseder ve bu kaygı bebeğe bulaşır. Bu süreç, çocuğun sosyal ortama uyum sağlamasında kritik rol oynar.</p>
+                    <p><strong>Kişilerarası İlişkilerdeki Rolü:</strong> Empati, sağlıklı kişilerarası ilişkilerin temelini oluşturur. Chum döneminde empati yeteneği gelişir ve çocuk ilk kez başkasının ihtiyaçlarını anlayabilir.</p>
+                    <p><strong>Patolojideki Yeri:</strong> Empati kapasitesinin zarar görmesi, kişilerarası ilişkilerde ciddi sorunlara yol açar. Şizofreni gibi durumların temelinde empati bozukluğu bulunur.</p>
+                    <p><strong>Terapötik Değer:</strong> Tedavide empati, hem terapistin hastayı anlaması hem de hastanın empatik kapasitesini yeniden geliştirmesi için kullanılır.</p>
+                </div>
+            </div>
+
+            <!-- Soru 9 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">9</div>
+                    <div class="question-type">Boşluk Doldurma</div>
+                </div>
+                <div class="question-text">
+                    Sullivan'a göre <input type="text" class="fill-blank" placeholder="şizofreni"> kişilerarası ilişkilerdeki ciddi bozuklukların sonucudur ve <input type="text" class="fill-blank" placeholder="güvenlik"> eksikliğinden kaynaklanır.
+                </div>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevaplar: Şizofreni, Güvenlik</h4>
+                    <p><strong>Açıklama:</strong> Sullivan, <strong>şizofreni</strong>yi organik bir hastalık olarak değil, kişilerarası ilişkilerdeki ciddi bozuklukların sonucu olarak görür. Bu durum, çocukluk döneminde yaşanan güvenlik eksikliği ve travmatik kişilerarası deneyimlerden kaynaklanır. Şizofrenideki semptomlar, aşırı kaygı durumlarında kişinin kendini koruma çabalarıdır. "Ben-değil" sisteminin bilinç düzeyine çıkması, kişinin gerçekle bağının kopmasına neden olur. Sullivan'ın bu yaklaşımı, şizofreni tedavisinde kişilerarası ilişkilerin düzeltilmesinin önemini vurgular ve dönemin biologik yaklaşımlarına karşı alternatif sunar.</p>
+                </div>
+            </div>
+
+            <!-- Soru 10 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">10</div>
+                    <div class="question-type">Çoktan Seçmeli</div>
+                </div>
+                <div class="question-text">
+                    Aşağıdakilerden hangisi Sullivan'ın Freud'dan temel farklılıklarından biri değildir?
+                </div>
+                <ul class="options">
+                    <li>A) Sosyal faktörlere odaklanma</li>
+                    <li>B) Bilinçdışının önemini vurgulama</li>
+                    <li>C) Kişilerarası ilişkileri merkeze alma</li>
+                    <li>D) Cinsellik yerine güvenlik arayışını önemseme</li>
+                    <li>E) Kültürel faktörleri dikkate alma</li>
+                </ul>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevap: B) Bilinçdışının önemini vurgulama</h4>
+                    <p><strong>Açıklama:</strong> <strong>Bilinçdışının önemini vurgulama</strong> Sullivan'ın Freud'dan temel farklılığı değildir, çünkü Sullivan da bilinçdışı süreçlerin önemini kabul eder, sadece bunları farklı bir şekilde kavramsallaştırır ("ben-değil" sistemi). Sullivan'ın temel farklılıkları şunlardır: sosyal ve kişilerarası faktörlere odaklanma, bireyi izole bir varlık olarak değil sosyal bağlam içinde görme, cinsellik yerine güvenlik arayışını temel güdü olarak görme, kültürel ve çevresel faktörlerin etkisini vurgulama. Sullivan, Freud'un bireyci yaklaşımına karşı sosyal bir perspektif geliştirmiştir.</p>
+                </div>
+            </div>
+
+            <!-- Soru 11 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">11</div>
+                    <div class="question-type">Çoktan Seçmeli</div>
+                </div>
+                <div class="question-text">
+                    Sullivan'ın "önemli diğerleri" (significant others) kavramı neyi ifade eder?
+                </div>
+                <ul class="options">
+                    <li>A) Romanktik partnerler</li>
+                    <li>B) Kişiliği şekillendiren tüm önemli kişiler</li>
+                    <li>C) Sadece ebeveynler</li>
+                    <li>D) Akran grubu</li>
+                    <li>E) Otoriteler</li>
+                </ul>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevap: B) Kişiliği şekillendiren tüm önemli kişiler</h4>
+                    <p><strong>Açıklama:</strong> <strong>"Önemli diğerleri"</strong> kavramı, bir kişinin gelişimi ve kişiliği üzerinde etkili olan tüm önemli kişileri kapsar. Bu sadece ebeveynlerle sınırlı değildir; öğretmenler, kardeşler, arkadaşlar, chum, ve diğer anlamlı kişiler de dahildir. Sullivan'a göre kişilik, bu önemli diğerleriyle olan etkileşimler sonucunda şekillenir. Her önemli diğer, kişinin benlik algısında farklı bir role sahiptir ve farklı kişilerarası dinamikleri öğretir. Bu kavram, sosyal öğrenme teorisinin de temellerini atmış ve modern psikolojide yaygın olarak kullanılmaktadır.</p>
+                </div>
+            </div>
+
+            <!-- Soru 12 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">12</div>
+                    <div class="question-type">Klasik Sınav</div>
+                </div>
+                <div class="question-text">
+                    Sullivan'ın kişilerarası kuramının günümüz psikolojisine katkılarını değerlendirin ve eleştirilerini tartışın.
+                </div>
+                <textarea class="essay-area" placeholder="Cevabınızı buraya yazınız..."></textarea>
+                <div class="explanation">
+                    <h4>🎯 Örnek Cevap:</h4>
+                    <p><strong>Katkılar:</strong> 1) Sosyal psikolojinin temellerini attı, 2) İnsan ilişkilerinin önemini vurguladı, 3) Grup terapisi ve aile terapisinin gelişimine katkı sağladı, 4) Şizofreni tedavisinde yeni yaklaşımlar getirdi, 5) "Önemli diğerleri" kavramını geliştirdi, 6) Empati kavramını psikolojiye kazandırdı, 7) Kültürel faktörlerin önemini gösterdi.</p>
+                    <p><strong>Modern Uygulamalar:</strong> Kişilerarası terapi (IPT), bağlanma kuramı, sosyal öğrenme teorisi, sistemik aile terapisi gibi yaklaşımlarda Sullivan'ın fikirlerinin izleri görülür.</p>
+                    <p><strong>Eleştiriler:</strong> 1) Kuramın sistematik olmaması, 2) Amprik araştırmalarla yeterince desteklenmemesi, 3) Biologik faktörleri göz ardı etmesi, 4) Terminolojinin karmaşık olması, 5) Şizofreni açıklamasının günümüz bilgileriyle uyuşmaması.</p>
+                    <p><strong>Genel Değerlendirme:</strong> Sullivan'ın kuramı, psikolojide sosyal boyutun önemini kavramada çığır açmış ve modern kişilerarası yaklaşımların temelini oluşturmuştur.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

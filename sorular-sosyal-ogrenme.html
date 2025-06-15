@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sosyal Öğrenme Kuramı Soruları</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+        }
+        
+        .header h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+        
+        .nav-link {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background: rgba(255,255,255,0.2);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-link:hover {
+            background: rgba(255,255,255,0.3);
+        }
+        
+        .content {
+            padding: 40px;
+        }
+        
+        .question {
+            background: #f8f9fa;
+            margin-bottom: 30px;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .question-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        
+        .question-number {
+            background: #667eea;
+            color: white;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+        
+        .question-type {
+            background: #28a745;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+        }
+        
+        .question-text {
+            font-size: 1.1rem;
+            color: #333;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+        
+        .options {
+            list-style: none;
+            margin-bottom: 20px;
+        }
+        
+        .options li {
+            padding: 10px 15px;
+            margin: 8px 0;
+            background: white;
+            border-radius: 8px;
+            border: 2px solid #e9ecef;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .options li:hover {
+            border-color: #667eea;
+            background: #f0f4ff;
+        }
+        
+        .correct-answer {
+            border-color: #28a745 !important;
+            background: #d4edda !important;
+        }
+        
+        .explanation {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+        
+        .explanation h4 {
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+        
+        .explanation p {
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+        
+        .fill-blank {
+            border: none;
+            border-bottom: 2px solid #667eea;
+            background: transparent;
+            padding: 5px;
+            font-size: 1rem;
+            width: 150px;
+            margin: 0 5px;
+        }
+        
+        .essay-area {
+            width: 100%;
+            min-height: 100px;
+            padding: 15px;
+            border: 2px solid #e9ecef;
+            border-radius: 10px;
+            font-family: inherit;
+            font-size: 1rem;
+            resize: vertical;
+        }
+        
+        @media (max-width: 768px) {
+            .content {
+                padding: 20px;
+            }
+            .question-header {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>👥 Sosyal Öğrenme Kuramı</h1>
+            <p>Gözlemsel öğrenme, modelleme ve sosyal bilişsel süreçler</p>
+            <a href="index.html" class="nav-link">← Ana Sayfaya Dön</a>
+        </div>
+        
+        <div class="content">
+            <!-- Soru 1 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">1</div>
+                    <div class="question-type">Çoktan Seçmeli</div>
+                </div>
+                <div class="question-text">
+                    Bandura'nın sosyal öğrenme kuramının temel varsayımı nedir?
+                </div>
+                <ul class="options">
+                    <li>A) Öğrenme sadece pekiştirme ile olur</li>
+                    <li>B) İnsanlar başkalarını gözlemleyerek öğrenebilir</li>
+                    <li>C) Genetik faktörler belirleyicidir</li>
+                    <li>D) Bilinçdışı güdüler etkilidir</li>
+                    <li>E) Öğrenme sadece doğrudan deneyimle mümkündür</li>
+                </ul>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevap: B) İnsanlar başkalarını gözlemleyerek öğrenebilir</h4>
+                    <p><strong>Açıklama:</strong> Bandura'nın sosyal öğrenme kuramının temel varsayımı <strong>insanların başkalarını gözlemleyerek öğrenebileceği</strong>dir. Bu yaklaşım, klasik davranışçılığın "doğrudan deneyim gerekli" varsayımını reddeder. Temel ilkeler: İnsanlar model aldıkları kişilerin davranışlarını izleyerek öğrenir, pekiştirme almasalar bile öğrenme gerçekleşebilir, bilişsel süreçler (dikkat, hafıza, motor beceriler) öğrenmede kritik rol oynar, öğrenme ile performans farklıdır - kişi öğrendiği davranışı hemen sergilemeyebilir. Bu kuram, Bobo bebek deneyleriyle desteklenmiş ve çocukların saldırgan davranışları gözlemleyerek öğrenebildiğini göstermiştir. Modern eğitim, medya etkileri ve sosyal gelişim araştırmalarının temelini oluşturur.</p>
+                </div>
+            </div>
+
+            <!-- Soru 2 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">2</div>
+                    <div class="question-type">Boşluk Doldurma</div>
+                </div>
+                <div class="question-text">
+                    Gözlemsel öğrenmenin dört aşaması: <input type="text" class="fill-blank" placeholder="dikkat"> , <input type="text" class="fill-blank" placeholder="saklama"> , <input type="text" class="fill-blank" placeholder="üretim"> ve <input type="text" class="fill-blank" placeholder="motivasyon"> dur.
+                </div>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevaplar: Dikkat, Saklama, Üretim, Motivasyon</h4>
+                    <p><strong>Açıklama:</strong> Bandura'ya göre gözlemsal öğrenme dört aşamada gerçekleşir: <strong>1) Dikkat (Attention):</strong> Model alınan davranışa odaklanma, ilgili ipuçlarını fark etme. Modelin çekiciliği, karmaşıklık düzeyi, gözlemcinin dikkat kapasitesi etkilidir. <strong>2) Saklama (Retention):</strong> Gözlenen davranışı hafızada tutma, zihinsel olarak kodlama. Sembolik temsil, zihinsel prova, tekrarlama önemlidir. <strong>3) Üretim (Reproduction):</strong> Hafızadaki bilgiyi motor davranışa dönüştürme. Fiziksel yetenekler, koordinasyon, pratik yapma gereklidir. <strong>4) Motivasyon (Motivation):</strong> Öğrenilen davranışı sergileme isteği. Beklenen sonuçlar, ödül-ceza beklentileri, öz-düzenleme etkilidir. Bu dört aşama tamamlandığında etkili gözlemsel öğrenme gerçekleşir. Her aşamadaki eksiklik, öğrenme sürecini engeller.</p>
+                </div>
+            </div>
+
+            <!-- Soru 3 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">3</div>
+                    <div class="question-type">Çoktan Seçmeli</div>
+                </div>
+                <div class="question-text">
+                    "Öz-yeterlilik" (self-efficacy) kavramı neyi ifade eder?
+                </div>
+                <ul class="options">
+                    <li>A) Genel özgüven düzeyi</li>
+                    <li>B) Belirli görevleri başarma inancı</li>
+                    <li>C) Sosyal becerilerin toplamı</li>
+                    <li>D) Akademik başarı düzeyi</li>
+                    <li>E) Liderlik yeteneği</li>
+                </ul>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevap: B) Belirli görevleri başarma inancı</h4>
+                    <p><strong>Açıklama:</strong> <strong>"Öz-yeterlilik"</strong> kişinin belirli görevleri başarıyla tamamlayabileceğine olan inancını ifade eder. Bu, genel özgüvenden farklı olarak duruma özeldir - matematik öz-yeterliliği, sosyal öz-yeterlilik, iş öz-yeterliliği gibi. Öz-yeterliliğin kaynakları: <strong>1) Geçmiş performans:</strong> Önceki başarılar güçlü öz-yeterlilik yaratır. <strong>2) Dolaylı deneyimler:</strong> Benzer durumda olan başkalarının başarısını gözlemleme. <strong>3) Sözel ikna:</strong> Başkalarının teşviki ve güven verici sözleri. <strong>4) Fizyolojik durumlar:</strong> Kaygı düzeyi, yorgunluk gibi fiziksel belirtiler. Yüksek öz-yeterlilik: daha çok çaba harcama, uzun süre sebat etme, zorlukla karşılaştığında pes etmeme ile sonuçlanır. Bu kavram, eğitim, iş yaşamı, sağlık davranışları ve psikoterapi alanlarında yaygın uygulanır.</p>
+                </div>
+            </div>
+
+            <!-- Soru 4 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">4</div>
+                    <div class="question-type">Klasik Sınav</div>
+                </div>
+                <div class="question-text">
+                    Bandura'nın "Bobo bebek" deneyini detaylandırın ve bu deneyin sosyal öğrenme kuramına katkısını açıklayın.
+                </div>
+                <textarea class="essay-area" placeholder="Cevabınızı buraya yazınız..."></textarea>
+                <div class="explanation">
+                    <h4>🎯 Örnek Cevap:</h4>
+                    <p><strong>Deney Düzeni:</strong> 1961-1963 yılları arasında Stanford Üniversitesi'nde yapılan deneyde 3-6 yaş arası çocuklar kullanıldı. Çocuklar üç gruba ayrıldı: saldırgan model grubu, saldırgan olmayan model grubu ve kontrol grubu.</p>
+                    <p><strong>Süreç:</strong> Çocuklar yetişkin modellerin Bobo bebek (şişme oyuncak) ile etkileşimini izledi. Saldırgan model grubu: yetişkinin Bobo bebeği vurması, tekmelemesi, "pow, boom" gibi sözler söylemesi. Saldırgan olmayan model grubu: yetişkinin sakin bir şekilde diğer oyuncaklarla oynaması. Kontrol grubu: hiç model görmedi.</p>
+                    <p><strong>Test Aşaması:</strong> Çocuklar önce çekici oyuncaklarla oynatıldı, sonra bu oyuncaklar alınarak hafif hayal kırıklığı yaratıldı. Daha sonra Bobo bebek de dahil çeşitli oyuncakların bulunduğu odaya alındılar.</p>
+                    <p><strong>Bulgular:</strong> Saldırgan model gören çocuklar: daha fazla saldırgan davranış sergiledi, modelin davranışlarını taklit etti, yeni saldırganlık türleri de geliştirdi. Erkek çocuklar kız çocuklardan daha saldırgan davrandı. Saldırgan olmayan model gören çocuklar kontrol grubundan bile daha az saldırgan davrandı.</p>
+                    <p><strong>Sosyal Öğrenme Kuramına Katkıları:</strong></p>
+                    <p><strong>1. Gözlemsel Öğrenme:</strong> Çocukların doğrudan pekiştirme almadan davranış öğrenebildiğini kanıtladı.</p>
+                    <p><strong>2. Modelleme:</strong> Yetişkin davranışlarının çocuklar üzerindeki güçlü etkisini gösterdi.</p>
+                    <p><strong>3. Davranışçılığa Eleştiri:</strong> Klasik koşullanma ve operant koşullanma ile açıklanamayan öğrenme türlerinin varlığını ispat etti.</p>
+                    <p><strong>4. Medya Etkileri:</strong> Televizyon, film ve diğer medya araçlarının çocuklar üzerindeki potansiyel etkilerine dikkat çekti.</p>
+                    <p><strong>5. Saldırganlık Teorisi:</strong> Saldırgan davranışın doğuştan değil, öğrenilmiş olduğunu destekledi.</p>
+                </div>
+            </div>
+
+            <!-- Soru 5 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">5</div>
+                    <div class="question-type">Çoktan Seçmeli</div>
+                </div>
+                <div class="question-text">
+                    "Karşılıklı determinizm" kavramı neyi açıklar?
+                </div>
+                <ul class="options">
+                    <li>A) Sadece çevrenin davranışı etkilemesi</li>
+                    <li>B) Birey, davranış ve çevre arasındaki karşılıklı etkileşim</li>
+                    <li>C) Genetik faktörlerin belirleyiciliği</li>
+                    <li>D) Bilinçdışının rolü</li>
+                    <li>E) Sadece bireyin çevreyi etkilemesi</li>
+                </ul>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevap: B) Birey, davranış ve çevre arasındaki karşılıklı etkileşim</h4>
+                    <p><strong>Açıklama:</strong> <strong>"Karşılıklı determinizm"</strong> Bandura'nın sosyal bilişsel kuramının temel kavramıdır ve birey, davranış ve çevre arasındaki karşılıklı etkileşimi açıklar. Bu üçlü etkileşim şöyle çalışır: <strong>Birey faktörleri:</strong> Bilişsel süreçler, duygular, biyolojik özellikler davranışı etkiler. <strong>Davranışsal faktörler:</strong> Kişinin davranışları hem çevreyi etkiler hem de kişinin kendisi hakkındaki düşüncelerini şekillendirir. <strong>Çevresel faktörler:</strong> Sosyal ortam, fiziksel koşullar hem bireyi hem de davranışı etkiler. Örnek: Çekingan bir çocuk (birey) → sosyal ortamlardan kaçınma (davranış) → daha az sosyal etkileşim fırsatı (çevre) → sosyal becerilerin gelişmemesi (birey). Bu model, basit neden-sonuç ilişkilerini reddeder ve karmaşık, dinamik bir sistemin varlığını vurgular.</p>
+                </div>
+            </div>
+
+            <!-- Soru 6 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">6</div>
+                    <div class="question-type">Boşluk Doldurma</div>
+                </div>
+                <div class="question-text">
+                    Sosyal öğrenme kuramında <input type="text" class="fill-blank" placeholder="öz-düzenleme"> kişinin kendi davranışını <input type="text" class="fill-blank" placeholder="kontrol"> etme yeteneğidir.
+                </div>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevaplar: Öz-düzenleme, Kontrol</h4>
+                    <p><strong>Açıklama:</strong> <strong>"Öz-düzenleme"</strong> sosyal öğrenme kuramında kişinin kendi davranışını izleme, değerlendirme ve <strong>kontrol</strong> etme yeteneğidir. Bu süreç üç bileşenden oluşur: <strong>1) Öz-gözlem:</strong> Kişinin kendi davranışını izlemesi, fark etmesi ve kaydetmesi. <strong>2) Öz-değerlendirme:</strong> Gözlenen davranışı standartlarla, hedeflerle karşılaştırma. <strong>3) Öz-tepki:</strong> Değerlendirme sonucuna göre kendini ödüllendirme veya cezalandırma. Öz-düzenleme yeteneği: uzun vadeli hedeflere ulaşmayı sağlar, dürtü kontrolünü artırır, akademik ve iş başarısını destekler, sosyal uyumu geliştirir. Bu kavram, modern pozitif psikoloji, eğitim ve terapide önemli yer tutar. İnsanların sadece dış pekiştireçlere bağımlı olmadığını, kendi davranışlarını düzenleyebildiğini gösterir.</p>
+                </div>
+            </div>
+
+            <!-- Soru 7 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">7</div>
+                    <div class="question-type">Çoktan Seçmeli</div>
+                </div>
+                <div class="question-text">
+                    Hangisi etkili model olma özelliklerinden biri değildir?
+                </div>
+                <ul class="options">
+                    <li>A) Benzerlik</li>
+                    <li>B) Prestij</li>
+                    <li>C) Çekicilik</li>
+                    <li>D) Yaş farkı</li>
+                    <li>E) Yetkinlik</li>
+                </ul>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevap: D) Yaş farkı</h4>
+                    <p><strong>Açıklama:</strong> <strong>"Yaş farkı"</strong> etkili model olma özelliklerinden biri değildir. Yaş farkının büyük olması modelin etkisini azaltabilir. Etkili model özelikleri şunlardır: <strong>Benzerlik:</strong> Gözlemci ile model arasındaki yaş, cinsiyet, sosyal statü benzerliği etkiyi artırır. <strong>Prestij:</strong> Yüksek sosyal statü, başarı öyküsü, toplumsal saygınlık modelin etkisini güçlendirir. <strong>Çekicilik:</strong> Fiziksel veya kişisel çekicilik, sempatik olma, sevilen kişi olma. <strong>Yetkinlik:</strong> Öğretilecek konuda uzman olma, beceri sahibi olma, başarılı performans sergileme. <strong>Güç:</strong> Ödül-ceza verme yetkisi, kontrol sahibi olma. Bu özellikler ne kadar fazla bir modelde bulunursa, gözlemsel öğrenme o kadar etkili olur. Çocuklar özellikle kendilerine benzer yaştaki başarılı akranları model alır.</p>
+                </div>
+            </div>
+
+            <!-- Soru 8 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">8</div>
+                    <div class="question-type">Klasik Sınav</div>
+                </div>
+                <div class="question-text">
+                    Sosyal öğrenme kuramının eğitim alanındaki uygulamalarını açıklayın ve modern eğitim sistemlerine etkilerini değerlendirin.
+                </div>
+                <textarea class="essay-area" placeholder="Cevabınızı buraya yazınız..."></textarea>
+                <div class="explanation">
+                    <h4>🎯 Örnek Cevap:</h4>
+                    <p><strong>Eğitim Alanındaki Uygulamalar:</strong></p>
+                    <p><strong>1. Modelleme Tekniği:</strong> Öğretmenlerin örnek davranışlar sergilemesi, akran öğreticiliği programları, rol model öğrencilerin sınıfta tanıtılması, video örnekleri ve görsel materyaller kullanımı.</p>
+                    <p><strong>2. Öz-yeterlilik Geliştirme:</strong> Öğrencilerin başarı deneyimleri yaşamasını sağlama, aşamalı zorluk artırma, bireysel ilerleme takibi, başarı öykülerini paylaşma.</p>
+                    <p><strong>3. Öz-düzenleme Becerileri:</strong> Hedef belirleme eğitimi, zaman yönetimi öğretimi, öz-değerlendirme teknikleri, portfolyo çalışmaları, yansıtıcı günlük tutma.</p>
+                    <p><strong>4. İşbirlikli Öğrenme:</strong> Grup çalışmaları, akran öğrenimi, mentor-mentee ilişkileri, karma yetenek grupları oluşturma.</p>
+                    <p><strong>5. Teknoloji Entegrasyonu:</strong> Eğitici videolar, simülasyonlar, sanal gerçeklik uygulamaları, online mentor programları.</p>
+                    <p><strong>Modern Eğitim Sistemlerine Etkileri:</strong></p>
+                    <p><strong>1. Öğrenci Merkezli Yaklaşım:</strong> Pasif bilgi alıcısından aktif öğrenci rolüne geçiş, bireysel öğrenme stillerinin dikkate alınması.</p>
+                    <p><strong>2. Sosyal Öğrenme Ortamları:</strong> İşbirlikli sınıf düzenlemeleri, grup projelerinin yaygınlaşması, akran değerlendirme sistemleri.</p>
+                    <p><strong>3. Yetkinlik Temelli Eğitim:</strong> Öz-yeterlilik algısı geliştirme, başarı deneyimleri sunma, kademeli beceri geliştirme.</p>
+                    <p><strong>4. Dijital Öğrenme:</strong> Online platformlar, uzaktan eğitim, sanal sınıflar, etkileşimli içerikler.</p>
+                    <p><strong>5. Karakter Eğitimi:</strong> Değerler eğitimi, rol model öğretmenlik, sosyal sorumluluk projeleri.</p>
+                    <p><strong>6. Özel Gereksinimli Eğitim:</strong> Modelleme ile beceri öğretimi, sosyal becerilerin geliştirilmesi, davranış değişikliği programları.</p>
+                    <p><strong>Günümüzdeki Uygulamalar:</strong> Flipped classroom modeli, STEAM eğitimi, proje tabanlı öğrenme, sosyal duygusal öğrenme programları, global sınıf projeleri.</p>
+                </div>
+            </div>
+
+            <!-- Soru 9 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">9</div>
+                    <div class="question-type">Boşluk Doldurma</div>
+                </div>
+                <div class="question-text">
+                    Sosyal öğrenme kuramında <input type="text" class="fill-blank" placeholder="dolaylı pekiştirme"> kişinin başkasının pekiştirildiğini gözlemleyerek kendi davranışını <input type="text" class="fill-blank" placeholder="değiştirmesi"> dir.
+                </div>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevaplar: Dolaylı pekiştirme, Değiştirmesidir</h4>
+                    <p><strong>Açıklama:</strong> <strong>"Dolaylı pekiştirme"</strong> sosyal öğrenme kuramının önemli kavramlarından biridir ve kişinin başkasının pekiştirildiğini gözlemleyerek kendi davranışını <strong>değiştirmesi</strong>dir. Bu süreç üç şekilde gerçekleşir: <strong>1) Dolaylı ödül:</strong> Başkasının ödül aldığını gören kişi, aynı davranışı sergileme eğilimi gösterir. <strong>2) Dolaylı ceza:</strong> Başkasının cezalandırıldığını gören kişi, o davranışı sergilemekten kaçınır. <strong>3) Sonuç beklentisi:</strong> Gözlenen sonuçlar, gelecekteki davranış seçimlerini etkiler. Örnek: Sınıfta öğretmenin bir öğrenciyi övdüğünü gören diğer öğrenciler, benzer davranış gösterme eğilimi artar. Bu kavram, doğrudan pekiştirme almanın gerekmediğini, sadece gözlemlemenin bile davranış değişikliği yaratabileceğini gösterir. Ebeveynlik, eğitim ve iş ortamlarında yaygın kullanım bulur.</p>
+                </div>
+            </div>
+
+            <!-- Soru 10 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">10</div>
+                    <div class="question-type">Çoktan Seçmeli</div>
+                </div>
+                <div class="question-text">
+                    Sosyal öğrenme kuramının modern psikolojiye en önemli katkısı nedir?
+                </div>
+                <ul class="options">
+                    <li>A) Davranışın ölçülmesi</li>
+                    <li>B) Bilişsel faktörlerin davranışla birleştirilmesi</li>
+                    <li>C) Genetik araştırmaların başlatılması</li>
+                    <li>D) Test geliştirme yöntemleri</li>
+                    <li>E) İstatistiksel analiz teknikleri</li>
+                </ul>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevap: B) Bilişsel faktörlerin davranışla birleştirilmesi</h4>
+                    <p><strong>Açıklama:</strong> Sosyal öğrenme kuramının modern psikolojiye en önemli katkısı <strong>bilişsel faktörlerin davranışla birleştirilmesi</strong>dir. Bu katkının önemi: <strong>1) Köprü işlevi:</strong> Davranışçılık ile bilişsel psikoloji arasında köprü kurdu, her iki yaklaşımın güçlü yanlarını birleştirdi. <strong>2) İnsan ajanslığı:</strong> İnsanın pasif tepki veren değil, aktif düşünen, planlayan ve seçim yapan varlık olduğunu vurguladı. <strong>3) Sosyal bağlam:</strong> Davranışın sosyal ortamdaki gözlem ve etkileşimlerle şekillendiğini gösterdi. <strong>4) Pratik uygulamalar:</strong> Eğitim, terapi, sosyal politika alanlarında uygulanabilir yöntemler geliştirdi. <strong>5) Günlük yaşam açıklaması:</strong> İnsanların günlük yaşamda nasıl öğrendiğini ve davrandığını daha gerçekçi açıkladı. Bu yaklaşım, günümüz sosyal bilişsel kuramlarının, pozitif psikolojinin ve kanıta dayalı müdahalelerin temelini oluşturmuştur.</p>
+                </div>
+            </div>
+
+            <!-- Soru 11 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">11</div>
+                    <div class="question-type">Klasik Sınav</div>
+                </div>
+                <div class="question-text">
+                    Sosyal öğrenme kuramının medya etkileri ve şiddet araştırmalarındaki rolünü açıklayın ve günümüz dijital medya çağındaki geçerliliğini değerlendirin.
+                </div>
+                <textarea class="essay-area" placeholder="Cevabınızı buraya yazınız..."></textarea>
+                <div class="explanation">
+                    <h4>🎯 Örnek Cevap:</h4>
+                    <p><strong>Medya Etkileri Araştırmalarındaki Rol:</strong></p>
+                    <p><strong>1. Teorik Temel:</strong> Bandura'nın Bobo bebek deneyleri medya şiddetinin çocuklar üzerindeki etkilerini açıklamak için teorik çerçeve sağladı. Gözlemsel öğrenme ilkeleri televizyon, film ve video oyunlarına uygulandı.</p>
+                    <p><strong>2. Şiddet Araştırmaları:</strong> Binlerce araştırma, medya şiddetinin saldırgan davranışları artırdığını gösterdi. Meta-analizler orta düzey etki büyüklüğü buldu. Çocuklar ve gençlerde daha güçlü etkiler gözlendi.</p>
+                    <p><strong>3. Mekanizma Açıklaması:</strong> Medya şiddeti nasıl etki eder: gözlemsel öğrenme yoluyla saldırgan davranış repertuarı genişler, şiddete karşı duyarsızlaşma artar, saldırganlığın kabul edilebilir çözüm olduğu inancı gelişir.</p>
+                    <p><strong>4. Politika Etkileri:</strong> Yaş sınırlamaları, içerik uyarıları, medya okuryazarlığı programları geliştirildi.</p>
+                    <p><strong>Dijital Medya Çağındaki Geçerlilik:</strong></p>
+                    <p><strong>1. Yeni Ortamlar:</strong> Sosyal medya, YouTube, streaming platformları, video oyunları yeni gözlemsel öğrenme kaynakları. İnfluencer kültürü, viral videolar, meme'ler modern modelleme örnekleri.</p>
+                    <p><strong>2. Etkileşimli İçerik:</strong> Video oyunları daha aktif katılım sağlar, sanal gerçeklik daha gerçekçi deneyimler sunar, kullanıcı tarafından üretilen içerik çeşitliliği artar.</p>
+                    <p><strong>3. Algoritmik Kişiselleştirme:</strong> Önerilen içerik kişiselleşir, filter bubbles oluşur, yankı odası etkisi güçlenir, belirli davranış türlerine daha fazla maruz kalma.</p>
+                    <p><strong>4. Anlık Erişim:</strong> 7/24 erişim, mobil cihazlarla sürekli bağlantı, kısa dikkat süreleri, hızlı içerik tüketimi.</p>
+                    <p><strong>Güncel Araştırma Bulguları:</strong> Sosyal medya kullanımı ve mental sağlık ilişkisi, cyberbullying'in yaygınlaşması, body image sorunlarının artması, FOMO (gelişmeleri kaçırma korkusu) sendromunun gelişmesi.</p>
+                    <p><strong>Pozitif Uygulamalar:</strong> Eğitici içerik, pozitif rol modeller, sosyal aktivizm, yaratıcılık platformları, çevrimiçi öğrenme toplulukları.</p>
+                    <p><strong>Öneriler:</strong> Dijital okuryazarlık eğitimi, bilinçli medya tüketimi, ebeveyn rehberliği, platform sorumluluğu, araştırma desteği artırma.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

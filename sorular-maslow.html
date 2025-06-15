@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abraham Maslow - İhtiyaçlar Hiyerarşisi Soruları</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+        }
+        
+        .header h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+        
+        .nav-link {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background: rgba(255,255,255,0.2);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-link:hover {
+            background: rgba(255,255,255,0.3);
+        }
+        
+        .content {
+            padding: 40px;
+        }
+        
+        .question {
+            background: #f8f9fa;
+            margin-bottom: 30px;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .question-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        
+        .question-number {
+            background: #667eea;
+            color: white;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+        
+        .question-type {
+            background: #28a745;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+        }
+        
+        .question-text {
+            font-size: 1.1rem;
+            color: #333;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+        
+        .options {
+            list-style: none;
+            margin-bottom: 20px;
+        }
+        
+        .options li {
+            padding: 10px 15px;
+            margin: 8px 0;
+            background: white;
+            border-radius: 8px;
+            border: 2px solid #e9ecef;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .options li:hover {
+            border-color: #667eea;
+            background: #f0f4ff;
+        }
+        
+        .correct-answer {
+            border-color: #28a745 !important;
+            background: #d4edda !important;
+        }
+        
+        .explanation {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+        
+        .explanation h4 {
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+        
+        .explanation p {
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+        
+        .fill-blank {
+            border: none;
+            border-bottom: 2px solid #667eea;
+            background: transparent;
+            padding: 5px;
+            font-size: 1rem;
+            width: 150px;
+            margin: 0 5px;
+        }
+        
+        .essay-area {
+            width: 100%;
+            min-height: 100px;
+            padding: 15px;
+            border: 2px solid #e9ecef;
+            border-radius: 10px;
+            font-family: inherit;
+            font-size: 1rem;
+            resize: vertical;
+        }
+        
+        @media (max-width: 768px) {
+            .content {
+                padding: 20px;
+            }
+            .question-header {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🔺 Abraham Maslow - İhtiyaçlar Hiyerarşisi</h1>
+            <p>İnsan motivasyonu, kendini gerçekleştirme ve temel ihtiyaçlar</p>
+            <a href="index.html" class="nav-link">← Ana Sayfaya Dön</a>
+        </div>
+        
+        <div class="content">
+            <!-- Soru 1 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">1</div>
+                    <div class="question-type">Çoktan Seçmeli</div>
+                </div>
+                <div class="question-text">
+                    Maslow'un ihtiyaçlar hiyerarşisinin en alt seviyesi nedir?
+                </div>
+                <ul class="options">
+                    <li>A) Güvenlik ihtiyaçları</li>
+                    <li>B) Fizyolojik ihtiyaçlar</li>
+                    <li>C) Sevgi ve aitlik ihtiyaçları</li>
+                    <li>D) Saygı ihtiyaçları</li>
+                    <li>E) Kendini gerçekleştirme ihtiyacı</li>
+                </ul>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevap: B) Fizyolojik ihtiyaçlar</h4>
+                    <p><strong>Açıklama:</strong> Maslow'un ihtiyaçlar hiyerarşisinin en temelinde <strong>fizyolojik ihtiyaçlar</strong> yer alır. Bu ihtiyaçlar yaşamın sürdürülmesi için gerekli olan temel biyolojik ihtiyaçlardır: nefes alma, su, yiyecek, barınma, uyku, cinsel ihtiyaçlar ve homeostaz (vücut dengesini koruma). Bu ihtiyaçlar karşılanmadığında, birey diğer üst düzey ihtiyaçlarla ilgilenmez ve tüm enerjisini bu temel ihtiyaçları karşılamaya odaklar. Maslow'a göre, bir üst seviyedeki ihtiyacın motive edici güce sahip olabilmesi için alt seviyedeki ihtiyaçların büyük ölçüde karşılanmış olması gerekir.</p>
+                </div>
+            </div>
+
+            <!-- Soru 2 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">2</div>
+                    <div class="question-type">Boşluk Doldurma</div>
+                </div>
+                <div class="question-text">
+                    Maslow'un hiyerarşisinde <input type="text" class="fill-blank" placeholder="eksiklik"> ihtiyaçları karşılandığında motivasyon azalırken, <input type="text" class="fill-blank" placeholder="büyüme"> ihtiyaçları karşılandığında motivasyon artar.
+                </div>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevaplar: Eksiklik, Büyüme</h4>
+                    <p><strong>Açıklama:</strong> Maslow, ihtiyaçları iki kategoriye ayırır: <strong>Eksiklik ihtiyaçları (D-needs/Deficiency needs):</strong> İlk dört seviye (fizyolojik, güvenlik, sevgi-aitlik, saygı) eksiklik ihtiyaçlarıdır. Bu ihtiyaçlar karşılandığında motivasyon gücü azalır çünkü artık o ihtiyacı hissetmeyiz. <strong>Büyüme ihtiyaçları (B-needs/Being needs):</strong> Kendini gerçekleştirme ihtiyacı büyüme ihtiyacıdır. Bu ihtiyaç karşılandıkça daha da güçlenir ve kişi daha fazlasını ister. Kendini gerçekleştiren kişi, potansiyelini kullandıkça daha da büyüme arzusu duyar. Bu nedenle kendini gerçekleştirme süreci hiç bitmez ve sürekli gelişim halindedir.</p>
+                </div>
+            </div>
+
+            <!-- Soru 3 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">3</div>
+                    <div class="question-type">Çoktan Seçmeli</div>
+                </div>
+                <div class="question-text">
+                    Maslow'a göre kendini gerçekleştiren insanların ortak özelliklerinden hangisi değildir?
+                </div>
+                <ul class="options">
+                    <li>A) Gerçekçi algı</li>
+                    <li>B) Mükemmeliyetçilik</li>
+                    <li>C) Özerklik</li>
+                    <li>D) Yaratıcılık</li>
+                    <li>E) Mistik deneyimler</li>
+                </ul>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevap: B) Mükemmeliyetçilik</h4>
+                    <p><strong>Açıklama:</strong> <strong>Mükemmeliyetçilik</strong>, kendini gerçekleştiren insanların özelliği değildir. Aksine, kendini gerçekleştiren insanlar kendi kusurlarını kabul eder ve mükemmel olmaya zorlanmaz. Maslow'un belirlediği kendini gerçekleştiren insanların özellikleri şunlardır: Gerçekçi algıya sahip olma, kendini ve başkalarını olduğu gibi kabul etme, doğallık ve samimiyet, problem-odaklı olma, özerklik ve bağımsızlık, zengin kişilerarası ilişkiler, güçlü etik değerler, yaratıcılık, mistik veya doruk deneyimler yaşama, insanlığa karşı demokratik tutum. Mükemmeliyetçilik ise genellikle nevrotik bir özellik olarak görülür ve kişinin büyümesini engelleyebilir.</p>
+                </div>
+            </div>
+
+            <!-- Soru 4 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">4</div>
+                    <div class="question-type">Klasik Sınav</div>
+                </div>
+                <div class="question-text">
+                    Maslow'un ihtiyaçlar hiyerarşisinin beş seviyesini sırasıyla yazın ve her seviyeyi örneklerle açıklayın.
+                </div>
+                <textarea class="essay-area" placeholder="Cevabınızı buraya yazınız..."></textarea>
+                <div class="explanation">
+                    <h4>🎯 Örnek Cevap:</h4>
+                    <p><strong>1. Fizyolojik İhtiyaçlar:</strong> Yaşamsal temel ihtiyaçlar. Örnekler: nefes alma, su, yiyecek, uyku, barınma, cinsel ihtiyaçlar. Bu ihtiyaçlar karşılanmadığında yaşam tehlike altındadır.</p>
+                    <p><strong>2. Güvenlik İhtiyaçları:</strong> Fiziksel ve psikolojik güvenlik. Örnekler: kişisel güvenlik, iş güvenliği, sağlık güvenliği, mülkiyet güvenliği, istikrarlı bir düzen. Kargaşa ve belirsizlikten kaçınma.</p>
+                    <p><strong>3. Sevgi ve Aitlik İhtiyaçları:</strong> Sosyal bağlantılar ve ilişkiler. Örnekler: arkadaşlık, romantik ilişkiler, aile bağları, gruplara aitlik hissi, toplumsal kabul. Yalnızlık ve dışlanma korkusu.</p>
+                    <p><strong>4. Saygı İhtiyaçları:</strong> Kendine ve başkalarından saygı. Örnekler: başarı, tanınma, statü, prestij, özgüven, başkalarından saygı görme, yetkinlik hissi, bağımsızlık.</p>
+                    <p><strong>5. Kendini Gerçekleştirme:</strong> Potansiyelini tam olarak kullanma. Örnekler: yaratıcılık, problem çözme, ahlaki değerler, önyargısızlık, otantik olma, kişisel büyüme.</p>
+                </div>
+            </div>
+
+            <!-- Soru 5 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">5</div>
+                    <div class="question-type">Çoktan Seçmeli</div>
+                </div>
+                <div class="question-text">
+                    "Doruk deneyim" (peak experience) kavramı neyi ifade eder?
+                </div>
+                <ul class="options">
+                    <li>A) En yüksek başarı anları</li>
+                    <li>B) Yoğun mutluluk ve tatmin anları</li>
+                    <li>C) Rekabet halindeki performans</li>
+                    <li>D) Sosyal onay alma anları</li>
+                    <li>E) Maddi kazanç elde etme</li>
+                </ul>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevap: B) Yoğun mutluluk ve tatmin anları</h4>
+                    <p><strong>Açıklama:</strong> <strong>"Doruk deneyim"</strong> Maslow'un kuramında önemli bir kavramdır ve kendini gerçekleştiren insanların yaşadığı özel anları ifade eder. Bu deneyimler, yoğun mutluluk, tatmin, aşkınlık ve anlam duygusuyla karakterizedir. Doruk deneyimler sırasında kişi: zamanı unutur, kendini evrenle bir hisseder, derin bir anlam ve amaç duygusu yaşar, yoğun sevgi ve bağlantı hisseder, yaratıcılığı zirve yapar. Bu deneyimler sanatsal yaratım, doğayla bütünleşme, sevgi anları, manevi deneyimler sırasında yaşanabilir. Doruk deneyimler, kişinin kendini gerçekleştirme yolculuğunda önemli dönüm noktaları olur ve yaşamına derin anlam katar.</p>
+                </div>
+            </div>
+
+            <!-- Soru 6 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">6</div>
+                    <div class="question-type">Boşluk Doldurma</div>
+                </div>
+                <div class="question-text">
+                    Maslow'a göre <input type="text" class="fill-blank" placeholder="metaihtiyaçlar"> kendini gerçekleştirme düzeyindeki ihtiyaçları ifade eder ve bunlar <input type="text" class="fill-blank" placeholder="değerler"> le ilgilidir.
+                </div>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevaplar: Metaihtiyaçlar, Değerler</h4>
+                    <p><strong>Açıklama:</strong> <strong>Metaihtiyaçlar (meta-needs)</strong> Maslow'un geç dönem çalışmalarında geliştirdiği kavramdır. Bu ihtiyaçlar, kendini gerçekleştirme düzeyindeki insanların yaşadığı ve temel değerlerle ilgili olan ihtiyaçlardır. Metaihtiyaçlar şunları içerir: gerçek (truth), güzellik (beauty), iyilik (goodness), bütünlük (wholeness), canlılık (aliveness), benzersizlik (uniqueness), mükemmellik (perfection), adalet (justice), düzen (order), basitlik (simplicity), oyunsallık (playfulness). Bu ihtiyaçlar karşılanmadığında "metapatoloji" denilen durumlar ortaya çıkar: sinizm, kayıtsızlık, anlamsızlık hissi. Metaihtiyaçlar, insanın en yüksek potansiyelini ifade eder.</p>
+                </div>
+            </div>
+
+            <!-- Soru 7 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">7</div>
+                    <div class="question-type">Çoktan Seçmeli</div>
+                </div>
+                <div class="question-text">
+                    Maslow'un kuramına göre, aşağıdakilerden hangisi motivasyonu en güçlü olan ihtiyaçtır?
+                </div>
+                <ul class="options">
+                    <li>A) Kendini gerçekleştirme</li>
+                    <li>B) Saygı ihtiyacı</li>
+                    <li>C) Karşılanmamış en düşük seviye ihtiyaç</li>
+                    <li>D) Sevgi ihtiyacı</li>
+                    <li>E) Güvenlik ihtiyacı</li>
+                </ul>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevap: C) Karşılanmamış en düşük seviye ihtiyaç</h4>
+                    <p><strong>Açıklama:</strong> Maslow'un kuramına göre, motivasyonu en güçlü olan ihtiyaç <strong>karşılanmamış en düşük seviye ihtiyaçtır</strong>. Bu "baskın ihtiyaç ilkesi" olarak bilinir. Örneğin, açlık çeken bir kişi için fizyolojik ihtiyaçlar en güçlü motivatördür ve kişi tüm enerjisini yiyecek bulmaya harcar. Saygı veya kendini gerçekleştirme gibi üst düzey ihtiyaçlar, temel ihtiyaçlar karşılanmadığı sürece motive edici güce sahip olmaz. Bu ilke, insanın önceliklerinin nasıl belirlediğini ve davranışların hangi ihtiyaçlar tarafından yönlendirildiğini açıklar. Alt seviye bir ihtiyaç ortaya çıktığında, üst seviye ihtiyaçlar geçici olarak arka plana itilir.</p>
+                </div>
+            </div>
+
+            <!-- Soru 8 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">8</div>
+                    <div class="question-type">Klasik Sınav</div>
+                </div>
+                <div class="question-text">
+                    Maslow'un "kendini gerçekleştiren insanlar" üzerine yaptığı araştırmayı açıklayın ve bu kişilerin ortak özelliklerini tartışın.
+                </div>
+                <textarea class="essay-area" placeholder="Cevabınızı buraya yazınız..."></textarea>
+                <div class="explanation">
+                    <h4>🎯 Örnek Cevap:</h4>
+                    <p><strong>Araştırma Yöntemi:</strong> Maslow, kendini gerçekleştirdiğini düşündüğü tarihsel figürler (Lincoln, Einstein, Roosevelt vb.) ve çağdaşı olan kişileri inceledi. Bu, gözlemsel ve biyografik bir araştırmaydı.</p>
+                    <p><strong>Seçim Kriterleri:</strong> Psikolojik olarak sağlıklı, potansiyelini kullanan, yaratıcı ve üretken kişiler seçildi.</p>
+                    <p><strong>Ortak Özellikler:</strong></p>
+                    <p><strong>1. Realite algısı:</strong> Kendilerini ve dünyayı olduğu gibi görürler, illüzyonlarla yaşamazlar.</p>
+                    <p><strong>2. Kabul:</strong> Kendilerini, başkalarını ve doğayı olduğu gibi kabul ederler.</p>
+                    <p><strong>3. Doğallık:</strong> Davranışlarında samimi ve otantiktirler, rol yapmazlar.</p>
+                    <p><strong>4. Problem odaklılık:</strong> Kişisel sorunlardan ziyade dış dünya problemlerine odaklanırlar.</p>
+                    <p><strong>5. Gizlilik ihtiyacı:</strong> Yalnızlığı sevebilirler, iç dünyalarıyla başbaşa kalabilirler.</p>
+                    <p><strong>6. Özerklik:</strong> Dış onaydan bağımsızdırlar, kendi değerlerine göre yaşarlar.</p>
+                    <p><strong>7. Değer yargıları:</strong> Güçlü etik değerlere sahiptirler, doğru-yanlış ayrımı yaparlar.</p>
+                    <p><strong>8. İnsan sevgisi:</strong> İnsanlığa karşı demokratik tutum sergilerler.</p>
+                </div>
+            </div>
+
+            <!-- Soru 9 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">9</div>
+                    <div class="question-type">Boşluk Doldurma</div>
+                </div>
+                <div class="question-text">
+                    Maslow'un kuramına göre ihtiyaçlar hiyerarşisinde <input type="text" class="fill-blank" placeholder="prepotent"> ilkesi geçerlidir ve bu da <input type="text" class="fill-blank" placeholder="alt"> seviye ihtiyaçların üst seviyedekilere göre önceliği olduğunu ifade eder.
+                </div>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevaplar: Prepotent, Alt</h4>
+                    <p><strong>Açıklama:</strong> <strong>Prepotent ilkesi</strong>, Maslow'un kuramının temel mantığını oluşturur. Bu ilkeye göre, hiyerarşide alt seviyedeki ihtiyaçlar, üst seviyedekilere göre daha güçlü motivasyon sağlar ve önceliğe sahiptir. "Prepotent" kelimesi "daha güçlü, baskın" anlamına gelir. Örneğin, açlık çeken bir kişi için fizyolojik ihtiyaçlar, saygı ihtiyacından daha prepotent'tir. Bu ilke şunu açıklar: Alt seviye bir ihtiyaç ortaya çıktığında, üst seviye ihtiyaçlar geçici olarak önemini kaybeder; kişi önce temel ihtiyaçlarını karşılamaya odaklanır; ancak alt seviye ihtiyaçlar karşılandığında, üst seviye ihtiyaçlar motive edici güçlerini geri kazanır.</p>
+                </div>
+            </div>
+
+            <!-- Soru 10 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">10</div>
+                    <div class="question-type">Çoktan Seçmeli</div>
+                </div>
+                <div class="question-text">
+                    Maslow'un kuramının eleştirilerinden hangisi doğru değildir?
+                </div>
+                <ul class="options">
+                    <li>A) Kültürel farklılıkları göz ardı eder</li>
+                    <li>B) Ampirik araştırmalarla yeterince desteklenmemiş</li>
+                    <li>C) İnsan motivasyonunu tek faktöre indirger</li>
+                    <li>D) Hiyerarşik yapı evrensel geçerli değil</li>
+                    <li>E) Bireyci kültürlere özgüdür</li>
+                </ul>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevap: C) İnsan motivasyonunu tek faktöre indirger</h4>
+                    <p><strong>Açıklama:</strong> <strong>"İnsan motivasyonunu tek faktöre indirger"</strong> eleştirisi doğru değildir çünkü Maslow'un kuramı tam tersine, insan motivasyonunu çok boyutlu olarak ele alır ve beş farklı ihtiyaç seviyesi tanımlar. Maslow, insanların farklı zamanlarda farklı ihtiyaçlar tarafından motive edilebileceğini kabul eder. Doğru eleştiriler şunlardır: Kuram, kültürel farklılıkları yeterince dikkate almaz ve Batı-merkezci bir yaklaşım sergiler; ampirik araştırmalarla yeterince desteklenmemiştir; hiyerarşik yapının evrensel geçerliliği sorgulanabilir; bireyci kültürlerin değerlerini yansıtır, kolektivist kültürler için uygun olmayabilir; kendini gerçekleştirme kavramı belirsiz ve subjektiftir.</p>
+                </div>
+            </div>
+
+            <!-- Soru 11 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">11</div>
+                    <div class="question-type">Çoktan Seçmeli</div>
+                </div>
+                <div class="question-text">
+                    Maslow'a göre "B-değerleri" (Being values) aşağıdakilerden hangisini ifade eder?
+                </div>
+                <ul class="options">
+                    <li>A) Temel fizyolojik değerler</li>
+                    <li>B) Kendini gerçekleştiren insanların yaşadığı değerler</li>
+                    <li>C) Sosyal normlar</li>
+                    <li>D) Güvenlik gereksinimleri</li>
+                    <li>E) Materyal değerler</li>
+                </ul>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevap: B) Kendini gerçekleştiren insanların yaşadığı değerler</h4>
+                    <p><strong>Açıklama:</strong> <strong>"B-değerleri" (Being values)</strong> kendini gerçekleştiren insanların yaşadığı ve metaihtiyaçlarla ilgili olan değerlerdir. Bu değerler şunlardır: <strong>Gerçek (Truth):</strong> Dürüstlük, otantiklik; <strong>Güzellik (Beauty):</strong> Estetik deneyimler; <strong>İyilik (Goodness):</strong> Ahlaki değerler; <strong>Bütünlük (Wholeness):</strong> Parça-bütün ilişkisi; <strong>Canlılık (Aliveness):</strong> Yaşamın enerjisi; <strong>Benzersizlik (Uniqueness):</strong> Teklik, özgünlük; <strong>Mükemmellik (Perfection):</strong> Uyum, doğruluk; <strong>Adalet (Justice):</strong> Eşitlik, dürüstlük. Bu değerler, kendini gerçekleştiren insanların yaşamlarını anlamlı kılan temel ilkelerdir ve bunların eksikliği metapatolojilere yol açar.</p>
+                </div>
+            </div>
+
+            <!-- Soru 12 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">12</div>
+                    <div class="question-type">Klasik Sınav</div>
+                </div>
+                <div class="question-text">
+                    Maslow'un kuramının modern psikoloji ve yönetim alanlarındaki uygulamalarını değerlendirin ve günümüzdeki geçerliliğini tartışın.
+                </div>
+                <textarea class="essay-area" placeholder="Cevabınızı buraya yazınız..."></textarea>
+                <div class="explanation">
+                    <h4>🎯 Örnek Cevap:</h4>
+                    <p><strong>Modern Psikolojideki Uygulamalar:</strong></p>
+                    <p><strong>1. Pozitif Psikoloji:</strong> Seligman'ın pozitif psikoloji hareketinin temellerini oluşturmuş, insan güçlü yanlarına odaklanma yaklaşımını desteklemiştir.</p>
+                    <p><strong>2. Hümanistik Terapi:</strong> İnsan potansiyeline odaklanan terapi yaklaşımlarının gelişimini etkilemiştir.</p>
+                    <p><strong>3. Gelişimsel Psikoloji:</strong> İnsan gelişiminin yaşam boyu süren bir süreç olduğu anlayışına katkı sağlamıştır.</p>
+                    <p><strong>Yönetim Alanındaki Uygulamalar:</strong></p>
+                    <p><strong>1. İnsan Kaynakları:</strong> Çalışan motivasyonunu anlama ve yönetmede kullanılmaktadır.</p>
+                    <p><strong>2. Liderlik:</strong> Liderlerin takipçilerinin farklı düzeydeki ihtiyaçlarını anlamasında rehberlik eder.</p>
+                    <p><strong>3. Örgütsel Davranış:</strong> İş tatmini ve performans arasındaki ilişkiyi açıklamada kullanılır.</p>
+                    <p><strong>Günümüzdeki Geçerlilik:</strong></p>
+                    <p><strong>Güçlü Yanlar:</strong> Holistik yaklaşım, pozitif odak, pratik uygulanabilirlik.</p>
+                    <p><strong>Sınırlılıklar:</strong> Kültürel genellenemezlik, ampirik destek eksikliği, aşırı basitleştirme eğilimi.</p>
+                    <p><strong>Sonuç:</strong> Kuram, temel kavramlarıyla modern psikolojiye katkı sağlamaya devam ediyor ancak güncellenmeye ihtiyaç duyuyor.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

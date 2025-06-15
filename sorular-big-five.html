@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Big Five - Beş Faktör Modeli Soruları</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+        }
+        
+        .header h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+        
+        .nav-link {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background: rgba(255,255,255,0.2);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-link:hover {
+            background: rgba(255,255,255,0.3);
+        }
+        
+        .content {
+            padding: 40px;
+        }
+        
+        .question {
+            background: #f8f9fa;
+            margin-bottom: 30px;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .question-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        
+        .question-number {
+            background: #667eea;
+            color: white;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+        
+        .question-type {
+            background: #28a745;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+        }
+        
+        .question-text {
+            font-size: 1.1rem;
+            color: #333;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+        
+        .options {
+            list-style: none;
+            margin-bottom: 20px;
+        }
+        
+        .options li {
+            padding: 10px 15px;
+            margin: 8px 0;
+            background: white;
+            border-radius: 8px;
+            border: 2px solid #e9ecef;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .options li:hover {
+            border-color: #667eea;
+            background: #f0f4ff;
+        }
+        
+        .correct-answer {
+            border-color: #28a745 !important;
+            background: #d4edda !important;
+        }
+        
+        .explanation {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+        
+        .explanation h4 {
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+        
+        .explanation p {
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+        
+        .fill-blank {
+            border: none;
+            border-bottom: 2px solid #667eea;
+            background: transparent;
+            padding: 5px;
+            font-size: 1rem;
+            width: 150px;
+            margin: 0 5px;
+        }
+        
+        .essay-area {
+            width: 100%;
+            min-height: 100px;
+            padding: 15px;
+            border: 2px solid #e9ecef;
+            border-radius: 10px;
+            font-family: inherit;
+            font-size: 1rem;
+            resize: vertical;
+        }
+        
+        @media (max-width: 768px) {
+            .content {
+                padding: 20px;
+            }
+            .question-header {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🌟 Big Five - Beş Faktör Modeli</h1>
+            <p>OCEAN modeli ve çağdaş kişilik psikolojisi</p>
+            <a href="index.html" class="nav-link">← Ana Sayfaya Dön</a>
+        </div>
+        
+        <div class="content">
+            <!-- Soru 1 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">1</div>
+                    <div class="question-type">Çoktan Seçmeli</div>
+                </div>
+                <div class="question-text">
+                    Big Five modelindeki beş faktör hangileridir?
+                </div>
+                <ul class="options">
+                    <li>A) Openness, Conscientiousness, Extraversion, Agreeableness, Neuroticism</li>
+                    <li>B) Optimism, Creativity, Energy, Altruism, Nervousness</li>
+                    <li>C) Organization, Confidence, Empathy, Assertiveness, Negativity</li>
+                    <li>D) Outgoing, Careful, Enthusiastic, Agreeable, Nervous</li>
+                    <li>E) Original, Controlled, Energetic, Adaptive, Natural</li>
+                </ul>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevap: A) Openness, Conscientiousness, Extraversion, Agreeableness, Neuroticism</h4>
+                    <p><strong>Açıklama:</strong> Big Five modeli beş temel faktörden oluşur ve OCEAN kısaltmasıyla hatırlanır: <strong>O - Açıklık (Openness):</strong> Yeni deneyimlere açıklık, yaratıcılık, hayal gücü, kültürel ilgiler. <strong>C - Sorumluluk (Conscientiousness):</strong> Öz-disiplin, düzen, güvenilirlik, hedef odaklılık. <strong>E - Dışadönüklük (Extraversion):</strong> Sosyallik, enerji, pozitif duygular, iddialılık. <strong>A - Uyumluluk (Agreeableness):</strong> İşbirlikçilik, güven, empati, alçakgönüllülük. <strong>N - Nevrotizm (Neuroticism):</strong> Duygusal kararsızlık, kaygı, depresif eğilimler, stres duyarlılığı. Bu beş faktör, kişiliğin temel boyutlarını kapsadığı düşünülür ve çok kültürlü araştırmalarla desteklenmiştir. Her faktör bağımsız bir boyut olarak işlev görür ve kişiliği tanımlamada kapsamlı bir çerçeve sağlar.</p>
+                </div>
+            </div>
+
+            <!-- Soru 2 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">2</div>
+                    <div class="question-type">Boşluk Doldurma</div>
+                </div>
+                <div class="question-text">
+                    Big Five modeli <input type="text" class="fill-blank" placeholder="leksik"> yaklaşıma dayanır ve bu yaklaşım <input type="text" class="fill-blank" placeholder="dil"> analizini temel alır.
+                </div>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevaplar: Leksik, Dil</h4>
+                    <p><strong>Açıklama:</strong> Big Five modeli <strong>"leksik yaklaşım"</strong>a dayanır ve bu yaklaşım <strong>dil analizi</strong>ni temel alır. Leksik hipotez der ki: İnsan kişiliğinin önemli yönleri doğal dillerde kelimeler olarak kodlanmıştır; kişiliği tanımlayan tüm önemli özellikler sıfatlar olarak dilde mevcuttur; dilde daha sık kullanılan özellikler daha önemli kişilik boyutlarını temsil eder. Bu yaklaşımın uygulanması: çeşitli dillerdeki kişilik sıfatları toplanır (İngilizce'de 17,000+ kelime), benzer anlamlı kelimeler gruplandırılır, faktör analizi ile temel boyutlar belirlenir, çok kültürlü çalışmalarla doğrulanır. Bu yöntem objektif ve kültürler arası geçerli bir kişilik modeli yaratmayı amaçlar. Farklı dillerde (İngilizce, Almanca, Çekçe vb.) benzer faktör yapıları bulunması, Big Five'ın evrenselliğini destekler.</p>
+                </div>
+            </div>
+
+            <!-- Soru 3 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">3</div>
+                    <div class="question-type">Çoktan Seçmeli</div>
+                </div>
+                <div class="question-text">
+                    Hangisi "Açıklık" faktörünün alt boyutlarından biri değildir?
+                </div>
+                <ul class="options">
+                    <li>A) Fantezi</li>
+                    <li>B) Estetik</li>
+                    <li>C) Duygular</li>
+                    <li>D) Güvenilirlik</li>
+                    <li>E) Fikirler</li>
+                </ul>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevap: D) Güvenilirlik</h4>
+                    <p><strong>Açıklama:</strong> <strong>"Güvenilirlik"</strong> Açıklık faktörünün alt boyutu değil, Sorumluluk faktörünün alt boyutudur. Açıklık faktörünün altı alt boyutu şunlardır: <strong>1) Fantezi:</strong> Hayal gücü, yaratıcı düşünce, rüya kurma eğilimi. <strong>2) Estetik:</strong> Sanat, güzellik ve estetik deneyimlere duyarlılık. <strong>3) Duygular:</strong> Kendi ve başkalarının duygularına açıklık, duygu yoğunluğu. <strong>4) Eylemler:</strong> Yeni aktiviteler deneme, rutin bozma isteği. <strong>5) Fikirler:</strong> Entelektüel merak, soyut düşünceye ilgi. <strong>6) Değerler:</strong> Geleneksel değerleri sorgulama, liberal tutumlar. Güvenilirlik ise Sorumluluk faktörü altında yer alır ve sözünü tutma, vaatlerini yerine getirme eğilimini ifade eder. Bu ayrım, faktörlerin kendine özgü alt yapılarına sahip olduğunu gösterir.</p>
+                </div>
+            </div>
+
+            <!-- Soru 4 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">4</div>
+                    <div class="question-type">Klasik Sınav</div>
+                </div>
+                <div class="question-text">
+                    Big Five modelinin "NEO-PI-R" testi ile ölçümünü açıklayın ve bu testin klinik ve araştırma alanlarındaki kullanımlarını tartışın.
+                </div>
+                <textarea class="essay-area" placeholder="Cevabınızı buraya yazınız..."></textarea>
+                <div class="explanation">
+                    <h4>🎯 Örnek Cevap:</h4>
+                    <p><strong>NEO-PI-R Testi:</strong> "NEO Personality Inventory-Revised" Costa ve McCrae tarafından geliştirilmiş, Big Five faktörlerini ölçen en kapsamlı kişilik testidir.</p>
+                    <p><strong>Test Özellikleri:</strong> 240 maddelik tam form (5 faktör × 6 alt boyut × 8 madde), 60 maddelik kısa form (NEO-FFI) mevcuttur, Likert tipi derecelendirme (1-5 arası), hem öz-değerlendirme hem de gözlemci formu bulunur.</p>
+                    <p><strong>Ölçüm Yapısı:</strong> Her faktör 6 alt boyutla ölçülür: N: Kaygı, öfke, depresyon, sosyal kaygı, dürtüsellik, stres duyarlılığı. E: Sıcaklık, girişkenlik, iddialılık, aktivite, heyecan arayışı, pozitif duygular. O: Fantezi, estetik, duygular, eylemler, fikirler, değerler. A: Güven, doğrudanlık, fedakarlık, uyum, alçakgönüllülük, şefkat. C: Yeterlik, düzen, görev bilinci, başarı çabası, öz-disiplin, temkinlilik.</p>
+                    <p><strong>Klinik Kullanımlar:</strong></p>
+                    <p><strong>1. Tanı Desteği:</strong> Kişilik bozukluklarının boyutsal değerlendirilmesi, DSM-5'de önerilen alternatif model.</p>
+                    <p><strong>2. Terapi Planlaması:</strong> Danışanın kişilik profiline göre terapi yaklaşımı seçimi, tedavi hedeflerinin belirlenmesi.</p>
+                    <p><strong>3. Prognoz Tahmini:</strong> Tedavi başarı olasılığı ve sürecin tahmini, relaps riskinin değerlendirilmesi.</p>
+                    <p><strong>4. Çift ve Aile Terapisi:</strong> İlişki dinamiklerinin anlaşılması, uyum problemlerinin analizi.</p>
+                    <p><strong>Araştırma Alanlarında Kullanım:</strong></p>
+                    <p><strong>1. Sağlık Psikolojisi:</strong> Kişilik-hastalık ilişkisi, sağlık davranışları, uyum stratejileri araştırması.</p>
+                    <p><strong>2. Sosyal Psikoloji:</strong> Grup dinamikleri, liderlik, önyargı, sosyal tutumlar çalışmaları.</p>
+                    <p><strong>3. Gelişim Psikolojisi:</strong> Yaşam boyu kişilik değişimi, kalıtım-çevre etkileşimi araştırması.</p>
+                    <p><strong>4. Endüstriyel Psikoloji:</strong> İş performansı, takım çalışması, liderlik, kariyer danışmanlığı.</p>
+                </div>
+            </div>
+
+            <!-- Soru 5 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">5</div>
+                    <div class="question-type">Çoktan Seçmeli</div>
+                </div>
+                <div class="question-text">
+                    Big Five faktörlerinden hangisi iş performansı ile en güçlü pozitif ilişkiye sahiptir?
+                </div>
+                <ul class="options">
+                    <li>A) Açıklık</li>
+                    <li>B) Sorumluluk</li>
+                    <li>C) Dışadönüklük</li>
+                    <li>D) Uyumluluk</li>
+                    <li>E) Nevrotizm</li>
+                </ul>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevap: B) Sorumluluk</h4>
+                    <p><strong>Açıklama:</strong> Meta-analitik araştırmalar, <strong>Sorumluluk</strong> faktörünün iş performansı ile en güçlü pozitif ilişkiye sahip olduğunu göstermektedir. Bu ilişkinin nedenleri: <strong>Öz-disiplin:</strong> İşi zamanında ve kaliteli tamamlama, <strong>Güvenilirlik:</strong> Verilen sözleri tutma, sorumluluklarını yerine getirme, <strong>Düzen:</strong> Sistematik çalışma, organize olma, <strong>Sebat:</strong> Zorluklarla karşılaştığında vazgeçmeme, <strong>Hedef odaklılık:</strong> Belirli amaçlara yönelme, dikkat dağılmama. Diğer faktörlerin iş performansı ile ilişkileri: Nevrotizm (negatif ilişki), Dışadönüklük (takım işleri ve satış pozisyonlarında pozitif), Uyumluluk (ekip çalışmasında pozitif), Açıklık (yaratıcılık gerektiren işlerde pozitif). Ancak hiçbiri Sorumluluk kadar tutarlı ve güçlü ilişki göstermez. Bu bulgu, işe alım süreçlerinde Sorumluluk ölçümünün önemini vurgular.</p>
+                </div>
+            </div>
+
+            <!-- Soru 6 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">6</div>
+                    <div class="question-type">Boşluk Doldurma</div>
+                </div>
+                <div class="question-text">
+                    Big Five faktörleri yaşla birlikte değişir: Genellikle <input type="text" class="fill-blank" placeholder="sorumluluk"> ve <input type="text" class="fill-blank" placeholder="uyumluluk"> artar, <input type="text" class="fill-blank" placeholder="nevrotizm"> ise azalır.
+                </div>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevaplar: Sorumluluk, Uyumluluk, Nevrotizm</h4>
+                    <p><strong>Açıklama:</strong> Boylamsal araştırmalar, Big Five faktörlerinin yaşam boyu sistematik değişimler gösterdiğini ortaya koymuştur. <strong>Sorumluluk:</strong> Yetişkinlik boyunca sürekli artar, özellikle 20-40 yaş arasında belirgin artış, yaşlılığa doğru platoya ulaşır. <strong>Uyumluluk:</strong> Orta yaş ve sonrasında artış gösterir, çatışma çözme becerileri gelişir, daha işbirlikçi olma eğilimi. <strong>Nevrotizm:</strong> Genellikle yaşla birlikte azalır, duygusal kararlılık artar, stres yönetimi becerilerinin gelişimi. <strong>Dışadönüklük:</strong> Hafif azalma eğilimi, özellikle sosyal aktivite ve heyecan arayışında. <strong>Açıklık:</strong> Yaşlılıkta hafif azalma, yeni deneyimlere daha az açık olma. Bu değişimler "kişilik olgunlaşması" olarak adlandırılır ve sosyal uyumu artıran yönde gelişir. Genetik faktörler sabit kalırken, yaşam deneyimleri ve sosyal roller bu değişimleri etkiler.</p>
+                </div>
+            </div>
+
+            <!-- Soru 7 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">7</div>
+                    <div class="question-type">Çoktan Seçmeli</div>
+                </div>
+                <div class="question-text">
+                    Big Five modelinin eleştirilerinden hangisi en yaygındır?
+                </div>
+                <ul class="options">
+                    <li>A) Faktör sayısının az olması</li>
+                    <li>B) Teorik temelin zayıf olması</li>
+                    <li>C) Ölçümün zor olması</li>
+                    <li>D) Kültürel geçersizlik</li>
+                    <li>E) Düşük güvenilirlik</li>
+                </ul>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevap: B) Teorik temelin zayıf olması</h4>
+                    <p><strong>Açıklama:</strong> Big Five modelinin en yaygın eleştirisi <strong>teorik temelin zayıf olması</strong>dır. Bu eleştirinin gerekçeleri: <strong>Ateorelik yaklaşım:</strong> Model tamamen empirik/istatistiksel temellere dayanır, neden bu 5 faktörün var olduğu teorik olarak açıklanmaz. <strong>Açıklayıcı mekanizma eksikliği:</strong> Faktörlerin nasıl ortaya çıktığı, neden bu şekilde örgütlendiği belirsiz. <strong>Nedensellik sorunu:</strong> Faktörlerin davranışa neden mi olduğu yoksa davranışların bir yansıması mı olduğu net değil. <strong>Evrimsel/biyolojik temellerin zayıflığı:</strong> Neden bu 5 boyutun evrimsel olarak seçildiği açık değil. Diğer eleştiriler: faktör sayısı konusunda fikir birliği olmayışı (3-7 arası öneriler), kültürler arası tam geçerlik tartışmaları, durumsal değişkenliği ihmal etmesi. Ancak güvenilirlik ve ölçüm konularında model genellikle başarılı kabul edilir.</p>
+                </div>
+            </div>
+
+            <!-- Soru 8 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">8</div>
+                    <div class="question-type">Klasik Sınav</div>
+                </div>
+                <div class="question-text">
+                    Big Five faktörlerinin kalıtımsal temellerini açıklayın ve davranış genetiği araştırmalarının bulgularını değerlendirin.
+                </div>
+                <textarea class="essay-area" placeholder="Cevabınızı buraya yazınız..."></textarea>
+                <div class="explanation">
+                    <h4>🎯 Örnek Cevap:</h4>
+                    <p><strong>Kalıtımsal Temeller:</strong> İkiz çalışmaları ve evlatlık alınan çocuk araştırmaları, Big Five faktörlerinin önemli ölçüde kalıtımsal olduğunu göstermektedir.</p>
+                    <p><strong>Kalıtılabilirlik Oranları:</strong></p>
+                    <p><strong>- Açıklık:</strong> %45-60 kalıtılabilir. Yaratıcılık, zeka ile genetik bağlantılar, dopamin sistemi ile ilişkili.</p>
+                    <p><strong>- Sorumluluk:</strong> %40-50 kalıtılabilir. Öz-kontrol, dikkat sistemleri, prefrontal korteks fonksiyonları ile bağlantılı.</p>
+                    <p><strong>- Dışadönüklük:</strong> %50-60 kalıtılabilir. Dopamin duyarlılığı, ödül sistemleri, sosyal beyinle genetik ilişkiler.</p>
+                    <p><strong>- Uyumluluk:</strong> %35-45 kalıtılabilir. Oksitosin, empati sistemleri, pro-sosyal davranış genetiği.</p>
+                    <p><strong>- Nevrotizm:</strong> %45-55 kalıtılabilir. Serotonin sistemi, stres tepki mekanizmaları, limbik sistem aktivitesi.</p>
+                    <p><strong>Genetik Araştırma Bulguları:</strong></p>
+                    <p><strong>1. GWAS Çalışmaları:</strong> Genom çapında ilişkilendirme çalışmaları yüzlerce genetik varyantın küçük etkilerle katkıda bulunduğunu gösterdi.</p>
+                    <p><strong>2. Aday Gen Yaklaşımı:</strong> 5-HTTLPR (serotonin), DRD4 (dopamin) gibi spesifik genlerin bazı faktörlerle ilişkisi bulundu.</p>
+                    <p><strong>3. Poligenik Skorlar:</strong> Binlerce genetik varyantın birleştirilmesiyle kişilik özelliklerinin %10-15'i tahmin edilebiliyor.</p>
+                    <p><strong>Çevre Etkileşimi:</strong></p>
+                    <p><strong>- Gen×Çevre etkileşimi:</strong> Genetik eğilimlerin çevresel koşullara göre farklı şekilde ifade edilmesi.</p>
+                    <p><strong>- Epigenetik mekanizmalar:</strong> Yaşam deneyimlerinin gen ifadesini değiştirmesi.</p>
+                    <p><strong>- Aktif gen-çevre korelasyonu:</strong> Kişilerin genetik eğilimlerine uygun çevreler seçmesi.</p>
+                    <p><strong>Sonuçlar:</strong> Kişilik hem genetik hem çevresel faktörlerin ürünü, erken müdahale önemli, bireysel farklılıklar doğal ve değerli, deterministik olmayan esnek bir sistem.</p>
+                </div>
+            </div>
+
+            <!-- Soru 9 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">9</div>
+                    <div class="question-type">Boşluk Doldurma</div>
+                </div>
+                <div class="question-text">
+                    Big Five modelinde faktörler <input type="text" class="fill-blank" placeholder="bipolar"> yapıdadır, yani her faktörün iki <input type="text" class="fill-blank" placeholder="kutbu"> bulunur.
+                </div>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevaplar: Bipolar, Kutbu</h4>
+                    <p><strong>Açıklama:</strong> Big Five modelinde her faktör <strong>bipolar</strong> (iki kutuplu) yapıya sahiptir, yani her faktörün iki zıt <strong>kutbu</strong> bulunur. Bu kutuplar: <strong>Açıklık:</strong> Açık/Yaratıcı ↔ Geleneksel/Konservatif. <strong>Sorumluluk:</strong> Organize/Disiplinli ↔ Dağınık/İhmalkâr. <strong>Dışadönüklük:</strong> Sosyal/Enerjik ↔ İçe dönük/Çekingen. <strong>Uyumluluk:</strong> İşbirlikçi/Güvenilir ↔ Rekabetçi/Şüpheci. <strong>Nevrotizm:</strong> Duygusal kararsız/Kaygılı ↔ Sakin/Dengeli. Bu bipolar yapı önemlidir çünkü: kişilik özelliklerinin normal dağılım gösterdiğini kabul eder, ekstrem uçlar patolojik değil, normal varyasyon olarak görülür, sürekli değişkenler olarak ölçülür (kategorik değil), her kutbun kendine özgü avantajları olduğunu vurgular. Örneğin, düşük sorumluluk "kötü" değil, sadece daha esnek ve spontan yaklaşımı temsil eder.</p>
+                </div>
+            </div>
+
+            <!-- Soru 10 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">10</div>
+                    <div class="question-type">Çoktan Seçmeli</div>
+                </div>
+                <div class="question-text">
+                    "Dark Triad" kavramı Big Five modeli ile nasıl ilişkilidir?
+                </div>
+                <ul class="options">
+                    <li>A) Big Five'ın bir alt kategorisidir</li>
+                    <li>B) Düşük Uyumluluk ve düşük Sorumluluk ile ilişkilidir</li>
+                    <li>C) Big Five ile hiç ilişkisi yoktur</li>
+                    <li>D) Yüksek Nevrotizm ile özdeştir</li>
+                    <li>E) Big Five'ın yerine geçen bir modeldir</li>
+                </ul>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevap: B) Düşük Uyumluluk ve düşük Sorumluluk ile ilişkilidir</h4>
+                    <p><strong>Açıklama:</strong> <strong>"Dark Triad"</strong> (Karanlık Üçlü) - narsisizm, makyavelizm ve psikopati - Big Five modeli ile güçlü ilişkiler gösterir, özellikle <strong>düşük Uyumluluk ve düşük Sorumluluk</strong> ile karakterizedir. İlişkiler şöyledir: <strong>Düşük Uyumluluk:</strong> Empati eksikliği, manipülatif davranış, çıkar odaklılık, güvensizlik. <strong>Düşük Sorumluluk:</strong> Kurallara uymama, dürtüsel davranış, sorumsuzluk, uzun vadeli sonuçları düşünmeme. <strong>Yüksek Dışadönüklük:</strong> Özellikle narsisizmde, sosyal baskınlık, dikkat çekme isteği. <strong>Düşük Nevrotizm:</strong> Stres altında sakin kalma, suçluluk hissetmeme, korkusuzluk. <strong>Değişken Açıklık:</strong> Makyavelizm'de yüksek (stratejik düşünme), psikopati'de düşük olabilir. Bu ilişki, Big Five'ın patolojik kişilik özelliklerini de kapsayabildiğini gösterir ve klinik uygulamalarda önemli bir araç olduğunu vurgular.</p>
+                </div>
+            </div>
+
+            <!-- Soru 11 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">11</div>
+                    <div class="question-type">Çoktan Seçmeli</div>
+                </div>
+                <div class="question-text">
+                    Big Five modelinin uygulamalarından hangisi en az gelişmiştir?
+                </div>
+                <ul class="options">
+                    <li>A) İşe alım süreçleri</li>
+                    <li>B) Klinik tanı</li>
+                    <li>C) Akademik araştırma</li>
+                    <li>D) Psikoterapi planlaması</li>
+                    <li>E) Çift terapisi</li>
+                </ul>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevap: B) Klinik tanı</h4>
+                    <p><strong>Açıklama:</strong> Big Five modelinin uygulamalarından <strong>klinik tanı</strong> alanı en az gelişmiştir. Bunun nedenleri: <strong>Kategorik vs. Boyutsal yaklaşım:</strong> DSM-5 hala büyük ölçüde kategorik tanıları kullanır, boyutsal Big Five modeli ile uyumsuzluk. <strong>Klinik gelenek:</strong> Psikiatri ve klinik psikoloji geleneksel tanı sistemlerine bağlı. <strong>Praktik zorluklar:</strong> Klinik ortamda hızlı tanı ihtiyacı, kapsamlı Big Five değerlendirmesi zaman alıcı. <strong>Eğitim eksikliği:</strong> Klinisyenlerin Big Five konusunda sınırlı bilgisi. Diğer alanlar daha gelişmiştir: <strong>İşe alım:</strong> Yaygın kullanım, iş performansı tahmininde etkili. <strong>Akademik araştırma:</strong> Standart araştırma aracı. <strong>Psikoterapi planlaması:</strong> Danışan özelliklerine göre terapi yaklaşımı seçimi. <strong>Çift terapisi:</strong> İlişki uyumu, çatışma alanları belirleme. DSM-5'de "Alternatif Kişilik Bozuklukları Modeli" Big Five benzeri yaklaşım önerir ama henüz yaygın kullanım bulmuş değil.</p>
+                </div>
+            </div>
+
+            <!-- Soru 12 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">12</div>
+                    <div class="question-type">Klasik Sınav</div>
+                </div>
+                <div class="question-text">
+                    Big Five modelinin geleceğini ve alternatif yaklaşımlarla karşılaştırmasını değerlendirin. Modelin güçlü yanları ve sınırlılıkları nelerdir?
+                </div>
+                <textarea class="essay-area" placeholder="Cevabınızı buraya yazınız..."></textarea>
+                <div class="explanation">
+                    <h4>🎯 Örnek Cevap:</h4>
+                    <p><strong>Big Five'ın Güçlü Yanları:</strong></p>
+                    <p><strong>1. Empirical Sağlamlık:</strong> 30+ yıllık araştırma birikimi, çok kültürlü doğrulama, yüksek güvenilirlik ve geçerlilik.</p>
+                    <p><strong>2. Kapsamlılık:</strong> Kişiliğin temel boyutlarını kapsıyor, çoğu kişilik teorisini organize ediyor.</p>
+                    <p><strong>3. Pratik Kullanım:</strong> Ölçümü kolay, anlaşılır, uygulamalarda etkili.</p>
+                    <p><strong>4. Teorik Birleştirme:</strong> Farklı kuramları ortak bir çerçevede buluşturuyor.</p>
+                    <p><strong>5. Tahmin Gücü:</strong> Yaşam sonuçlarını (iş, ilişki, sağlık) makul düzeyde tahmin ediyor.</p>
+                    <p><strong>Sınırlılıklar:</strong></p>
+                    <p><strong>1. Teorik Zayıflık:</strong> Neden bu 5 faktör? Altında yatan mekanizmalar belirsiz.</p>
+                    <p><strong>2. Statik Yaklaşım:</strong> Durumsal değişkenliği, kişilik-durum etkileşimini yeterince ele almıyor.</p>
+                    <p><strong>3. Batı Merkezli:</strong> Leksik yaklaşım İngilizce temelli, diğer kültürlerde tam geçerlilik sorgulanıyor.</p>
+                    <p><strong>4. Değerler ve Motivasyon Eksikliği:</strong> Neyi değerli bulduğu, ne istediği konularında zayıf.</p>
+                    <p><strong>5. Gelişimsel Süreç İhmali:</strong> Kişiliğin nasıl geliştiği, değiştiği konularında yetersiz.</p>
+                    <p><strong>Alternatif Yaklaşımlar:</strong></p>
+                    <p><strong>HEXACO Modeli:</strong> 6 faktörlü model, Dürüstlük-Alçakgönüllülük faktörü ekliyor.</p>
+                    <p><strong>Durumsal Güçler:</strong> Durumsal faktörlerin önemini vurgulayan yaklaşımlar.</p>
+                    <p><strong>Değerler Odaklı Modeller:</strong> Schwartz'ın değerler teorisi, motivasyonel açıklama sağlıyor.</p>
+                    <p><strong>Ağ Yaklaşımları:</strong> Kişiliği birbirine bağlı özellikler ağı olarak görüyor.</p>
+                    <p><strong>Gelecek Öngörüleri:</strong> Big Five temel çerçeve olarak kalacak ama durumsal faktörler, değerler, dinamik süreçlerle birleştirilecek, nörogörüntüleme ile biyolojik temelleri güçlenecek, kültürlerarası geçerlilik artacak, klinik uygulamalar gelişecek.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

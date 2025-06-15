@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alfred Adler - Bireysel Psikoloji Soruları</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+        }
+        
+        .header h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+        
+        .nav-link {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background: rgba(255,255,255,0.2);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-link:hover {
+            background: rgba(255,255,255,0.3);
+        }
+        
+        .content {
+            padding: 40px;
+        }
+        
+        .question {
+            background: #f8f9fa;
+            margin-bottom: 30px;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .question-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        
+        .question-number {
+            background: #667eea;
+            color: white;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+        
+        .question-type {
+            background: #28a745;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+        }
+        
+        .question-text {
+            font-size: 1.1rem;
+            color: #333;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+        
+        .options {
+            list-style: none;
+            margin-bottom: 20px;
+        }
+        
+        .options li {
+            padding: 10px 15px;
+            margin: 8px 0;
+            background: white;
+            border-radius: 8px;
+            border: 2px solid #e9ecef;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .options li:hover {
+            border-color: #667eea;
+            background: #f0f4ff;
+        }
+        
+        .explanation {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+        
+        .explanation h4 {
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+        
+        .explanation p {
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+        
+        .fill-blank {
+            border: none;
+            border-bottom: 2px solid #667eea;
+            background: transparent;
+            padding: 5px;
+            font-size: 1rem;
+            width: 150px;
+            margin: 0 5px;
+        }
+        
+        .essay-area {
+            width: 100%;
+            min-height: 100px;
+            padding: 15px;
+            border: 2px solid #e9ecef;
+            border-radius: 10px;
+            font-family: inherit;
+            font-size: 1rem;
+            resize: vertical;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎯 Alfred Adler - Bireysel Psikoloji</h1>
+            <p>Aşağılık kompleksi, üstünlük çabası ve yaşam tarzı</p>
+            <a href="index.html" class="nav-link">← Ana Sayfaya Dön</a>
+        </div>
+        
+        <div class="content">
+            <!-- Soru 1 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">1</div>
+                    <div class="question-type">Çoktan Seçmeli</div>
+                </div>
+                <div class="question-text">
+                    Adler'e göre insan davranışının temel motivasyonu nedir?
+                </div>
+                <ul class="options">
+                    <li>A) Cinsel dürtüler</li>
+                    <li>B) Üstünlük çabası</li>
+                    <li>C) Güvenlik ihtiyacı</li>
+                    <li>D) Sosyal kabul</li>
+                    <li>E) Kendini gerçekleştirme</li>
+                </ul>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevap: B) Üstünlük çabası</h4>
+                    <p><strong>Açıklama:</strong> Adler'in bireysel psikolojisinin merkezinde <strong>üstünlük çabası (striving for superiority)</strong> yer alır. Bu, insanın doğuştan gelen temel motivasyonudur ve kişiliği şekillendiren en önemli güçtür. Üstünlük çabası, aşağılık duygularının üstesinden gelme ve daha mükemmel bir duruma ulaşma çabasıdır. Bu kavram Freud'un libido teorisine alternatif olarak geliştirilmiştir. Adler, bu çabanın sağlıklı (sosyal ilgi ile birleştiğinde) veya sağlıksız (sadece kişisel çıkar odaklı) olabileceğini vurgular.</p>
+                </div>
+            </div>
+
+            <!-- Soru 2 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">2</div>
+                    <div class="question-type">Boşluk Doldurma</div>
+                </div>
+                <div class="question-text">
+                    Adler'e göre her insan <input type="text" class="fill-blank" placeholder="aşağılık"> duygusuyla doğar ve bunu aşmak için <input type="text" class="fill-blank" placeholder="üstünlük"> çabası gösterir. Bu süreçte <input type="text" class="fill-blank" placeholder="sosyal ilgi"> geliştirilmesi kritiktir.
+                </div>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevaplar: Aşağılık, Üstünlük, Sosyal İlgi</h4>
+                    <p><strong>Açıklama:</strong> Adler'in teorisinin üç temel kavramı: <strong>Aşağılık duygusu:</strong> Çocukların doğuştan getirdiği yetersizlik hissi, yetişkinlerin karşısında küçük ve güçsüz olma durumu. <strong>Üstünlük çabası:</strong> Aşağılık duygusunu telafi etme ve daha mükemmel olmaya yönelik doğal motivasyon. <strong>Sosyal ilgi (social interest):</strong> Başkalarıyla işbirliği yapma, topluma katkıda bulunma yönelimi. Sağlıklı kişilik gelişimi için üstünlük çabasının sosyal ilgiyle dengelenmesi gerekir.</p>
+                </div>
+            </div>
+
+            <!-- Soru 3 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">3</div>
+                    <div class="question-type">Çoktan Seçmeli</div>
+                </div>
+                <div class="question-text">
+                    "Yaşam tarzı" (lifestyle) kavramı aşağıdakilerden hangisini ifade eder?
+                </div>
+                <ul class="options">
+                    <li>A) Kişinin maddi imkanlarını</li>
+                    <li>B) Sosyal sınıf durumunu</li>
+                    <li>C) Yaşamına yaklaşım tarzı ve temel tutumlarını</li>
+                    <li>D) Günlük rutinlerini</li>
+                    <li>E) Meslek tercihlerini</li>
+                </ul>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevap: C) Yaşamına yaklaşım tarzı ve temel tutumlarını</h4>
+                    <p><strong>Açıklama:</strong> <strong>Yaşam tarzı (lifestyle)</strong>, Adler'in teorisindeki en önemli kavramlardan biridir. Bu, kişinin yaşama karşı geliştirdiği tutumlar, değerler, hedefler ve davranış kalıplarının bütünüdür. Yaşam tarzı 4-5 yaşlarında oluşmaya başlar ve görece sabit kalır. Kişinin kendine, başkalarına ve dünyaya karşı temel yaklaşımını belirler. Erken çocukluk deneyimleri, aile konstellasyonu ve aşağılık duygularıyla başa çıkma yöntemleri yaşam tarzını şekillendirir. Terapi sürecinde yaşam tarzının anlaşılması ve gerekirse değiştirilmesi amaçlanır.</p>
+                </div>
+            </div>
+
+            <!-- Soru 4 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">4</div>
+                    <div class="question-type">Klasik Sınav</div>
+                </div>
+                <div class="question-text">
+                    Adler'in "aile konstellasyonu" kavramını açıklayın ve kişilik gelişimindeki rolünü tartışın.
+                </div>
+                <textarea class="essay-area" placeholder="Cevabınızı buraya yazınız..."></textarea>
+                <div class="explanation">
+                    <h4>🎯 Örnek Cevap:</h4>
+                    <p><strong>Aile Konstellasyonu Tanımı:</strong> Çocuğun ailede hangi sırada doğduğu ve bu durumun psikolojik etkilerini ifade eder. Adler, doğum sırası ve aile dinamiklerinin kişilik gelişiminde kritik rol oynadığını savunur.</p>
+                    <p><strong>Doğum Sırası Etkileri:</strong> <strong>İlk çocuk:</strong> Sorumlu, mükemmeliyetçi, güç odaklı. <strong>İkinci çocuk:</strong> Yarışmacı, hırslı, isyankâr eğilimli. <strong>En küçük çocuk:</strong> Şımarık, yaratıcı, dikkat çekmeyi seven. <strong>Tek çocuk:</strong> Merkez olmaya alışkın, sosyal becerilerde zayıf olabilir.</p>
+                    <p><strong>Kişilik Gelişimindeki Rolü:</strong> Aile içindeki pozisyon, çocuğun üstünlük çabası gösterme yöntemlerini etkiler. Aile atmosferi, ebeveyn tutumları ve kardeş ilişkileri yaşam tarzının temellerini atar. Bu erken deneyimler, kişinin sosyal ilgisini ve başa çıkma stratejilerini şekillendirir.</p>
+                </div>
+            </div>
+
+            <!-- Soru 5 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">5</div>
+                    <div class="question-type">Çoktan Seçmeli</div>
+                </div>
+                <div class="question-text">
+                    Adler'e göre "aşağılık kompleksi" ne zaman gelişir?
+                </div>
+                <ul class="options">
+                    <li>A) Doğuştan vardır</li>
+                    <li>B) Aşağılık duygularının aşılamadığı durumlarda</li>
+                    <li>C) Sadece yetişkinlik döneminde</li>
+                    <li>D) Sosyal çevrenin etkisiyle</li>
+                    <li>E) Travmatik olaylardan sonra</li>
+                </ul>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevap: B) Aşağılık duygularının aşılamadığı durumlarda</h4>
+                    <p><strong>Açıklama:</strong> Adler önemli bir ayrım yapar: <strong>Aşağılık duygusu</strong> doğal ve evrenseldir, tüm çocuklar bu duyguyla dünyaya gelir. Bu sağlıklı bir motivasyon kaynağıdır. Ancak <strong>aşağılık kompleksi</strong> patolojik bir durumdur ve aşağılık duygularının sağlıklı şekilde aşılamadığı, üstünlük çabasının başarısız olduğu durumlarda gelişir. Bu durumda kişi sürekli yetersizlik hisseder, kaçıngan davranışlar sergiler ve sosyal ilgisini kaybeder. Kompleks, aşırı koruyucu ebeveynlik, ihmal, fiziksel eksiklikler veya sürekli eleştiri sonucu oluşabilir.</p>
+                </div>
+            </div>
+
+            <!-- Soru 6 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">6</div>
+                    <div class="question-type">Boşluk Doldurma</div>
+                </div>
+                <div class="question-text">
+                    Adler'in teorisinde kişilik <input type="text" class="fill-blank" placeholder="teleolojik"> (amaç odaklı) olarak ele alınır ve her davranışın bir <input type="text" class="fill-blank" placeholder="amacı"> vardır. Bu yaklaşım <input type="text" class="fill-blank" placeholder="nedenselci"> yaklaşımdan farklıdır.
+                </div>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevaplar: Teleolojik, Amacı, Nedenselci</h4>
+                    <p><strong>Açıklama:</strong> Adler'in <strong>teleolojik yaklaşımı</strong>, insan davranışını gelecekteki amaçlar açısından açıklar. <strong>Teleoloji:</strong> Her davranışın bir amacı, hedefi vardır; insanlar geleceğe yönelik hedeflerle motive olurlar. <strong>Nedenselci yaklaşım:</strong> Davranışları geçmiş nedenlerle açıklar (Freud'un yaklaşımı gibi). Adler, geçmişin önemli olduğunu kabul eder ancak asıl belirleyicinin kişinin gelecek hedefleri olduğunu savunur. Bu yaklaşım, terapide geçmişi anlamaktan ziyade gelecek hedeflerini yeniden yapılandırmaya odaklanır.</p>
+                </div>
+            </div>
+
+            <!-- Soru 7 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">7</div>
+                    <div class="question-type">Çoktan Seçmeli</div>
+                </div>
+                <div class="question-text">
+                    Adler'in "kişisel mitoloji" kavramı neyi ifade eder?
+                </div>
+                <ul class="options">
+                    <li>A) Kişinin gerçek yaşam hikayesi</li>
+                    <li>B) Kişinin kendine anlattığı yaşam hikayesi</li>
+                    <li>C) Aile gelenekleri</li>
+                    <li>D) Kültürel mitler</li>
+                    <li>E) Çocukluk fantazileri</li>
+                </ul>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevap: B) Kişinin kendine anlattığı yaşam hikayesi</h4>
+                    <p><strong>Açıklama:</strong> <strong>Kişisel mitoloji</strong>, bireyin kendi yaşamı hakkında oluşturduğu öznel anlatıdır. Bu, objektif gerçeklerden ziyade kişinin yaşamını nasıl anlamlandırdığı, hangi olayları önemsediği ve kendine nasıl bir hikaye anlattığıyla ilgilidir. Kişisel mitoloji yaşam tarzını yansıtır ve gelecek davranışları yönlendirir. Adler terapide bu kişisel anlatıyı keşfetmeye ve gerekirse yeniden yazılmasına odaklanır. Erken anılar bu mitolojinin inşasında önemli rol oynar çünkü kişi yaşam tarzına uygun anıları hatırlar ve anlamlandırır.</p>
+                </div>
+            </div>
+
+            <!-- Soru 8 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">8</div>
+                    <div class="question-type">Klasik Sınav</div>
+                </div>
+                <div class="question-text">
+                    Adler'in "erken anılar" tekniğini açıklayın ve bu tekniğin terapötik değeri nedir?
+                </div>
+                <textarea class="essay-area" placeholder="Cevabınızı buraya yazınız..."></textarea>
+                <div class="explanation">
+                    <h4>🎯 Örnek Cevap:</h4>
+                    <p><strong>Erken Anılar Tekniği:</strong> Kişiden hatırladığı en erken çocukluk anısını anlatması istenir. Adler, bu anıların kişinin yaşam tarzını ve temel tutumlarını yansıttığına inanır.</p>
+                    <p><strong>Teorik Temeli:</strong> Anılar rastgele hatırlanmaz; kişi yaşam tarzına uygun olan anıları seçer ve korur. Bu anılar, kişinin kendine, başkalarına ve dünyaya karşı temel yaklaşımını ortaya çıkarır.</p>
+                    <p><strong>Analiz Yöntemi:</strong> Anının içeriği, duyguları, kişinin rolü, diğer karakterler, sonuç ve kişinin bu anıdan çıkardığı anlam analiz edilir. Tekrarlayan temalar yaşam tarzını işaret eder.</p>
+                    <p><strong>Terapötik Değeri:</strong> 1) Yaşam tarzının hızlı bir şekilde anlaşılması, 2) Kişinin farkında olmadığı temel tutumlarının ortaya çıkarılması, 3) Terapötik ilişkinin güçlendirilmesi, 4) Değişim için motivasyon artışı. Bu teknik, Adlerci terapinin köşe taşlarından biridir.</p>
+                </div>
+            </div>
+
+            <!-- Soru 9 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">9</div>
+                    <div class="question-type">Boşluk Doldurma</div>
+                </div>
+                <div class="question-text">
+                    Adler'e göre sağlıklı kişilik gelişimi için üç temel yaşam görevi vardır: <input type="text" class="fill-blank" placeholder="iş"> görevi, <input type="text" class="fill-blank" placeholder="sosyal"> görev ve <input type="text" class="fill-blank" placeholder="aşk"> görevi.
+                </div>
+                <div class="explanation">
+                    <h4>🎯 Doğru Cevaplar: İş, Sosyal, Aşk</h4>
+                    <p><strong>Açıklama:</strong> Adler, sağlıklı yaşam için üç temel görevin başarılması gerektiğini savunur: <strong>İş görevi (work task):</strong> Üretken olmak, topluma katkıda bulunmak, meslek hayatında başarılı olmak. <strong>Sosyal görev (social task):</strong> Arkadaşlık kurmak, toplumsal ilişkilerde başarılı olmak, sosyal ilgiyi geliştirmek. <strong>Aşk görevi (love task):</strong> Karşı cinsle sağlıklı ilişki kurmak, sevgi ve yakınlık deneyimlemek. Bu üç görevde başarı, sosyal ilgi ve üstünlük çabasının sağlıklı şekilde dengelenmesiyle mümkündür. Psikolojik sorunlar genellikle bu görevlerden birinde veya birkaçında başarısızlıktan kaynaklanır.</p>
+                </div>
+            </div>
+
+            <!-- Soru 10 -->
+            <div class="question">
+                <div class="question-header">
+                    <div class="question-number">10</div>
+                    <div class="question-type">Klasik Sınav</div>
+                </div>
+                <div class="question-text">
+                    Adler ile Freud arasındaki temel farklılıkları karşılaştırın ve Adler'in psikanalitik hareketten ayrılma nedenlerini açıklayın.
+                </div>
+                <textarea class="essay-area" placeholder="Cevabınızı buraya yazınız..."></textarea>
+                <div class="explanation">
+                    <h4>🎯 Örnek Cevap:</h4>
+                    <p><strong>Temel Motivasyon:</strong> Freud: Libido ve cinsel dürtüler. Adler: Üstünlük çabası ve sosyal ilgi.</p>
+                    <p><strong>Bilinçdışı Anlayışı:</strong> Freud: Bastırılmış cinsel ve agresif dürtüler. Adler: Yaşam tarzı ve yaratıcı benlik.</p>
+                    <p><strong>Determinizm:</strong> Freud: Geçmiş tarafından belirlenmişlik. Adler: Teleolojik yaklaşım, gelecek hedefleri.</p>
+                    <p><strong>Sosyal Faktörler:</strong> Freud: İkincil önemde. Adler: Temel önemde, sosyal ilgi merkezi kavram.</p>
+                    <p><strong>Kişilik Gelişimi:</strong> Freud: Çocuklukta sabitlenir. Adler: Yaşam boyu değişebilir, yaratıcı benlik.</p>
+                    <p><strong>Ayrılma Nedenleri:</strong> 1) Cinsellik vurgusuna karşı çıkma, 2) Sosyal faktörlerin önemini vurgu, 3) İyimser insan doğası görüşü, 4) Holistik yaklaşım benimseme, 5) Eşitlikçi terapötik ilişki önerme. Adler daha humanistik ve sosyal odaklı bir yaklaşım geliştirmiştir.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
